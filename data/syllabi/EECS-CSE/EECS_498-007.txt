@@ -1,0 +1,36 @@
+Source: Andrew-Ng-s-number-one-fan/EECS498-Deep-Learning-for-Computer-Vision (GitHub, student
+notes repo), README.md.
+
+EECS 498-007 / 598-005: Deep Learning for Computer Vision
+Instructor: Justin Johnson
+Term: Fall 2019 (lecture video/slide set referenced; course has run in multiple terms since,
+e.g. FA2020, WI2022, per official course site at web.eecs.umich.edu/~justincj/teaching/eecs498/,
+which is on a blocked *.umich.edu domain and was not directly fetched)
+
+Lecture list (Fall 2019):
+1. Introduction to Deep Learning for Computer Vision
+2. Image Classification
+3. Linear Classifiers
+4. Optimization
+5. Neural Networks
+6. Backpropagation
+7. Convolutional Networks
+8. CNN Architectures
+9. Hardware and Software
+10. Training Neural Networks I
+11. Training Neural Networks II
+12. Recurrent Networks
+13. Attention
+14. Visualizing and Understanding CNNs
+15. Object Detection
+16. Detection and Segmentation
+17. 3D Vision
+18. Videos
+19. Generative Models I
+20. Generative Models II
+21. Reinforcement Learning
+22. Conclusion
+
+No grading breakdown, prerequisites, or textbook were present in the cloned student repos;
+a second student repo (AndreiKeino/EECS-498-007-598-005-Deep-Learning-for-Computer-Vision)
+confirmed the same course title/number but contained only assignment code, no syllabus text.

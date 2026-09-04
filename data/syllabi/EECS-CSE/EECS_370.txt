@@ -1,0 +1,245 @@
+2020/8/31 EECS 370: Introduction to Computer Organization - Fall 2020
+Ramses .
+wero EECS 370: INTRODUCTION TO COMPUTER
+O79 ORGANIZATION
+FALL 2020
+ANNOUNCEMENTS .
+Course Overview
+COURSE This course is intended to give you a basic understanding of how computers
+OVERVIEW 5 ,
+execute programs. Understanding computers means understanding the
+hardware/software process of how you and the computer work together to have
+LECTURES the computer carry out a task.
+LECTURE In your introductory programming courses (e.g. EECS 280), you learned how to
+RECORDINGS express a task in terms of a high-level programming language such as C or C++. In
+EECS 370, you will see how a low-level language is executed by the hardware,
+DISCUSSION and you will see how to put together basic hardware building blocks to form the
+RECORDINGS functional units of a computer.
+To achieve these goals, you will design and "build" simple computers at various
+DISCUSSIONS . . ae . 5 5
+levels of detail. In this course, building will not mean connecting chips and gates.
+Rather, you will describe the hardware in diagrams, finite-state machines, and
+STAFF AND HOURS
+hardware simulators (written in C). To further your understanding of other
+topics, we will provide practice questions that will be discussed in small
+RESOURCES | ,. 5 .
+‘discussion pods" (see below).
+VIDEO REVIEW | Prerequisites
+HOMEWORKS Students must have taken EECS 280. From that course they should have learned
+and be comfortable with programming C++ on Unix. A brief overview of C vs. C++
+PROJECTS will occur during the first discussion section of the semester. Also you can go to
+staff office hours for additional help.
+EXAMS | In addition, students should have taken either EECS 203 or EECS 270
+ADMINISTRATIVE | Class Projects
+REQUESTS a
+Four projects will be assigned during the term, each of which will require a
+PIAZZA substantial time commitment on your part. The first project will be divided in
+three parts, each with a separate deadline. Many students find the work load in
+this course to be heavy.
+The most common reason for not doing well on the projects is not starting them
+early enough. You will be given plenty of time to complete each project.
+However, if you wait until the last minute to start, you may not be able to finish.
+https:/www.eecs.umich.edu/courses/eecs3 70/eecs370.20/course/ 16
+
+
+=== PAGE BREAK ===
+
+2020/8/31 EECS 370: Introduction to Computer Organization - Fall 2020
+Plan to do some work on a project every day. Also plan to have it finished about
+2 days ahead of the due date - many unexpected problems arise during
+programming, especially in the debugging phase. Office hours can become quite
+crowded as deadlines approach, making it difficult to get help. Plan for these
+things to happen. Your lack of starting early is not an excuse for turning in your
+project late, even if some unfortunate situations arise such as having your
+computer crash.
+There are many sources of help on which you can draw. Many questions can be
+submitted to the course staff and your fellow classmates via Piazza. These will
+typically be answered within the day, often more quickly during working hours.
+However, some types of questions cannot be answered without seeing your
+project. If you have detailed questions on your program, speak to a GSI or
+professor during office hours.
+Students are also encouraged to help one another on the course concepts (but
+not the implementation of the projects). One of the best ways for you to make
+sure that you understand a concept is to explain it to someone else. Keep in
+mind, however, that you should not expect anyone else to do any part of your
+project for you. The project that you tum in must be completely your own.
+Many computing sites have consultants who are available to help you at the site.
+They are fine sources of help with questions regarding the computers and
+installed software (such as Unix and the C compiler). However, they are not likely
+to be able to help you with questions about computer programming, the C
+language, or specific errors in your program.
+Turning in Projects
+Projects are due at 11:55pm Eastern time exactly on the due date.
+You will be submitting your projects electronically by going to autograder.io. Your
+projects will be graded automatically using an autograder program. You are
+allowed to submit your programs as frequently as you wish. However, to deter
+you from using the autograder as a debugger, you will receive autograder
+feedback only FIVE TIMES a day. That is, only the first 5 submissions will be
+graded and returned to you with your score on any given day. Additional
+submissions beyond the initial 5 will be graded and recorded, but you will not
+receive any feedback about them. For each project, your final score will be
+derived from your best submission to the autograder.
+Extensions
+Sometimes unexpected problems make it difficult to get a project in on time. For
+this reason, each person will have a total of 3 free late days to be used for
+https:/www.eecs.umich.edu/courses/eecs3 70/eecs370.20/course/ 216
+
+
+=== PAGE BREAK ===
+
+2020/8/31 EECS 370: Introduction to Computer Organization - Fall 2020
+projects throughout the semester. These late days should only be used to deal
+with unexpected problems such as illness. They should not be used simply to
+start later on a project or because you are having difficulty completing the
+project. Thus, please plan your work accordingly so that you won't need to use
+any of the late days unless there is a personal emergency. If you are having
+trouble understanding the material or designing a program, please come to office
+hours for help right away.
+Project Grading
+The projects will be graded primarily for correctness (doing all the required
+tasks, simulating at the correct hardware level, and giving correct results). All
+grading questions should first be discussed with a GSI or IA. If you cannot resolve
+a problem with them, bring the project to the instructor.
+Doing Your Own Project
+All projects and exams in this course are to be done on your own. Any
+suspected violation will result in the initiation of formal procedures with the
+LS&A or Engineering Honor Council. Violators will receive a 0 in the project,
+in addition to additional grade repercussions, as recommended by the
+appropriate Honor Council.
+We will be using a sophisticated automated program to correlate projects,
+including those submitted in previous semesters.
+We do encourage students to help each other learn the course material. As in
+most courses, there is a boundary separating these two situations. You may give
+or receive help on any of the concepts covered in lecture or discussion and on
+the specifics of C syntax. You are allowed to consult with other students in the
+current class to help you understand the project specification (i.e. the problem
+definition). However, you may not collaborate in any way when constructing your
+solution - the solution to the project must be generated by your work alone and
+the work of other students must not have contributed to your solution. You are
+not allowed to work out the programming details of the problems with anyone or
+to collaborate to the extent that your programs are identifiably similar. You are
+not allowed to look at or in any way derive advantage from the existence of
+project specifications or solutions prepared in prior years (e.g. programs written
+by former students, solutions provided by instructors, project handouts).
+If you have any questions as to what constitutes unacceptable collaboration,
+please talk to the instructor right away. You are expected to exercise reasonable
+precautions in protecting your own work. Do not leave your program in a publicly
+accessible directory, and take care when discarding printouts.
+https:/www.eecs.umich.edu/courses/eecs3 70/eecs370.20/course/ 3/6
+
+
+=== PAGE BREAK ===
+
+2020/8/31 EECS 370: Introduction to Computer Organization - Fall 2020
+Exams
+There will be two exams this semester. You are expected to take the exams at
+the scheduled times. If you do not take an exam without verifying a documented
+medical or personal emergency causing you to miss an exam, you will receive a
+zero for that exam. If you anticipate conflicts with the exam time, declare your
+conflicts by 9/24/20. The exam dates are given near the beginning of the
+semester so you can avoid scheduling job interviews or other commitments on
+exam days. Outside commitments are not considered a valid reason for missing
+an exam. If you need to request any special accommodation during any exam,
+please bring the necessary paperwork from the SSD office by the end of the first
+month of classes.
+Homework
+There will be six individual homework assignments during the semester, and
+there is NO late day for homework assignments. Your homework assignments will
+be posted on this website and will have a deadline set at 11:55pm for the day
+the homework is due on Gradescope. Students can re-submit as much as they
+would like until the deadline. Only the last submission will be graded. The files
+can be typed up or written and then scanned. You will be able to drop one
+homework assignment. Late assignments (even 1 minute late) turned in within 24
+hours of when they are due will generally get 50% credit. Later assignments will
+get a zero. Do note that you can drop one homework score.
+Further, you will have group assignments. These will be done in groups of four or
+five, with just one assignment turned in on Gradescope for the entire group.
+Group assignments will be completed within the Discussion Pods detailed below.
+Please be sure to have each member's name on the scanned document and to
+turn in the assignment as a group assignment with everyone's name on
+Gradescope.
+You may not post homework answers on piazza or place them in any other public
+forum (a webpage for example) or share them with others. Note that homework
+constitutes a fairly small factor in your final grade. Their main purpose is to help
+you in getting trained for the type of questions that you will find in the course
+exams.
+Discussion Pods
+For this semester, due to the challenges associated with collaborative learning
+with remote instruction, we will be facilitating an alternate form of discussion. A
+reduced number of live, interactive discussion sections will still be led by student
+staff. These will be both streamed live, as well as recorded and made available
+https:/www.eecs.umich.edu/courses/eecs3 70/eecs370.20/course/ 4/6
+
+
+=== PAGE BREAK ===
+
+2020/8/31 EECS 370: Introduction to Computer Organization - Fall 2020
+to all students afterward. In addition, you will be required to attend a one hour-
+long “discussion pod” per week with your homework group, which you will
+schedule with the course staff and attend on Zoom. This time is intended to be
+used to work through the group homework assignment or discuss the course
+material. For 15 minutes of this hour, a staff member will join your pod to
+facilitate conversation and to answer any questions you have on the material or
+assignment. The staff member will not assist with any project debugging during
+this time.
+We will send out information in the first week of class to facilitate forming
+groups and scheduling times for your pod. Attendance is mandatory to receive
+full credit for the assignment.
+This is a new layout. We may augment, change, or replace this scheme entirely
+based on feedback from you and the course staff. We appreciate your flexibility
+and patience.
+Grading Policy
+Final grades will be based on the total points earned on homework, projects and
+exams. Factors such as class participation may be used to adjust your final grade,
+especially if it falls on a borderline. The grade distribution is as follows:
+© Projects (4 assignments, 10% each) = 40%
+»* Homework (6 assignments, drop the lowest) = 10%
+e Midterm = 25%
+e Final exam = 25%
+© Optional: 3% of the midterm and final'’s score weight (combined) can be
+
+replaced with participation score (see below)
+
+Participation
+You can earn participation points in two ways, depending on whether you are
+engaging in the synchronous or asynchronous lectures:
+
+1. Synchronous lectures- Live polling will be conducted during lectures
+through Zoom, with your responses recorded. A linear score will be
+calculated based on how many polls you respond to. Responding to 2/3 or
+more of the polls will garner full points.
+
+2. Asynchronous lectures- Quizzes covering the lecture material will be
+administered regularly via Canvas and graded to determine your
+participation score. The time windows that you can take these quizzes will
+be made available on Canvas
+
+https:/www.eecs.umich.edu/courses/eecs3 70/eecs370.20/course/ 516
+
+
+=== PAGE BREAK ===
+
+2020/8/31 EECS 370: Introduction to Computer Organization - Fall 2020
+Participation is not required, but if doing so increases your grade, 3% of the
+exams’ weight in your overall grade will be replaced with the participation score.
+You may choose either method (and switch between them), regardless of which
+section you are enrolled in.
+COVID-19 Policy
+If at any point you become unable to complete your work due to factors related
+to the COVID-19 pandemic (e.g. you or a loved one becomes infected or loses
+their job, you lose prolonged access to the internet, etc.), please contact the
+staff as soon as you can. We will do our best to work with you to find a solution.
+If this happens near the start of term, we may encourage you to drop the course.
+If it occurs later, we may encourage you to take an “Incomplete” for the term to
+finish your work after the semester has ended.
+Computers
+You may develop on any machine that runs gcc. However, we will only support
+programs which run correctly on a CAEN machine. If you are not an engineering
+student (or declared CS-major), we recommend you to get a CAEN account. The
+autograder should work for submissions from ITCS Linux workstations, but we
+cannot guarantee this.
+Finally, you are responsible for reading your umich e-mail inbox: class
+announcements and other student communications may be sent there.
+Home/Announcements Course Overview Lectures Discussions Staff and Hours Resources Video
+Review Homeworks Projects Exams Piazza
+https:/www.eecs.umich. edu/courses/eecs3 70/eecs370 f20/course/ 6/6

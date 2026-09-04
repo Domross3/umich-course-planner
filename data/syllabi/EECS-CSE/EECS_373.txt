@@ -1,0 +1,15 @@
+Sources:
+1. arschallwig/EECS373_CFS (GitHub, verified via git clone) - student team project README,
+   confirms: "EECS 373: Introduction to Embedded System Design, Winter 2023, Ann Arbor" and
+   project team of 3 (Matthew Kukucka, Andrew Schallwig, Jessica Simmer) building an embedded
+   computer-vision transit-data system ("Commuter First Solutions").
+2. WebSearch summary of official course pages (web.eecs.umich.edu/~prabal/teaching/eecs373*,
+   blocked *.umich.edu domain, not directly fetched) - curriculum topic list only:
+   Introduction to Embedded Systems, ARM Instruction Set Architecture, Assembly/C/GNU
+   Toolchains, Memory and I/O Architecture, Memory-Mapped Peripherals, Interrupts,
+   Timers/Counters/Compares/Captures, Memory Technologies (SRAM, DRAM, Flash), Serial
+   Communications (UART, SPI, I2C), Data Converters (ADC, DAC), Wireless Communications,
+   Circuit Board Design and Fabrication.
+
+No grading breakdown, instructor name (for the specific verified term), or textbook was
+recoverable from either source.

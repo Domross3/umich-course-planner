@@ -1,0 +1,69 @@
+{
+  "code": "EECS 487",
+  "title": "Introduction to Natural Language Processing",
+  "term": "Fall 2023",
+  "sourceRepo": "laura-burdick/laura-burdick.github.io",
+  "sourceFiles": [
+    "papers/SyllabusEECS487Fall2023.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Laura Burdick",
+  "gradingBreakdown": [
+    {"component": "Project proposal", "percent": 5},
+    {"component": "Project progress report", "percent": 5},
+    {"component": "Project final report", "percent": 15},
+    {"component": "Project final poster", "percent": 5}
+  ],
+  "weeklyTopics": [
+    "Introduction: Why is NLP Hard?",
+    "Text Normalization",
+    "N-gram Language Models",
+    "Naive Bayes and Sentiment Classification",
+    "Logistic Regression",
+    "Vector Semantics and Embeddings",
+    "Neural Networks and Neural Language Models",
+    "Sequence Labeling for POS and NER",
+    "RNNs and LSTMs",
+    "Transformers and Pretrained LMs",
+    "Fine-tuning and Masked LMs",
+    "Chatbots and Dialogue Systems",
+    "ChatGPT: Data and Societal Implications",
+    "Machine Translation",
+    "Question Answering and IR",
+    "ASR and Text-to-Speech",
+    "Constituency and Dependency Parsing",
+    "Word Senses and WordNet",
+    "Sentiment, Affect, and Connotation",
+    "Coreference Resolution (if time)",
+    "Hidden Markov Models (if time)"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "Canvas",
+    "Gradescope",
+    "Piazza"
+  ],
+  "skills": [
+    "nlp fundamentals",
+    "n-gram language models",
+    "naive bayes and logistic regression classification",
+    "word embeddings",
+    "neural language models",
+    "sequence labeling (pos/ner)",
+    "rnns and lstms",
+    "transformer architectures",
+    "fine-tuning and masked language models",
+    "dialogue systems and chatbots",
+    "machine translation",
+    "question answering",
+    "constituency and dependency parsing",
+    "hands-on nlp coding labs",
+    "team research project and poster presentation"
+  ],
+  "workloadNotes": "26 lectures (must complete lecture assignments for 20 to earn full credit; not accepted late); 10 lab assignments (lowest dropped, due weekly); 3 homework assignments (10%/day late penalty up to 3 days); a group \"One Cool Thing\" video presentation; one in-person exam (no final exam); and a semester-long team project (2-3 students) worth 30% total (5% proposal, 5% progress report, 15% final report, 5% poster), with a mandatory final poster session. Exact overall weights for lecture/lab/homework categories were not machine-readable from the source grading table.",
+  "prerequisitesText": "Designed for junior/senior undergraduates in CS, information science, linguistics, or related fields; expected to write code proficiently (Python recommended) and have studied algorithms, probability, and statistics.",
+  "textbooks": [
+    "Dan Jurafsky and James H. Martin, Speech and Language Processing, 3rd ed. draft (online)"
+  ],
+  "confidence": "syllabus"
+}

@@ -1,0 +1,46 @@
+{
+  "code": "EECS 587",
+  "title": "Parallel Computing",
+  "term": "Fall (offered each fall; specific year not confirmed)",
+  "sourceRepo": "web.eecs.umich.edu/~qstout/587_Overview.pdf (blocked domain; content via WebSearch summary, not directly fetched) + yipengm/EECS587 (student homework/PBS scripts, GitHub)",
+  "sourceFiles": [
+    "587_Overview.pdf (summarized, not directly read)"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Quentin Stout",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Speedup and performance analysis",
+    "Load balancing",
+    "Latency and latency toleration",
+    "Parallel system taxonomies",
+    "Algorithm design for idealized parallel models",
+    "Shared-memory programming (OpenMP)",
+    "Distributed-memory programming (MPI)",
+    "GPU programming (CUDA)",
+    "Networks and grid computing",
+    "Synchronization",
+    "Communication minimization"
+  ],
+  "toolsAndLanguages": [
+    "MPI",
+    "OpenMP",
+    "CUDA",
+    "HPC batch scheduler (PBS)"
+  ],
+  "skills": [
+    "parallel algorithm design",
+    "mpi distributed-memory programming",
+    "openmp shared-memory programming",
+    "cuda gpu programming",
+    "load balancing",
+    "performance/speedup analysis",
+    "hpc cluster job submission",
+    "parallel systems taxonomy",
+    "term-scale parallel project work"
+  ],
+  "workloadNotes": "Per a search-engine summary of the official (blocked, not independently fetched) course overview page: grading is approximately 15% written homework, 40% programming assignments, and 45% a substantial term project (plus possibly a small quiz or two). Treat these percentages as unverified secondhand paraphrase rather than a directly-read source. A public student repo (yipengm/EECS587) independently confirms cluster-based (PBS) programming assignments across varying problem sizes and thread/process counts.",
+  "prerequisitesText": "",
+  "textbooks": [],
+  "confidence": "listing only"
+}

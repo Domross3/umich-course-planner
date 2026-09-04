@@ -1,0 +1,72 @@
+{
+  "code": "EECS 492",
+  "title": "Introduction to Artificial Intelligence",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 492_Introduction to AI_Winter 2021.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Joyce Chai",
+  "gradingBreakdown": [
+    {"component": "Homework assignments (4)", "percent": 50},
+    {"component": "Midterm Exam", "percent": 25},
+    {"component": "Final Exam", "percent": 25}
+  ],
+  "weeklyTopics": [
+    "Introduction",
+    "Intelligent Agent",
+    "Search",
+    "Adversarial Search",
+    "Constraint Satisfaction",
+    "Logical Agents",
+    "Propositional Logic and Inference",
+    "First-Order Logic and Inference",
+    "Programming in Logic",
+    "Knowledge Representation",
+    "Planning",
+    "Uncertainties",
+    "Bayesian Network",
+    "Bayesian Inference",
+    "Hidden Markov Model",
+    "Decision Trees",
+    "Concept Learning",
+    "Perceptron Learning",
+    "Linear Regression and Neural Networks",
+    "Deep Learning",
+    "Decision Analysis",
+    "Markov Decision Process",
+    "Reinforcement Learning",
+    "Game Theory and Multiagent Decision",
+    "Human-Robot Communication"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "Canvas",
+    "Gradescope",
+    "Piazza",
+    "Zoom"
+  ],
+  "skills": [
+    "search algorithms",
+    "adversarial search / game trees",
+    "constraint satisfaction",
+    "propositional and first-order logic",
+    "knowledge representation",
+    "classical planning",
+    "probabilistic reasoning (bayesian networks)",
+    "hidden markov models",
+    "decision trees and concept learning",
+    "neural networks and deep learning basics",
+    "markov decision processes",
+    "reinforcement learning",
+    "game theory and multiagent decision making",
+    "python programming for ai"
+  ],
+  "workloadNotes": "Four homework assignments (50% total, each with written and programming portions, ~3 weeks each, 10%/day late penalty up to 3 days), midterm (25%) and final exam (25%). Weekly discussion sections.",
+  "prerequisitesText": "EECS 281 and proficiency in Python programming. Note: CSE graduate students should enroll in EECS 592 instead.",
+  "textbooks": [
+    "Russell & Norvig, Artificial Intelligence: A Modern Approach, 3rd or 4th ed."
+  ],
+  "confidence": "syllabus"
+}

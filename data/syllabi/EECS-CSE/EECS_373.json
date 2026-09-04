@@ -1,0 +1,48 @@
+{
+  "code": "EECS 373",
+  "title": "Introduction to Embedded System Design",
+  "term": "Winter 2023 (student project confirmed; curriculum list from other terms)",
+  "sourceRepo": "arschallwig/EECS373_CFS",
+  "sourceFiles": [
+    "README.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction to Embedded Systems",
+    "ARM Instruction Set Architecture",
+    "Assembly, C, and GNU Toolchains",
+    "Memory and I/O Architecture",
+    "Memory-Mapped Peripherals",
+    "Interrupts",
+    "Timers/Counters/Compares/Captures",
+    "Memory Technologies (SRAM, DRAM, Flash)",
+    "Serial Communications (UART, SPI, I2C)",
+    "Data Converters (ADC, DAC)",
+    "Wireless Communications",
+    "Circuit Board Design and Fabrication"
+  ],
+  "toolsAndLanguages": [
+    "ARM ISA",
+    "C",
+    "Assembly",
+    "GNU toolchain",
+    "PCB design tools"
+  ],
+  "skills": [
+    "embedded systems design",
+    "arm assembly and c programming",
+    "memory-mapped i/o programming",
+    "interrupt-driven programming",
+    "serial protocols (uart/spi/i2c)",
+    "analog-to-digital and digital-to-analog conversion",
+    "wireless communication integration",
+    "pcb design and fabrication",
+    "team-based hardware/embedded project"
+  ],
+  "workloadNotes": "Team-based semester project building a complete embedded system (e.g. an embedded computer-vision transit-data device in one verified student example). No grading breakdown was recoverable from available sources; the curriculum topic list is a secondhand WebSearch summary of official (blocked) course pages, not directly fetched.",
+  "prerequisitesText": "",
+  "textbooks": [],
+  "confidence": "listing only"
+}

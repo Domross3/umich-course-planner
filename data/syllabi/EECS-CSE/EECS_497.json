@@ -1,0 +1,51 @@
+{
+  "code": "EECS 497",
+  "title": "Human-Centered Software Design and Development (cross-listed with ENGR 455-400, Multidisciplinary Software Development / MDP)",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 497&ENGR455_Human-Centered Software Design and Development & Multidisciplinary Software Development_Winter 2021.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Jeff Ringenberg, Ju Young (Lisa) Kim",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Customer discovery",
+    "Contextual inquiry",
+    "Prototyping",
+    "Process models",
+    "Project scheduling",
+    "UI/UX design",
+    "Development",
+    "Testing and debugging",
+    "Team dynamics and creative problem solving",
+    "Leadership and conflict resolution"
+  ],
+  "toolsAndLanguages": [
+    "Zoom",
+    "GitLab/GitHub",
+    "Jira Software",
+    "Microsoft Teams",
+    "Canvas",
+    "Piazza"
+  ],
+  "skills": [
+    "human-centered design",
+    "contextual inquiry",
+    "rapid prototyping",
+    "software project scheduling",
+    "ui/ux design",
+    "team-based software development",
+    "sponsored/client project management",
+    "software testing and debugging",
+    "multidisciplinary collaboration",
+    "team dynamics and leadership"
+  ],
+  "workloadNotes": "Semester-long team project (teams of 3-5 for EECS 497) sponsored by a real customer, run through the Multidisciplinary Design Program (MDP); asynchronous lecture recordings with a lecture-summary attendance form. Exact grading weights were not machine-readable from the source table; individual assignments/quizzes/exams (where present) must be completed independently.",
+  "prerequisitesText": "",
+  "textbooks": [
+    "Holtzblatt, Wendell, and Wood, Rapid Contextual Design, 2008 (reference, not required to purchase)",
+    "Software Engineering: A Practitioner's Approach, 8th ed., McGraw-Hill Education, 2014 (reference, not required to purchase)"
+  ],
+  "confidence": "syllabus"
+}

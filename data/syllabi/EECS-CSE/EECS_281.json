@@ -1,0 +1,44 @@
+{
+  "code": "EECS 281",
+  "title": "Data Structures and Algorithms",
+  "term": "Fall 2020",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 281_Data Structures and Algorithms_Fall 2020.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Marcus Darden, Hector Garcia, Maximilian Krogius, David Paoletti",
+  "gradingBreakdown": [
+    {"component": "Lab Assignments", "percent": 20},
+    {"component": "Projects", "percent": 40},
+    {"component": "Midterm Exam", "percent": 20},
+    {"component": "Final Exam", "percent": 20}
+  ],
+  "weeklyTopics": [],
+  "toolsAndLanguages": [
+    "C++",
+    "make",
+    "Gradescope",
+    "CAEN Linux (GCC 6.2.0)",
+    "Piazza",
+    "Canvas"
+  ],
+  "skills": [
+    "data structures",
+    "algorithm design and analysis",
+    "c++ programming",
+    "abstract data type specification",
+    "time/space complexity tradeoffs",
+    "autograder-driven testing",
+    "code correctness under hidden test cases",
+    "efficient implementation practices",
+    "technical documentation"
+  ],
+  "workloadNotes": "10 lab assignments (20% total) and 4 projects (40% total, 2-3 weeks each) across the semester, plus a midterm and final exam (20% each). Minimum competency thresholds apply separately to projects (55%), exams (50%), and labs (75%). Two late days allowed for the semester.",
+  "prerequisitesText": "Grade of C or better in each of EECS 203 and EECS 280 (or equivalent knowledge of discrete mathematics and C++ programming); MATH 465 or MATH 565 accepted in lieu of EECS 203. Strictly enforced; two-attempt limit on EECS 281 itself.",
+  "textbooks": [
+    "Cormen, Leiserson, Rivest, and Stein, Introduction to Algorithms, 3rd ed., MIT Press, 2009",
+    "N. Josuttis, The C++ Standard Library: A Tutorial and Reference, 2nd ed., Addison Wesley, 2012"
+  ],
+  "confidence": "syllabus"
+}

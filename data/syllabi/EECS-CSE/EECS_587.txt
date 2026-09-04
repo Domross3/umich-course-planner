@@ -1,0 +1,22 @@
+Source: WebSearch summary of the official course overview page
+(https://web.eecs.umich.edu/~qstout/587_Overview.pdf), which is hosted on a blocked
+*.umich.edu domain and could not be fetched or verified directly in this session. The text below
+is the search engine's summary of that page's content, not a direct file read.
+
+EECS 587: Parallel Computing
+Instructor: Quentin Stout (taught each fall semester)
+
+Course overview: development of programs for parallel computers, including basic concepts
+such as speedup, load balancing, latency, system taxonomies, design of algorithms for idealized
+models, programming on parallel systems such as shared or distributed memory machines,
+networks, grid computing, and performance analysis. Substantial term project.
+
+Languages/tools mentioned: CUDA (GPUs), MPI (distributed memory), OpenMP (shared memory).
+Topics: synchronization, load balancing, communication minimization, latency toleration.
+
+Grading (per search summary): written homework ~15%, programs ~40%, project ~45%
+(plus possibly a small quiz or two).
+
+A public student repo (yipengm/EECS587) was found and cloned; it contained only homework
+code and PBS cluster job scripts (parallel matrix/sorting-style benchmarks), confirming the
+programming/HPC-cluster nature of the assignments but no syllabus text.

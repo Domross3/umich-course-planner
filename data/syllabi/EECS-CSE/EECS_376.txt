@@ -1,0 +1,280 @@
+EECS 376: Foundations of Computer Science
+Fall 2020
+Instructors: Amir Kamil akamil@umich.edu
+Ilya Volkovich ilyavol@umich.edu
+GSls: Anthony Liu Ethan Zell
+IAs: Mollie Bakal Thomas Larsen
+Lily Ge Juliet Levesque
+Scott Guest Peter Ly
+Reuben Gutmann Hadley Peterson
+Ali Baker lan Robinson
+Anzhelika lugai Misha Sashko
+Charmee Kamdar Anjali Vyas
+Katie Knister Sam Zayko
+PT
+TED
+
+
+=== PAGE BREAK ===
+
+Office Hours:
+
+® = Alloffice hours will be conducted remotely over Zoom.
+
+@ We will hold both Individualized and group office hours as indicated below.
+
+@ See the Google Calendar linked from Canvas for the most up-to-date information.
+
+@ = The times below are tentative and will be finalized shortly. This document will be updated as things
+change.
+
+® = Zoom links will be added when we start holding office hours at the end of the first week of the term.
+
+Monday: Anjali (10:30am-11:30am), Katie (12:00pm - 2:00pm), Prof. Kamil (2:00pm - 3:00pm), Scott
+
+(3:00pm - 4:00pm), Lily (4:30pm - 6:30pm), Reuben (5:00pm - 7:00pm)
+
+Tuesday: Mollie (10am - 12pm), Scott (12:00pm - 1:00pm), lan (1:00pm - 3:00pm), Charmee (3:00pm -
+
+5:00pm), Hadley (5:00pm - 7:00pm)
+
+Wednesday: Misha (10:00am - 12:00pm), Juliet (12:00pm - 2:00pm) Sam (4:30pm - 6:30pm)
+
+Thursday: Anjali (10:30am-11:30am), Anzhelika (12:00pm - 2:00pm), Prof. Volkovich (2:00pm - 3:00pm)
+
+Friday: Ethan (10:00 am - 12:00pm), Thomas (2:00pm - 4:00pm), Peter (4:00pm - 6:00pm)
+
+Zoom: You will need a Zoom account through the university. You can sign up for one here:
+
+httys://umich.zoom.us/. if you have a personal Zoom account using your UM email, you will have to
+
+convert your account to a university one. Please follow the instructions here:
+
+https://documentation. its. umich.edu/zoom-account-switch
+
+Textbook: Although the course does not have a required textbook, the following books will be good
+
+references:
+
+Michael Sipser, “Introduction to the Theory of Computation,” 2nd or 3rd editions.
+
+Cris Moore and Stephan Mertens, “The Nature of Computation” (free online through the U-M Library).
+
+Both course slides and additional materials will be posted online.
+
+Prerequisites: EECS 203 and EECS 280 or equivalent.
+
+
+=== PAGE BREAK ===
+
+General Info:
+EECS 376 provides an introduction to the theory of computation, including: algorithms, computability,
+complexity, and cryptography.
+By the end of the course, students are expected to understand the fundamental results about the power
+and limits of computation, including: algorithmic paradigms, upper and lower bounds, undecidability, and
+NP-completeness. Students should also be able to apply this knowledge to problems that they encounter
+in the future.
+Adetailed schedule for the class can be found on the Canvas page.
+Course Format and Requirements:
+The class time will be spent in lecture, having discussion and working in small groups. All aspects of the
+course will be conducted remotely, and recordings will be made available for at least one lecture and one
+discussion section. While we do not require synchronous participation, we recommend attending and
+participating in classes (both lectures and discussions) live, if possible.
+All times and deadlines for this course are in Ann Arbor (Eastern) time.
+A Piazza page has been established to help with discussion outside of class. Any question that is not
+private and might be of interest to other students in the class should be posted to Piazza. Please note that
+the staff might ask you to post your questions on Piazza if we feel it will be beneficial to other students.
+https://piazza.com/umich/fall2020/eecs3 76
+For other questions, you can reach the course staff at: eecs376-F20@umich.edu
+If you send the course staff an email that requires more than a few sentences of reply, you might be asked
+to attend office hours or set up an individual meeting.
+If you do not get a reply within 48 hours, please resend your email. The course staff will work very hard to
+be respectful of you. Please be respectful and professional in your emails.
+Course Grading:
+
+Course Evaluation and Computing CARES Surveys
+Below are the guaranteed grade thresholds: if your final raw score exceeds the threshold for grade X, your
+final letter grade will be X or better. The actual thresholds will be determined after the final exam, but will
+be no higher than what appears below. (E.g.,a score of 87% or above is guaranteed to receive a B+ or
+better.) A failing grade on the final exam is grounds for failing the course.
+A 94% and above
+Ast 90%
+Bt: 87%
+B: 83%
+B-: 80%
+Ct: 71%
+CG 70%
+
+
+=== PAGE BREAK ===
+
+Grading Philosophy:
+
+In any humanities or social science class, you must write clearly and concisely to get your point across. It is
+not sufficient that a correct argument appears somewhere in your answer, if it is also accompanied by
+incorrect or faulty reasoning. The same applies for this course: your responses must be clear, concise, and
+correct to receive full credit.
+
+Components of Grade:
+
+Homework Assignments (40%
+
+Homework assignments play an important role in the learning process.
+
+There will be 12 weekly assignments HW0 - HW11, due at 10:59PM on Wednesdays (except HW11,
+which will be due 11:59PM on Tuesday due to the end of the semester).
+
+Late assignments will receive no credit. However, the two lowest homework scores will be dropped.
+Therefore, each homework assignment is worth 4% of your final grade. Unfortunately, exceptions can
+only be made for emergency situations (e.g. family or medical}, and should be requested with as much
+notice as possible and/or be evidenced by documentation. Please plan accordingly and/or be ready to
+provide documentation of medical appointments, etc.
+
+Each assignment will consist of both effort-based and regular problems.
+
+The effort questions are graded subjectively on the perceived effort. That is, getting full points on effort
+questions amounts to making an attempt at a valid argument or approach but, perhaps, missing some
+details along the way. However, each problem will be graded differently. For example, if you are asked to
+do an induction proof and co not state either a base case or an induction hypothesis, that almost certainly
+will not count as a "reasonable effort" - even if you find some other way to do the proof. In the same way,
+if your proposed hypothesis is a clear misunderstanding of the question, you might get some or no points.
+Grading on effort questions is often going to be subjective (beyond correct and complete answers of
+course being objectively correct).
+
+Regular problems are designed to test your understanding of the material and will typically be deeper
+and/or more challenging problems.
+
+Midterm (24%) and Final Exam (32%
+
+One midterm and a cumulative final exam will be given. A large fraction of the questions on these exams
+will be similar to homework and class problems or very slight variations/extensions. Thus a good way to
+study is to make sure you know how to solve these problems.
+
+Course Evaluation and Computing CARES Surveys (4%)
+
+The course evaluations and Computing CARES surveys are important to us and count 4% towards your
+final grade. Students will receive two points by submitting the midterm and the final course evaluations
+{one point each) and uploading the receipts from the course evaluations to Canvas as separate
+assignments. Students will receive two points (one point each) by submitting the Computing CARES
+surveys before their deadlines.
+
+
+=== PAGE BREAK ===
+
+Regrading Policy:
+
+If astudent feels that credit has been inappropriately allocated, then they should ask for a regrade. The
+student should submit a request via Gradescope along with an explanation of what was incorrectly graded
+and why. Regrade requests must be made within one week of an assignment being graded.
+
+***No oral and/or e-mail regrade requests will be accepted***
+
+Students are cautioned that they have the possibility of both gaining and losing points (i.e., if the regrade
+determines that the answer was more incorrect than marked). Students are reminded that accuracy alone
+is not sufficient; the answer should also be clear and concise.
+
+Honor Code and Collaboration:
+
+Unless otherwise specified in an assignment, all submitted work must be your own, original work. If you
+are referencing others’ work, put it in quotes! If you are directly quoting, or building on others’ writing,
+provide a citation. See the Rackham Graduate policy on Academic and Professional Integrity for the
+definition of plagiarism, and associated consequences. Violations of the Honor Code will be taken
+seriously; please see details at http://honorcode.engin.umich.edu/
+
+Students are encouraged to collaborate (except when taking exams). Please use Piazza to this effect and
+also to find other students to work with on assignments, i.e., create study/homework groups. However,
+when turning in work that benefited from a collaboration, the student must state that clearly. Students
+must write their solutions on their own and may not look at any other student's write-up.
+
+Course Technology Policy:
+
+Students who need loaner laptops and reside in the United States may request one from ITS:
+
+https: //its. umich.edu/computing/computers-software/sites-at-home
+
+We encourage you to attend lectures and discussion sections synchronously if possible. When
+participating in remote lecture, discussion, or office hours, please keep yourself muted unless you are
+actively talking to the other participants. Background noise can be distracting to your peers.
+
+Course lectures and discussions may be audio/video recorded and made available to other students in this
+course. As part of your participation in this course, you may be recorded. If you do not wish to be
+recorded, you may keep yourself muted during class sessions. Chat transcripts will also be recorded. If you
+would like to ask a question in chat but do not want it in the recording, you can send a private chat
+message to the instructor, which will not show up in the recording.
+
+Students may not record or distribute any class activity without written permission from the instructor,
+except as necessary as part of approved accommodations for students with disabilities. Any approved
+recordings may only be used for the student’s own private use.
+
+Student Sexual Misconduct
+
+Policy Title IX prohibits discrimination on the basis of sex, which includes sexual misconduct — including
+harassment, domestic and dating violence, sexual assault, and stalking. We understand that sexual
+violence can undermine students’ academic success and we encourage anyone dealing with sexual
+misconduct to talk to someone about their experience, so they can get the support they need.
+Confidential support and academic advocacy can be found with the Sexual Assault Prevention and
+Awareness Center (SAPAC) on their 24-hour crisis line, (734) 936-3333 and at sapac.umich.edu.
+
+Alleged violations can be non-confidentially reported to the Office for Institutional Equity (OIE) at
+institutional.equity@umich.edu
+
+
+=== PAGE BREAK ===
+
+Student Mental Health and Wellbeing
+
+We want you to be successful in and outside of this class. If you or someone you know is feeling
+overwhelmed, depressed, and/or in need of support, services are available. For help, contact Counseling
+and Psychological Services (CAPS) at (734) 764-8312 and caps.umich.edu during and after hours, on
+weekends and holidays, or through its counselors physically located in schools on both North and Central
+Campus. You may also consult University Health Service (UHS) at (734) 764-8320 and
+https://www_uhs.umich.edu/mentalhealthsvcs, or for alcohol or drug concerns, see
+www.uhs.umich.edu/aodresources. For a listing of other mental health resources available on and off
+campus, please visit: htto://umich.edu/~mhealth/
+
+Accommodations for Students with Disabilities
+
+If you think you need an accommodation for a disability, please let the course staff know at your earliest
+convenience by completing the online form:
+
+https://forms gle/W8iQNdPsB7iUSiWN7
+
+Some aspects of this course, the assignments, the in-class activities, and the way we teach may be
+modified to facilitate your participation and progress. As soon as you make any of the staff aware of your
+needs, we can work with the Office of Services for Students with Disabilities (SSD) to help us determine
+appropriate accommodations. SSD (734-763-3000; http://www.umich.edu/~sswa/) typically recommends
+accommodations through a Verified Individualized Services and Accommodations (VISA) form. The course
+staff will treat any information you provide as private and confidential.
+
+Exam Conflicts
+
+Everyone is expected to take all exams at the scheduled times. The times of the exams can be found on
+the course schedule. It is departmental, college, and university policy that travel schedules and holiday
+activities never take precedence over exam schedules. Alternate exam will be given only in very
+exceptional cases such as serious illness or a similarly serious family emergency.
+
+We will accommodate people residing in time zones that necessitate an alternate time.
+
+Ina case of a conflict due to a university sponsored event (such as participation in a sponsored sports
+event or a competition) a university official in charge of the event should contact the instructors at least
+three weeks in advance to determine how the missing grade will be made up.
+
+Note that end-of-term transportation matters, such as the availability of inexpensive air tickets in
+mid-December, are not acceptable reasons for an absence.
+
+Research Disclosure
+
+Your class work might be used for research purposes. For example, we may use anonymized student
+assignments to design algorithms or build tools to help programmers. Any student who wishes to opt out
+can contact the course staff (eecs376-F20@umich.edu) to do so at any time up to seven days after final
+grades have been issued. This has no impact on your grade in any manner.
+
+Right to Revise
+
+The course staff reserve the right to make changes to the syllabus at any time as they see fit. Whena
+revision occurs, it will be announced, and it is your responsibility to be informed of such.
+
+
+=== PAGE BREAK ===
+
+Good luck!

@@ -1,0 +1,182 @@
+° ogee °
+Introduction to Artificial Intelligence
+Course Links and Information
+Instructor: Joyce Chai (chaijy@umich.edu)
+
+Lecture Time: Tuesday and Thursday 10:30-12:00
+Lecture Location: https://umich.200m.us///9932414410
+GSls: Ziyan Wang (ziywang@umich.edu), Qiucheng Wu (wugiuche@umich.edu)
+IA: Zigiao Ma (marstin@umich.edu)
+Discussion Sections:
+® Sec 1: Friday 11:30- 12:30 (https://umich.zo0m.us/|/98210265286, Password: 48109)
+© Sec 2: Friday 12:30- 13:30 (https://umich.z00m.us/|/98210265286, Password: 48109)
+e Sec 3: Friday 13:30 - 14:30 (httos://umich.zoom.us/j/8461991344, Password: OKKfcc)
+® Sec 4: Monday 16:00 - 17:00 (https://umich.zoom.us/|/8461991344, Password: OKKfcc)
+Office Hours:
+e Instructor: Tuesday, 1:30-3:00 pm, EST (httos://umich.2o0m.us/|/9932414410 (Links to an
+external site.)
+® Ziyan: Wednesday, 9-11 am, EST (https://umich.2zo0m.us/|/94058827122, Password: 970214)
+® Qiucheng: Thursday, 1-3 pm, EST (httes://umich.zoom.us/|/8461991344, Password: OKKfcc)
+e Zigiao: Monday, 8-10 pm, EST (https://umich.z00m.us/|/971576846 12, Password: martin492)
+Course Description
+This is an introductory course to artificial intelligence that covers fundamental topics in Al,
+including search, reasoning, knowledge representation, planning, and machine learning. The goal
+of this course is to provide an overview of the artificial intelligence field. Through lectures,
+discussions, and homework assignments, students will learn basic Al concepts and principles and
+develop modeling and analytical skills to apply Al for problem-solving. The course will prepare
+students to further exploration of Al in both research and application domains.
+Textbook
+Artificial Intelligence: A Modern Approach, 3rd or 4th Edition. Russell & Norvig.
+The 4th edition just came out and it's not available at several online places. It's great if you have
+the 4th edition. Otherwise, the 3rd edition would work as well. Unless specified otherwise, all the
+page numbers and chapter numbers refer to the 3rd edition.
+Prerequisite
+EECS281 and proficiency in Python programming
+(most of the programming assignments will be in Python)
+Note: CSE graduate students should enroll in EECS592
+
+
+=== PAGE BREAK ===
+
+Course Grades
+The work in this course consists of four homework assignments and two exams. Each assignment
+may include a written portion and a programming portion.
+
+e Homework assignments: 50%
+
+e@ Midterm Exam: 25%
+
+e Final Exam: 25%
+The final exam will take place online and on the date/time scheduled by the university. Details will
+be provided before the exam.
+
+Assigned date Due date
+
+Homework 1 jan 19 Feb9
+
+Homework 2 Feb 9 Mar 2
+
+Homework 3 Mar 2 Mar 25
+
+Homework 4 Mar 25 Apr 15
+Lectures and Discussions
+Schedule of Topics and Assignments (Tentative)
+
+
+=== PAGE BREAK ===
+
+Date Topics Slides Assignments
+jan 19 Introduction HW’1 Assigned
+jan 21 Intelligent Agent
+jan 26 Search
+jan 28 Adversarial Search
+Feb 2 Constraint Satisfaction
+Feb4 Logical Agents
+Feb 9 Propositional Logic and Inference HW1 Due HW2 Assigned
+Feb 11 First-Order Logic and Inference
+Feb 16 Programming in Logic
+Feb 18 Knowledge Representation
+Feb 23 Planning
+Feb 25 Uncertainties
+Mar2 Bayesian Network HW2 Due HW3 assigned
+Mar4 Bayesian Inference
+Mar9 Midterm
+Mar 11 Hidden Markov Model
+Mar 16 Decision Trees
+Mar 18 Concept Learning
+Mar 23 Well-being Break (no class)
+Mar 25 Perceptron Learning HW3 Due HW4 Assigned
+Mar 30 Linear Regress and NN
+Apr Deep Learning
+Apr6 Decision Analysis
+Apr 8 Markov Decision Process
+Apr 13 Reinforcement Learning
+Apr 15 Game theory and Multiagent Decision HW4 Due
+Apr 20 Human-Robot Communication
+Lecture Videos
+To be Uploaded.
+Discussion Videos
+
+
+=== PAGE BREAK ===
+
+To be Uploaded.
+Course Policies
+Discussion Sections
+Weekly one-hour discussion sections will focus on developing problem-solving skills. These
+smaller groups are designed to be interactive; students are expected to participate in the solution
+of problems under discussion. Students should attend the same section every week and are
+encouraged to bring problems (e.g., based on current assignments) to discuss.
+Homework
+Homework must be turned in on the date that itis due, by 11:55 pm. The homework must be
+submitted electronically using Canvas and Gradescope and we will use the later timestamp to
+validate turn-in time. It is your responsibility to ensure that the homework has been uploaded
+successfully by the due date. This may include checking a box to verify in accordance with the
+honor code policy. Homework that is incorrectly uploaded will be subject to the associated late
+penalty. Late homework will be penalized 10% per day (where each day starts at 11:55 pm on the
+due day). Homework turned in after three days will not be accepted.
+Also, note that any changes you make to the homework already submitted on
+Canvas/Gradescope count as a resubmission. If you make any changes to the assignment after
+the due date has passed you will be assigned a late penalty based on the number of days that
+have passed. For example, if you edit an assignment on March 5th and it was due on March 2nd,
+you will be assigned a 30% penalty (10% per day) as explained above.
+Office Hours
+The instructors will have regularly scheduled office hours each week. You are encouraged to
+make use of these to discuss aspects of the course including lecture material and homework
+problems. In cases where you cannot make office hours, contact the course staff to arrange an
+appointment.
+Piazza
+We have enabled Piazza to facilitate collaborative problem solving between students. It does not
+serve as constant on-demand access to course instructors. If you have pressing concerns, make
+sure to ask during lectures or office hours. Do not post homework solutions on Piazza.
+Academic Honesty
+Honor code
+All homework submitted must be your own work. Review the College of Engineering's Honor
+Code here: http:/Awww.engin.umich.edu/college/academics/bulletin/rules (Links to an external
+site.)
+In this class, as in many others at the University, you will be expected to include and sign the
+Honor Pledge on each assignment you submit. The Honor Pledge is as follows:
+| have neither given nor received unauthorized aid on this assignment, nor have | concealed any
+violations of the Honor Code.
+The Honor Code is based on these tenets:
+
+1, Engineers must possess personal integrity both as students and as professionals. They must
+
+be honorable people to ensure safety, health, fairness, and the proper use of available
+
+
+=== PAGE BREAK ===
+
+resources in their undertakings.
+2. Students in the College of Engineering community are honorable and trustworthy persons.
+3. The students, faculty members, and administrators of the College of Engineering trust each
+other to uphold the principles of the Honor Code. They are jointly responsible for
+precautions against violations of its policies.
+A, Itis dishonorable for students to receive credit for work that is not the result of their own
+efforts.
+Among other things, the Honor Code forbids plagiarism. To plagiarize is to use another person's
+ideas, writings, etc. as one's own, without crediting the other person. Thus, you must credit
+information obtained from other sources, including websites, e-mail or other written
+communications, conversations, articles, books, etc.
+Collaboration
+We expect strict adherence to the Engineering Honor Code in all assignments and exams. All
+problem sets (homework assignments) are to be completed on your own. You are encouraged to
+discuss ideas and techniques broadly with other class members, but all written works, whether in
+scrap or final form, are to be generated by you working alone unless otherwise expressly stated in
+the homework assignment. You are not allowed to sit together and work out the details of the
+problems with anyone. You are not allowed to discuss the problem set with previous class
+members, nor anyone else who has significant knowledge of the details of the problem set. Nor
+should you compare your written solutions, whether in scrap paper form or your final work
+product, to other students (and vice versa). You are also not allowed to possess, look at, use, or in
+any way derive advantage from the existence of solutions prepared in prior years, whether these
+solutions were former students' work products or copies of solutions that had been made
+available by instructors. Violation of this policy is grounds to initiate an action that would be filed
+with the Dean's office and would come before the College of Engineering's Honor Council. Ifyou
+find any ambiguity about this policy, it is your responsibility to contact the course staff for
+clarification.
+Special Accommodations
+If you have disabilities or medical conditions that require some form of accommodations, please
+contact your instructor and the Office of Students with Disabilities at the start of the term so that
+arrangements can be made to accommodate you.
+Note: The instructor reserves the right to modify course policies and the course calendar
+according to the progress and needs of the class.

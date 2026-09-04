@@ -1,0 +1,39 @@
+{
+  "code": "EECS 441",
+  "title": "Mobile App Development for Entrepreneurs",
+  "term": "",
+  "sourceRepo": "eecs441soloway/eecs441soloway.github.io",
+  "sourceFiles": [
+    "index.html",
+    "441.html",
+    "section-1.html (assignments branch)"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Elliot Soloway",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Project analysis and elevator pitch",
+    "Company analysis presentation",
+    "App idea pitch",
+    "App design presentation",
+    "Customer, persona, and mockup development",
+    "MVP1 showcase",
+    "MVP1 feedback and iteration",
+    "MVP2 showcase and user feedback"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "mobile app product design",
+    "customer discovery and persona development",
+    "mvp iteration",
+    "pitch presentation",
+    "team-based app development",
+    "startup/entrepreneurship fundamentals",
+    "user feedback incorporation",
+    "company/competitive analysis"
+  ],
+  "workloadNotes": "Semester-long team project course structured as a series of graded presentations (elevator pitch, company analysis, app design, persona/mockup, two MVP showcase-and-feedback cycles) plus daily participation tracking. Does not teach mobile programming directly; students learn the platform independently. Exact grading percentages were hosted on an off-repo Syllabus/Schedule page not present in this source and so were not captured.",
+  "prerequisitesText": "",
+  "textbooks": [],
+  "confidence": "listing only"
+}

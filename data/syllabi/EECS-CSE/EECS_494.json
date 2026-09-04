@@ -1,0 +1,55 @@
+{
+  "code": "EECS 494",
+  "title": "Computer Game Design (Game Design and Implementation)",
+  "term": "Winter 2015 era (per wiki; course has been taught by other instructors in other years)",
+  "sourceRepo": "UMich-EECS-resources/wiki",
+  "sourceFiles": [
+    "EECS-494:-Computer-Game-Design.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Jeremy Gibson (as of Winter 2015; taught by other instructors, e.g. Austin Yarger, in other years)",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Game analysis frameworks",
+    "The layered tetrad",
+    "Design goals",
+    "Paper prototyping",
+    "Playtesting",
+    "Mathematics of game balance",
+    "Puzzle design",
+    "Guiding the player",
+    "General experience design",
+    "Unity 3D game engine",
+    "C# and MonoDevelop",
+    "Component-based software architecture",
+    "Agile methodology",
+    "Project scoping",
+    "Git version control",
+    "Game industry and education"
+  ],
+  "toolsAndLanguages": [
+    "Unity",
+    "C#",
+    "MonoDevelop",
+    "Git"
+  ],
+  "skills": [
+    "game design analysis",
+    "rapid prototyping",
+    "playtesting methodology",
+    "game balance mathematics",
+    "unity game engine development",
+    "c# programming",
+    "agile/scrum project management",
+    "burndown chart tracking",
+    "team-based game production",
+    "postmortem/prior-art writing",
+    "presentation and demo skills"
+  ],
+  "workloadNotes": "High-workload capstone/MDE elective. Weekly textbook readings and tutorial implementations, recreation of a classic NES-era game in Unity, two rapid prototypes within 2 weeks, weekly project presentations, burndown-chart tracking, short postmortem papers, and a multi-month team project (teams of 4) demoed at an end-of-semester public exhibition, including trailers and peer playtesting/feedback. No formal exams or quizzes reported. Exact grading percentages not documented in this source.",
+  "prerequisitesText": "EECS 281 (Data Structures and Algorithms) with a C or better, or graduate standing.",
+  "textbooks": [
+    "Jeremy Gibson, Introduction to Game Design, Prototyping, and Development"
+  ],
+  "confidence": "listing only"
+}

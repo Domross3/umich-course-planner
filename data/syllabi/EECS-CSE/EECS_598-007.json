@@ -1,0 +1,53 @@
+{
+  "code": "EECS 598-007",
+  "title": "Adversarial Machine Learning",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 598-007_Adversarial and Trustworthy Machine Learning_Winter 2021.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Atul Prakash",
+  "gradingBreakdown": [
+    {"component": "Class presentations", "percent": 15},
+    {"component": "Class participation (incl. answering paper questions)", "percent": 15},
+    {"component": "Reproducing results on attack", "percent": 10},
+    {"component": "Reproducing results on defense", "percent": 10},
+    {"component": "Final project and presentation", "percent": 50}
+  ],
+  "weeklyTopics": [
+    "Tutorial on computing infrastructure",
+    "Intriguing properties of neural networks; Explaining and harnessing adversarial examples",
+    "Adversarial examples in the physical world; Limitations of deep learning in adversarial settings",
+    "DeepFool; On the effectiveness of defensive distillation",
+    "Towards Evaluating the Robustness of Neural Networks",
+    "Towards Deep Learning Models Resistant to Adversarial Attacks; Obfuscated Gradients",
+    "Efficient Adversarial Training with Transferable Adversarial Examples; bypassing detection methods",
+    "Ensembles of weak defenses; Robust physical-world attacks on deep learning visual classification",
+    "Provable defenses via convex outer adversarial polytope; Robustness-accuracy trade-off"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "PyTorch",
+    "TensorFlow/Keras",
+    "Great Lakes HPC cluster",
+    "Google Colab",
+    "SSH / Linux terminal"
+  ],
+  "skills": [
+    "adversarial machine learning",
+    "adversarial example generation and defense",
+    "data poisoning attack analysis",
+    "deepfake detection concepts",
+    "research paper presentation",
+    "reproducing ml research results",
+    "robustness evaluation of neural networks",
+    "bias and fairness in ml systems",
+    "gpu-based deep learning workflows",
+    "open-ended research project execution"
+  ],
+  "workloadNotes": "Seminar-style graduate special-topics course: no exams. Students present an attack paper and a defense paper (with reproduction of results) during the semester, plus a semester-long open-ended final project (50% of grade) with a 20-minute presentation and an 8-page paper-style report near the end of term.",
+  "prerequisitesText": "Graduate standing or instructor permission; prior exposure to machine learning (e.g. EECS 445 or similar); comfortable coding in Python and working in a Linux terminal; familiarity with linear algebra, probability, statistics, and calculus.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

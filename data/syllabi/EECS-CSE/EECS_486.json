@@ -1,0 +1,63 @@
+{
+  "code": "EECS 486",
+  "title": "Information Retrieval and Web Search",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 486_Information Retrieval and Web Search_Winter 2021.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Rada Mihalcea",
+  "gradingBreakdown": [
+    {"component": "Programming assignments", "percent": 40},
+    {"component": "Exam I", "percent": 20},
+    {"component": "Exam II", "percent": 20},
+    {"component": "Term project", "percent": 20}
+  ],
+  "weeklyTopics": [
+    "Introduction to IR models and methods",
+    "Text properties and text processing",
+    "Boolean model and extensions",
+    "Vector space model",
+    "Word embeddings",
+    "Web crawling",
+    "Link analysis: PageRank and HITS, topic sensitive link analysis",
+    "Relevance feedback and query expansion",
+    "Evaluation of IR systems",
+    "Text classification",
+    "Question answering",
+    "Keyword extraction and text summarization",
+    "Social media and social networks",
+    "Knowledge graphs",
+    "Image and video retrieval",
+    "Ethics of Web search",
+    "Recent trends in information retrieval"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "CAEN Linux environment",
+    "Piazza",
+    "Zoom"
+  ],
+  "skills": [
+    "information retrieval algorithms",
+    "text indexing and processing",
+    "vector space and boolean retrieval models",
+    "word embeddings",
+    "web crawling",
+    "link analysis (pagerank/hits)",
+    "search evaluation methodology",
+    "text classification",
+    "question answering systems",
+    "text summarization",
+    "team-based research project work"
+  ],
+  "workloadNotes": "Four programming assignments (40% total, up to 3 days late at 10% penalty per day), two synchronous exams (20% each), and a 5-person team term project with two checkpoints plus a final poster presentation (20%).",
+  "prerequisitesText": "EECS 281 Data Structures and Algorithms.",
+  "textbooks": [
+    "Christopher D. Manning, Prabhakar Raghavan, and Hinrich Schutze, Introduction to Information Retrieval, Cambridge University Press, 2008 (required)",
+    "K. Sparck Jones and P. Willett, Readings in Information Retrieval, Morgan Kaufmann, 1997 (recommended)",
+    "Ricardo Baeza-Yates and Berthier Ribeiro-Neto, Modern Information Retrieval, Addison-Wesley, 1999 (recommended)"
+  ],
+  "confidence": "syllabus"
+}

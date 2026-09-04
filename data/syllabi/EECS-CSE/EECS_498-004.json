@@ -1,0 +1,64 @@
+{
+  "code": "EECS 498-004",
+  "title": "Introduction to Natural Language Processing",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 498-004_Introduction to NLP_Winter 2021.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Lu Wang",
+  "gradingBreakdown": [
+    {"component": "Assignments (4, 15% each)", "percent": 60},
+    {"component": "Project proposal", "percent": 5},
+    {"component": "Project mid-term report", "percent": 8},
+    {"component": "Project final report", "percent": 12},
+    {"component": "Project presentation", "percent": 7},
+    {"component": "Feedback to other teams' presentations", "percent": 3},
+    {"component": "Participation", "percent": 5}
+  ],
+  "weeklyTopics": [
+    "Introduction, Language Models",
+    "Language Models cont'd, Text Categorization and Evaluation, Naive Bayes, Part-of-Speech",
+    "Part-of-Speech cont'd, HMM",
+    "Machine Learning Basics, Neural Networks, Formal Grammars of English",
+    "Syntactic Parsing",
+    "Vector-Space Lexical Semantics, Distributional Semantics",
+    "Neural Language Models, Sentiment Analysis",
+    "Information Extraction, Question Answering",
+    "Summarization, Machine Translation",
+    "Dialogue Systems",
+    "Chatbots",
+    "Coreference Resolution, Discourse Analysis",
+    "Course Project Presentations"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "Canvas",
+    "Piazza",
+    "Zoom"
+  ],
+  "skills": [
+    "natural language processing fundamentals",
+    "language modeling",
+    "text categorization and naive bayes",
+    "part-of-speech tagging and hmms",
+    "neural network basics for nlp",
+    "syntactic parsing",
+    "distributional/vector-space semantics",
+    "sentiment analysis",
+    "information extraction and question answering",
+    "text summarization and machine translation",
+    "dialogue systems and chatbots",
+    "coreference resolution and discourse analysis",
+    "research project proposal and reporting"
+  ],
+  "workloadNotes": "Four assignments (60% total, 15% each), a team project of 2-3 students (35% total: proposal, mid-term and final reports, presentation, and peer feedback), and participation (5%). 8 total late days budget for the semester (20 points/100 penalty per late day beyond that); late days not applicable to the final presentation.",
+  "prerequisitesText": "Senior undergraduate level; proficiency in a programming language (Python recommended), courses in algorithms, probability, and statistics; linear algebra and prior ML exposure recommended but not required.",
+  "textbooks": [
+    "Dan Jurafsky and James H. Martin, Speech and Language Processing, 2nd ed., Prentice Hall, 2009 (main; 3rd ed. draft freely available online)",
+    "Jacob Eisenstein, Introduction to Natural Language Processing, MIT Press, 2019 (reference)",
+    "Chris Manning and Hinrich Schutze, Foundations of Statistical Natural Language Processing, MIT Press, 1999 (reference)"
+  ],
+  "confidence": "syllabus"
+}

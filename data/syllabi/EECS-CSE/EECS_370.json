@@ -1,0 +1,42 @@
+{
+  "code": "EECS 370",
+  "title": "Introduction to Computer Organization",
+  "term": "Fall 2020",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 370_Introduction to Computer Organization_Fall 2020.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "",
+  "gradingBreakdown": [
+    {"component": "Projects (4, 10% each)", "percent": 40},
+    {"component": "Homework (6, lowest dropped)", "percent": 10},
+    {"component": "Midterm", "percent": 25},
+    {"component": "Final Exam", "percent": 25}
+  ],
+  "weeklyTopics": [],
+  "toolsAndLanguages": [
+    "C",
+    "gcc",
+    "CAEN Linux",
+    "autograder.io",
+    "Gradescope",
+    "Piazza",
+    "Zoom"
+  ],
+  "skills": [
+    "computer organization",
+    "hardware/software interface",
+    "finite-state machine design",
+    "hardware simulation in c",
+    "low-level program execution",
+    "digital logic building blocks",
+    "assembly-level reasoning",
+    "debugging simulated hardware",
+    "collaborative discussion-pod problem solving"
+  ],
+  "workloadNotes": "Four projects (10% each, heavy workload, first project split into 3 parts), six individual homework assignments (lowest dropped, 10% total), weekly group discussion-pod assignment, and two exams (midterm 25%, final 25%). Up to 3% of exam weight can be replaced by a participation score. 3 free late days for projects; no late days for homework (50% credit within 24 hours late).",
+  "prerequisitesText": "EECS 280 required; also EECS 203 or EECS 270.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

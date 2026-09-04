@@ -1,0 +1,33 @@
+Source: eecs441soloway/eecs441soloway.github.io (course wiki), index/section pages (index.html, 441.html, section-1.html).
+
+EECS 441 / CSE 441: Mobile App Development for Entrepreneurs
+University of Michigan, College of Engineering.
+Instructor: Elliot Soloway (Professor).
+
+Description: "Best practices in the software engineering of mobile applications and best
+practices of software entrepreneurs in the design, production and marketing of mobile apps."
+
+Course pages found: Course Information (logistics, grades), Syllabus/Schedule (course
+policies, dates, deadlines — content hosted off-repo, not machine readable), Student Grades,
+Daily Participation Record, Absence Form, Class Recordings, Past Semester Work, Readings
+Folder, Guest Speakers, Evaluation Forms (Project Preso Evaluation, Company Preso
+Evaluation, Team Evaluation).
+
+Assignments / deliverables listed:
+- Assignment #0: Project Analysis
+- Elevator Pitch (presented in class)
+- Company Presentation (analyze a company of your choice)
+- Pitch Your App Idea
+- Project Preso #1: App Design / Presentation Research
+- Project Preso #2: Customer, Persona, & Mockup / "What problem/need your app will address"
+- Project Preso #3: MVP1 Showcase / Target Persona & MVP1
+- Project Preso #4: MVP1 Feedback & Solutions / MVP1 Live Demo
+- Project Preso #5: MVP2 Showcase / User Feedback & MVP2
+- Company Preso: Make a Prediction
+- Project Groups: Form a group
+
+The course is a semester-long project course (teams build and iterate a mobile app through
+two MVP cycles with pitch/persona/demo/feedback presentations), run in multiple sections
+each with their own IA. This course does not teach mobile programming itself; students are
+expected to learn the platform on their own (per the department's public course description
+found via search but not directly present in the cloned repo, so not otherwise quoted here).

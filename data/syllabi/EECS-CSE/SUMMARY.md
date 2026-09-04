@@ -62,3 +62,68 @@ mosharaf/eecs489, eecs484db/eecs484db.github.io, eecs445-f16/umich-eecs445-f16, 
 ## Time/scope
 
 Worked well within the 90-minute / 60-course budget (stopped at 11 courses due to diminishing returns from repo-name guessing rather than time exhaustion). A follow-up run should start by re-attempting `git clone` (not raw HTTP HEAD checks) on the "not found" org list above, and by searching for more individual-professor repos (the single most productive pattern found), e.g. for EECS 388, 481, 491, 470, 545, 592, 595.
+
+## Round 2
+
+### Counts by confidence (28 new courses)
+
+| Confidence | Count |
+|---|---|
+| syllabus | 17 |
+| course page | 1 |
+| listing only | 10 |
+| **Total new** | **28** |
+
+### Courses added (28)
+
+| Code | Title | Confidence | Source |
+|---|---|---|---|
+| EECS 281 | Data Structures and Algorithms | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 285 | Practical Programming in Java | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 370 | Introduction to Computer Organization | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 376 | Foundations of Computer Science | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 482 | Introduction to Operating Systems | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 486 | Information Retrieval and Web Search | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 492 | Introduction to Artificial Intelligence | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 497 | Human-Centered Software Design (MDP/ENGR455) | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 498-004 | Introduction to NLP | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 598-007 | Adversarial Machine Learning | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 598-012 | Unsupervised Visual Learning | syllabus | PeterQiu0516/UMich-Syllabus-Collection (OCR) |
+| EECS 487 | Intro to Natural Language Processing (Fall 2023) | syllabus | laura-burdick/laura-burdick.github.io |
+| EECS 595 | Natural Language Processing | syllabus | laura-burdick/laura-burdick.github.io |
+| EECS 589 | Advanced Computer Networks (Winter 2019) | syllabus | forkjoseph/EECS589 |
+| EECS 598-004 | Systems for Generative AI (Winter 2024) | syllabus | mosharaf/eecs598 (branch w24-genai) |
+| EECS 598-009 | Systems for AI (Winter 2021) | syllabus | mosharaf/eecs598 (branch w21-ai) |
+| EECS 498-016/598-016 | Computer Graphics and Generative Models (Winter 2026) | syllabus | um-graphics/um-graphics.github.io |
+| EECS 470 | Computer Architecture | course page | jieltan/OpenCompArchCourse |
+| EECS 388 | Introduction to Computer Security | listing only | Umich-CS/eecs-388 (lecture filenames only) |
+| EECS 441 | Mobile App Development for Entrepreneurs | listing only | eecs441soloway/eecs441soloway.github.io |
+| EECS 545 | Machine Learning (Winter 2016) | listing only | liangtianumich/umich-eecs545-lectures |
+| EECS 592 | Foundations of AI (cross-listed 492, Winter 2017) | listing only | y-shi/EECS592W17 |
+| EECS 373 | Introduction to Embedded System Design | listing only | arschallwig/EECS373_CFS + WebSearch topic list |
+| EECS 494 | Computer Game Design | listing only | UMich-EECS-resources/wiki |
+| EECS 498-007/598-005 | Deep Learning for Computer Vision (Justin Johnson) | listing only | Andrew-Ng-s-number-one-fan/... (student repo) |
+| EECS 587 | Parallel Computing | listing only | WebSearch summary (blocked source) + yipengm/EECS587 |
+| EECS 491 | Introduction to Distributed Systems | listing only | WebSearch summary (blocked source) |
+| EECS 453 | Principles of Machine Learning | listing only | WebSearch summary (blocked source) |
+
+### Courses searched but NOT found this round
+
+- **EECS 481** (Software Engineering) — official site `eecs481.org` and `dijkstra.eecs.umich.edu/kleach/...` both on blocked domains; no backing GitHub repo found under `eecs481`, `kleach`, `weimerw`, or guessed org names (all either 404/private or just student project code with no syllabus content, e.g. `asadsq/misc-umich-481`).
+- **EECS 448 / 449** (Human-Centered ML, Emily Mower Provost) — official site is `emp.engin.umich.edu` (blocked); no GitHub repo located.
+- **EECS 473** (Advanced Embedded Systems) — official site blocked; only unrelated student repos found.
+- **EECS 490** (Programming Languages) — repeated round-1 finding confirmed: `amirkamil.github.io/eecs490.org` and `eecs490.github.io` exist as rendered sites, but every guessed underlying repo (`amirkamil/eecs490.org`, `eecs490/eecs490.org`, `eecs490/eecs490.github.io`) returns "could not read Username" (private/nonexistent) via git.
+- **CSE 587 / 589** as literal course codes — not confirmed to exist separately from `EECS 587`/`EECS 589`, which were found and used instead (UMich cross-lists many EECS grad courses under CSE informally in search results, but no separate "CSE 587" course page was located).
+
+### What worked this round
+
+1. **Goldmine repo**: `PeterQiu0516/UMich-Syllabus-Collection` — a public repo of *scanned PDF* syllabi (Foxit-print-driver exports with no embedded text layer, just vector-outline glyphs and rasterized page content). Recovered text by installing `ghostscript` (rasterize each page to PNG) + `tesseract-ocr` (OCR each page) + `pillow`/`cffi` (fix a broken system `cryptography` import chain that was blocking `pypdf`/`pdfminer`). This single repo yielded 11 of this round's 28 courses, all at full `syllabus` confidence with real grading breakdowns.
+2. **Professor/lab GitHub-Pages repos** (confirms round-1 finding): `laura-burdick/laura-burdick.github.io` (syllabus PDFs in `papers/`), `forkjoseph/EECS589` (student-maintained but instructor-linked full syllabus+schedule in README), `mosharaf/eecs598` (multiple full syllabi as **git branches**, one per term/topic — a new pattern: check branches, not just the default branch, on a professor's special-topics repo), `um-graphics/um-graphics.github.io` (new org-owned course site, `docs/index.md`).
+3. **GitHub wiki repos as a source type** (new pattern): a repo's wiki is a separate git remote at `https://github.com/OWNER/REPO.wiki.git` — found `UMich-EECS-resources/wiki.wiki` this way, containing an EECS 494 course-description page.
+4. **Lecture-slide filename listings** (weak but usable): when no README/syllabus exists, a repo's `Lecture Slides/` directory filenames alone (e.g. `Umich-CS/eecs-388`) can reconstruct a course's weekly-topic sequence — recorded at `listing only` confidence.
+5. **WebSearch summaries of blocked official pages** (used cautiously): for EECS 587, 491, and 453, no GitHub repo existed, but WebSearch's cached-page summaries of blocked `*.umich.edu`-family official course pages yielded real (but secondhand/unverified) instructor names, topics, and in two cases grading percentages. Recorded at `listing only` confidence with explicit caveats in `workloadNotes` that the content was not independently fetched — this is a deliberately lower-trust tier than a directly-read file and should be treated skeptically by downstream consumers.
+6. **`WebFetch` was not usable**: every non-GitHub domain tried (`fkfd.me`, `adrianstoll.com`) returned `EGRESS_BLOCKED` from the network proxy, not just the documented `*.umich.edu`/`*.github.io` blocks — so this session relied entirely on `git clone`/`git ls-remote` plus WebSearch's own result summaries, never a general-purpose page fetch.
+
+### Time
+
+Approximately 50 minutes of the 75-minute budget used; stopped at 28 new courses (under the 40-course cap) due to diminishing returns on the remaining target list (481, 448, 449, 473, 490) after multiple search strategies each failed to locate a usable public repo or reachable page.

@@ -1,0 +1,51 @@
+{
+  "code": "EECS 376",
+  "title": "Foundations of Computer Science",
+  "term": "Fall 2020",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 376_Foundations of CS_Fall 2020.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Amir Kamil, Ilya Volkovich",
+  "gradingBreakdown": [
+    {"component": "Homework Assignments (12, lowest 2 dropped)", "percent": 40},
+    {"component": "Midterm", "percent": 24},
+    {"component": "Final Exam", "percent": 32},
+    {"component": "Course Evaluation and Computing CARES Surveys", "percent": 4}
+  ],
+  "weeklyTopics": [
+    "Algorithms",
+    "Computability",
+    "Complexity",
+    "Cryptography",
+    "Algorithmic paradigms",
+    "Upper and lower bounds",
+    "Undecidability",
+    "NP-completeness"
+  ],
+  "toolsAndLanguages": [
+    "Gradescope",
+    "Piazza",
+    "Zoom",
+    "Canvas"
+  ],
+  "skills": [
+    "theory of computation",
+    "computability theory",
+    "computational complexity",
+    "np-completeness proofs",
+    "algorithmic paradigm design",
+    "cryptography fundamentals",
+    "mathematical proof writing",
+    "reduction techniques",
+    "upper/lower bound analysis"
+  ],
+  "workloadNotes": "12 weekly homework assignments (lowest 2 dropped, 4% each of final grade), one midterm (24%) and a cumulative final exam (32%); homework problems mix effort-based and regular (graded) problems. Late homework receives no credit. Collaboration encouraged on homework (must be disclosed) but not on exams.",
+  "prerequisitesText": "EECS 203 and EECS 280 or equivalent.",
+  "textbooks": [
+    "Michael Sipser, Introduction to the Theory of Computation, 2nd or 3rd ed. (recommended, not required)",
+    "Cris Moore and Stephan Mertens, The Nature of Computation (free online via U-M Library, recommended)"
+  ],
+  "confidence": "syllabus"
+}

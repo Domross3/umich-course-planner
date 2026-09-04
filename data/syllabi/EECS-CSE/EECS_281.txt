@@ -1,0 +1,334 @@
+Jump to Today
+EECS 281: Data Structures and Algorithms
+Fall 2020
+- Basic Information
+Faculty Instructors
+Prof. Marcus Darden, 2644 Beyster, secs281admin@umich.edu
+Dr. Hector Garcia, 3640 Beyster,
+(mailto: 281admin@umich.edu)
+Mr. Maximilian Krogius, eecs281admin@umich.edu (mallto:eecs281admin@umich.edu)
+Dr. David Paoletti, 2645 Beyster, cecs281admin@umich.edu (mailto:eecs281admin@umich.edu)
+Office Hours
+Office hours will be posted to the Google Calendar on Canvas
+Other resources
+Course web page (all sections): Canvas: htips://umich,instructure,com/
+Course forum/chat (all sections): Piazza, please sign up here:
+https://piazza,com/umich/winter2020/eecs281 » (https://piazza,com/umich/winter2020/eecs281)
+Course administrative email (used for special circumstances such as illness):
+eecs281admin@umich.edu (mailto:eecs281admin@umich.edu}
+- Course Overview
+EECS 281 is an introductory course in data structures and algorithms at the undergraduate level.
+The objective of the course is to present a number of fundamental techniques to solve common
+programming problems. For each of these problems, we will determine an abstract specification for a
+solution and examine one or more potential representations to implement the abstract specification,
+focusing on those with significant advantages in time/space required to solve large problem
+instances. When appropriate, we will consider special cases of a general problem that admit
+particularly elegant solutions.
+- Lectures
+
+
+=== PAGE BREAK ===
+
+The lectures will be recorded online, live, at the scheduled class time. Please refer to the Schedule
+of Topics at the left for a link to each video. The link will be populated about one day before the video
+is scheduled to be made.
+
+- Prerequisites
+
+Students must have obtained a grade of C or better in each of EECS 203 and EECS 280, or have
+equivalent knowledge of discrete mathematics and C++ programming. MATH 465 or MATH 565 are
+accepted in lieu of EECS 203. Due to the overwhelming number of students interested in this
+course, we will strictly enforce the prerequisites. If you failed to complete, or if you received a
+grade of C- or below in any of the prerequisites, then you must drop EECS 2871 this term, and re-
+enroll at a later term, after you have completed all prerequisites with a grade of C or better.
+Students will be expected to use the "make" utility to automate C++ compilation. Also, students
+should be able to generate plots using MS-Excel, OpenOffice, Gnuplot, or similar tools. Students
+with questions about whether they have sufficient preparation for this course should speak with the
+instructor(s) as soon as possible.
+
+- Two-Attempt Rule
+
+Per departmental policy, each student may attempt EECS 281 twice at most. One attempt in EECS
+281 is defined as one instance where EECS 281 appears on your UM transcript - including but not
+limited to a letter grade (A-E), withdrawal (W), pass/fail (P/F), incomplete (I). At most one attempt
+from Summer 2014 or earlier will count towards this limit. If you drop EECS 281 prior to the date
+which a W would appear on your transcript, then that would not count as an attempt for the purposes
+of this policy. Exceptions to this policy can be granted by the appropriate Chief Program Advisor
+under extraordinary circumstances only.
+
+- Reading List
+
+Readings come from (both are available electronically to UM students at no extra cost):
+
+« Introduction to Algorithms, 3rd Edition. by Cormen, Leiserson, Rivest, and Stein. MIT Press,
+2009 2 {https://mlriyn.lib.umich.edu/Record/011694922) (click on Available Online below the
+Holdings tab)
+
+° The C++ Standard Library: A Tutorial and Reference, 2nd ed.. by N Josuttis, Addison Wesley
+Publishing, 2012  _(https://learning,oreilly,com/library/view/the-c-
+standard/9780132978286/copyright. html}
+
+There may also be some handouts that the faculty will provide. You are required to read the contents
+of the course website and regularly visit Piazza, where we will post important course-related
+information.
+
+
+=== PAGE BREAK ===
+
+. Grading Policy
+Your work in this course is composed of: attending lecture and lab sections, reading assigned
+material, completing lab assignments, completing projects, taking a midterm exam, and taking a final
+exam. Final grades will be based on the total points earned on the labs, projects, and exams.
+Factors such as improvement and course participation may be used to adjust your final grade,
+especially if it falls on a borderline. The weight assigned to each category is as follows:
+Lab Assignments 20% (each lab assignment weighted equally)
+Projects 40% (each project weighted equally)
+Midterm Exam 20%
+Final Exam 20%
+. Grading Errors
+We make every effort to grade correctly, however we do sometimes make mistakes. Arithmetic
+errors can be corrected in person by your IA or GSI. If you believe something was graded incorrectly,
+you may submit it for a regrade. All exam regrade requests must be made on Gradescope. Regrade
+requests for other assignments must be made via email explaining the technical reason(s) that would
+make a regrade necessary. The email must be sent to eecs281admin@umich.edu
+{mallto:eecs281admin@umich.edu) with “EECS 281 Regrade Request’ in the subject line. All regrade
+requests must be submitted no later than five working days after the graded work is returned to the
+student - after that, your score on the assignment in question stands. This includes requesting that
+errors in recording a score in Canvas be fixed. Regrade requests must be an objective argument
+about which specific rubric items were inconsistently or improperly applied, not a subjective
+argument about what things should be worth. The work in question will be regraded carefully
+from scratch in its entirety, with consideration given to the written request. As a result, your grade
+might go up, stay the same, or go down.
+For the midterm exam, we will begin accepting regrade requests two calendar days after your exam
+is released to you on Gradescope. This is to force you to wait until you have carefully reviewed your
+exam responses and the rubric before submitting a regrade request. Regrade requests for the
+midterm exam will still close five working days after the scores are released, not after we begin
+accepting regrade requests. For the final exam, your exam will not be released to you, and you will
+need to see an instructor in office hours to view your exam. In that case, the instructor will regrade
+your final exam with you side-by-side.
+For lab handwritten parts, you have until the Friday of the week immediately following the lab
+in question to dispute your score.
+- Incompletes
+Incompletes will generally not be given except in extreme circumstances. In accordance with
+university policy, doing poorly in a course is not a valid reason for an incomplete. If you are having
+
+
+=== PAGE BREAK ===
+
+problems in the course, please talk to the instructor(s) as soon as you are able.
+
+- Minimum Competency
+To pass this course, you MUST achieve at least a 55% average on the Programming Projects AND a
+50% average (curved scores) on the exams AND a 75% average on lab assignments. You must
+achieve ALL of these thresholds separately - very high exam scores will not compensate for very
+low project scores, and vice versa. If you receive at least 220 project points AND at least 100 exam
+points total for the term AND at least 150 lab points, you are guaranteed at least a grade of C in the
+course. Rounding is not guaranteed, so 219.999999 project points OR 99.999999 exam points OR
+149.999999 lab points does not guarantee passing.
+
+- Curving
+The Midterm and Final Exams will be curved if needed, and any curve applied can only be in your
+favor. For example, if the Midterm Exam tums out with a lower average than we would like, we might
+set a bar of say 46 points for passing the Midterm, rather than 50. The table below gives you a lower
+bound as to what your grade would be. That is, we may perform a final curving, which again may
+improve someone's grade, but never reduce it. Rounding is not guaranteed, thus 90% overall
+guarantees at least a grade of A-, 89.999999% does not - the cutoff must go somewhere and no
+matter where it goes, there will always be somebody barely on either side of it.
+Grades shown here are superseded by the “Minimum Competency” rules shown above. If you
+achieve ALL thresholds, then the guarantee that you will receive at least a C in the course trumps
+the scale shown in the table below. However, if you fail to meet at least one of the thresholds, then
+you may still receive a C- or below even if the scale shown in the table below says that you should be
+getting a higher grade. For example, if you have 60% overall, and achieve at least the minimum 55%
+on projects and 50% on exams, you will receive a C, even though the table below says that you
+should receive a D. On the other hand, if you only achieve 50% on projects, but 100% on everything
+else, then despite that being 80% overall, your grade will be a C-, even though the table below says
+that you should receive a B-.
+
+Grae mine
+
+aor 0]
+
+aad
+
+m9 0]
+
+B 83 |<87
+
+
+=== PAGE BREAK ===
+
+=
+oo 0]
+om as]
+eo |
+- Final Note About Grades
+Your grade is based solely on your performance for the work assigned in the course. We must be
+consistent in how we evaluate students in order to be fair to all students, hence we must uniformly
+enforce all deadlines and course policies, and we cannot give extra credit or makeup assignments on
+an individual basis. If you need a certain grade in the course in order to make satisfactory progress
+towards your major or minor, keep a scholarship, avoid having a contingent job offer rescinded, avoid
+problems with your academic standing, etc., then you must earn the grade yourself by paying
+attention to the work assigned for the course throughout the term. The course grade is not open to
+student negotiation. While factors such as improvement can be used to move you across a grade
+boundary in a very borderline case, this decision rests solely with the instructors and is not
+negotiable.
+We do caution you that from our experience, those who aim for only the minimum often finish the
+term with a result that they are disappointed with. Even if your goal is only to receive a passing
+grade, it is still in your best interest to put forth your best effort throughout the term. You are likely
+taking EECS 281 to help you get a job, and we want you to succeed in getting a job. However, note
+that many employers want to see a good understanding of data structures and algorithms (and not
+just a grade for EECS 281) - if you take EECS 281 with the intent of just barely scraping by the
+course, then you may encounter difficulty in the job search process.
+
+°
+- Lab Assignments
+We will assign 10 lab assignments over the course of the semester (each equally weighted). Lab
+submissions must not include external materials (e.q., web downloads) unless specifically requested
+
+
+=== PAGE BREAK ===
+
+in the assignment. Any extemal sources used must be clearly cited in the lab solution set. Lab work
+is typically due as some combination of: (1) a written coding problem turned in on Gradescope; (2) a
+quiz submission to the EECS 281 Canvas site; (3) a submission to the EECS 281 autograder. There
+are no drops - experience shows that students would often just entirely skip "the hardest lab" or the
+last lab of the term, and those choices will harm your understanding of important concepts discussed
+in those labs. In the event of an extreme medical or personal situation, we may prorate a lab written
+score (based on your scores on other portions of the lab) or extend a lab quiz deadline as
+appropriate. In order to request this accommodation, you must email eecs281admin@umich.edu
+{mailto:eecs281admin@umich.edu) before the deadline and provide documentation.
+NOTE: Because COVID-19 has interrupted in-person classes, your "hand written" assignment
+will be turned in on Gradescope each week. This is still great practice for the exams, since
+you will be turning in written coding problems for the exams this way.
+
+- Course Projects
+Four projects will be assigned during the term. Project submissions must not include external
+materials (e.g., web downloads) unless specifically requested in the assignment. These projects
+will require substantial time commitment on every student’s part - you cannot start a project a
+few days before it is due and expect to receive a good grade on it, even if this might have worked for
+you in EECS 280. However, we expect that effort spent on programming projects will help the
+student to gain a conceptual understanding of the material. We strongly recommend that students
+begin working on projects early, both to lower stress and have more time to ask questions.
+
+- Project Grading
+The projects together total 40% of the course grade (10% each). The breakdown of points for each
+project grade will be specified in the project assignment. Categories include:
+
+« functional correctness;
+
+e execution speed to obtain correct solution;
+
+* principles and practices (readable code, efficient algorithms and implementation, comments, use
+
+of topics from class); and
+
+« documentation of your solution.
+For each project, we will do a final grading run after the deadline, where every student's project is run
+one-by-one on the autograder with hidden test cases. The purpose of running every student's project
+one-by-one is to even out the playing field by giving everybody the same computing resources when
+determining project grades, so your score should not be penalized because your runtime or memory
+usage was affected by other students’ projects being run in parallel. The purpose of the hidden test
+cases (they will be randomly generated cases, not the trickiest corner cases) is to ensure that your
+project works in general, and not just for the autograder. We will use your best submission for final
+
+
+=== PAGE BREAK ===
+
+grading, unless you complete a form requesting that we use your last submission within 48 hours
+after the project deadline. “Best submission” is defined as the submission with the highest displayed
+score prior to the deadline. If multiple submissions are tied as being your best submission, then we
+will use the most recent of those submissions for final grading. The score resulting from final
+grading is the score that will go in the gradebook. This means that your overall highest
+displayed score on the autograder may not necessarily be the score that goes in the
+gradebook. It is possible that your score may go up, stay the same, or go down as a result of the
+final grading. Most of the time, scores do not change by more than a few tenths of a point, but a
+change between one to two points is still nothing we will be alarmed about. If a student's score
+decreases by more than two points, the autograder will prompt us to manually review the situation.
+
+- Turning in Projects
+You will have roughly 2-3 weeks (roughly half the time in a spring term) to work on each project.
+Projects will be submitted online to an autograder, and will only be accepted via the autograder.
+Specific details of the project submission process will be described on the course website.
+Sometimes unexpected events or other academic commitments make it difficult to get a project in on
+time. Everybody is given two (2) late days for the semester to use on whatever project(s) and
+for whatever reason, no questions asked. You can use them for illness, family emergency,
+computer or equipment fallure, loss or erasure of files, Internet access problems, work for
+other courses, and other outside commitments. Use them wisely! You must use one late per
+calendar day after the deadline in order to submit a project late. If you want to submit a project one
+day after the deadline, it will simply cost you one late day. If you want to submit a project two days
+after the deadline, and you have already used one late day on that project for the day after the
+deadline, then it will simply cost you a second late day. However, if you want to submit a project two
+days after the deadline, but you did not use a late day on that project for the day after the deadline,
+then it will still cost you two {not one) late days.
+Aside from the late days, projects will not be accepted once the autograder closes, except in extreme
+documented medical and personal emergencies. We advise you to use your late days for when the
+unexpected occurs, and not for starting a project late. Often, it will be better to submit a partially
+working assignment on time rather than spend an uncertain amount of additional time in getting it to
+work completely. Because of auto-grading, it is important to carry out the project tasks in such a way
+that you have at least a partially working project early on, which you enhance every day until the
+project becomes due.
+
+- Computing Facilities
+All projects are to be written in C++. The student is free to use any environment to develop a
+program, but any submitted program must compile and run in the CAEN Linux computing
+environment (login.engin.umich.edu) using the GCC version 6.2.0 compller. You are
+responsible for making sure that your projects run correctly in this environment. “My code runs fine
+locally, but just not on CAEN” will not be considered justified for receiving special consideration.
+Using CAEN Linux computing as your development environment will reduce the chance of
+
+
+=== PAGE BREAK ===
+
+encountering nasty surprises when your project is graded.
+
+- Exams
+There will be one midterm exam and one final examination. The midterm examination is scheduled
+for Tuesday, October 20. The final examination is scheduled for Friday, December 11. There will
+be two time slots available for each exam, to allow students in different time zones to take it during
+"normal" waking hours.
+If you miss an exam without a documented medical or personal emergency, you will recelve a
+score of zero for that exam. If you have an exam conflict, or need SSD accommodations, you must
+fill out the Alternate Exam Request form on Canvas, and submit any requested documentation at
+least two weeks before the exam. Alternate exam requests are not accepted via email or Piazza.
+The exam dates are given at the beginning of the term so that you can avoid scheduling job
+interviews or other personal commitments on exam days. Per university policy, when altemate exam
+times are available, they are not elective. You must have a documented and valid conflict in order to
+take an altemate exam.
+The following reasons may justify an alternate exam request:
+
+« Disabilities - must be documented with an official SSD form.
+
+* Varsity athletic competitions and travel - must be verified by a university official from the Athletics
+Department.
+
+« Conflicting exams and classes - if it is scheduled to end at least 30 minutes before or begin at
+least 30 minutes after the EECS 281 exam, then it is not a conflict, even if it takes place on
+central campus.
+
+e Religious holidays.
+
+« Family emergencies.
+
+« lllness or injury - the physician’s note must specifically require that we excuse you from the exam
+and provide an approximate date of recovery, “patient was seen in UHS’ note is insufficient.
+
+The following reasons do not justify an alternate exam request:
+
+« Job interviews - unless the company verifies that you do not have a choice with regards to
+interview date.
+
+« Conferences - unless a university faculty member verifies that you absolutely cannot opt out of
+attendance.
+
+« Employment.
+
+e Athletic practice.
+
+¢ Club meetings.
+
+e Vacation, weddings, travel home - cheaper flights or accommodation will not be accepted as
+justification.
+
+These are not exhaustive lists, but you can notice that most of the reasons that do not justify an
+alternate exam request are personal outside commitments, for which participation is voluntary. If you
+have a personal outside commitment that conflicts with elther exam, and you are unwilling t

@@ -1,0 +1,67 @@
+{
+  "code": "EECS 598-012",
+  "title": "Unsupervised Visual Learning",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 598-012_Unsupervised Visual Learning_Winter 2021.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Andrew Owens",
+  "gradingBreakdown": [
+    {"component": "Final project", "percent": 45},
+    {"component": "Class presentation", "percent": 25},
+    {"component": "Problem set", "percent": 20},
+    {"component": "Participation & paper reviews", "percent": 10}
+  ],
+  "weeklyTopics": [
+    "Introduction to unsupervised learning; generative models",
+    "Energy-based models",
+    "Variational autoencoders",
+    "Normalizing flows",
+    "GANs",
+    "Autoregressive models",
+    "Pretext tasks (self-supervised learning)",
+    "Contrastive learning",
+    "Language & vision",
+    "Sound & vision",
+    "Motion estimation",
+    "Video forecasting",
+    "3D reconstruction",
+    "Attention / transformers",
+    "Optimization (K-FAC)",
+    "Theory of self-supervision",
+    "Gradient-based meta-learning",
+    "Architecture search",
+    "Semi- and weakly-supervised learning",
+    "Representation learning for action",
+    "Human vision",
+    "Project presentations"
+  ],
+  "toolsAndLanguages": [
+    "Zoom",
+    "Piazza",
+    "Canvas",
+    "Gradescope"
+  ],
+  "skills": [
+    "unsupervised and self-supervised learning",
+    "deep generative models (vae, gan, normalizing flows, autoregressive)",
+    "contrastive representation learning",
+    "multimodal learning (vision-language, vision-audio)",
+    "video representation learning and motion estimation",
+    "3d reconstruction from unlabeled data",
+    "transformer/attention architectures",
+    "meta-learning and architecture search",
+    "critical reading and reviewing of research papers",
+    "research paper presentation",
+    "self-directed group research project"
+  ],
+  "workloadNotes": "Seminar-based graduate course centered on reading and critiquing research papers. Weekly short paper reviews (2 lowest dropped), one group class presentation (groups of 3, 75-minute session with background + 2 papers + discussion), one problem set (~2/3 through semester) reviewing core concepts, and a self-directed final group project (groups up to 4: proposal, 4-page CVPR-format report, 5-minute presentation). Attendance required; missing more than two classes without excuse hurts the grade.",
+  "prerequisitesText": "An introductory computer vision course (EECS 442, EECS 504, or equivalent).",
+  "textbooks": [
+    "Goodfellow, Bengio, Courville, Deep Learning (free online, reference)",
+    "Szeliski, Computer Vision: Algorithms and Applications, 2nd ed. draft (free online, reference)"
+  ],
+  "confidence": "syllabus"
+}

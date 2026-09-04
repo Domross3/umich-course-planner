@@ -1,0 +1,18 @@
+Source: y-shi/EECS592W17 student repo, README.md + homework PDF headers.
+
+EECS 492/592, Winter 2017. Prof. Ed Durfee.
+
+Homework headers confirm cross-listing "EECS 492/592 Winter 2017, Prof. Ed Durfee" and a
+100-point-per-homework structure, submitted via Gradescope (PDF) and Canvas (code), with
+3 late days allowed at a 10-point-per-day deduction.
+
+Homework topics (from README and PDF titles):
+- Homework 1: game-playing / poker agent (adversarial search)
+- Homework 2: Search Problems - hill climbing and random-restart hill climbing (8-queens)
+- Homework 3: First-Order Logic to Prolog conversion and querying
+- Homework 4: Planning - PDDL problem specification solved with a Graphplan library
+- Homework 5: Value iteration for a Markov Decision Process (MDP)
+- Homework 6: Q-learning agent
+
+No syllabus text, grading weights (beyond per-homework point totals), or textbook were present
+in this student repository.

@@ -1,0 +1,17 @@
+Source: WebSearch summary of CourseHero-cached course pages/lecture slides for "EECS 491 -
+Distributed Systems, Fall 2019" (originally hosted on lamport.eecs.umich.edu, a blocked
+*.umich.edu domain; content below is the search engine's paraphrase, not a directly-read file).
+
+EECS 491: Introduction to Distributed Systems
+Instructor (Fall 2019 offering): Harsha V. Madhyastha
+Lecture time (Fall 2019): TTh 3:00-4:30pm, 1500 EECS
+Optional textbook: Distributed Systems, 3rd ed., Maarten van Steen and Andrew S. Tanenbaum
+
+Topics mentioned: replicated state machines, reasoning about time in distributed systems,
+replication, concurrency control, data consistency models, techniques for scaling,
+multi-tenancy.
+
+Programming language: Go (chosen because it originated at Google to power their distributed
+systems).
+
+No grading breakdown or assignment structure was recoverable from the search summary.

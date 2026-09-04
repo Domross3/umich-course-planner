@@ -1,0 +1,511 @@
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+Jump to Today ®& Edit
+
+EECS 487: Introduction to Natural Language
+Processing, Fall 2023
+
+Welcome to 487! We're glad you’re here, and we're looking forward to a great semester
+learning more about NLP.
+
+Canvas course image taken from https:/capacity.com/S-reasons-why-advances-in-nlp-
+can-enhance-a-helpdesk/
+
+Quick Links
+
+e Class calendar B; (https://calendar.google.com/calendar/render?
+
+cid=c_47cd81f18dd0bdb1cb0a09a9e74d3a54977e90abd1026ea20420c7b47b438497a@gro
+e EECS OH Queue B
+(https //leecsoh.eecs.umich.edu/queues/2UIc2ICcinaCsyFxpPOUOgFLUNj)
+
+* Kai's remote office hours: zoom link _(https://umich.zoom.us/j/2605239720)
+Basic Information
+
+Lecture time: Tuesday & Thursday 3-4:20pm
+
+Lecture location: 1013 DOW & (https://maps.studentlife.umich.edu/building/herbert-h-
+dow-building)
+
+Faculty Instructor: Laura Burdick, BBB 3824, Iburdick@umich.edu
+(mailto:Iburdick@umich.edu)
+https://umich instructure.comcourses!624730_ 123
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+e Dr. Burdick typically responds to most e-mails within a day, though usually doesn’t
+respond during evenings and weekends.
+Faculty Office Hours: Tuesday & Thursday 1:45-2:45pm (conference room, BBB
+4941)
+e Office hours begin Thursday, August 31.
+e On September 19, 21, 26, and 28, office hours will be held in BBB 2901, rather than
+the usual location.
+e If these times don’t work for you (or you’d prefer to meet remotely), please send an
+e-mail, and we can find another time to meet, either remotely or in-person.
+GSls:
+Jacob Sansom, jhsansom@umich.edu (mailto;jhsansom@umich.edu)
+° Office hours:
+° Monday 1:30-3:30pm (in-person, Table #1 in the BBB Learning Center)
+oe Tuesday 11am-12pm (in-person, Table #2 in the BBB Learning Center)
+e Office hours begin Tuesday, September 5.
+Kaijian Zou, zkjzou@umich.edu (mailto:zkjzou@umich.edu)
+* Office hours:
+o Wednesday, 1:30-3pm (in-person, 2901 BBB)
+eo Thursday, 4:30 - 6:00pm (remote, zoom link E>
+(https://umich.zoom.us/j/2605239720) )
+* Office hours begin Thursday, August 31.
+IA:
+Gordon Lim, gbtc@umich.edu (mailto:gbtc@umich.edu)
+e Office hours:
+° Friday 2:30-3:30pm (in-person, Table #1 in the BBB Learning Center)
+* Office hours begin Friday, September 1.
+https://umich instructure.comcourses!624730_ 2123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+Lab times and locations:
+
+* Two lab sections will be offered on Fridays: 12:30-2:30pm and 3:30-5:30pm, both in
+1010 DOW.
+
+e All staff members will help with both labs.
+
+e Most weeks, labs will only meet for the first hour. Occasionally, however, labs will
+meet for both hours - on these weeks, the second hour will be optional. We will
+announce 2-hour labs ahead of time.
+
+Course Description
+
+The purpose of this course is to provide a broad introduction to the fundamental
+
+concepts, tasks, and techniques of natural language processing, and its recent
+
+advances based on machine learning algorithms (e.g., neural networks) and
+applications for interdisciplinary subjects. The successful student will finish the course
+with specific modeling and analytical skills, knowledge of the most important language
+concepts and machine learning schemes, and a broad understanding of natural
+language processing models and practice. The course will serve to prepare the student
+for further study of NLP and Al in general, as well as to inform any work involving the
+design of computer programs for substantial application domains.
+
+Broadly speaking, this course will contain the following components (more details in the
+
+rest of the syllabus):
+
+« Lectures. Attendance is not required at lectures, however, you must complete a
+short lecture assignment within 36 hours of the lecture for 20 out of the 26 lectures
+this semester. Lectures will be recorded.
+
+e Labs. Attendance is not required at labs, however, you will need to turn in a lab
+assignment each week (with a few exceptions). In general, labs will not be recorded.
+
+* One Cool Thing. Students will form groups of around 4 people and will record a
+short video about one cool thing that’s happened in NLP recently. This video will be
+
+https://umich instructure.comcourses!624730_ 3123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+presented either in lecture or in lab.
+
+e Homeworks. There will be three homework assignments throughout the semester.
+* Project. There will be a final project in this class, completed in teams of 2-3.
+
+* Exams. There will be one in-person exam.
+
+Prerequisites
+
+This course is designed for junior/senior undergraduate students majoring in computer
+science, information science, linguistics, and other related areas. Students who take
+this course are expected to be able to write code in some programming languages
+proficiently (Python is recommended), and have studied algorithms, probability, and
+statistics. Linear algebra is optional, but recommended. It would be beneficial if the
+students have prior knowledge of supervised machine learning.
+
+Textbook and Course Materials
+
+Dan Jurafsky and James H. Martin, Speech and Language Processing. We will be
+using the third edition draft, available online at
+https://web.stanford.edu/~jurafsky/slp3/ B_(https:/iweb.stanford.edu/~jurafsky/slp3/)_.
+Additional course materials will be posted on Canvas.
+
+Lecture
+
+Lectures in this class are interactive, with time for discussion and in-class exercises.
+Because of this, we highly recommend attending lectures in-person. Attending lectures
+will allow you to learn the material better and remember it longer after the class has
+ended. To make sure that you are keeping up with the lectures, you will be required to
+complete a lecture assignment for a certain number of lectures.
+https://umich instructure.comcourses!624730_ 4123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+Lectures will be recorded. There will be 25 lectures over the course of the semester
+(this doesn’t include the in-class exam or the final poster session, see the Course
+Schedule at the end of this document). In order to earn full credit, you will be required
+to complete the lecture assignment for 19 lectures. In order to complete the lecture
+assignment, you must watch the lecture (either in-person or the recording) and fill out
+an assignment with several in-class exercises and questions. Some questions will be
+graded solely for completion, while some questions will be graded for completeness
+(this will be noted for each question on the form). The form must be submitted by
+11:59pm the day after the lecture. For Tuesday lectures, the form must be submitted
+by Wednesday at 11:59pm. For Thursday lectures, the form must be submitted by
+Friday at 11:59pm.
+
+Because you are only required to submit the lecture assignment for around 75% of the
+lectures, you have some flexibility for illness, job interviews, travel, etc. Because of this
+built-in flexibility, exceptions to this policy will not be granted except in
+extenuating circumstances. If you have extenuating circumstances, please contact
+Dr. Burdick.
+
+Lecture Topics
+
+We will generally follow the topics given in the textbook, with some exceptions. | have
+included textbook readings along with each topic. These readings are optional, but
+helpful, especially if you are struggling to understand the lectures on a particular topic.
+There may be additional readings posted on Canvas for some topics. | am not sure how
+long it will take us to get through each topic, which is why | haven't included dates.
+Because of that, we may not get to some of the topics at the end.
+
+e Introduction: Why is NLP Hard?
+
+« Unit 1: Fundamental Algorithms (or, How did we get to chatGPT?)
+https://umich instructure.comcourses!624730_ 5123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+o Text Normalization (Ch. 2.2, 2.3, 2.4)
+
+o N-gram Language Models (Ch. 3)
+
+© Naive Bayes and Sentiment Classification (Ch. 4)
+
+o Logistic Regression (Ch. 5)
+
+° Vector Semantics and Embeddings (Ch. 6)
+
+eo Neural Networks and Neural Language Models (Ch. 7)
+
+eo Sequence Labeling for POS and NER (Ch. 8)
+
+eo RNNs and LSTMs (Ch. 9)
+
+© Transformers and Pretrained LMs (Ch. 10)
+
+o Fine-tuning and Masked LMs (Ch. 11)
+
+° Chatbots and Dialogue Systems (Ch. 15)
+
+o ChatGPT: Putting it all Together, Data, and Societal Implications
+e Unit 2: NLP Applications
+
+© Machine Translation (Ch. 13)
+
+© Question Answering and IR (Ch. 14)
+
+o ASR and Text-to-speech (Ch. 16)
+e Unit 3: Annotating Linguistic Structure
+
+o Constituency and Dependency Parsing (Ch. 17-18)
+
+o Word Senses and WordNet (Ch. 23)
+
+© Sentiment, Affect, and Connotation (Ch. 25)
+
+© Coreference Resolution (Ch. 26) - if time
+
+o Hidden Markov Models (Appendix A) - if time
+Labs
+Labs will be hands-on coding practice with the material that we are learning in class.
+You must turn in an assignment for each lab, due Monday at 11:59pm after the lab. |f
+you attend lab in-person, you will have the opportunity to complete the assignment with
+a partner and help from the course staff. If you do not attend the lab in-person, you still
+must complete the assignment (you may work with a partner who also did not attend
+the in-person lab). Labs will not be recorded.
+https://umich instructure.comcourses!624730_ 6123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+There will be a few labs that do not follow this schedule (also see the Course Schedule
+at the end of this document):
+
+* There will be no lab Friday, October 13, the Friday before Fall Break.
+
+* The lab on Friday, November 10 will be an exam review. It will be recorded, and
+
+there will not be any lab assignment to turn in.
+
+e There will be no lab Friday, November 17, the Friday before Thanksgiving Break.
+
+In total, there will be 10 lab assignments that you are required to complete. The lowest
+lab assignment will be dropped.
+
+One Cool Thing
+
+Students will be divided into groups of around four students, and each group must
+record a short video about one cool recent thing in NLP. It can be anything that you find
+interesting - a research paper, a new NLP application in industry, an ethical concern
+around NLP, a societal implication about NLP, etc. These videos will be played in
+lectures and labs throughout the semester. More details will be given in the first couple
+of weeks.
+
+Homeworks
+
+There will be three homework assignments throughout the semester. They will be due
+September 27, October 20, and November 3(see Course Schedule at the end of the
+document). These assignments will involve conceptual questions and coding practice.
+Conceptual questions must be completed individually. Coding questions can be either
+completed individually or with a partner. It will be clearly marked which questions must
+be completed individually and which questions can be done with a partner.
+Project
+https://umich instructure.comcourses!624730_ 123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+Teams of 2 or 3 students will work together on a course project based on their own
+selection throughout the semester. Sample project ideas will be provided. Each team
+must meet the following milestones (see Course Schedule at the end of the document):
+* October 11 - Submit a proposal
+e November 21 - Submit a progress report
+e December 5, last day of class - Present a poster at the final project poster session
+e December 14 - Submit a final report (this would have been the day of our final exam,
+but there will be no final exam in this class)
+You must attend the last day of class to receive credit for your poster.
+Exam
+There will be one exam in this class. It will take place on Thursday, November 16
+during classtime (please note that this is the Thursday before Thanksgiving break). The
+exam will take place in-person - there will be no exceptions to this policy for
+Thanksgiving break travel. Please plan your travel accordingly.
+Late Policy
+The general late policy is laid out below. There are a few exceptions: Lecture
+assignments will not be accepted if they are turned in late. For the final poster, credit
+will not be given unless you attend the final poster session (during the last day of
+class).
+For all other assignments (homeworks, labs, One Cool Thing, other project milestones),
+the policy is as follows:
+https://umich instructure.comcourses!624730_ 8123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+Assignments must be turned in on the date that it is due, by 11:59PM Ann Arbor time.
+The homework must be submitted electronically using Canvas and Gradescope and we
+will use the later timestamp to validate turn-in time. Late homework will be penalized
+10% per day (where each day starts at 11:59pm on the due day). Homework turned in
+after three days will not be accepted. Certain homework assignments may be
+associated with a single late day, to facilitate exam study. This will be noted when the
+assignment is released.
+
+If you are unable to complete the homework assignment on time due to illness or a
+personal emergency, please contact Dr. Burdick.
+
+Note that the only method of submission is Canvas/Gradescope. It is your responsibility
+to ensure that the homework has been uploaded successfully by the due date. This
+may include checking a box to verify accordance with the honor code policy. Homework
+that is incorrectly uploaded will be subject to the associated late penalty. Homework not
+successfully uploaded by the due date will not be accepted.
+
+Also note that any changes you make to the homework already submitted on
+Canvas/Gradescope counts as a resubmission. If you make any changes to the
+assignment after the due date has passed you will be assigned a late penalty based on
+the number of days that have passed. For example, if you edit an assignment on
+October 5 and it was due on October 2, you will be assigned a 30% penalty (10% per
+day) as explained above. This is non-negotiable.
+
+Office Hours
+
+The instructors will have regularly scheduled office hours each week. You are
+encouraged to make use of these to discuss aspects of the course including lecture
+material and the homework problems. In cases where you cannot make office hours,
+https://umich instructure.comcourses!624730_ 9123,
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+contact the course staff to arrange an appointment; don’t wait until the last minute
+though!
+
+Piazza
+
+We will be using Piazza to host a course forum and asynchronous Q&A. You are
+encouraged to read this regularly and post technical questions. Please search before
+posting to avoid re-asking questions that have already been answered.
+
+It is important that you do NOT post your own code or homework solutions to the forum.
+If you have a question about any of these things, use a private post (visible only to
+instructors).
+
+Course staff will answer questions on Piazza throughout the day, but do not expect an
+immediate response (particularly on evenings and weekends). We will try to answer
+questions within 24 hours when possible. Of course, students are encouraged to
+answer each others’ questions!
+
+Email Policy
+
+We do not answer technical questions via email. In order to save everyone time, we
+want all students to have the benefit of seeing each question and its answer, so please
+use Piazza instead.
+
+Grading
+
+Lecture
+
+Assignments
+https://umich instructure.comcourses!624730_ 10/23
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+Assignments
+Notes:
+¢ To earn full credit, you must complete 20 lecture assignments (out of 26 possible
+lectures)
+e There are 10 lab assignments, the lowest grade is dropped
+e There are 3 homework assignments
+« The final project grade is broken up as follows:
+° 5% - project proposal
+o 5% - progress report
+o 15% - final report
+o 5% - final poster
+The values are subject to slight adjustments based on the discretion of the instructor. If
+you have a problem with the grading on a particular assignment or exam, submit a
+regrade request on Gradescope. If the assignment was not submitted using
+Gradescope, submit a regrade request by e-mailing a brief (one paragraph) description
+of the problem to Dr. Burdick. Regrade requests must be submitted within one
+week of when the graded assignment is made available to the student. Later
+regrade requests will not be accepted.
+The exam grades will most likely be curved. Final letter grades will be calculated
+according to the following table:
+https://umich instructure.comcourses!624730_ 11/23
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+A+ 98s %< 100
+
+A93 5% < 98
+
+A- 90s % <93
+
+B+ 87 < % < 90
+
+B8&3< % < 87
+
+B- 80< % <83
+
+C+ 77s %<80
+
+C73<5%<77
+
+C-70<% < 73
+
+D+ 67<%<70
+
+D635 %<67
+
+D-60< % <63
+
+E%<60
+
+Honor Code
+
+We encourage collaboration in EECS 487, especially on concepts, tools, specifications,
+and strategies. In this class, you are expected to follow the College of Engineering
+
+Honor Code E> (https://ecas.engin.umich.edu/wp-
+
+content/uploads/sites/19/2019/03/Honor-Code-Pamphlet-2018.pdf).. Suspected violations
+
+will be referred to the Engineering Honor Council B
+(https //ecas.engin.umich.edu/honor-council/) .
+
+In particular, here are some ways that the Honor Code applies to this class:
+
+e Homework assignments - conceptual questions. Conceptual questions must be
+completed individually. You are free to discuss high-level ideas with other students,
+but all solutions must be your own. It is an Honor Code violation to work out the
+
+https://umich instructure.comcourses!624730_ 12/23
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+details of the problems with someone else. It is an Honor Code violation to compare
+your solutions, whether in scrap paper form or your final work product, to other
+students (and vice versa).
+
+* Homework assignments - coding questions. You may collaborate with one other
+student for coding questions. It is an Honor Code violation to collaborate with more
+than one other student.
+
+e Code publishing. You may not make your code publicly available in any form, for
+example in a public GitHub repository or personal website. You are still responsible
+for following these rules even after finishing the course.
+
+* Exam. The exam must be completed individually. It is an Honor Code violation to
+discuss exams with other students before the exam is completed.
+
+e Previous semesters. It is an Honor Code violation to possess, look at, use, or in
+anyway derive advantage from the existence of solutions prepared in prior years,
+whether these solutions were former students’ work product or copies of solutions
+that had been made available by instructors.
+
+If you are at all unsure whether your collaboration is allowed, please contact the course
+
+staff via Piazza, office hours, or email before you do anything. We will help you
+
+determine if what you're thinking of doing is in the spirit of collaboration for this class.
+
+Wellness
+
+If for any reason you are having difficulty in this course, please come talk to Dr.
+
+Burdick; we want to help. Any member of our community may experience stressors
+
+that can impact both their academic experience and their personal well-being. These
+may include academic pressure and challenges associated with relationships, mental
+health, alcohol or other drugs, finances, etc.
+
+If you are facing challenges, seeking help is a courageous thing to do for yourself and
+
+those who care about you. If the source of your stressors is academic, please contact
+https://umich instructure.comcourses!624730_ 13/23
+
+
+=== PAGE BREAK ===
+
+10/26/23, 1:25 PM EECS 487 001 FA 2023
+
+Dr. Burdick so that we can find solutions together.
+
+Accommodations for Students with Disabilities
+The University of Michigan recognizes disability as an integral part of diversity and is
+committed to creating an inclusive and equitable educational environment for students
+with disabilities. Students who are experiencing a disability-related barrier should
+contact Services for Students with Disabilities (https://ssd.umich.edu/ B
+(https://ssd.umich.edu/) ; 734-763-30

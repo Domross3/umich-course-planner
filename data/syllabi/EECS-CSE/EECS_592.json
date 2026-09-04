@@ -1,0 +1,43 @@
+{
+  "code": "EECS 592",
+  "title": "Foundations of Artificial Intelligence (cross-listed with EECS 492)",
+  "term": "Winter 2017",
+  "sourceRepo": "y-shi/EECS592W17",
+  "sourceFiles": [
+    "README.md",
+    "HW2/EECS492PS2WN17.pdf",
+    "HW4/Homework4.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Ed Durfee",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Adversarial search / game-playing agents",
+    "Search problems: hill climbing and random-restart hill climbing",
+    "First-order logic and conversion to Prolog",
+    "Planning with PDDL and Graphplan",
+    "Markov Decision Processes and value iteration",
+    "Q-learning"
+  ],
+  "toolsAndLanguages": [
+    "Prolog",
+    "PDDL / Graphplan",
+    "Gradescope",
+    "Canvas"
+  ],
+  "skills": [
+    "adversarial search and game-playing agents",
+    "local search (hill climbing)",
+    "first-order logic and automated reasoning",
+    "classical planning (pddl/graphplan)",
+    "markov decision processes",
+    "value iteration",
+    "q-learning / reinforcement learning basics",
+    "poker/game agent implementation",
+    "prolog querying"
+  ],
+  "workloadNotes": "Six homework assignments (100 points each), submitted via Gradescope (PDF) and Canvas (code). 3 late days allowed for the semester at a 10-point-per-day deduction. Exact overall grading weights and exam structure were not present in this student repository.",
+  "prerequisitesText": "",
+  "textbooks": [],
+  "confidence": "listing only"
+}

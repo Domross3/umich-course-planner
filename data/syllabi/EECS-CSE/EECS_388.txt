@@ -1,0 +1,26 @@
+Source: Umich-CS/eecs-388 GitHub repository, "Lecture Slides" directory listing (Fall 2017 era filenames mixed with later lec-numbered files). No README/syllabus text file was present in the repo; the following is the lecture-slide filename list, used only to derive a topic sequence (no grading, instructor, or textbook info was available in this repo).
+
+388-01_Intro.pdf
+388-02_Integrity.pdf
+388-03_Randomness_and_Pseudorandomness.pdf
+388-04_Confidentiality.pdf
+388-f17-05_KeyExchange.pdf
+388-f17-06_PublicKey.pdf
+lec07-web_architecture.pdf
+lec08-HTTPS-archive.pdf
+388-f17-08_web_attacks.pdf
+lec09_Attacking_HTTPS-archive.pdf
+lec10_Networking.pdf
+lec11_NetworkAttacks.pdf
+lec12_authentication-archive.pdf
+lec13_Control_Hijacking_1.pdf
+lec14-side-channels-archive.pdf
+lec15-malware-archive.pdf
+lec16-Voting.pdf
+lec17-defeding_weak_applications.pdf
+lec18_Network_Probing.pdf
+lec19_forensics-archive.pdf
+lec20-cyberwar.pdf
+lec21_Privacy-Anonymity-Anticensorship.pdf
+lec22-IoT-medsec.pdf
+Final Review.pdf

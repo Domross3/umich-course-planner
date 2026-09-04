@@ -23,7 +23,10 @@ const walk = (dir) => {
       workload: j.workloadNotes || null, source: j.sourceRepo || null, tag: 'syllabi sweep · ' + (j.confidence || 'listing only'),
     };
     // keep the highest-confidence record per course
-    const rank = { syllabus: 3, 'course page': 2, 'listing only': 1 };
+    const wn = String(j.workloadNotes || '').toLowerCase(); const srcStr = String(j.sourceRepo || '').toLowerCase();
+    const secondhand = !j.sourceRepo || /websearch|web search/.test(srcStr) || /websearch|web search|not independently fetched|secondhand|not directly fetched/.test(wn);
+    if (secondhand) { rec.confidence = 'secondhand'; rec.tag = 'secondhand · not fetched, verify before trusting'; rec.grading = []; }
+    const rank = { syllabus: 3, 'course page': 2, 'listing only': 1, secondhand: 0 };
     const prev = seen.get(code);
     if (!prev || (rank[rec.confidence] || 0) > (rank[prev.confidence] || 0)) seen.set(code, rec);
   }

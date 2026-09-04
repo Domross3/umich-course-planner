@@ -1,0 +1,39 @@
+{
+  "code": "EECS 491",
+  "title": "Introduction to Distributed Systems",
+  "term": "Fall 2019",
+  "sourceRepo": "lamport.eecs.umich.edu (blocked domain; content via WebSearch/CourseHero-cache summary, not directly fetched)",
+  "sourceFiles": [],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Harsha V. Madhyastha",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Replicated state machines",
+    "Reasoning about time in distributed systems",
+    "Replication",
+    "Concurrency control",
+    "Data consistency models",
+    "Techniques for scaling",
+    "Multi-tenancy"
+  ],
+  "toolsAndLanguages": [
+    "Go"
+  ],
+  "skills": [
+    "distributed systems design",
+    "replicated state machines",
+    "logical/physical clock reasoning",
+    "concurrency control",
+    "data consistency models",
+    "system scaling techniques",
+    "go programming for distributed systems",
+    "multi-tenancy design",
+    "distributed systems debugging and testing"
+  ],
+  "workloadNotes": "Details recovered only via a search-engine summary of cached course pages (original site on a blocked umich.edu domain); no grading breakdown or assignment structure was recoverable. Treat this record as a secondhand paraphrase, not a directly verified source.",
+  "prerequisitesText": "",
+  "textbooks": [
+    "Maarten van Steen and Andrew S. Tanenbaum, Distributed Systems, 3rd ed. (optional)"
+  ],
+  "confidence": "listing only"
+}

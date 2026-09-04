@@ -1,0 +1,55 @@
+{
+  "code": "EECS 545",
+  "title": "Machine Learning",
+  "term": "Winter 2016",
+  "sourceRepo": "liangtianumich/umich-eecs545-lectures",
+  "sourceFiles": [
+    "README.md",
+    "Lectures.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction to Machine Learning",
+    "Linear Algebra & Optimization",
+    "Convex Functions & Probability",
+    "Linear Regression",
+    "Bayesian Linear Regression / Gaussian Processes",
+    "Probabilistic Models & Logistic Regression",
+    "Linear Classifiers (Naive Bayes, GDA, LDA)",
+    "Kernel Methods",
+    "ML Advice",
+    "Bias-Variance and Information Theory",
+    "Bayesian Networks",
+    "Latent Variables, Independence, Clustering",
+    "Clustering, Mixtures, EM",
+    "GMM-HMM",
+    "PGM Inference and Applications",
+    "PCA / ICA",
+    "MDS / Nonlinear Dimensionality Reduction",
+    "Neural Networks"
+  ],
+  "toolsAndLanguages": [
+    "Jupyter/IPython notebooks"
+  ],
+  "skills": [
+    "linear and logistic regression",
+    "bayesian machine learning",
+    "kernel methods",
+    "generative classifiers (naive bayes, gda, lda)",
+    "graphical models",
+    "expectation-maximization / clustering",
+    "hidden markov models",
+    "dimensionality reduction (pca/ica/mds)",
+    "neural networks fundamentals",
+    "bias-variance analysis"
+  ],
+  "workloadNotes": "This source is a lecture-materials repository (Jupyter notebooks/slides), not a full administrative syllabus. No grading breakdown, assignment structure, or instructor name was recoverable from the repository content.",
+  "prerequisitesText": "",
+  "textbooks": [
+    "Bishop, Pattern Recognition and Machine Learning, 2006 (required)",
+    "Murphy, Machine Learning: A Probabilistic Perspective, 2012 (reference)"
+  ],
+  "confidence": "listing only"
+}

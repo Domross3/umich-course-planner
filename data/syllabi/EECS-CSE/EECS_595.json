@@ -1,0 +1,62 @@
+{
+  "code": "EECS 595",
+  "title": "Natural Language Processing (cross-listed with EECS 498.007)",
+  "term": "Fall (year not stated in source; exam dates Oct 11 / Dec 14-15)",
+  "sourceRepo": "laura-burdick/laura-burdick.github.io",
+  "sourceFiles": [
+    "papers/595.498.NLP.syllabus.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Rada Mihalcea",
+  "gradingBreakdown": [
+    {"component": "Programming assignments (4)", "percent": 35},
+    {"component": "Exam I", "percent": 20},
+    {"component": "Exam II", "percent": 20},
+    {"component": "Project", "percent": 20},
+    {"component": "Class participation", "percent": 5}
+  ],
+  "weeklyTopics": [
+    "Overview of English linguistics",
+    "Text preprocessing",
+    "Language models",
+    "Word embeddings",
+    "Part of speech tagging",
+    "Syntactic parsing",
+    "Word sense disambiguation",
+    "Subjectivity and sentiment analysis",
+    "Information extraction",
+    "Automatic summarization",
+    "Machine translation",
+    "NLP for social sciences",
+    "Other special topics"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "CAEN Linux environment",
+    "iClickers",
+    "Piazza",
+    "Canvas"
+  ],
+  "skills": [
+    "nlp fundamentals (syntax, semantics, pragmatics)",
+    "text preprocessing",
+    "language modeling",
+    "word embeddings",
+    "part-of-speech tagging",
+    "syntactic parsing",
+    "word sense disambiguation",
+    "sentiment analysis",
+    "information extraction",
+    "automatic summarization",
+    "machine translation",
+    "nlp research project work",
+    "in-class research presentation (\"OneCoolThing\")"
+  ],
+  "workloadNotes": "Four programming assignments (35% total, up to 3 days late at 10%/day penalty), two exams (20% each), a course project (20%), and class participation (5%, including iClicker responses, Piazza engagement, and rotating \"OneCoolThing\" team presentations on recent NLP research).",
+  "prerequisitesText": "For EECS 498.007 students: EECS 281 Data Structures and Algorithms.",
+  "textbooks": [
+    "D. Jurafsky and R. Martin, Speech and Language Processing, 2nd ed. (required)",
+    "C. Manning and H. Schutze, Foundations of Statistical Natural Language Processing (recommended)"
+  ],
+  "confidence": "syllabus"
+}

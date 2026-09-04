@@ -1,0 +1,56 @@
+{
+  "code": "EECS 498-016 / 598-016",
+  "title": "Computer Graphics and Generative Models",
+  "term": "Winter 2026",
+  "sourceRepo": "um-graphics/um-graphics.github.io",
+  "sourceFiles": [
+    "docs/index.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Jeong Joon Park",
+  "gradingBreakdown": [
+    {"component": "Programming Assignments (5)", "percent": 60},
+    {"component": "Final Exam", "percent": 25},
+    {"component": "Participation (lecture, Piazza, lab)", "percent": 15}
+  ],
+  "weeklyTopics": [
+    "Introduction",
+    "Transformations and homogeneous coordinates",
+    "Rasterization",
+    "Materials and lighting",
+    "Ray tracing and global illumination",
+    "Geometry and texture modeling",
+    "Structure from motion / 3D reconstruction",
+    "Neural implicit representations / neural fields",
+    "Neural radiance fields (NeRF) and extensions",
+    "Gaussian splatting",
+    "Generative adversarial networks (GANs)",
+    "Diffusion models",
+    "Generative models applied to 3D content creation"
+  ],
+  "toolsAndLanguages": [
+    "C++",
+    "Python",
+    "Blender",
+    "Gradescope",
+    "Piazza"
+  ],
+  "skills": [
+    "computer graphics fundamentals (rasterization, ray tracing)",
+    "camera models and transformations",
+    "lighting and material modeling",
+    "3d reconstruction / structure-from-motion",
+    "neural radiance fields (nerf)",
+    "gaussian splatting",
+    "generative adversarial networks",
+    "diffusion models",
+    "3d content generation with ai",
+    "blender-based 3d modeling"
+  ],
+  "workloadNotes": "Five individual programming assignments (60% total, 12% each, including a Blender project), a final exam (25%), and participation (15%: lecture discussion, Piazza, lab attendance, with up to +3% discretionary). Late homework: 10% flat penalty for up to 10 days, then 25%. Undergrad (498) and grad (598) students share lectures and assignments but are graded within separate tracks. Collaboration is encouraged but code must be rewritten independently afterward (MOSS plagiarism detection used); generative AI tools are prohibited for code generation.",
+  "prerequisitesText": "EECS 281, and (MATH 425 or 412 or EECS 301 or IOE 265 or TO 301), and (EECS 351 or MATH 214/217/296/417/419 or ROB 101), or graduate standing. Familiarity with deep learning and computer vision strongly recommended for the generative-modeling portion.",
+  "textbooks": [
+    "Marschner & Shirley, Fundamentals of Computer Graphics, 4th ed. (recommended, not required)"
+  ],
+  "confidence": "syllabus"
+}

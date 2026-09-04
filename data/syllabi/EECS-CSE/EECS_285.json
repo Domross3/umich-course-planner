@@ -1,0 +1,52 @@
+{
+  "code": "EECS 285",
+  "title": "Practical Programming in Java",
+  "term": "Fall 2020",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 285_Practical Programming in Java_Fall 2020.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Kristopher Smith",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Java syntax, expressions and statements",
+    "Control flow",
+    "Objects and types",
+    "Inheritance",
+    "Polymorphism",
+    "Arrays",
+    "Exceptions",
+    "Interfaces",
+    "Nested and local classes",
+    "Generics",
+    "Input and output",
+    "Graphical user interfaces",
+    "Threads",
+    "Mobile programming"
+  ],
+  "toolsAndLanguages": [
+    "Java 8",
+    "IntelliJ IDEA",
+    "Android Studio",
+    "Piazza",
+    "web-based autograder"
+  ],
+  "skills": [
+    "java programming fundamentals",
+    "object-oriented design",
+    "inheritance and polymorphism",
+    "exception handling",
+    "generics",
+    "gui programming",
+    "multithreading",
+    "android/mobile programming basics",
+    "test-driven debugging",
+    "code style and readability practices",
+    "pair-programming collaboration"
+  ],
+  "workloadNotes": "Four programming projects (Project 1 solo, Projects 2-4 solo or with a partner) plus several quizzes outside lecture hours (lowest quiz grade dropped). Final grade based on weighted project and quiz scores; exact point distribution table in the source syllabus was not machine-readable. 3 late days total for the semester; early-submission bonus of up to 5% on Projects 2-4.",
+  "prerequisitesText": "Some prior programming experience required; no prior Java experience needed.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

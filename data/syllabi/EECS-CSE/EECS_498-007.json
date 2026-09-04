@@ -1,0 +1,59 @@
+{
+  "code": "EECS 498-007 / 598-005",
+  "title": "Deep Learning for Computer Vision",
+  "term": "Fall 2019",
+  "sourceRepo": "Andrew-Ng-s-number-one-fan/EECS498-Deep-Learning-for-Computer-Vision",
+  "sourceFiles": [
+    "README.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Justin Johnson",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction to Deep Learning for Computer Vision",
+    "Image Classification",
+    "Linear Classifiers",
+    "Optimization",
+    "Neural Networks",
+    "Backpropagation",
+    "Convolutional Networks",
+    "CNN Architectures",
+    "Hardware and Software",
+    "Training Neural Networks I",
+    "Training Neural Networks II",
+    "Recurrent Networks",
+    "Attention",
+    "Visualizing and Understanding CNNs",
+    "Object Detection",
+    "Detection and Segmentation",
+    "3D Vision",
+    "Videos",
+    "Generative Models I",
+    "Generative Models II",
+    "Reinforcement Learning",
+    "Conclusion"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "PyTorch"
+  ],
+  "skills": [
+    "image classification",
+    "linear classifiers and optimization",
+    "neural network fundamentals and backpropagation",
+    "convolutional neural network architectures",
+    "training and debugging deep networks",
+    "recurrent networks",
+    "attention mechanisms",
+    "cnn visualization and interpretability",
+    "object detection and segmentation",
+    "3d vision",
+    "video understanding",
+    "generative models (vae/gan-era)",
+    "reinforcement learning basics"
+  ],
+  "workloadNotes": "22-lecture undergraduate/graduate deep learning for computer vision course (well-known UMich course, also run in multiple later terms such as Fall 2020 and Winter 2022 per its official course page, which is hosted on a blocked domain and not directly verified here). No grading breakdown, prerequisites, or textbook were recoverable from the student repositories checked. A WebSearch snippet (not independently verified) mentioned roughly six assignments plus a mini-project for this course in some term.",
+  "prerequisitesText": "",
+  "textbooks": [],
+  "confidence": "listing only"
+}

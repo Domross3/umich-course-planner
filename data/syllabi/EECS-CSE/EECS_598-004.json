@@ -1,0 +1,54 @@
+{
+  "code": "EECS 598-004",
+  "title": "Systems for Generative AI",
+  "term": "Winter 2024",
+  "sourceRepo": "mosharaf/eecs598",
+  "sourceFiles": [
+    "README.md (branch: w24-genai)"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Mosharaf Chowdhury",
+  "gradingBreakdown": [
+    {"component": "Paper Presentation", "percent": 15},
+    {"component": "Paper Summary", "percent": 15},
+    {"component": "Participation", "percent": 10},
+    {"component": "Project Report", "percent": 40},
+    {"component": "Project Presentations", "percent": 20}
+  ],
+  "weeklyTopics": [
+    "Introduction; how to read/present papers",
+    "The Datacenter as a Computer",
+    "GenAI basics: transformers, attention",
+    "Diffusion models and CLIP",
+    "Multimodal / vision-language models",
+    "Mixture-of-experts and sparse scaling",
+    "Pre-training systems (Pathways, Megatron-LM)",
+    "Distributed training parallelism (Alpa, Oobleck)",
+    "Fine-tuning and alignment (LoRA, RLHF, instruction tuning)",
+    "Inference serving systems (Orca, PagedAttention/vLLM)",
+    "Model-parallel serving and speculative decoding",
+    "Retrieval-augmented generation / grounding (REALM, RETRO)",
+    "Approximate nearest neighbor search and vector databases",
+    "Mid-semester project presentations",
+    "Security risks of GenAI / training data extraction"
+  ],
+  "toolsAndLanguages": [
+    "GPU cloud resources (CloudLab)",
+    "Piazza"
+  ],
+  "skills": [
+    "systems for large language models",
+    "distributed training (data/model/pipeline parallelism)",
+    "llm inference serving systems",
+    "fine-tuning and parameter-efficient adaptation (lora)",
+    "retrieval-augmented generation systems",
+    "vector search / approximate nearest neighbor systems",
+    "research paper presentation and critique",
+    "systems research project execution",
+    "genai security awareness"
+  ],
+  "workloadNotes": "Seminar-style graduate course reading recent top-venue GenAI-systems papers. Grading: paper presentation 15%, paper summary 15%, participation 10%, project report 40%, project presentations 20%. Semester-long systems research project with mid-semester and final presentations. Explicitly NOT focused on AI methods themselves — focuses on the systems/infrastructure that support them.",
+  "prerequisitesText": "Good programming skills and at least one undergraduate systems-related course (EECS 482 operating systems, EECS 484 databases, EECS 491 distributed systems, or EECS 489 networking). Undergraduate ML/AI background helpful but not required.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

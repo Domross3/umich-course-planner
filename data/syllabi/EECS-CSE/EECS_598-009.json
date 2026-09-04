@@ -1,0 +1,45 @@
+{
+  "code": "EECS 598-009",
+  "title": "Systems for AI",
+  "term": "Winter 2021",
+  "sourceRepo": "mosharaf/eecs598",
+  "sourceFiles": [
+    "README.md (branch: w21-ai)"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Mosharaf Chowdhury",
+  "gradingBreakdown": [
+    {"component": "Paper Summary", "percent": 20},
+    {"component": "Paper Presentation", "percent": 20},
+    {"component": "Participation", "percent": 10},
+    {"component": "Assignment", "percent": 10},
+    {"component": "Project", "percent": 40}
+  ],
+  "weeklyTopics": [
+    "Introduction: large-scale ML infrastructure at industry (Philly, TFX, Facebook ML)",
+    "Datacenter background: The Datacenter as a Computer, Jupiter datacenter networks",
+    "Distributed data frameworks: Spark (RDDs), Flat Datacenter Storage",
+    "Deep learning frameworks and runtime execution",
+    "Distributed and federated learning systems",
+    "Serving systems and inference",
+    "Scheduling and resource management in AI clusters",
+    "Compilers for AI workloads"
+  ],
+  "toolsAndLanguages": [
+    "Piazza"
+  ],
+  "skills": [
+    "large-scale ml systems design",
+    "datacenter and cluster computing fundamentals",
+    "distributed data processing (spark-style)",
+    "ml training/serving infrastructure",
+    "federated learning systems",
+    "ai cluster scheduling and resource management",
+    "research paper presentation and critique",
+    "systems research project execution"
+  ],
+  "workloadNotes": "Seminar-style graduate course reading papers on scalable AI/ML systems from top systems/networking/database venues. Grading: paper summary 20%, paper presentation 20%, participation 10%, assignment 10%, project 40%. Explicitly focused on the systems/infrastructure supporting AI, not AI methods themselves.",
+  "prerequisitesText": "Good programming skills and at least one undergraduate systems-related course (EECS 482 operating systems, EECS 484 databases, EECS 491 distributed systems, or EECS 489 networking).",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

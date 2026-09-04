@@ -1,0 +1,53 @@
+{
+  "code": "EECS 482",
+  "title": "Introduction to Operating Systems",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": [
+    "EECS 482_Introduction to Operating Systems_Winter 2021.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Peter Chen, Manos Kapritsos, Baris Kasikci",
+  "gradingBreakdown": [
+    {"component": "Project 1", "percent": 3},
+    {"component": "Project 2", "percent": 15},
+    {"component": "Project 3", "percent": 15},
+    {"component": "Project 4", "percent": 15},
+    {"component": "Midterm exam", "percent": 26},
+    {"component": "Final exam", "percent": 26}
+  ],
+  "weeklyTopics": [
+    "Processes and threads",
+    "Concurrency and synchronization",
+    "CPU scheduling",
+    "Virtual memory management",
+    "Communication in distributed systems",
+    "Secondary-storage management",
+    "File systems"
+  ],
+  "toolsAndLanguages": [
+    "C/C++",
+    "g++ 9.1.0 (-std=c++17)",
+    "RHEL 7 / CAEN Linux",
+    "GitHub (private per-group repos)",
+    "Piazza"
+  ],
+  "skills": [
+    "operating systems design",
+    "process and thread management",
+    "concurrency and synchronization primitives",
+    "cpu scheduling algorithms",
+    "virtual memory management",
+    "distributed systems communication",
+    "file system implementation",
+    "client-server systems programming",
+    "group-based systems programming",
+    "c++ systems programming"
+  ],
+  "workloadNotes": "Four projects (Project 1 individual at 3%, Projects 2-4 in groups of 2-3 at 15% each), plus midterm and final exam (26% each). Must average a passing grade on exams to pass the course. 3 late days per group for the semester. Optional advanced supplemental course EECS 498-002 runs alongside for concurrently enrolled students.",
+  "prerequisitesText": "EECS 281 and EECS 370; expected to understand data structures and computer architecture, have extensive C/C++ experience, and be familiar with UNIX.",
+  "textbooks": [
+    "Thomas Anderson and Michael Dahlin, Operating Systems: Principles and Practice, 2nd ed. (recommended)"
+  ],
+  "confidence": "syllabus"
+}

@@ -1,0 +1,70 @@
+# EECS 494: Computer Game Design
+EECS 494 is an upper-level elective typically chosen as an MDE-fulfilling course by a Senior in Computer Science. The course provides an introduction to the design and implementation of videogames, emphasizing rapid prototyping with an agile production methodology. EECS 494 is taught by [Jeremy Gibson](https://www.eecs.umich.edu/eecs/faculty/eecsfaculty.html?uniqname=gameprof) as of W15. The course textbook is [Introduction to Game Design, Prototyping, and Development](http://www.amazon.com/Introduction-Game-Design-Prototyping-Development/dp/0321933168) by Jeremy Gibson. The course website is [eecs.prototools.net/494](http://eecs.prototools.net/494/).
+
+## Topics Encountered
+EECS 494 attempts to provide students with two categories of knowledge. One, game design-- the ability to analyze and critique the ruleset of an interactive experience, and two, game implementation-- the ability to implement with a team a digital game to be played by an audience at a bi-annual showcase. The course also discusses the games industry, its nature, and how a student may "break in".
+
+### Game Design
+* Game Analysis Frameworks
+* The Layered Tetrad
+* Design Goals
+* Paper Prototyping
+* Playtesting
+* The Mathematics of Game-Balance
+* Puzzle Design
+* Guiding the Player
+* General experience design (The design of Disney Land)
+
+### Game Implementation
+* The Unity 3D Game Engine
+* C# and MonoDevelop
+* Component-based Software Architecture
+* The Agile Methodology
+* Project Scoping
+* Git Version Control
+
+### Game Industry
+* Game Education
+* Getting into the Industry
+* Conferences (GDC, IndieCade)
+
+## Expectations
+EECS 494 has, in the past if not in the present, expected the following from students.
+* Weekly Readings of a course Textbook.
+* Implementations of tutorials from the course textbook.
+* Recreation of a classic video game (NES era) using the Unity Game Engine.
+* Rapid Prototype production (2 prototypes due in 2 weeks).
+* Weekly presentation and exhibition of game projects in front of class.
+* Maintenance, usage, and discussion of burndown charts (of the Agile methodology).
+* Short papers (1-2 pages) serving as project postmortems and prior-art research.
+* Optional partitipation in Wolverine Soft game jams (occasionally for extra credit).
+* A multi-month project in teams of 4, to be demoed at an end-of-semester exhibition for the entire community.
+* Produce trailers for projects.
+* Record feedback for the projects of classmates. Receive feedback from classmates.
+* Lead formal playtesting sessions of your and other team's projects.
+
+## Should I take this?
+EECS 494 has developed a reputation as a high-workload, high-reward course.
+### Consider this course if...
+* You like games.
+* You want to work in the games industry.
+* You want to work in interactive media or media-rich simulation.
+* You work well with teams, or would like more practice in doing so.
+
+### Be wary of this course if...
+* You're ambivalent (or worse) about games.
+* You have a busy schedule.
+* Mildly subjective grading criteria scares you.
+* You like to receive grades in a timely manner.
+
+## Tips
+### General
+* Join [Wolverine Soft](http://www.wolverinesoft.org) and partake in their Unity tutorials.
+* Spend a day walking through several example game projects in the course textbook.
+
+### Team projects
+* Establish consistent, weekly, in-person meeting times immediately.
+* Be honest about the state of your project ("The controls are pretty unintuitive").
+* Cast all criticism on the team, and not the individual. ("**We** messed up that presentation-- how can we improve?").
+* Discuss individual responsibilities and progress. Talk honestly and openly about time-committment.
+* Devote a chunk of time to testing pre-presentation.

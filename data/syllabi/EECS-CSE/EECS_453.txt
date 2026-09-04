@@ -1,0 +1,23 @@
+Source: WebSearch summary of Prof. Qing Qu's official course page
+(qingqu.engin.umich.edu/eecs-453-principles-of-machine-learning-fall-2023/, a blocked
+*.umich.edu-family domain) and related ECE course-description pages. Not directly fetched;
+this is the search engine's paraphrase of that page's content.
+
+EECS 453: Principles of Machine Learning
+Instructor: Qing Qu
+Schedule (Fall offering referenced): Mon/Wed 12:00-1:30pm, office hours Wed 3:30-5:00pm, 3 credit hours.
+Audience: entry-level ECE machine learning course for senior EE/CE undergrads and junior
+master's students outside the SIPML area.
+
+Course content: basic principles of machine learning, covering unsupervised learning
+(clustering, mixture models, dimension reduction) and supervised learning (regression,
+classification, neural networks and deep learning), emphasizing algorithmic ideas/intuitions
+and basic theoretical insights.
+
+Topics: basics of probability, linear algebra, and optimization; regression and linear
+prediction; support vector machines and kernel methods; deep neural networks; dimension
+reduction (PCA, autoencoders); clustering (K-means, mixture of Gaussians, EM); representation
+learning (nonnegative matrix factorization, dictionary learning).
+
+Grading (per search summary): 5 homework assignments (40%), midterm exam (30%), course
+project (25%), participation & course evaluation (5%).

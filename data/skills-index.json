@@ -218,6 +218,159 @@
   "tag": "syllabi sweep · syllabus"
  },
  {
+  "code": "DATASCI 415",
+  "title": "Data Mining and Machine Learning (cross-listed with STATS 415)",
+  "term": null,
+  "confidence": "course page",
+  "skills": [
+   "linear and logistic regression",
+   "k-nearest neighbors",
+   "bias-variance tradeoff analysis",
+   "discriminant analysis (lda/qda)",
+   "cross-validation and bootstrap resampling",
+   "model selection and regularization (shrinkage)",
+   "dimension reduction",
+   "splines and generalized additive models",
+   "decision trees and ensemble methods",
+   "support vector machines",
+   "clustering (hierarchical, k-means)",
+   "statistical learning in r"
+  ],
+  "tools": [
+   "R",
+   "RMarkdown"
+  ],
+  "grading": [],
+  "workload": "Homework assignments (HW1, HW2 seen) with R/RMarkdown solutions; student repo, not an official syllabus.",
+  "source": "xinyexu/STATS-415",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "DATASCI 451",
+  "title": "Bayesian Data Analysis (cross-listed with STATS 451)",
+  "term": null,
+  "confidence": "syllabus",
+  "skills": [
+   "bayesian inference",
+   "monte carlo methods",
+   "mcmc",
+   "hierarchical modeling",
+   "shrinkage estimation",
+   "stan programming",
+   "posterior analysis",
+   "probabilistic modeling",
+   "statistical computing",
+   "group research project"
+  ],
+  "tools": [
+   "R",
+   "Stan",
+   "JAGS",
+   "Canvas"
+  ],
+  "grading": [],
+  "workload": "Grades based on weekly Canvas quizzes, biweekly homework, one midterm exam, and one final project (groups of 2-4) applying Bayesian methods to real data with a written report; up to 5% bonus for Canvas discussion participation.",
+  "source": "danieliong/stats451",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "DATASCI 507",
+  "title": "Data Science and Analytics using Python (cross-listed with STATS 507)",
+  "term": "Fall 2021",
+  "confidence": "course page",
+  "skills": [
+   "python for data science",
+   "pandas data wrangling",
+   "numpy array computing",
+   "regular expressions",
+   "object-oriented python",
+   "git version control",
+   "linux shell scripting",
+   "high performance computing basics",
+   "parallel processing / multiprocessing",
+   "data visualization with matplotlib",
+   "monte carlo simulation",
+   "statistical modeling (ols, glm)",
+   "machine learning with scikit-learn",
+   "distributed computing with pyspark",
+   "intro deep learning"
+  ],
+  "tools": [
+   "Python",
+   "pandas",
+   "numpy",
+   "matplotlib",
+   "scikit-learn",
+   "statsmodels",
+   "PySpark",
+   "Git",
+   "Jupyter/jupytext",
+   "Great Lakes HPC",
+   "Binder"
+  ],
+  "grading": [],
+  "workload": "6 problem sets (ps1-ps6) with example/exemplar solutions; lecture notebooks doubled as slides (authored in markdown via jupytext).",
+  "source": "jbhender/Stats507_F21",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "DATASCI 531",
+  "title": "Modeling and Analysis of Time Series Data (cross-listed with STATS 531)",
+  "term": "Winter 2024",
+  "confidence": "syllabus",
+  "skills": [
+   "time series analysis",
+   "arma models",
+   "trend estimation",
+   "autocovariance",
+   "frequency domain analysis",
+   "spectral smoothing",
+   "state-space models",
+   "pomp models",
+   "simulation-based inference",
+   "likelihood maximization",
+   "stochastic dynamic modeling",
+   "epidemiological modeling",
+   "financial volatility modeling",
+   "r programming",
+   "peer review"
+  ],
+  "tools": [
+   "R",
+   "pomp R package",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Weekly homeworks",
+    "percent": 25
+   },
+   {
+    "component": "Group midterm project",
+    "percent": 20
+   },
+   {
+    "component": "Peer reviews of midterm projects (2, individual)",
+    "percent": 8
+   },
+   {
+    "component": "Group final project",
+    "percent": 30
+   },
+   {
+    "component": "Peer reviews of final projects (2, individual)",
+    "percent": 12
+   },
+   {
+    "component": "Participation",
+    "percent": 5
+   }
+  ],
+  "workload": "Weekly homeworks graded to a rubric; a randomly-assigned group midterm project plus two individual anonymous peer reviews; groups re-randomized for a group final project plus two more individual peer reviews; class participation tracked via a rubric. Explicit source-attribution and GenAI-use disclosure requirements on every homework and project.",
+  "source": "ionides/531w24",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
   "code": "ECON 402",
   "title": "Intermediate Macroeconomics",
   "term": "Winter 2018",
@@ -243,6 +396,105 @@
   "workload": "Weekly discussion section (GSI section 004); 2 midterms and a final exam; weekly homeworks due Fridays.",
   "source": "richryan/econ402",
   "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "ECON 672",
+  "title": "Econometric Analysis II",
+  "term": "Winter 2020",
+  "confidence": "syllabus",
+  "skills": [
+   "maximum likelihood estimation",
+   "least squares theory",
+   "instrumental variables",
+   "panel data econometrics",
+   "hac estimation",
+   "m-estimation",
+   "generalized method of moments",
+   "discrete choice models",
+   "selection models",
+   "treatment effects estimation",
+   "econometric theory"
+  ],
+  "tools": [],
+  "grading": [
+   {
+    "component": "Problem sets",
+    "percent": 10
+   },
+   {
+    "component": "Mid-term exam",
+    "percent": 40
+   },
+   {
+    "component": "Comprehensive final exam",
+    "percent": 50
+   }
+  ],
+  "workload": "Second course of the PhD first-year econometrics sequence (prerequisite: Econ 671; not open to master's students). Problem sets (10%), mid-term exam in-class (40%), comprehensive final exam (50%). Detailed lecture-by-lecture schedule tied to Wooldridge textbook chapters and Bruce Hansen's lecture notes.",
+  "source": "hgmn/hgmn.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ECON 678",
+  "title": "Advanced Econometrics I",
+  "term": "Fall 2019",
+  "confidence": "syllabus",
+  "skills": [
+   "generalized method of moments",
+   "empirical process theory",
+   "bootstrap methods",
+   "asymptotic statistics",
+   "quantile regression",
+   "time series theory",
+   "econometric theory",
+   "reading primary economics literature",
+   "in-class research presentation"
+  ],
+  "tools": [],
+  "grading": [
+   {
+    "component": "Problem sets (may involve in-class presentations)",
+    "percent": 20
+   },
+   {
+    "component": "Take-home final exam",
+    "percent": 80
+   }
+  ],
+  "workload": "First course of the PhD second-year econometric theory field sequence (followed by Econ 679); prepares students for the econometric theory field exam and for research. Not open to master's students.",
+  "source": "hgmn/hgmn.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ECON 679",
+  "title": "Advanced Econometrics II",
+  "term": "Winter 2017",
+  "confidence": "syllabus",
+  "skills": [
+   "resampling methods",
+   "asymptotic expansions",
+   "empirical process theory",
+   "quantile regression",
+   "time series econometrics",
+   "structural break testing",
+   "unit root testing",
+   "econometric theory",
+   "reading primary economics literature"
+  ],
+  "tools": [],
+  "grading": [
+   {
+    "component": "Problem sets (4, may involve in-class presentations)",
+    "percent": 20
+   },
+   {
+    "component": "Take-home final exam",
+    "percent": 80
+   }
+  ],
+  "workload": "Second course of the PhD second-year econometric theory field sequence (preceded by Econ 678); prepares students for the econometric theory field exam. Not open to master's students. 4 problem sets (20%) plus a take-home final exam (80%).",
+  "source": "hgmn/hgmn.github.io",
+  "tag": "syllabi sweep · syllabus"
  },
  {
   "code": "EECS 201",
@@ -306,6 +558,246 @@
   "grading": [],
   "workload": null,
   "source": "eecs280staff/tutorials",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 281",
+  "title": "Data Structures and Algorithms",
+  "term": "Fall 2020",
+  "confidence": "syllabus",
+  "skills": [
+   "data structures",
+   "algorithm design and analysis",
+   "c++ programming",
+   "abstract data type specification",
+   "time/space complexity tradeoffs",
+   "autograder-driven testing",
+   "code correctness under hidden test cases",
+   "efficient implementation practices",
+   "technical documentation"
+  ],
+  "tools": [
+   "C++",
+   "make",
+   "Gradescope",
+   "CAEN Linux (GCC 6.2.0)",
+   "Piazza",
+   "Canvas"
+  ],
+  "grading": [
+   {
+    "component": "Lab Assignments",
+    "percent": 20
+   },
+   {
+    "component": "Projects",
+    "percent": 40
+   },
+   {
+    "component": "Midterm Exam",
+    "percent": 20
+   },
+   {
+    "component": "Final Exam",
+    "percent": 20
+   }
+  ],
+  "workload": "10 lab assignments (20% total) and 4 projects (40% total, 2-3 weeks each) across the semester, plus a midterm and final exam (20% each). Minimum competency thresholds apply separately to projects (55%), exams (50%), and labs (75%). Two late days allowed for the semester.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 285",
+  "title": "Practical Programming in Java",
+  "term": "Fall 2020",
+  "confidence": "syllabus",
+  "skills": [
+   "java programming fundamentals",
+   "object-oriented design",
+   "inheritance and polymorphism",
+   "exception handling",
+   "generics",
+   "gui programming",
+   "multithreading",
+   "android/mobile programming basics",
+   "test-driven debugging",
+   "code style and readability practices",
+   "pair-programming collaboration"
+  ],
+  "tools": [
+   "Java 8",
+   "IntelliJ IDEA",
+   "Android Studio",
+   "Piazza",
+   "web-based autograder"
+  ],
+  "grading": [],
+  "workload": "Four programming projects (Project 1 solo, Projects 2-4 solo or with a partner) plus several quizzes outside lecture hours (lowest quiz grade dropped). Final grade based on weighted project and quiz scores; exact point distribution table in the source syllabus was not machine-readable. 3 late days total for the semester; early-submission bonus of up to 5% on Projects 2-4.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 370",
+  "title": "Introduction to Computer Organization",
+  "term": "Fall 2020",
+  "confidence": "syllabus",
+  "skills": [
+   "computer organization",
+   "hardware/software interface",
+   "finite-state machine design",
+   "hardware simulation in c",
+   "low-level program execution",
+   "digital logic building blocks",
+   "assembly-level reasoning",
+   "debugging simulated hardware",
+   "collaborative discussion-pod problem solving"
+  ],
+  "tools": [
+   "C",
+   "gcc",
+   "CAEN Linux",
+   "autograder.io",
+   "Gradescope",
+   "Piazza",
+   "Zoom"
+  ],
+  "grading": [
+   {
+    "component": "Projects (4, 10% each)",
+    "percent": 40
+   },
+   {
+    "component": "Homework (6, lowest dropped)",
+    "percent": 10
+   },
+   {
+    "component": "Midterm",
+    "percent": 25
+   },
+   {
+    "component": "Final Exam",
+    "percent": 25
+   }
+  ],
+  "workload": "Four projects (10% each, heavy workload, first project split into 3 parts), six individual homework assignments (lowest dropped, 10% total), weekly group discussion-pod assignment, and two exams (midterm 25%, final 25%). Up to 3% of exam weight can be replaced by a participation score. 3 free late days for projects; no late days for homework (50% credit within 24 hours late).",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 373",
+  "title": "Introduction to Embedded System Design",
+  "term": "Winter 2023 (student project confirmed; curriculum list from other terms)",
+  "confidence": "secondhand",
+  "skills": [
+   "embedded systems design",
+   "arm assembly and c programming",
+   "memory-mapped i/o programming",
+   "interrupt-driven programming",
+   "serial protocols (uart/spi/i2c)",
+   "analog-to-digital and digital-to-analog conversion",
+   "wireless communication integration",
+   "pcb design and fabrication",
+   "team-based hardware/embedded project"
+  ],
+  "tools": [
+   "ARM ISA",
+   "C",
+   "Assembly",
+   "GNU toolchain",
+   "PCB design tools"
+  ],
+  "grading": [],
+  "workload": "Team-based semester project building a complete embedded system (e.g. an embedded computer-vision transit-data device in one verified student example). No grading breakdown was recoverable from available sources; the curriculum topic list is a secondhand WebSearch summary of official (blocked) course pages, not directly fetched.",
+  "source": "arschallwig/EECS373_CFS",
+  "tag": "secondhand · not fetched, verify before trusting"
+ },
+ {
+  "code": "EECS 376",
+  "title": "Foundations of Computer Science",
+  "term": "Fall 2020",
+  "confidence": "syllabus",
+  "skills": [
+   "theory of computation",
+   "computability theory",
+   "computational complexity",
+   "np-completeness proofs",
+   "algorithmic paradigm design",
+   "cryptography fundamentals",
+   "mathematical proof writing",
+   "reduction techniques",
+   "upper/lower bound analysis"
+  ],
+  "tools": [
+   "Gradescope",
+   "Piazza",
+   "Zoom",
+   "Canvas"
+  ],
+  "grading": [
+   {
+    "component": "Homework Assignments (12, lowest 2 dropped)",
+    "percent": 40
+   },
+   {
+    "component": "Midterm",
+    "percent": 24
+   },
+   {
+    "component": "Final Exam",
+    "percent": 32
+   },
+   {
+    "component": "Course Evaluation and Computing CARES Surveys",
+    "percent": 4
+   }
+  ],
+  "workload": "12 weekly homework assignments (lowest 2 dropped, 4% each of final grade), one midterm (24%) and a cumulative final exam (32%); homework problems mix effort-based and regular (graded) problems. Late homework receives no credit. Collaboration encouraged on homework (must be disclosed) but not on exams.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 388",
+  "title": "Introduction to Computer Security",
+  "term": "Fall 2017 era (mixed lecture-slide vintages)",
+  "confidence": "listing only",
+  "skills": [
+   "cryptographic primitives (confidentiality/integrity)",
+   "public key cryptography and key exchange",
+   "web security (https, web attacks)",
+   "network attack and defense",
+   "authentication mechanisms",
+   "control-hijacking exploitation",
+   "side-channel analysis",
+   "malware analysis",
+   "digital forensics",
+   "privacy and anonymity systems",
+   "iot/embedded security"
+  ],
+  "tools": [],
+  "grading": [],
+  "workload": "Only a lecture-slide filename listing was recoverable from this source repository (no syllabus text, grading policy, or assignment structure). No administrative details available.",
+  "source": "Umich-CS/eecs-388",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 441",
+  "title": "Mobile App Development for Entrepreneurs",
+  "term": null,
+  "confidence": "listing only",
+  "skills": [
+   "mobile app product design",
+   "customer discovery and persona development",
+   "mvp iteration",
+   "pitch presentation",
+   "team-based app development",
+   "startup/entrepreneurship fundamentals",
+   "user feedback incorporation",
+   "company/competitive analysis"
+  ],
+  "tools": [],
+  "grading": [],
+  "workload": "Semester-long team project course structured as a series of graded presentations (elevator pitch, company analysis, app design, persona/mockup, two MVP showcase-and-feedback cycles) plus daily participation tracking. Does not teach mobile programming directly; students learn the platform independently. Exact grading percentages were hosted on an off-repo Syllabus/Schedule page not present in this source and so were not captured.",
+  "source": "eecs441soloway/eecs441soloway.github.io",
   "tag": "syllabi sweep · listing only"
  },
  {
@@ -382,6 +874,28 @@
   "tag": "syllabi sweep · listing only"
  },
  {
+  "code": "EECS 453",
+  "title": "Principles of Machine Learning",
+  "term": "Fall 2023 (per page title; exact year of the summarized offering uncertain)",
+  "confidence": "secondhand",
+  "skills": [
+   "probability and linear algebra foundations for ml",
+   "regression and linear prediction",
+   "support vector machines and kernel methods",
+   "neural network fundamentals",
+   "dimensionality reduction (pca, autoencoders)",
+   "clustering (k-means, gmm, em)",
+   "representation learning (nmf, dictionary learning)",
+   "convex optimization basics",
+   "model evaluation and course project execution"
+  ],
+  "tools": [],
+  "grading": [],
+  "workload": "Per a secondhand WebSearch summary of the instructor's official (blocked, not independently fetched) course page: 5 homework assignments (40%), midterm exam (30%), course project (25%), participation and course evaluation (5%). Treat these percentages as unverified paraphrase rather than a directly-read source.",
+  "source": "qingqu.engin.umich.edu (blocked domain; content via WebSearch summary, not directly fetched)",
+  "tag": "secondhand · not fetched, verify before trusting"
+ },
+ {
   "code": "EECS 467",
   "title": "Autonomous Robotics Laboratory",
   "term": "Winter 2016 (student fork, historical)",
@@ -407,6 +921,92 @@
   "workload": null,
   "source": "sajanptl/eecs467",
   "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 470",
+  "title": "Computer Architecture",
+  "term": "Winter 2021",
+  "confidence": "course page",
+  "skills": [
+   "digital logic design",
+   "systemverilog rtl design",
+   "risc-v pipeline implementation",
+   "hazard detection and forwarding",
+   "out-of-order processor microarchitecture",
+   "instruction-level parallelism exploitation",
+   "cache design",
+   "branch prediction",
+   "virtual memory design",
+   "hardware performance analysis (cpi, clock rate)",
+   "team-based large-scale hardware project",
+   "hardware verification and testing"
+  ],
+  "tools": [
+   "SystemVerilog",
+   "RISC-V ISA",
+   "GCC with custom linker",
+   "Verilog simulator",
+   "logic synthesis tools",
+   "Gradescope"
+  ],
+  "grading": [],
+  "workload": "Four individual programming/design assignments (priority selectors; pipelined multiplier/synthesis; VeriSimpleV hazard handling) building toward a semester-long term project: teams of 5 build an out-of-order RISC-V processor on top of the Project 3 pipeline. Term project grading (internal to that project, not the overall course weighting): base features 25%, correctness/testing 20%, performance 20%, optional features 15%, analysis 10%, documentation 7%, checkpoints 3%. Overall course-level weighting between the 4 projects and any exams was not recoverable from this source.",
+  "source": "jieltan/OpenCompArchCourse",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "EECS 482",
+  "title": "Introduction to Operating Systems",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "operating systems design",
+   "process and thread management",
+   "concurrency and synchronization primitives",
+   "cpu scheduling algorithms",
+   "virtual memory management",
+   "distributed systems communication",
+   "file system implementation",
+   "client-server systems programming",
+   "group-based systems programming",
+   "c++ systems programming"
+  ],
+  "tools": [
+   "C/C++",
+   "g++ 9.1.0 (-std=c++17)",
+   "RHEL 7 / CAEN Linux",
+   "GitHub (private per-group repos)",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Project 1",
+    "percent": 3
+   },
+   {
+    "component": "Project 2",
+    "percent": 15
+   },
+   {
+    "component": "Project 3",
+    "percent": 15
+   },
+   {
+    "component": "Project 4",
+    "percent": 15
+   },
+   {
+    "component": "Midterm exam",
+    "percent": 26
+   },
+   {
+    "component": "Final exam",
+    "percent": 26
+   }
+  ],
+  "workload": "Four projects (Project 1 individual at 3%, Projects 2-4 in groups of 2-3 at 15% each), plus midterm and final exam (26% each). Must average a passing grade on exams to pass the course. 3 late days per group for the semester. Optional advanced supplemental course EECS 498-002 runs alongside for concurrently enrolled students.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
  },
  {
   "code": "EECS 484",
@@ -483,6 +1083,102 @@
   "tag": "syllabi sweep · listing only"
  },
  {
+  "code": "EECS 486",
+  "title": "Information Retrieval and Web Search",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "information retrieval algorithms",
+   "text indexing and processing",
+   "vector space and boolean retrieval models",
+   "word embeddings",
+   "web crawling",
+   "link analysis (pagerank/hits)",
+   "search evaluation methodology",
+   "text classification",
+   "question answering systems",
+   "text summarization",
+   "team-based research project work"
+  ],
+  "tools": [
+   "Python",
+   "CAEN Linux environment",
+   "Piazza",
+   "Zoom"
+  ],
+  "grading": [
+   {
+    "component": "Programming assignments",
+    "percent": 40
+   },
+   {
+    "component": "Exam I",
+    "percent": 20
+   },
+   {
+    "component": "Exam II",
+    "percent": 20
+   },
+   {
+    "component": "Term project",
+    "percent": 20
+   }
+  ],
+  "workload": "Four programming assignments (40% total, up to 3 days late at 10% penalty per day), two synchronous exams (20% each), and a 5-person team term project with two checkpoints plus a final poster presentation (20%).",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 487",
+  "title": "Introduction to Natural Language Processing",
+  "term": "Fall 2023",
+  "confidence": "syllabus",
+  "skills": [
+   "nlp fundamentals",
+   "n-gram language models",
+   "naive bayes and logistic regression classification",
+   "word embeddings",
+   "neural language models",
+   "sequence labeling (pos/ner)",
+   "rnns and lstms",
+   "transformer architectures",
+   "fine-tuning and masked language models",
+   "dialogue systems and chatbots",
+   "machine translation",
+   "question answering",
+   "constituency and dependency parsing",
+   "hands-on nlp coding labs",
+   "team research project and poster presentation"
+  ],
+  "tools": [
+   "Python",
+   "Canvas",
+   "Gradescope",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Project proposal",
+    "percent": 5
+   },
+   {
+    "component": "Project progress report",
+    "percent": 5
+   },
+   {
+    "component": "Project final report",
+    "percent": 15
+   },
+   {
+    "component": "Project final poster",
+    "percent": 5
+   }
+  ],
+  "workload": "26 lectures (must complete lecture assignments for 20 to earn full credit; not accepted late); 10 lab assignments (lowest dropped, due weekly); 3 homework assignments (10%/day late penalty up to 3 days); a group \"One Cool Thing\" video presentation; one in-person exam (no final exam); and a semester-long team project (2-3 students) worth 30% total (5% proposal, 5% progress report, 15% final report, 5% poster), with a mandatory final poster session. Exact overall weights for lecture/lab/homework categories were not machine-readable from the source grading table.",
+  "source": "laura-burdick/laura-burdick.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
   "code": "EECS 489",
   "title": "Computer Networks",
   "term": "Winter 2025",
@@ -538,6 +1234,76 @@
   ],
   "workload": "Four assignments during the semester; the first done individually, the rest in groups. Two exams (midterm and final).",
   "source": "mosharaf/eecs489",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 491",
+  "title": "Introduction to Distributed Systems",
+  "term": "Fall 2019",
+  "confidence": "secondhand",
+  "skills": [
+   "distributed systems design",
+   "replicated state machines",
+   "logical/physical clock reasoning",
+   "concurrency control",
+   "data consistency models",
+   "system scaling techniques",
+   "go programming for distributed systems",
+   "multi-tenancy design",
+   "distributed systems debugging and testing"
+  ],
+  "tools": [
+   "Go"
+  ],
+  "grading": [],
+  "workload": "Details recovered only via a search-engine summary of cached course pages (original site on a blocked umich.edu domain); no grading breakdown or assignment structure was recoverable. Treat this record as a secondhand paraphrase, not a directly verified source.",
+  "source": "lamport.eecs.umich.edu (blocked domain; content via WebSearch/CourseHero-cache summary, not directly fetched)",
+  "tag": "secondhand · not fetched, verify before trusting"
+ },
+ {
+  "code": "EECS 492",
+  "title": "Introduction to Artificial Intelligence",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "search algorithms",
+   "adversarial search / game trees",
+   "constraint satisfaction",
+   "propositional and first-order logic",
+   "knowledge representation",
+   "classical planning",
+   "probabilistic reasoning (bayesian networks)",
+   "hidden markov models",
+   "decision trees and concept learning",
+   "neural networks and deep learning basics",
+   "markov decision processes",
+   "reinforcement learning",
+   "game theory and multiagent decision making",
+   "python programming for ai"
+  ],
+  "tools": [
+   "Python",
+   "Canvas",
+   "Gradescope",
+   "Piazza",
+   "Zoom"
+  ],
+  "grading": [
+   {
+    "component": "Homework assignments (4)",
+    "percent": 50
+   },
+   {
+    "component": "Midterm Exam",
+    "percent": 25
+   },
+   {
+    "component": "Final Exam",
+    "percent": 25
+   }
+  ],
+  "workload": "Four homework assignments (50% total, each with written and programming portions, ~3 weeks each, 10%/day late penalty up to 3 days), midterm (25%) and final exam (25%). Weekly discussion sections.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
   "tag": "syllabi sweep · syllabus"
  },
  {
@@ -597,6 +1363,221 @@
   "tag": "syllabi sweep · syllabus"
  },
  {
+  "code": "EECS 494",
+  "title": "Computer Game Design (Game Design and Implementation)",
+  "term": "Winter 2015 era (per wiki; course has been taught by other instructors in other years)",
+  "confidence": "listing only",
+  "skills": [
+   "game design analysis",
+   "rapid prototyping",
+   "playtesting methodology",
+   "game balance mathematics",
+   "unity game engine development",
+   "c# programming",
+   "agile/scrum project management",
+   "burndown chart tracking",
+   "team-based game production",
+   "postmortem/prior-art writing",
+   "presentation and demo skills"
+  ],
+  "tools": [
+   "Unity",
+   "C#",
+   "MonoDevelop",
+   "Git"
+  ],
+  "grading": [],
+  "workload": "High-workload capstone/MDE elective. Weekly textbook readings and tutorial implementations, recreation of a classic NES-era game in Unity, two rapid prototypes within 2 weeks, weekly project presentations, burndown-chart tracking, short postmortem papers, and a multi-month team project (teams of 4) demoed at an end-of-semester public exhibition, including trailers and peer playtesting/feedback. No formal exams or quizzes reported. Exact grading percentages not documented in this source.",
+  "source": "UMich-EECS-resources/wiki",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 497",
+  "title": "Human-Centered Software Design and Development (cross-listed with ENGR 455-400, Multidisciplinary Software Development / MDP)",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "human-centered design",
+   "contextual inquiry",
+   "rapid prototyping",
+   "software project scheduling",
+   "ui/ux design",
+   "team-based software development",
+   "sponsored/client project management",
+   "software testing and debugging",
+   "multidisciplinary collaboration",
+   "team dynamics and leadership"
+  ],
+  "tools": [
+   "Zoom",
+   "GitLab/GitHub",
+   "Jira Software",
+   "Microsoft Teams",
+   "Canvas",
+   "Piazza"
+  ],
+  "grading": [],
+  "workload": "Semester-long team project (teams of 3-5 for EECS 497) sponsored by a real customer, run through the Multidisciplinary Design Program (MDP); asynchronous lecture recordings with a lecture-summary attendance form. Exact grading weights were not machine-readable from the source table; individual assignments/quizzes/exams (where present) must be completed independently.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 498-004",
+  "title": "Introduction to Natural Language Processing",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "natural language processing fundamentals",
+   "language modeling",
+   "text categorization and naive bayes",
+   "part-of-speech tagging and hmms",
+   "neural network basics for nlp",
+   "syntactic parsing",
+   "distributional/vector-space semantics",
+   "sentiment analysis",
+   "information extraction and question answering",
+   "text summarization and machine translation",
+   "dialogue systems and chatbots",
+   "coreference resolution and discourse analysis",
+   "research project proposal and reporting"
+  ],
+  "tools": [
+   "Python",
+   "Canvas",
+   "Piazza",
+   "Zoom"
+  ],
+  "grading": [
+   {
+    "component": "Assignments (4, 15% each)",
+    "percent": 60
+   },
+   {
+    "component": "Project proposal",
+    "percent": 5
+   },
+   {
+    "component": "Project mid-term report",
+    "percent": 8
+   },
+   {
+    "component": "Project final report",
+    "percent": 12
+   },
+   {
+    "component": "Project presentation",
+    "percent": 7
+   },
+   {
+    "component": "Feedback to other teams' presentations",
+    "percent": 3
+   },
+   {
+    "component": "Participation",
+    "percent": 5
+   }
+  ],
+  "workload": "Four assignments (60% total, 15% each), a team project of 2-3 students (35% total: proposal, mid-term and final reports, presentation, and peer feedback), and participation (5%). 8 total late days budget for the semester (20 points/100 penalty per late day beyond that); late days not applicable to the final presentation.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 498-007 / 598-005",
+  "title": "Deep Learning for Computer Vision",
+  "term": "Fall 2019",
+  "confidence": "secondhand",
+  "skills": [
+   "image classification",
+   "linear classifiers and optimization",
+   "neural network fundamentals and backpropagation",
+   "convolutional neural network architectures",
+   "training and debugging deep networks",
+   "recurrent networks",
+   "attention mechanisms",
+   "cnn visualization and interpretability",
+   "object detection and segmentation",
+   "3d vision",
+   "video understanding",
+   "generative models (vae/gan-era)",
+   "reinforcement learning basics"
+  ],
+  "tools": [
+   "Python",
+   "PyTorch"
+  ],
+  "grading": [],
+  "workload": "22-lecture undergraduate/graduate deep learning for computer vision course (well-known UMich course, also run in multiple later terms such as Fall 2020 and Winter 2022 per its official course page, which is hosted on a blocked domain and not directly verified here). No grading breakdown, prerequisites, or textbook were recoverable from the student repositories checked. A WebSearch snippet (not independently verified) mentioned roughly six assignments plus a mini-project for this course in some term.",
+  "source": "Andrew-Ng-s-number-one-fan/EECS498-Deep-Learning-for-Computer-Vision",
+  "tag": "secondhand · not fetched, verify before trusting"
+ },
+ {
+  "code": "EECS 498-016 / 598-016",
+  "title": "Computer Graphics and Generative Models",
+  "term": "Winter 2026",
+  "confidence": "syllabus",
+  "skills": [
+   "computer graphics fundamentals (rasterization, ray tracing)",
+   "camera models and transformations",
+   "lighting and material modeling",
+   "3d reconstruction / structure-from-motion",
+   "neural radiance fields (nerf)",
+   "gaussian splatting",
+   "generative adversarial networks",
+   "diffusion models",
+   "3d content generation with ai",
+   "blender-based 3d modeling"
+  ],
+  "tools": [
+   "C++",
+   "Python",
+   "Blender",
+   "Gradescope",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Programming Assignments (5)",
+    "percent": 60
+   },
+   {
+    "component": "Final Exam",
+    "percent": 25
+   },
+   {
+    "component": "Participation (lecture, Piazza, lab)",
+    "percent": 15
+   }
+  ],
+  "workload": "Five individual programming assignments (60% total, 12% each, including a Blender project), a final exam (25%), and participation (15%: lecture discussion, Piazza, lab attendance, with up to +3% discretionary). Late homework: 10% flat penalty for up to 10 days, then 25%. Undergrad (498) and grad (598) students share lectures and assignments but are graded within separate tracks. Collaboration is encouraged but code must be rewritten independently afterward (MOSS plagiarism detection used); generative AI tools are prohibited for code generation.",
+  "source": "um-graphics/um-graphics.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 545",
+  "title": "Machine Learning",
+  "term": "Winter 2016",
+  "confidence": "listing only",
+  "skills": [
+   "linear and logistic regression",
+   "bayesian machine learning",
+   "kernel methods",
+   "generative classifiers (naive bayes, gda, lda)",
+   "graphical models",
+   "expectation-maximization / clustering",
+   "hidden markov models",
+   "dimensionality reduction (pca/ica/mds)",
+   "neural networks fundamentals",
+   "bias-variance analysis"
+  ],
+  "tools": [
+   "Jupyter/IPython notebooks"
+  ],
+  "grading": [],
+  "workload": "This source is a lecture-materials repository (Jupyter notebooks/slides), not a full administrative syllabus. No grading breakdown, assignment structure, or instructor name was recoverable from the repository content.",
+  "source": "liangtianumich/umich-eecs545-lectures",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
   "code": "EECS 582",
   "title": "Advanced Operating Systems",
   "term": "Winter 2022",
@@ -638,6 +1619,378 @@
   ],
   "workload": "Weekly paper reviews (miss up to 4 with no penalty) and in-class paper presentations/discussions; a semester-long group research project with proposal, mid-semester presentation, final video presentation, and final research paper.",
   "source": "efeslab/eecs582",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 587",
+  "title": "Parallel Computing",
+  "term": "Fall (offered each fall; specific year not confirmed)",
+  "confidence": "secondhand",
+  "skills": [
+   "parallel algorithm design",
+   "mpi distributed-memory programming",
+   "openmp shared-memory programming",
+   "cuda gpu programming",
+   "load balancing",
+   "performance/speedup analysis",
+   "hpc cluster job submission",
+   "parallel systems taxonomy",
+   "term-scale parallel project work"
+  ],
+  "tools": [
+   "MPI",
+   "OpenMP",
+   "CUDA",
+   "HPC batch scheduler (PBS)"
+  ],
+  "grading": [],
+  "workload": "Per a search-engine summary of the official (blocked, not independently fetched) course overview page: grading is approximately 15% written homework, 40% programming assignments, and 45% a substantial term project (plus possibly a small quiz or two). Treat these percentages as unverified secondhand paraphrase rather than a directly-read source. A public student repo (yipengm/EECS587) independently confirms cluster-based (PBS) programming assignments across varying problem sizes and thread/process counts.",
+  "source": "web.eecs.umich.edu/~qstout/587_Overview.pdf (blocked domain; content via WebSearch summary, not directly fetched) + yipengm/EECS587 (student homework/PBS scripts, GitHub)",
+  "tag": "secondhand · not fetched, verify before trusting"
+ },
+ {
+  "code": "EECS 589",
+  "title": "Advanced Computer Networks",
+  "term": "Winter 2019",
+  "confidence": "syllabus",
+  "skills": [
+   "reading and critiquing networking research papers",
+   "research paper presentation",
+   "network measurement methodology",
+   "congestion control analysis",
+   "sdn and network programmability",
+   "datacenter networking (rdma, load balancing)",
+   "network security and censorship measurement",
+   "wireless/cellular networking research",
+   "independent networking research project",
+   "poster presentation of research"
+  ],
+  "tools": [],
+  "grading": [],
+  "workload": "Seminar-style graduate course: ~50 research papers read/discussed over the semester (from SIGCOMM, MobiCom, NSDI, IMC), each led by a student presenter (individually or in groups). Semester-long research project (analysis, design, and/or implementation) with a mid-semester progress presentation and a final poster session. Graded on paper reviews, class discussion, and project scope/effort/results; students who satisfactorily complete all assigned work receive a B+ or better.",
+  "source": "forkjoseph/EECS589",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 592",
+  "title": "Foundations of Artificial Intelligence (cross-listed with EECS 492)",
+  "term": "Winter 2017",
+  "confidence": "listing only",
+  "skills": [
+   "adversarial search and game-playing agents",
+   "local search (hill climbing)",
+   "first-order logic and automated reasoning",
+   "classical planning (pddl/graphplan)",
+   "markov decision processes",
+   "value iteration",
+   "q-learning / reinforcement learning basics",
+   "poker/game agent implementation",
+   "prolog querying"
+  ],
+  "tools": [
+   "Prolog",
+   "PDDL / Graphplan",
+   "Gradescope",
+   "Canvas"
+  ],
+  "grading": [],
+  "workload": "Six homework assignments (100 points each), submitted via Gradescope (PDF) and Canvas (code). 3 late days allowed for the semester at a 10-point-per-day deduction. Exact overall grading weights and exam structure were not present in this student repository.",
+  "source": "y-shi/EECS592W17",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 595",
+  "title": "Natural Language Processing (cross-listed with EECS 498.007)",
+  "term": "Fall (year not stated in source; exam dates Oct 11 / Dec 14-15)",
+  "confidence": "syllabus",
+  "skills": [
+   "nlp fundamentals (syntax, semantics, pragmatics)",
+   "text preprocessing",
+   "language modeling",
+   "word embeddings",
+   "part-of-speech tagging",
+   "syntactic parsing",
+   "word sense disambiguation",
+   "sentiment analysis",
+   "information extraction",
+   "automatic summarization",
+   "machine translation",
+   "nlp research project work",
+   "in-class research presentation (\"onecoolthing\")"
+  ],
+  "tools": [
+   "Python",
+   "CAEN Linux environment",
+   "iClickers",
+   "Piazza",
+   "Canvas"
+  ],
+  "grading": [
+   {
+    "component": "Programming assignments (4)",
+    "percent": 35
+   },
+   {
+    "component": "Exam I",
+    "percent": 20
+   },
+   {
+    "component": "Exam II",
+    "percent": 20
+   },
+   {
+    "component": "Project",
+    "percent": 20
+   },
+   {
+    "component": "Class participation",
+    "percent": 5
+   }
+  ],
+  "workload": "Four programming assignments (35% total, up to 3 days late at 10%/day penalty), two exams (20% each), a course project (20%), and class participation (5%, including iClicker responses, Piazza engagement, and rotating \"OneCoolThing\" team presentations on recent NLP research).",
+  "source": "laura-burdick/laura-burdick.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 598-004",
+  "title": "Systems for Generative AI",
+  "term": "Winter 2024",
+  "confidence": "syllabus",
+  "skills": [
+   "systems for large language models",
+   "distributed training (data/model/pipeline parallelism)",
+   "llm inference serving systems",
+   "fine-tuning and parameter-efficient adaptation (lora)",
+   "retrieval-augmented generation systems",
+   "vector search / approximate nearest neighbor systems",
+   "research paper presentation and critique",
+   "systems research project execution",
+   "genai security awareness"
+  ],
+  "tools": [
+   "GPU cloud resources (CloudLab)",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Paper Presentation",
+    "percent": 15
+   },
+   {
+    "component": "Paper Summary",
+    "percent": 15
+   },
+   {
+    "component": "Participation",
+    "percent": 10
+   },
+   {
+    "component": "Project Report",
+    "percent": 40
+   },
+   {
+    "component": "Project Presentations",
+    "percent": 20
+   }
+  ],
+  "workload": "Seminar-style graduate course reading recent top-venue GenAI-systems papers. Grading: paper presentation 15%, paper summary 15%, participation 10%, project report 40%, project presentations 20%. Semester-long systems research project with mid-semester and final presentations. Explicitly NOT focused on AI methods themselves — focuses on the systems/infrastructure that support them.",
+  "source": "mosharaf/eecs598",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 598-007",
+  "title": "Adversarial Machine Learning",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "adversarial machine learning",
+   "adversarial example generation and defense",
+   "data poisoning attack analysis",
+   "deepfake detection concepts",
+   "research paper presentation",
+   "reproducing ml research results",
+   "robustness evaluation of neural networks",
+   "bias and fairness in ml systems",
+   "gpu-based deep learning workflows",
+   "open-ended research project execution"
+  ],
+  "tools": [
+   "Python",
+   "PyTorch",
+   "TensorFlow/Keras",
+   "Great Lakes HPC cluster",
+   "Google Colab",
+   "SSH / Linux terminal"
+  ],
+  "grading": [
+   {
+    "component": "Class presentations",
+    "percent": 15
+   },
+   {
+    "component": "Class participation (incl. answering paper questions)",
+    "percent": 15
+   },
+   {
+    "component": "Reproducing results on attack",
+    "percent": 10
+   },
+   {
+    "component": "Reproducing results on defense",
+    "percent": 10
+   },
+   {
+    "component": "Final project and presentation",
+    "percent": 50
+   }
+  ],
+  "workload": "Seminar-style graduate special-topics course: no exams. Students present an attack paper and a defense paper (with reproduction of results) during the semester, plus a semester-long open-ended final project (50% of grade) with a 20-minute presentation and an 8-page paper-style report near the end of term.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 598-009",
+  "title": "Systems for AI",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "large-scale ml systems design",
+   "datacenter and cluster computing fundamentals",
+   "distributed data processing (spark-style)",
+   "ml training/serving infrastructure",
+   "federated learning systems",
+   "ai cluster scheduling and resource management",
+   "research paper presentation and critique",
+   "systems research project execution"
+  ],
+  "tools": [
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Paper Summary",
+    "percent": 20
+   },
+   {
+    "component": "Paper Presentation",
+    "percent": 20
+   },
+   {
+    "component": "Participation",
+    "percent": 10
+   },
+   {
+    "component": "Assignment",
+    "percent": 10
+   },
+   {
+    "component": "Project",
+    "percent": 40
+   }
+  ],
+  "workload": "Seminar-style graduate course reading papers on scalable AI/ML systems from top systems/networking/database venues. Grading: paper summary 20%, paper presentation 20%, participation 10%, assignment 10%, project 40%. Explicitly focused on the systems/infrastructure supporting AI, not AI methods themselves.",
+  "source": "mosharaf/eecs598",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 598-012",
+  "title": "Unsupervised Visual Learning",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "unsupervised and self-supervised learning",
+   "deep generative models (vae, gan, normalizing flows, autoregressive)",
+   "contrastive representation learning",
+   "multimodal learning (vision-language, vision-audio)",
+   "video representation learning and motion estimation",
+   "3d reconstruction from unlabeled data",
+   "transformer/attention architectures",
+   "meta-learning and architecture search",
+   "critical reading and reviewing of research papers",
+   "research paper presentation",
+   "self-directed group research project"
+  ],
+  "tools": [
+   "Zoom",
+   "Piazza",
+   "Canvas",
+   "Gradescope"
+  ],
+  "grading": [
+   {
+    "component": "Final project",
+    "percent": 45
+   },
+   {
+    "component": "Class presentation",
+    "percent": 25
+   },
+   {
+    "component": "Problem set",
+    "percent": 20
+   },
+   {
+    "component": "Participation & paper reviews",
+    "percent": 10
+   }
+  ],
+  "workload": "Seminar-based graduate course centered on reading and critiquing research papers. Weekly short paper reviews (2 lowest dropped), one group class presentation (groups of 3, 75-minute session with background + 2 papers + discussion), one problem set (~2/3 through semester) reviewing core concepts, and a self-directed final group project (groups up to 4: proposal, 4-page CVPR-format report, 5-minute presentation). Attendance required; missing more than two classes without excuse hurts the grade.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "IOE 510",
+  "title": "Linear Programming I (cross-listed MATH 561, TO 518)",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "linear programming",
+   "integer programming",
+   "simplex method",
+   "duality theory",
+   "sensitivity analysis",
+   "branch-and-bound",
+   "cutting-plane methods",
+   "lagrangian relaxation",
+   "column generation",
+   "optimization modeling",
+   "mathematical proof writing",
+   "optimization software (gurobi/cplex)"
+  ],
+  "tools": [
+   "Python",
+   "Gurobi",
+   "LaTeX",
+   "Excel",
+   "MATLAB",
+   "CPLEX",
+   "IPOPT",
+   "AMPL"
+  ],
+  "grading": [
+   {
+    "component": "Homework (6-7 assignments)",
+    "percent": 30
+   },
+   {
+    "component": "Quizzes (10, need 5/10 correct for full quiz credit)",
+    "percent": 5
+   },
+   {
+    "component": "Project (report + final presentation)",
+    "percent": 25
+   },
+   {
+    "component": "Exam 1 (take-home, 24 hours)",
+    "percent": 20
+   },
+   {
+    "component": "Exam 2 (take-home, 24 hours)",
+    "percent": 20
+   }
+  ],
+  "workload": "Graduate-level optimization course, asynchronous lecture delivery via Canvas recordings. Homework done in groups of 1-3 (bonus 5 extra credit points for groups of 3), submitted as typed LaTeX with strict late penalties (80% at <24h late, 60% at <48h, 40% at <72h, zero beyond). Weekly quizzes. Group project (1-3 students) applying course techniques to a real optimization problem: LaTeX report (6-10 pages), 6-10 slide presentation, individual contribution statement, and Q&A to verify collaboration. Two take-home exams, no makeup dates offered.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
   "tag": "syllabi sweep · syllabus"
  },
  {
@@ -745,6 +2098,35 @@
   "tag": "syllabi sweep · syllabus"
  },
  {
+  "code": "ROB 204",
+  "title": "Introduction to Human-Robot Systems",
+  "term": "Winter 2022 (first offered Fall 2022 per repo; robotics.umich.edu lists Winter 2022)",
+  "confidence": "syllabus",
+  "skills": [
+   "human-robot interaction",
+   "user interface design",
+   "stakeholder interviews",
+   "usability testing",
+   "non-verbal robot communication",
+   "situation awareness",
+   "trust in automation",
+   "socially engaged design",
+   "problem statement definition",
+   "design ideation",
+   "risk assessment",
+   "hardware prototyping"
+  ],
+  "tools": [
+   "Arduino",
+   "Raspberry Pi",
+   "Amazon Astro"
+  ],
+  "grading": [],
+  "workload": "Combines lectures, hands-on hardware labs (custom Arduino UI controllers, Raspberry Pi non-verbal communication robot, Amazon Astro), and a multi-week socially-engaged design final project involving real stakeholder interviews and a usability study. Two exams (Week 8 and Week 15).",
+  "source": "michiganrobotics/rob204",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
   "code": "ROB 311",
   "title": "How to Build Robots and Make Them Move",
   "term": "Fall 2022",
@@ -828,6 +2210,44 @@
   "workload": "7 homework assignments covering estimation through SLAM; graduate course with ~140 students in Winter 2022, some undergraduates.",
   "source": "UMich-CURLY-teaching/UMich-ROB-530-public",
   "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ROB 550",
+  "title": "Robotic Systems Laboratory",
+  "term": null,
+  "confidence": "course page",
+  "skills": [
+   "robot kinematics",
+   "inverse kinematics",
+   "camera calibration",
+   "coordinate transforms",
+   "computer vision",
+   "pid control",
+   "state machines",
+   "slam",
+   "monte carlo localization",
+   "path planning",
+   "a* search",
+   "sensor fusion",
+   "embedded systems",
+   "team-based lab work"
+  ],
+  "tools": [
+   "Python",
+   "PyQt5",
+   "xArm Python SDK",
+   "MuJoCo",
+   "LCM",
+   "ROS2",
+   "OpenCV",
+   "AprilTags",
+   "Raspberry Pi",
+   "GitLab"
+  ],
+  "grading": [],
+  "workload": "Two lab segments (Armlab, Botlab) run as team-based hands-on hardware labs with staged checkpoints; Armlab ends in a competition worth extra credit toward the report grade.",
+  "source": "rob550-docs/rob550-docs.github.io",
+  "tag": "syllabi sweep · course page"
  },
  {
   "code": "SI 206",
@@ -1038,6 +2458,37 @@
   "tag": "syllabi sweep · listing only"
  },
  {
+  "code": "SI 664",
+  "title": "Database and Information Systems Design (Django/MySQL web applications)",
+  "term": "Fall 2018",
+  "confidence": "course page",
+  "skills": [
+   "sql queries",
+   "relational data modeling",
+   "django orm",
+   "django web development",
+   "rest api design",
+   "mysql administration",
+   "git/github workflow",
+   "database schema design",
+   "web app deployment",
+   "python programming"
+  ],
+  "tools": [
+   "Python",
+   "Django",
+   "Django REST Framework",
+   "MySQL",
+   "SQL",
+   "Git/GitHub",
+   "ngrok"
+  ],
+  "grading": [],
+  "workload": "Final project graded on a 2000-point rubric (GitHub repo 50, logical data model 100, MySQL database 650, Django app 700, Django REST API 500 points) rather than percentages, so no percent breakdown is given. Weekly exercises tied to specific class meetings (4 through 10) plus a mid-course exam.",
+  "source": "arwhyte/SI664-docs",
+  "tag": "syllabi sweep · course page"
+ },
+ {
   "code": "STATS 250",
   "title": "Introduction to Statistics and Data Analysis",
   "term": "Winter 2015",
@@ -1180,6 +2631,204 @@
   "tag": "syllabi sweep · course page"
  },
  {
+  "code": "STATS 425",
+  "title": "Introduction to Probability (cross-listed with MATH 425)",
+  "term": "Fall 2014",
+  "confidence": "syllabus",
+  "skills": [
+   "probability theory",
+   "conditional probability",
+   "random variables",
+   "joint distributions",
+   "expectation and variance",
+   "problem solving",
+   "mathematical proof"
+  ],
+  "tools": [],
+  "grading": [
+   {
+    "component": "Homeworks (11 assigned, lowest dropped, best 10 counted)",
+    "percent": 30
+   },
+   {
+    "component": "Midterm exam",
+    "percent": 30
+   },
+   {
+    "component": "Final exam",
+    "percent": 40
+   }
+  ],
+  "workload": "11 homework assignments (lowest dropped), one closed-book midterm covering chapters 1-3, one closed-book comprehensive final exam. Late homework not accepted absent documented emergency; collaboration on discussion allowed but write-ups must be independent.",
+  "source": "ambujtewari/ambujtewari.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 451",
+  "title": "Bayesian Data Analysis",
+  "term": null,
+  "confidence": "syllabus",
+  "skills": [
+   "bayesian inference",
+   "monte carlo methods",
+   "mcmc",
+   "hierarchical modeling",
+   "shrinkage estimation",
+   "stan programming",
+   "posterior analysis",
+   "probabilistic modeling",
+   "statistical computing",
+   "group research project"
+  ],
+  "tools": [
+   "R",
+   "Stan",
+   "JAGS",
+   "Canvas"
+  ],
+  "grading": [],
+  "workload": "Grades based on weekly Canvas quizzes, biweekly homework, one midterm exam, and one final project (groups of 2-4) applying Bayesian methods to real data with a written report; up to 5% bonus for Canvas discussion participation.",
+  "source": "danieliong/stats451",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 485",
+  "title": "Capstone Seminar in Statistics",
+  "term": "Fall 2025",
+  "confidence": "syllabus",
+  "skills": [
+   "applied statistical analysis",
+   "generalized linear models",
+   "survival analysis",
+   "mixed effects models",
+   "gee",
+   "dimension reduction",
+   "time series analysis",
+   "large/complex dataset manipulation",
+   "scientific writing",
+   "statistical communication",
+   "case study analysis"
+  ],
+  "tools": [
+   "R",
+   "Python",
+   "Julia",
+   "Google Docs",
+   "GitHub",
+   "Canvas",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Writing memos (unweighted average, ~8 assignments, no exams)",
+    "percent": 100
+   }
+  ],
+  "workload": "Satisfies the LSA Upper Level Writing Requirement (ULWR) for Statistics/Data Science majors. ~8 individual case-study writing memos (2-3 pages) graded on a 4-part rubric (focus, methods/approach, writing/organization, findings/interpretation, 25 points each); course grade is an unweighted average; no exams or quizzes; code is not submitted or graded.",
+  "source": "kshedden/case_studies",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 503",
+  "title": "Multivariate Analysis",
+  "term": "Winter 2017",
+  "confidence": "listing only",
+  "skills": [
+   "pca",
+   "factor analysis",
+   "multidimensional scaling",
+   "classification",
+   "logistic regression",
+   "knn",
+   "svm",
+   "neural networks",
+   "decision trees",
+   "ensemble methods",
+   "clustering",
+   "gaussian mixture models",
+   "text processing",
+   "data visualization"
+  ],
+  "tools": [
+   "R",
+   "RMarkdown",
+   "Python",
+   "Shiny",
+   "ggplot2"
+  ],
+  "grading": [],
+  "workload": "Weekly dated lab sessions (13 labs over the winter term), each with an R Markdown lab handout and posted solutions; two labs include a companion Shiny app.",
+  "source": "rogerfan/stats503_w17_labs",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "STATS 504",
+  "title": "Capstone Seminar in Statistics",
+  "term": null,
+  "confidence": "syllabus",
+  "skills": [
+   "applied statistical analysis",
+   "generalized linear models",
+   "survival analysis",
+   "mixed effects models",
+   "gee",
+   "dimension reduction",
+   "time series analysis",
+   "large/complex dataset manipulation",
+   "technical writing",
+   "oral presentation",
+   "statistical communication",
+   "case study analysis"
+  ],
+  "tools": [
+   "R",
+   "Python",
+   "Julia",
+   "Google Docs",
+   "GitHub",
+   "Canvas"
+  ],
+  "grading": [
+   {
+    "component": "Writing memos and one presentation (unweighted average, ~8 assignments)",
+    "percent": 100
+   }
+  ],
+  "workload": "Capstone seminar for 2nd-year Applied Statistics/Data Science master's students; ~8 individual case-study writing assignments (2-3 page memos) graded on a 4-part rubric (focus, methods/approach, writing/organization, findings/interpretation, 25 points each), plus one student presentation; course grade is an unweighted average of all assignment scores; no exams; code is not submitted or graded.",
+  "source": "kshedden/case_studies",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 506",
+  "title": "Computational Methods and Tools in Statistics",
+  "term": "Fall 2020",
+  "confidence": "listing only",
+  "skills": [
+   "shell scripting",
+   "r programming",
+   "dplyr",
+   "data wrangling",
+   "survey data analysis",
+   "stata programming",
+   "sas programming",
+   "cross-language translation",
+   "reproducible reports",
+   "group collaboration"
+  ],
+  "tools": [
+   "R",
+   "RMarkdown",
+   "Stata",
+   "SAS",
+   "shell/bash",
+   "dplyr"
+  ],
+  "grading": [],
+  "workload": "Weekly Tuesday group activities with assigned roles (Project Manager, Editor, Record Keeper); problem sets have per-language starter templates (R, Rmarkdown, Stata, SAS, shell), implying assignments are done in multiple languages.",
+  "source": "jbhender/Stats506_F20",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
   "code": "STATS 507",
   "title": "Data Science in Python",
   "term": "Fall 2021",
@@ -1218,5 +2867,313 @@
   "workload": "6 problem sets (ps1-ps6) with example/exemplar solutions; lecture notebooks doubled as slides (authored in markdown via jupytext).",
   "source": "jbhender/Stats507_F21",
   "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "STATS 531",
+  "title": "Modeling and Analysis of Time Series Data",
+  "term": "Winter 2024",
+  "confidence": "syllabus",
+  "skills": [
+   "time series analysis",
+   "arma models",
+   "trend estimation",
+   "autocovariance",
+   "frequency domain analysis",
+   "spectral smoothing",
+   "state-space models",
+   "pomp models",
+   "simulation-based inference",
+   "likelihood maximization",
+   "stochastic dynamic modeling",
+   "epidemiological modeling",
+   "financial volatility modeling",
+   "r programming",
+   "peer review"
+  ],
+  "tools": [
+   "R",
+   "pomp R package",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Weekly homeworks",
+    "percent": 25
+   },
+   {
+    "component": "Group midterm project",
+    "percent": 20
+   },
+   {
+    "component": "Peer reviews of midterm projects (2, individual)",
+    "percent": 8
+   },
+   {
+    "component": "Group final project",
+    "percent": 30
+   },
+   {
+    "component": "Peer reviews of final projects (2, individual)",
+    "percent": 12
+   },
+   {
+    "component": "Participation",
+    "percent": 5
+   }
+  ],
+  "workload": "Weekly homeworks graded to a rubric; a randomly-assigned group midterm project plus two individual anonymous peer reviews; groups re-randomized for a group final project plus two more individual peer reviews; class participation tracked via a rubric. Explicit source-attribution and GenAI-use disclosure requirements on every homework and project.",
+  "source": "ionides/531w24",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 604",
+  "title": "Statistical Practice",
+  "term": null,
+  "confidence": "syllabus",
+  "skills": [
+   "research question formulation",
+   "study design assessment",
+   "generalized linear models",
+   "statistical power analysis",
+   "applied data analysis",
+   "scientific writing",
+   "oral defense of analysis",
+   "case study analysis",
+   "critical reading of statistical literature",
+   "seminar discussion / participation"
+  ],
+  "tools": [
+   "R",
+   "Python",
+   "Julia",
+   "GitHub",
+   "Canvas"
+  ],
+  "grading": [
+   {
+    "component": "Short writing assignments (memos, 6-8 over the term)",
+    "percent": 50
+   },
+   {
+    "component": "Attendance and participation in class discussions",
+    "percent": 15
+   },
+   {
+    "component": "In-class handwritten writing exercise (blue book, no references)",
+    "percent": 15
+   },
+   {
+    "component": "Individual oral exams (15 min each, last five lab meetings)",
+    "percent": 20
+   }
+  ],
+  "workload": "PhD-level seminar for 2nd-year Statistics PhD students (prerequisite: STATS 600 and either 511 or 610); discussion-based, not lecture-based; heavy emphasis on oral defense of written work via individual 15-minute oral exams tailored to each student's own memos; code is not submitted for grading.",
+  "source": "kshedden/case_studies",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 605",
+  "title": "Advanced Topics in Modeling and Data Analysis: High Dimensional Statistics",
+  "term": "Winter 2013",
+  "confidence": "syllabus",
+  "skills": [
+   "high-dimensional statistics",
+   "lasso regression",
+   "sparse pca",
+   "matrix completion",
+   "graphical model estimation",
+   "convex optimization",
+   "concentration inequalities",
+   "random matrix theory",
+   "clustering",
+   "covariance estimation",
+   "classification theory",
+   "research survey writing"
+  ],
+  "tools": [
+   "Matlab",
+   "R"
+  ],
+  "grading": [
+   {
+    "component": "Homeworks (4, equally weighted)",
+    "percent": 60
+   },
+   {
+    "component": "Final project (survey or research project)",
+    "percent": 40
+   }
+  ],
+  "workload": "Advanced PhD-level course. 4 equally-weighted homeworks mixing theory and programming (60%); final project (40%) is either an individually-written high-quality survey of an actively developing sub-topic, or a research project (teams up to 2) contributing novel theory/methods/algorithms/applications, split into a proposal, presentation, and report. No official programming language required.",
+  "source": "ambujtewari/ambujtewari.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 607A",
+  "title": "Computing in Statistics",
+  "term": "Fall 2014",
+  "confidence": "listing only",
+  "skills": [
+   "python programming",
+   "numpy",
+   "scipy",
+   "pandas",
+   "data wrangling",
+   "regular expressions",
+   "numerical optimization",
+   "linear algebra computing",
+   "database querying",
+   "web api consumption",
+   "hpc cluster usage",
+   "mapreduce",
+   "text indexing"
+  ],
+  "tools": [
+   "Python",
+   "NumPy",
+   "SciPy",
+   "Pandas",
+   "Jupyter/IPython notebooks",
+   "Hadoop",
+   "flux (UMich HPC cluster)",
+   "SQL databases"
+  ],
+  "grading": [],
+  "workload": "Lecture materials are entirely Jupyter/IPython notebooks (nbformat 3) building from core Python up through NumPy, SciPy, Pandas, databases/web APIs, and finally distributed computing (Hadoop on the flux HPC cluster); repo includes a homeworks folder but grading breakdown not found in-repo.",
+  "source": "ambujtewari/stats607a-fall2014",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "STATS 608A",
+  "title": "Optimization Methods in Statistics",
+  "term": "Fall 2015 (half-semester, began Oct 26, 2015)",
+  "confidence": "syllabus",
+  "skills": [
+   "convex optimization",
+   "gradient descent",
+   "subgradient methods",
+   "proximal algorithms",
+   "coordinate descent",
+   "optimization for machine learning",
+   "research project writing"
+  ],
+  "tools": [
+   "Python",
+   "Matlab",
+   "R"
+  ],
+  "grading": [
+   {
+    "component": "Homeworks (3, equally weighted)",
+    "percent": 75
+   },
+   {
+    "component": "Course project proposal",
+    "percent": 5
+   },
+   {
+    "component": "Course project final report",
+    "percent": 20
+   }
+  ],
+  "workload": "Half-semester graduate course on convex optimization for ML/statistics. 3 homeworks mixing theory and programming (75% total); course project done in pairs (groups of 3 allowed for wider-scope projects), consisting of a 2-page proposal (5%) and a 6-8 page final report in NeurIPS format (20%).",
+  "source": "ambujtewari/ambujtewari.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 700",
+  "title": "Special Topics: Theory of LLM Reasoning",
+  "term": "Fall 2025 (half-semester, Aug 25 - Oct 10, 2025)",
+  "confidence": "syllabus",
+  "skills": [
+   "llm reasoning theory",
+   "transformer architecture",
+   "reinforcement learning from human feedback",
+   "chain-of-thought analysis",
+   "in-context learning theory",
+   "sample complexity analysis",
+   "pac learning",
+   "information theory",
+   "test-time compute scaling",
+   "reading and critiquing ml theory papers"
+  ],
+  "tools": [],
+  "grading": [],
+  "workload": "PhD-level half-semester (7-week) special topics course requiring strong mathematical maturity and interest in LLM reasoning; structured as background reading (~2.5 weeks) followed by close reading and discussion of recent (2024-2025) machine learning theory papers on chain-of-thought and test-time compute (~4.5 weeks); no grading breakdown found in-repo.",
+  "source": "ambujtewari/LT-fall2025",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 701",
+  "title": "Special Topics: Theory of Reinforcement Learning",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "reinforcement learning theory",
+   "markov decision processes",
+   "dynamic programming",
+   "monte carlo methods",
+   "temporal difference learning",
+   "online convex optimization",
+   "regret analysis",
+   "multi-armed bandits",
+   "thompson sampling",
+   "concentration inequalities",
+   "stochastic approximation",
+   "research paper presentation",
+   "mathematical proof reading"
+  ],
+  "tools": [
+   "Zoom (remote delivery)",
+   "Canvas"
+  ],
+  "grading": [],
+  "workload": "PhD-level special topics seminar, taught remotely (COVID-19); no graded homeworks or exams; grades based on class presentations (student groups present papers on advanced RL topics) and a final project (proposal due partway through term).",
+  "source": "ambujtewari/stats701-winter2021",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 710",
+  "title": "Sequential Decision Making with mHealth Applications",
+  "term": "Fall 2016",
+  "confidence": "syllabus",
+  "skills": [
+   "multi-armed bandits",
+   "contextual bandits",
+   "regret analysis",
+   "thompson sampling",
+   "reinforcement learning in mdps",
+   "pac learning bounds",
+   "mobile health intervention design",
+   "just-in-time adaptive interventions",
+   "scribing/technical note-taking",
+   "research poster presentation",
+   "reading primary ml theory literature"
+  ],
+  "tools": [
+   "LaTeX",
+   "Canvas"
+  ],
+  "grading": [
+   {
+    "component": "Scribing lectures (1-2 lectures per student, typed in LaTeX)",
+    "percent": 60
+   },
+   {
+    "component": "Final project proposal",
+    "percent": 5
+   },
+   {
+    "component": "Final project poster presentation",
+    "percent": 10
+   },
+   {
+    "component": "Final project report",
+    "percent": 25
+   }
+  ],
+  "workload": "Advanced graduate seminar co-taught by Susan Murphy and Ambuj Tewari; minimal formal requirements beyond scribing 1-2 lectures each (typed LaTeX notes posted to the course site, 60%) and a final project (survey, paper commentary, or original research, individually or in pairs) split into proposal (5%), poster (10%), and report (25%).",
+  "source": "ambujtewari/ambujtewari.github.io",
+  "tag": "syllabi sweep · syllabus"
  }
 ]

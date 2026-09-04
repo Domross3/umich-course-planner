@@ -1,0 +1,35 @@
+{
+  "code": "EECS 453",
+  "title": "Principles of Machine Learning",
+  "term": "Fall 2023 (per page title; exact year of the summarized offering uncertain)",
+  "sourceRepo": "qingqu.engin.umich.edu (blocked domain; content via WebSearch summary, not directly fetched)",
+  "sourceFiles": [],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Qing Qu",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Basics of probability, linear algebra, and optimization",
+    "Regression and linear prediction",
+    "Support vector machines and kernel methods",
+    "Deep neural networks",
+    "Dimension reduction: PCA, autoencoders",
+    "Clustering: K-means, mixture of Gaussians, EM",
+    "Representation learning: nonnegative matrix factorization, dictionary learning"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "probability and linear algebra foundations for ml",
+    "regression and linear prediction",
+    "support vector machines and kernel methods",
+    "neural network fundamentals",
+    "dimensionality reduction (pca, autoencoders)",
+    "clustering (k-means, gmm, em)",
+    "representation learning (nmf, dictionary learning)",
+    "convex optimization basics",
+    "model evaluation and course project execution"
+  ],
+  "workloadNotes": "Per a secondhand WebSearch summary of the instructor's official (blocked, not independently fetched) course page: 5 homework assignments (40%), midterm exam (30%), course project (25%), participation and course evaluation (5%). Treat these percentages as unverified paraphrase rather than a directly-read source.",
+  "prerequisitesText": "Entry-level ECE machine learning course targeted at senior EE/CE undergraduates and junior master's students outside the SIPML area.",
+  "textbooks": [],
+  "confidence": "listing only"
+}

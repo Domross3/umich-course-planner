@@ -1,0 +1,54 @@
+{
+  "code": "EECS 470",
+  "title": "Computer Architecture",
+  "term": "Winter 2021",
+  "sourceRepo": "jieltan/OpenCompArchCourse",
+  "sourceFiles": [
+    "README.md",
+    "projects/project1/project1.pdf",
+    "projects/project2/project2.pdf",
+    "projects/project3/project3.pdf",
+    "projects/project4/project4.pdf"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Priority selectors/arbiters (digital design review)",
+    "Synthesis and pipelined multiplier design",
+    "VeriSimpleV: pipelined RISC-V, hazard detection and forwarding",
+    "Out-of-order scheduling algorithms for instruction-level parallelism",
+    "Example out-of-order microarchitectures (P6-style, R10K-style)",
+    "Caching",
+    "Prefetching",
+    "Virtual memory",
+    "Branch prediction and BTBs",
+    "Superscalar execution"
+  ],
+  "toolsAndLanguages": [
+    "SystemVerilog",
+    "RISC-V ISA",
+    "GCC with custom linker",
+    "Verilog simulator",
+    "logic synthesis tools",
+    "Gradescope"
+  ],
+  "skills": [
+    "digital logic design",
+    "systemverilog rtl design",
+    "risc-v pipeline implementation",
+    "hazard detection and forwarding",
+    "out-of-order processor microarchitecture",
+    "instruction-level parallelism exploitation",
+    "cache design",
+    "branch prediction",
+    "virtual memory design",
+    "hardware performance analysis (cpi, clock rate)",
+    "team-based large-scale hardware project",
+    "hardware verification and testing"
+  ],
+  "workloadNotes": "Four individual programming/design assignments (priority selectors; pipelined multiplier/synthesis; VeriSimpleV hazard handling) building toward a semester-long term project: teams of 5 build an out-of-order RISC-V processor on top of the Project 3 pipeline. Term project grading (internal to that project, not the overall course weighting): base features 25%, correctness/testing 20%, performance 20%, optional features 15%, analysis 10%, documentation 7%, checkpoints 3%. Overall course-level weighting between the 4 projects and any exams was not recoverable from this source.",
+  "prerequisitesText": "EECS 270 (digital logic) assumed as background.",
+  "textbooks": [],
+  "confidence": "course page"
+}
