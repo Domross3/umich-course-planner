@@ -1,0 +1,84 @@
+{
+  "code": "EECS 442",
+  "title": "Computer Vision",
+  "term": "Winter 2024",
+  "sourceRepo": "eecs442/eecs442.github.io",
+  "sourceFiles": [
+    "docs/index.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Jeong Joon Park",
+  "gradingBreakdown": [
+    {
+      "component": "Homework (6 @ 10% each)",
+      "percent": 60
+    },
+    {
+      "component": "Midterm",
+      "percent": 20
+    },
+    {
+      "component": "Final Project (2% proposal + 18% report/video)",
+      "percent": 20
+    }
+  ],
+  "weeklyTopics": [
+    "Introduction + Cameras 1 (Pinhole Model, Homogeneous Coordinates)",
+    "Cameras 2 (Intrinsics & Extrinsic Matrices, Lenses)",
+    "Math Recap (Floating point, Linear Algebra, Calculus)",
+    "Light & Shading (Human/Color Vision, Reflection)",
+    "Filtering (Linear Filters, Blurring, Gradients)",
+    "Detectors & Descriptors 1 (Edge Detection, Harris Corners)",
+    "Detectors & Descriptors 2 (Scale-Space, SIFT)",
+    "Transforms 1 (Linear Regression, RANSAC, Hough Transform)",
+    "Transforms 2 (Affine and Perspective Transforms)",
+    "Machine Learning (Supervised Learning, Regularization)",
+    "Optimization (SGD, SGD+Momentum)",
+    "Neural Networks (Backpropagation, Fully Connected NNs)",
+    "Convolutional Networks 1 (Convolution, Pooling)",
+    "Convolutional Networks 2 (CNN Architectures, Training)",
+    "Segmentation (Semantic/Instance Segmentation)",
+    "Detection & Other Topics",
+    "Image Generative Models 1 (GANs, Self-supervised learning)",
+    "Image Generative Models 2 (Score-based/Diffusion Models)",
+    "Camera Calibration (Intro to 3D)",
+    "Epipolar Geometry (Fundamental & Essential Matrices)",
+    "Stereo (Two-view Stereo)",
+    "Structure from Motion",
+    "Neural Fields 1 (3D Representations)",
+    "Neural Fields 2",
+    "Special Topics (Transformers, Ethics)"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "NumPy",
+    "PyTorch",
+    "Gradescope",
+    "Piazza"
+  ],
+  "skills": [
+    "camera models and geometry",
+    "image filtering and edge detection",
+    "feature detection and description (sift)",
+    "image transforms and ransac fitting",
+    "supervised learning fundamentals",
+    "gradient-based optimization",
+    "neural network backpropagation",
+    "convolutional neural networks",
+    "semantic and instance segmentation",
+    "generative models (gans, diffusion)",
+    "epipolar geometry and stereo vision",
+    "structure from motion",
+    "neural 3d representations (neural fields)"
+  ],
+  "workloadNotes": "Six homeworks (10% each, 6 total late days across all), one in-class midterm, and a final group project (proposal + report/video) done in groups of 3-4 over the second half of the semester.",
+  "prerequisitesText": "Assumes algorithms/data structures at the EECS 281 level and Python programming; helpful background in NumPy/PyTorch, linear algebra (cross product, eigenvectors, SVD), and calculus (chain rule, partial derivatives).",
+  "textbooks": [
+    "Computer Vision: Algorithms and Applications by Richard Szeliski (free online)",
+    "Computer Vision: A Modern Approach (2nd ed.) by Forsyth and Ponce",
+    "Elements of Statistical Learning by Hastie, Tibshirani, Friedman (free online)",
+    "Multiple View Geometry in Computer Vision (2nd ed.) by Hartley and Zisserman",
+    "Linear Algebra review and reference by Zico Kolter"
+  ],
+  "confidence": "syllabus"
+}

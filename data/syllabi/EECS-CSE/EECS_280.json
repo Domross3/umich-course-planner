@@ -1,0 +1,40 @@
+{
+  "code": "EECS 280",
+  "title": "Programming and Introductory Data Structures",
+  "term": null,
+  "sourceRepo": "eecs280staff/tutorials",
+  "sourceFiles": [
+    "README.md",
+    "docs/*.md (tool setup guides)"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [],
+  "toolsAndLanguages": [
+    "C++",
+    "gdb",
+    "lldb",
+    "AddressSanitizer",
+    "Valgrind/leak-check",
+    "Git",
+    "VS Code",
+    "Xcode",
+    "CAEN Linux",
+    "Make"
+  ],
+  "skills": [
+    "c++ programming fundamentals",
+    "command line proficiency",
+    "using a debugger (gdb/lldb)",
+    "memory debugging (asan, leak checking)",
+    "version control with git",
+    "code style and static analysis",
+    "using makefiles",
+    "remote development on caen/ssh"
+  ],
+  "workloadNotes": null,
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

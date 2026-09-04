@@ -1,0 +1,54 @@
+{
+  "code": "EECS 201",
+  "title": "Computer Science Pragmatics",
+  "term": "Fall 2018 (archived; predecessor course \"Computing for Computer Scientists\"/C4CS, since renamed/renumbered to EECS 201)",
+  "sourceRepo": "c4cs/c4cs.github.io",
+  "sourceFiles": [
+    "README.md",
+    "_syllabus/f18/week01.md ... week14.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction, Virtual Machines, & Command Line Primer",
+    "Basic Git",
+    "Shells, Environment, Scripting, and Bash",
+    "Editors",
+    "Unix II",
+    "Git II",
+    "Build Systems",
+    "Unit Testing and Python",
+    "Debuggers",
+    "Package Managers & Development Environment",
+    "IDEs",
+    "A Sampling of Other Things",
+    "Staff Lectures"
+  ],
+  "toolsAndLanguages": [
+    "Unix/Linux command line",
+    "Git",
+    "Bash",
+    "Python",
+    "Virtual Machines",
+    "Build systems (e.g. Make)",
+    "Debuggers",
+    "Package managers",
+    "IDEs/Editors"
+  ],
+  "skills": [
+    "command line proficiency",
+    "version control with git",
+    "shell scripting and bash",
+    "using text editors and ides",
+    "build systems and makefiles",
+    "unit testing in python",
+    "using a debugger",
+    "package management and dev environment setup",
+    "general software development tooling literacy"
+  ],
+  "workloadNotes": "Weekly lecture + homework cadence, with optional 'advanced' topics and OH++ (office-hours-plus) sessions for select weeks.",
+  "prerequisitesText": "Positioned as an early-career EECS course covering practical developer tooling.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

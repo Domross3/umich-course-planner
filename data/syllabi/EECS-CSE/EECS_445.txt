@@ -1,0 +1,26 @@
+README.md:
+# umich-eecs445-f16
+Materials for EECS 445, an undergraduate Machine Learning course taught at the University of Michigan, Ann Arbor.
+
+Lecture folder listing (topics, in order):
+lecture01_introduction
+lecture02_linear-algebra-optimization
+lecture03_convex-functions-optimization
+lecture04_linear-regression-part1
+lecture05_linear-regression-part2
+lecture06_logistic_regression
+lecture07_naive-bayes
+lecture08_SVM
+lecture09_SVM-part2
+lecture10_bias-variance-tradeoff
+lecture11_info-theory-decision-trees
+lecture12_bagging-boosting
+lecture13_error-measures-and-ml-advice
+lecture14_unsupervised-learning-pca-clustering
+lecture15_exp_families_bayesian_networks
+lecture16_pgms_latent_vars_cond_independence
+lecture17_clustering-mixtures-em
+lecture18_gmm-hmm
+lecture19_baum-welch-pgm-inference
+lecture20_cnn-1
+lecture21_cnn-2

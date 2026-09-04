@@ -1,0 +1,27 @@
+{
+  "code": "EECS 485",
+  "title": "Web Systems",
+  "term": null,
+  "sourceRepo": "eecs485staff/madoop",
+  "sourceFiles": [
+    "README.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [],
+  "toolsAndLanguages": [
+    "Python",
+    "MapReduce / Hadoop Streaming (via Madoop)",
+    "Flask (implied by staff tooling ecosystem)"
+  ],
+  "skills": [
+    "mapreduce programming model",
+    "python for data processing pipelines",
+    "distributed/parallel data processing concepts"
+  ],
+  "workloadNotes": null,
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

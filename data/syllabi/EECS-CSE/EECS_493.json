@@ -1,0 +1,67 @@
+{
+  "code": "EECS 493",
+  "title": "User Interface Development",
+  "term": "Fall 2026",
+  "sourceRepo": "eecs493staff/eecs493staff.github.io",
+  "sourceFiles": [
+    "docs/eecs493.org/syllabus.html",
+    "docs/a2-asteroids-menu/",
+    "docs/a3-asteroids/",
+    "docs/a4-figma/",
+    "docs/a5-artist-search/"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Anhong Guo, Farnaz Jahanbakhsh",
+  "gradingBreakdown": [
+    {
+      "component": "Lecture Participation",
+      "percent": 10
+    },
+    {
+      "component": "Discussion Participation",
+      "percent": 5
+    },
+    {
+      "component": "Quizzes",
+      "percent": 5
+    },
+    {
+      "component": "Assignments (5 total)",
+      "percent": 25
+    },
+    {
+      "component": "Final Project (milestones + presentation)",
+      "percent": 25
+    },
+    {
+      "component": "Midterm Exam",
+      "percent": 15
+    },
+    {
+      "component": "Final Exam",
+      "percent": 15
+    }
+  ],
+  "weeklyTopics": [],
+  "toolsAndLanguages": [
+    "HTML/CSS/JavaScript",
+    "Figma",
+    "Web programming"
+  ],
+  "skills": [
+    "user interface design methods",
+    "user-centered research",
+    "web programming for uis",
+    "prototyping with figma",
+    "usability evaluation",
+    "hci research methods",
+    "team-based final project development",
+    "asteroids-style game ui build (assignments)",
+    "menu and navigation design",
+    "search/artist-search interface implementation"
+  ],
+  "workloadNotes": "23 lectures, 10 discussions, 4 project showcase/presentation days, a midterm, and a final. 5 assignments (first is an HCI research training, remaining four are web programming, e.g. asteroids menu/game, Figma prototyping, artist search). Final project done in groups of ~4 with 5 milestones plus a final presentation.",
+  "prerequisitesText": "EECS 281. Substantial experience with object-oriented programming assumed; experience with web technologies beneficial.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

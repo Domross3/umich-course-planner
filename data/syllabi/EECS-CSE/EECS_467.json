@@ -1,0 +1,35 @@
+{
+  "code": "EECS 467",
+  "title": "Autonomous Robotics Laboratory",
+  "term": "Winter 2016 (student fork, historical)",
+  "sourceRepo": "sajanptl/eecs467",
+  "sourceFiles": [
+    "README.md",
+    "INSTALL"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Prof. Benjamin Kuipers",
+  "gradingBreakdown": [],
+  "weeklyTopics": [],
+  "toolsAndLanguages": [
+    "C/C++",
+    "Java",
+    "LCM (Lightweight Communications and Marshalling)",
+    "vx (visualization library)",
+    "Linux/Ubuntu",
+    "Make",
+    "rexarm robot arm driver"
+  ],
+  "skills": [
+    "robot middleware / inter-process communication (lcm)",
+    "sensor and actuator driver development",
+    "robot arm control (rexarm)",
+    "real-time visualization for robotics (vx)",
+    "linux build tooling for robotics stacks",
+    "udev/hardware interfacing on linux"
+  ],
+  "workloadNotes": null,
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

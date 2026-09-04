@@ -1,0 +1,58 @@
+{
+  "code": "EECS 445",
+  "title": "Introduction to Machine Learning",
+  "term": "Fall 2016",
+  "sourceRepo": "eecs445-f16/umich-eecs445-f16",
+  "sourceFiles": [
+    "README.md",
+    "lecture*/ (folder names)"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction",
+    "Linear Algebra & Optimization",
+    "Convex Functions & Optimization",
+    "Linear Regression (Part 1)",
+    "Linear Regression (Part 2)",
+    "Logistic Regression",
+    "Naive Bayes",
+    "SVM",
+    "SVM (Part 2)",
+    "Bias-Variance Tradeoff",
+    "Information Theory & Decision Trees",
+    "Bagging & Boosting",
+    "Error Measures and ML Advice",
+    "Unsupervised Learning: PCA & Clustering",
+    "Exponential Families & Bayesian Networks",
+    "PGMs, Latent Variables, Conditional Independence",
+    "Clustering, Mixtures, EM",
+    "GMM & HMM",
+    "Baum-Welch & PGM Inference",
+    "CNNs (Part 1)",
+    "CNNs (Part 2)"
+  ],
+  "toolsAndLanguages": [
+    "Python"
+  ],
+  "skills": [
+    "linear regression",
+    "logistic regression",
+    "support vector machines",
+    "naive bayes classification",
+    "decision trees",
+    "ensemble methods (bagging and boosting)",
+    "bias-variance tradeoff analysis",
+    "unsupervised learning and pca",
+    "clustering and gaussian mixture models",
+    "hidden markov models",
+    "probabilistic graphical models",
+    "expectation-maximization algorithm",
+    "convolutional neural networks"
+  ],
+  "workloadNotes": "Weekly discussion sections and hands-on sessions accompanying each lecture (per repository structure); no grading breakdown documented in this repo.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

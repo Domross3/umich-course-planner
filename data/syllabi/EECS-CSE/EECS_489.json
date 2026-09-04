@@ -1,0 +1,89 @@
+{
+  "code": "EECS 489",
+  "title": "Computer Networks",
+  "term": "Winter 2025",
+  "sourceRepo": "mosharaf/eecs489",
+  "sourceFiles": [
+    "README.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Mosharaf Chowdhury",
+  "gradingBreakdown": [
+    {
+      "component": "Assignment 1",
+      "percent": 5
+    },
+    {
+      "component": "Assignment 2",
+      "percent": 15
+    },
+    {
+      "component": "Assignment 3",
+      "percent": 15
+    },
+    {
+      "component": "Assignment 4",
+      "percent": 15
+    },
+    {
+      "component": "Midterm Exam",
+      "percent": 25
+    },
+    {
+      "component": "Final Exam",
+      "percent": 25
+    },
+    {
+      "component": "Quiz (Bonus)",
+      "percent": 2
+    }
+  ],
+  "weeklyTopics": [
+    "Introduction and Overview",
+    "Protocol Layering",
+    "HTTP and the Web",
+    "DNS and CDN",
+    "Video Streaming and Cloud Systems",
+    "Transport Layer",
+    "TCP Basics",
+    "Flow and Congestion Control",
+    "More Congestion Control",
+    "Network Layer and IP",
+    "IP Routers",
+    "Routing Fundamentals",
+    "Intra-AS Routing",
+    "IP Addressing and Inter-AS Routing",
+    "BGP",
+    "Software-Defined Networking",
+    "Link Layer",
+    "Switched LAN",
+    "Wireless Networking",
+    "Datacenter Networking"
+  ],
+  "toolsAndLanguages": [
+    "C/C++",
+    "Unix sockets",
+    "Wireshark"
+  ],
+  "skills": [
+    "socket programming",
+    "http proxy implementation",
+    "tcp/udp protocol design",
+    "network routing algorithms",
+    "software-defined networking",
+    "packet analysis with wireshark",
+    "client-server application design",
+    "congestion control",
+    "dns and cdn concepts",
+    "wireless networking basics",
+    "datacenter networking",
+    "distributed video streaming systems"
+  ],
+  "workloadNotes": "Four assignments during the semester; the first done individually, the rest in groups. Two exams (midterm and final).",
+  "prerequisitesText": "Enforced prerequisites: EECS 281 (Data Structures and Algorithms) and EECS 370 (Introduction to Computer Organization). Does not require prior knowledge of EECS 482, but requires working knowledge of C/C++ and Unix.",
+  "textbooks": [
+    "Kurose and Ross, Computer Networking: A Top-Down Approach, 7th ed. (or earlier), Pearson, 2016",
+    "Peterson and Davie, Computer Networks: A Systems Approach"
+  ],
+  "confidence": "syllabus"
+}

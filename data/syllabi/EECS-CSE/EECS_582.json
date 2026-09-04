@@ -1,0 +1,72 @@
+{
+  "code": "EECS 582",
+  "title": "Advanced Operating Systems",
+  "term": "Winter 2022",
+  "sourceRepo": "efeslab/eecs582",
+  "sourceFiles": [
+    "README.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Tanvir Ahmed Khan, Ian Neal",
+  "gradingBreakdown": [
+    {
+      "component": "Paper Reviews",
+      "percent": 20
+    },
+    {
+      "component": "Presentations (paper + midterm + final)",
+      "percent": 15
+    },
+    {
+      "component": "Class Participation",
+      "percent": 10
+    },
+    {
+      "component": "Project (prototype)",
+      "percent": 45
+    },
+    {
+      "component": "Project (final paper)",
+      "percent": 10
+    }
+  ],
+  "weeklyTopics": [
+    "Introductions / Research Methodology",
+    "System Design",
+    "Tackling Complexity",
+    "Kernels",
+    "Naming",
+    "Locality",
+    "Performance",
+    "Virtualization 1 & 2",
+    "Security 1 & 2 (Diffie-Hellman, Spectre)",
+    "Debugging",
+    "Fault Tolerance",
+    "Project Mid-term Presentations",
+    "Failures",
+    "Datacenter Systems 1-3 (MapReduce, GFS, Spanner, BigTable)",
+    "Testing and Verification 1 & 2",
+    "Heterogeneous Systems",
+    "Concurrency",
+    "Atomicity & Consistency",
+    "Machine Learning Systems",
+    "Rethinking the OS Design"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "reading and reviewing systems research papers",
+    "operating system kernel design",
+    "virtualization techniques",
+    "distributed systems fault tolerance",
+    "datacenter-scale systems (mapreduce, gfs, bigtable, spanner)",
+    "software testing and formal verification",
+    "concurrency and consistency models",
+    "systems security analysis",
+    "research project design and execution",
+    "technical writing and presentation of research"
+  ],
+  "workloadNotes": "Weekly paper reviews (miss up to 4 with no penalty) and in-class paper presentations/discussions; a semester-long group research project with proposal, mid-semester presentation, final video presentation, and final research paper.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "syllabus"
+}

@@ -1,0 +1,75 @@
+{
+  "code": "CSE 585",
+  "title": "Advanced Scalable Systems for Agentic AI",
+  "term": "Winter 2026",
+  "sourceRepo": "mosharaf/cse585",
+  "sourceFiles": [
+    "README.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Mosharaf Chowdhury",
+  "gradingBreakdown": [
+    {
+      "component": "Paper Presentation",
+      "percent": 20
+    },
+    {
+      "component": "Paper Summary",
+      "percent": 10
+    },
+    {
+      "component": "Participation",
+      "percent": 10
+    },
+    {
+      "component": "Project Report",
+      "percent": 40
+    },
+    {
+      "component": "Project Presentations",
+      "percent": 20
+    }
+  ],
+  "weeklyTopics": [
+    "Introduction; Datacenter as a Computer",
+    "Systems for AI (Agents) Basics",
+    "Distributed Training Basics",
+    "Pre-Training at Scale",
+    "Post-Training",
+    "Inference Basics",
+    "Inference: Disaggregation and Fusion",
+    "Inference: Beyond Text",
+    "Agents as a New System Workload",
+    "Serving Systems for Agents",
+    "Agentic State Management",
+    "Test-Time Compute as Resource Allocation",
+    "System Interfaces for Agents",
+    "Mid-Semester Presentations",
+    "Agents in the Physical World",
+    "Multi-Agent Execution",
+    "Agent Security",
+    "Operations: Capacity and Cost",
+    "Operations: Reliability and Fault Tolerance",
+    "Operations: Power and Energy",
+    "Wrap Up"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "reading and presenting systems research papers",
+    "datacenter and cloud computing fundamentals",
+    "distributed llm training systems",
+    "llm inference serving systems",
+    "agentic ai system design",
+    "kv-cache and context management for llms",
+    "multi-agent system scheduling",
+    "ai system security and access control",
+    "capacity, cost, and reliability analysis for ai infrastructure",
+    "power and energy efficiency for ai systems",
+    "research project execution and technical writing",
+    "technical presentation skills"
+  ],
+  "workloadNotes": "Weekly paper readings/discussion with student paper presentations and written summaries; a semester-long group research project with a mid-semester presentation, final report, and final presentation.",
+  "prerequisitesText": "Good programming skills and at least one undergraduate systems-related course (operating systems/EECS482, databases/EECS484, distributed systems/EECS491, or networking/EECS489). Undergrad ML/AI course helpful but not required.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

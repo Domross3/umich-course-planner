@@ -1,0 +1,91 @@
+{
+  "code": "EECS 484",
+  "title": "Database Management Systems",
+  "term": "Spring 2026 (sp26 half-term)",
+  "sourceRepo": "eecs484db/eecs484db.github.io",
+  "sourceFiles": [
+    "sp26/docs/syllabus.html",
+    "sp26/docs/index.html",
+    "index.md"
+  ],
+  "fetchedAt": "2026-09-04T00:00:00Z",
+  "instructor": "Prof. Almomani (almomani@umich.edu)",
+  "gradingBreakdown": [
+    {
+      "component": "Midterm Exam",
+      "percent": 27
+    },
+    {
+      "component": "Final Exam",
+      "percent": 27
+    },
+    {
+      "component": "Projects (4 @ 10% each)",
+      "percent": 40
+    },
+    {
+      "component": "Homeworks (5 @ 2% each, 2 lowest dropped)",
+      "percent": 6
+    }
+  ],
+  "weeklyTopics": [
+    "Introduction",
+    "ER Model",
+    "ER Model (cntd.)",
+    "Relational Model",
+    "ER to Relational",
+    "Relational Algebra",
+    "SQL",
+    "SQL (cntd.)",
+    "DB App Programming",
+    "Normalization",
+    "Normalization (cntd.)",
+    "No SQL databases",
+    "Storage/Indexing",
+    "Tree-structured index",
+    "Hash-based indexing",
+    "External Sort",
+    "Query Evaluation: Selection",
+    "Query Evaluation: Joins",
+    "Query Evaluation: Other Ops",
+    "Query Optimization",
+    "Transaction Management Overview",
+    "Concurrency Control",
+    "Concurrency Control (cntd.)",
+    "Logging and Recovery",
+    "Final Exam Review"
+  ],
+  "toolsAndLanguages": [
+    "SQL",
+    "Java",
+    "JavaScript",
+    "C++",
+    "Oracle DB",
+    "Postgres",
+    "MongoDB",
+    "JDBC",
+    "Gradescope",
+    "Autograder.io"
+  ],
+  "skills": [
+    "relational database design",
+    "sql querying",
+    "database normalization",
+    "jdbc application programming",
+    "nosql databases (mongodb)",
+    "storage and indexing structures",
+    "hash-based and tree-based indexing",
+    "external sorting algorithms",
+    "query evaluation and optimization",
+    "transaction management",
+    "concurrency control",
+    "logging and recovery",
+    "grace hash join implementation"
+  ],
+  "workloadNotes": "4 programming projects (Fakebook Database, Fakebook JDBC, MongoDB, Grace Hash Join), completed in pairs; 5 written homeworks (lowest 2 dropped); midterm and final exam.",
+  "prerequisitesText": "EECS 281 or EECS 403 or CSE graduate standing. Requires solid data-structures background (lists, hash tables, arrays, search trees) and strong programming experience. Projects use Java, JavaScript, and C++.",
+  "textbooks": [
+    "Raghu Ramakrishnan and Johannes Gehrke, Database Management Systems, 3rd edition, McGraw Hill, 2003"
+  ],
+  "confidence": "syllabus"
+}
