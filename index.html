@@ -242,7 +242,7 @@
 
   <div class="filters" id="filters">
     <input type="search" id="q" placeholder="Search anything: code, title, topic, instructor" aria-label="Search courses">
-    <label class="fchk hero"><input type="checkbox" id="f-fits"><i></i><span>Still fits my week</span></label>
+    <label class="fchk hero" title="Hides every course that overlaps a class in My schedule, with a 30-minute buffer across campuses"><input type="checkbox" id="f-fits"><i></i><span>Hide clashes with my schedule</span></label>
     <label class="fchk"><input type="checkbox" id="f-open"><i></i><span>Open seats</span></label>
     <label class="fchk"><input type="checkbox" id="f-top"><i></i><span>Highly rated</span></label>
     <label class="ftime"><span>Nothing before</span><input type="time" id="t-before" step="900" aria-label="Nothing before"></label>
@@ -3176,6 +3176,8 @@
   .ftime input,.fslot input,.fslot select{font-family:var(--f-mono);font-size:.7rem;border:1px solid var(--rule);background:var(--surface);color:var(--ink);padding:.2rem .3rem}
   .filters.top{position:static;margin:0 0 1.2rem;border-bottom:1px solid var(--rule)}
   .filters.top input[type=search]{flex:1 1 100%;font-size:.95rem;font-family:var(--f-body);padding:.55rem .7rem}
+  .pick.taken{color:var(--open);border-color:var(--open);background:var(--central-bg)}
+  #tr-text{grid-column:1/3;min-height:7rem}
   .tabs{display:flex;gap:0;border-bottom:1px solid var(--ink);margin:0 0 1.5rem}
   .tabs button{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:.6rem .9rem;cursor:pointer;margin-bottom:-1px}
   .tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
@@ -3390,26 +3392,26 @@
   // ---------- degree progress ----------
   var PROGRAMS = {
     'cs-lsa':{name:'Computer Science (LSA)',kind:'major',cap:null,src:'https://cse.engin.umich.edu/academics/undergraduate/majors/computer-science-lsa-major/',buckets:[
-      {id:'pre',name:'Prerequisites',desc:'EECS 203 (or MATH 465/565), EECS 280, one approved math course.',need:3,unit:'courses'},
-      {id:'core',name:'Core',desc:'EECS 281, EECS 370, EECS 376, plus one probability/statistics course (e.g. STATS 250, STATS 412, EECS 301).',need:4,unit:'courses'},
-      {id:'ulcs',name:'Upper-level CS electives',desc:'EECS 4xx/5xx technical electives. Official total is 15 or 16 credits — sources disagree; confirm with your advisor.',need:16,unit:'credits',tbd:true},
-      {id:'mde',name:'Major design experience',desc:'One capstone: EECS 441, 467, 470, 473, 481, 494, 497, or approved 498 sections. Cannot double-count as an elective.',need:1,unit:'courses'},
+      {id:'pre',name:'Prerequisites',desc:'EECS 203 (or MATH 465/565), EECS 280, one approved math course.',need:3,unit:'courses',match:'^(EECS 203|EECS 280|MATH (465|565|115|116|120|121|156|175|176|185|186|214|215|216|217|255|256|285|286|295|296|417|419))$'},
+      {id:'core',name:'Core',desc:'EECS 281, EECS 370, EECS 376, plus one probability/statistics course (e.g. STATS 250, STATS 412, EECS 301).',need:4,unit:'courses',match:'^(EECS 281|EECS 370|EECS 376|EECS 301|STATS (206|250|280|412|426|265)|IOE 265|ECON 451|TO 301)$'},
+      {id:'ulcs',name:'Upper-level CS electives',desc:'EECS 4xx/5xx technical electives. Official total is 15 or 16 credits — sources disagree; confirm with your advisor.',need:16,unit:'credits',tbd:true,match:'^(EECS|CSE) [45]\\d\\d',exclude:'^EECS (441|467|470|473|481|494|497|443)$'},
+      {id:'mde',name:'Major design experience',desc:'One capstone: EECS 441, 467, 470, 473, 481, 494, 497, or approved 498 sections. Cannot double-count as an elective.',need:1,unit:'courses',match:'^EECS (441|467|470|473|481|494|497|443)$'},
       {id:'fte',name:'Flexible technical electives',desc:'Credit count for CS-LSA not confirmed; differs from CS-Engineering.',need:8,unit:'credits',tbd:true}]},
     'cogsci':{name:'Cognitive Science',kind:'major',cap:3,src:'https://lsa.umich.edu/weinberginstitute/undergraduates/current-students/curriculum.html',buckets:[
-      {id:'gate',name:'Gateway',desc:'COGSCI 200.',need:1,unit:'courses'},
+      {id:'gate',name:'Gateway',desc:'COGSCI 200.',need:1,unit:'courses',match:'^COGSCI 200$'},
       {id:'track',name:'Track courses',desc:'Three courses in your track (Computation, Decision, Language, or Philosophy). Computation: PSYCH 240 or 345 plus EECS 281/445/492.',need:3,unit:'courses'},
       {id:'elec',name:'Electives',desc:'Six electives from at least three departments; C- or better in every course.',need:6,unit:'courses'}]},
     'bus-minor':{name:'Business minor (Ross)',kind:'minor',cap:null,src:'https://rossweb.bus.umich.edu/academics/dual-degrees-minors-special-programs/businessminor/curriculum',buckets:[
-      {id:'econ',name:'Co-requisite',desc:'ECON 101.',need:1,unit:'courses'},
-      {id:'core',name:'Core (one from each pair)',desc:'ACC 302|471 · FIN 302|TO 302 · MKT 302|MO 302 · STRATEGY 302|action-based course (BA 456, ES 395, …).',need:4,unit:'courses'},
+      {id:'econ',name:'Co-requisite',desc:'ECON 101.',need:1,unit:'courses',match:'^ECON 101$'},
+      {id:'core',name:'Core (one from each pair)',desc:'ACC 302|471 · FIN 302|TO 302 · MKT 302|MO 302 · STRATEGY 302|action-based course (BA 456, ES 395, …).',need:4,unit:'courses',match:'^(ACC (302|471)|FIN 302|TO 302|MKT 302|MO 302|STRATEGY 302|BA (453|445|455|456|457)|ES 395|MKT 401|MO (355|463)|TO (465|482))$'},
       {id:'elec',name:'Electives to 15 Ross credits',desc:'Graded, no pass/fail; 2.0 minimum within the minor.',need:3,unit:'credits'}]},
     'phil-minor':{name:'Philosophy minor',kind:'minor',cap:null,src:'https://lsa.umich.edu/philosophy/undergraduates/programs/minor/minor-requirements.html',buckets:[
-      {id:'cr',name:'15 credits of Philosophy',desc:'At least 9 in residence. PHIL 180/181 are not in the current catalog — use 183, 355, or 361.',need:15,unit:'credits'},
-      {id:'400',name:'One 400-level course',desc:'Other than formal methods (PHIL 413/414). PHIL 450 Philosophy of Cognition runs this fall.',need:1,unit:'courses'}]},
+      {id:'cr',name:'15 credits of Philosophy',desc:'At least 9 in residence. PHIL 180/181 are not in the current catalog — use 183, 355, or 361.',need:15,unit:'credits',match:'^PHIL \\d{3}$'},
+      {id:'400',name:'One 400-level course',desc:'Other than formal methods (PHIL 413/414). PHIL 450 Philosophy of Cognition runs this fall.',need:1,unit:'courses',match:'^PHIL 4\\d\\d$',exclude:'^PHIL 41[34]$'}]},
     'entr-minor':{name:'Entrepreneurship minor',kind:'minor',cap:null,src:'https://ent-minor.umich.edu/requirements',buckets:[
-      {id:'fund',name:'Fundamentals',desc:'ES 212 (ELP may be approved as a substitute by petition).',need:1,unit:'courses'},
+      {id:'fund',name:'Fundamentals',desc:'ES 212 (ELP may be approved as a substitute by petition).',need:1,unit:'courses',match:'^(ES 212|UC 214|ES 250)$'},
       {id:'idea',name:'Ideation',desc:'One ideation course, e.g. ENTR 410 Finding Your Venture.',need:1,unit:'courses'},
-      {id:'prac',name:'Practicum',desc:'ENTR 411 (3 cr), senior standing.',need:1,unit:'courses'},
+      {id:'prac',name:'Practicum',desc:'ENTR 411 (3 cr), senior standing.',need:1,unit:'courses',match:'^ENTR 411$'},
       {id:'elec',name:'Electives',desc:'6–7 credits from the approved list (ENTR 414, 423, 490, 530, 560 …).',need:6,unit:'credits'}]}
   };
   var RULES = [
@@ -3421,11 +3423,41 @@
   var DEG = LS.get(DK,{declared:['cs-lsa'],courses:{}});
   function codesOf(pid){ var out=[]; (PROGRAMS[pid].buckets||[]).forEach(function(b){ ((DEG.courses[pid]||{})[b.id]||'').split(/[,;\n]+/).map(function(x){ return x.trim().toUpperCase().replace(/\s+/g,' '); }).filter(Boolean).forEach(function(c){ var code=c.split(':')[0].trim(); if(out.indexOf(code)===-1) out.push(code); }); }); return out; }
   function bucketVal(pid,b){ var raw=((DEG.courses[pid]||{})[b.id]||''); var items=raw.split(/[,;\n]+/).map(function(x){ return x.trim(); }).filter(Boolean); if(b.unit==='courses') return items.length; return items.reduce(function(a,x){ var m=x.match(/:(\d+(\.\d+)?)/); return a+(m?parseFloat(m[1]):3); },0); }
+  var TK='planner.taken.v1';
+  var TAKEN = LS.get(TK,[]);
+  function parseTranscript(text){
+    var out={}, re=/\b([A-Z]{2,8})\s+(\d{3})\b([^\n]*)/g, m;
+    var t=text.replace(/\u00a0/g,' ');
+    while((m=re.exec(t))){
+      var code=m[1]+' '+m[2]; if(/^(FALL|WINTER|SPRING|SUMMER|TERM|GPA|MHRS|EHRS|TOTAL|CUM|UNIT|CREDIT|HOURS|PAGE)$/.test(m[1])) continue;
+      var rest=m[3]; var cr=(rest.match(/\b(\d{1,2}\.\d{2})\b/)||[])[1]; var gr=(rest.match(/\s([A-E][+\-]?|CR|NC|P|F|W|I|S|U|Y)\s*$/)||rest.match(/\s([A-E][+\-]?|CR|P)\s/)||[])[1];
+      if(gr==='W'||gr==='NC'||gr==='F'||gr==='E') continue;
+      out[code]={code:code,credits:cr?parseFloat(cr):null,grade:gr||null};
+    }
+    return Object.keys(out).map(function(k){ return out[k]; });
+  }
+  function autofill(){
+    DEG.declared.forEach(function(pid){ PROGRAMS[pid].buckets.forEach(function(b){
+      if(!b.match) return; var re=new RegExp(b.match), ex=b.exclude?new RegExp(b.exclude):null;
+      var hits=TAKEN.filter(function(c){ return re.test(c.code)&&!(ex&&ex.test(c.code)); }).map(function(c){ return c.code+(b.unit==='credits'&&c.credits&&c.credits!==3?':'+c.credits:''); });
+      if(!hits.length) return; DEG.courses[pid]=DEG.courses[pid]||{}; var cur=(DEG.courses[pid][b.id]||'').split(/[,;\n]+/).map(function(x){ return x.trim(); }).filter(Boolean);
+      hits.forEach(function(h){ var code=h.split(':')[0]; if(!cur.some(function(x){ return x.split(':')[0].toUpperCase()===code; })) cur.push(h); });
+      DEG.courses[pid][b.id]=cur.join(', ');
+    }); });
+    LS.set(DK,DEG);
+  }
+  function markTaken(){ var set={}; TAKEN.forEach(function(c){ set[c.code]=true; }); CAT.forEach(function(c){ var base=c.code.split('.')[0].split(' / ')[0].split(' + ')[0].trim(); var old=c.row.querySelector('.taken'); if(old) old.remove(); if(set[base]){ var b=document.createElement('span'); b.className='pick taken'; b.textContent='Taken'; c.row.querySelector('.sum-top').appendChild(b); } }); }
   function renderDegree(){
     var pane=panes.degree; pane.innerHTML='';
     var sel=el('select',{id:'add-prog'},[el('option',{value:'',text:'Add a major or minor…'})].concat(Object.keys(PROGRAMS).filter(function(k){ return DEG.declared.indexOf(k)===-1; }).map(function(k){ return el('option',{value:k,text:PROGRAMS[k].name+' ('+PROGRAMS[k].kind+')'}); })));
-    sel.addEventListener('change',function(){ if(sel.value){ DEG.declared.push(sel.value); LS.set(DK,DEG); renderDegree(); } });
+    sel.addEventListener('change',function(){ if(sel.value){ DEG.declared.push(sel.value); LS.set(DK,DEG); autofill(); renderDegree(); } });
     pane.appendChild(el('div',{class:'deg-head'},[sel, el('span',{class:'unv',text:'requirement numbers unverified — from program pages, confirm with your advisor'})]));
+    var ta=el('textarea',{id:'tr-text',placeholder:'Paste your unofficial transcript here (Wolverine Access → Student Business → Unofficial Transcript, select all, copy). Any text with course codes works: “EECS 281 Data Struct & Algor 4.00 A”.'});
+    var go=el('button',{class:'btn',type:'button',text:'Import transcript'}); var clr=el('button',{class:'chip',type:'button',text:'Clear taken courses'});
+    go.addEventListener('click',function(){ var got=parseTranscript(ta.value); if(!got.length){ alert('No course codes found. Paste text that contains lines like “EECS 281 … 4.00 A”.'); return; } var seen={}; TAKEN.forEach(function(c){ seen[c.code]=c; }); got.forEach(function(c){ seen[c.code]=c; }); TAKEN=Object.keys(seen).map(function(k){ return seen[k]; }); LS.set(TK,TAKEN); autofill(); markTaken(); renderDegree(); });
+    clr.addEventListener('click',function(){ TAKEN=[]; LS.set(TK,TAKEN); markTaken(); renderDegree(); });
+    var cr=TAKEN.reduce(function(a,c){ return a+(c.credits||0); },0);
+    pane.appendChild(el('section',{class:'recs'},[ el('h2',{text:'Import your transcript'}), el('p',{class:'lede',text:TAKEN.length?(TAKEN.length+' courses on file · '+cr+' credits with a listed value. Buckets below were auto-filled where a course clearly qualifies; edit anything.'):'Paste it once. Courses you have taken fill the buckets below automatically and get a “Taken” badge in the catalog.'}), el('div',{class:'skl-in'},[ta, el('div',{class:'row'},[go,clr])]), TAKEN.length?el('div',{class:'chips'},TAKEN.slice().sort(function(a,b){ return a.code.localeCompare(b.code); }).map(function(c){ return el('span',{class:'chip',text:c.code+(c.grade?' · '+c.grade:'')}); })):null ]));
     // overall
     var tot=0, done=0;
     DEG.declared.forEach(function(pid){ PROGRAMS[pid].buckets.forEach(function(b){ tot+=b.need; done+=Math.min(b.need,bucketVal(pid,b)); }); });
@@ -3488,6 +3520,14 @@
     pane.appendChild(el('p',{class:'credit',html:'Catalog: U-M Atlas sweep, Aug 23–24 2026 (117 courses). Skills seed: Syllabus Collector bot index, Sept 3 2026 (118 courses; SI/PHIL enriched). Degree numbers: program pages, unverified. Built by a three-bot Grok team, finished in Claude Code. <a href="https://claude.ai/code/artifact/e3ee984d-17f3-44c8-83e7-b01d548d21b7">Demo</a> · #GrokBotForStudents'}));
   }
 
+  // Project the fixed schedule onto the list: hide clashing courses by default once a schedule exists,
+  // until the student flips the toggle themselves.
+  var fitsBox=document.getElementById('f-fits');
+  function autoFits(){ if(LS.get('planner.fitsTouched',false)) return; var want=window.PL.getFixed().length>0; if(fitsBox.checked!==want){ fitsBox.checked=want; window.PL.applyFilters(); } }
+  fitsBox.addEventListener('change',function(){ LS.set('planner.fitsTouched',true); });
+  var _setFixed=window.PL.setFixed; window.PL.setFixed=function(l){ _setFixed(l); autoFits(); };
+  autoFits();
+  markTaken();
   show(LS.get('planner.tab','courses'));
 })();
 </script>
