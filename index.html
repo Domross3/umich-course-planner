@@ -3450,7 +3450,7 @@
       var rest=m[3]; var cr=(rest.match(/\b(\d{1,2}\.\d{2})\b/)||[])[1]; var gr=(rest.match(/\s([A-E][+\-]?|CR|NC|P|F|W|I|S|U|Y|T)\s*$/)||rest.match(/\s([A-E][+\-]?|CR|P|T)\s/)||[])[1];
       if(gr==='W'||gr==='NC'||gr==='F'||gr==='E') continue;
       if(/##/.test(rest)) continue;
-      var current = !gr && !!cr;   // credits listed, no grade yet = in progress this term
+      var current = !gr;   // no grade token = in progress this term (transfer lines carry T, so they are excluded)
       out[code]={code:code,credits:cr?parseFloat(cr):null,grade:gr||null,current:current};
     }
     return Object.keys(out).map(function(k){ return out[k]; });
