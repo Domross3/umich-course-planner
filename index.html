@@ -108,7 +108,7 @@
 
   .body{padding:.7rem 0 .3rem;display:flex;flex-direction:column;gap:.6rem}
   .blurb{margin:0;color:var(--ink-soft);font-size:.94rem;max-width:42rem}
-  .why{margin:0;font-size:.89rem;color:var(--muted);max-width:42rem;padding-left:.85rem;border-left:2px solid var(--rule)}
+  .why{display:none;margin:0;font-size:.89rem;color:var(--muted);max-width:42rem;padding-left:.85rem;border-left:2px solid var(--rule)}
   .why b{color:var(--ink-soft);font-weight:600}
   .rowmeta{margin:0;font-family:var(--f-mono);font-size:.74rem;color:var(--muted)}
   .status{font-weight:600;font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;padding:.02rem .3rem;border:1px solid currentColor}
@@ -227,25 +227,24 @@
  <div class="main">
 
   <header class="masthead">
-    <p class="eyebrow">U-M Atlas sweep &middot; Fall 2026 &middot; 117 courses &middot; built by a Grok Bot team, finished in Claude Code</p>
+    <p class="eyebrow">University of Michigan &middot; Fall 2026 &middot; 117 courses from Atlas &middot; built by a Grok Bot team, finished in Claude Code</p>
     <h1>Wolverine Course Planner</h1>
-    <p class="standfirst">Fall 2026 courses of every credit value that survive two filters: they fit around EECS 445, and they do something for entrepreneurship, AI, or the product-manager job. Every course now carries its student-evaluation scores and the name of whoever is teaching it.</p>
+    <p class="standfirst">Search the catalog, tell it where you want your career to go, and build a week that doesn&rsquo;t clash. Every course carries its student-evaluation scores, seat status, and instructor. Add your own classes on the right and the planner hides anything that collides with them.</p>
   </header>
 
   <div class="howto">
     <h2>How to use this</h2>
-    <p><strong>Your registered classes are the fixed blocks</strong> on the grid (edit them under “My schedule” on the right). <strong>Tick any course</strong> to drop it into the week. Overlaps get outlined in red and named below the grid, so you can stack options and see what actually fits.</p>
-    <p><strong>Click any course title</strong> to open its description and the reasoning for why it's on the list.</p>
-    <p><span class="swatch-inline sw-n"></span> <strong>Orange is North Campus</strong>, <span class="swatch-inline sw-c"></span> <strong>green is Central</strong> &mdash; judged by the actual room, checked against the Registrar's building list, not by subject code. So Leinweber (SI, CSE) is North; Kinesiology (SKB) is Central; ENTR 390.101 at Weiser is Central. Back-to-back across that line means a bus.</p>
-    <p><strong>The bars inside each course are student evaluation data</strong>, pulled from Atlas. <em>Understanding</em> is the share of students who said the course advanced their understanding of the subject; <em>increased interest</em> is the share who said it made them more interested in the field. <em>Heavier workload</em> is the share who said it was heavier than their other courses, so on that one a low number is the good number. Courses with no evaluations are usually new &mdash; they are kept, flagged, and findable with the <b>No evals yet</b> filter.</p>
-    <p>The <b>Still fits my week</b> filter hides anything that collides with what you have ticked, and it assumes a <b>30-minute buffer whenever you have to cross between North and Central Campus</b>. Same-campus back-to-backs are allowed. The grid uses one plausible section per course. Where a course has several section times, the alternatives are listed inside its description.</p>
+    <p><strong>1. Add your registered classes</strong> under &ldquo;My schedule&rdquo; on the right (or load the example). They become the fixed blocks on your week.</p>
+    <p><strong>2. Search or ask.</strong> Type any word into search, or tell the planner your goal in plain English and let the model rank courses with a reason for each.</p>
+    <p><strong>3. Tick courses</strong> to drop them onto the grid. Turn on <b>Still fits my week</b> to hide anything that collides; it assumes a <b>30-minute buffer when you have to cross between North and Central Campus</b>. Use <b>Slot</b> to compare every course meeting at one time.</p>
+    <p><span class="swatch-inline sw-n"></span> <strong>Orange is North Campus</strong>, <span class="swatch-inline sw-c"></span> <strong>green is Central</strong>, judged by the actual room. <strong>The bars</strong> are five-year student evaluations from Atlas: <em>understanding</em>, <em>increased interest</em>, <em>desire to take</em>, and <em>heavier workload</em> (low is good on that one).</p>
   </div>
 
   <div class="filters" id="filters">
     <input type="search" id="q" placeholder="Search anything: code, title, topic, instructor" aria-label="Search courses">
     <label class="fchk hero"><input type="checkbox" id="f-fits"><i></i><span>Still fits my week</span></label>
     <label class="fchk"><input type="checkbox" id="f-open"><i></i><span>Open seats</span></label>
-    <label class="fchk"><input type="checkbox" id="f-top"><i></i><span>Top picks</span></label>
+    <label class="fchk"><input type="checkbox" id="f-top"><i></i><span>Highly rated</span></label>
     <label class="ftime"><span>Nothing before</span><input type="time" id="t-before" step="900" aria-label="Nothing before"></label>
     <label class="ftime"><span>Nothing after</span><input type="time" id="t-after" step="900" aria-label="Nothing after"></label>
     <span class="fslot"><span>Slot</span>
@@ -272,10 +271,10 @@
 
   <section>
     <div class="sec-head">
-      <h2>If you only read one part</h2>
-      <span class="sec-count">9 picks</span>
+      <h2>Highly rated and broadly useful</h2>
+      <span class="sec-count">9 courses</span>
     </div>
-    <p class="sec-note">Ranked by what they'd actually change about your next two years, given what's already on your transcript. You've got heavy entrepreneurship theory and near-zero marketing, ops, or negotiation &mdash; that gap drives most of this list.</p>
+    <p class="sec-note">Courses that score well with students and transfer across majors: negotiation, project management, user experience, marketing, network science.</p>
 
     <div class="courses">
       <div class="course" data-campus="central" data-open="1" data-top="1" data-start="870" data-end="960" data-fam="central" data-crv="3" data-under="97" data-interest="88" data-ev="1">
@@ -286,7 +285,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">ORGSTUDY 405</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">ORGSTUDY 405</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Negotiation and Dispute Resolution</span>
             <span class="sum-meta"><span class="when">Mon/Wed 2:30&ndash;4:00</span><span class="dot">&middot;</span><span class="cr">3 cr</span><span class="dot">&middot;</span><span class="status open">Open &middot; 22 seats (sec 002)</span></span>
           </summary>
@@ -307,7 +306,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">ENTR 560</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">ENTR 560</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Project Management and Consulting</span>
             <span class="sum-meta"><span class="when">Tue <em>or</em> Wed 5:30&ndash;8:30</span><span class="dot">&middot;</span><span class="cr">3 cr &middot; median A</span><span class="dot">&middot;</span><span class="status open">Open &middot; 9 (Tue) + 19 (Wed)</span></span>
           </summary>
@@ -328,7 +327,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">PHIL 360</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">PHIL 360</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Global Priorities</span>
             <span class="sum-meta"><span class="when">Tue/Thu 1:00&ndash;2:30</span><span class="dot">&middot;</span><span class="cr">3&ndash;4 cr</span><span class="dot">&middot;</span><span class="status closed">Closed &middot; 0 of 25</span></span>
           </summary>
@@ -349,7 +348,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">SI 588</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">SI 588</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Principles of User Experience</span>
             <span class="sum-meta"><span class="when">Wed 12:30&ndash;3:30 (sec 001)</span><span class="dot">&middot;</span><span class="cr">3 cr &middot; median A</span><span class="dot">&middot;</span><span class="status open">Open &middot; 56 of 100</span></span>
           </summary>
@@ -370,7 +369,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">SI 425</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">SI 425</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Introduction to User Modeling</span>
             <span class="sum-meta"><span class="when">Tue/Thu 1:00&ndash;2:30</span><span class="dot">&middot;</span><span class="cr">3 cr</span><span class="dot">&middot;</span><span class="status open">Open &middot; 7 of 185</span></span>
           </summary>
@@ -391,7 +390,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">ENTR 490.105</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">ENTR 490.105</span><span class="pick">Highly rated</span></span>
             <span class="course-title">AI, Entrepreneurship, and the&hellip;</span>
             <span class="sum-meta"><span class="when">Tue 3:30&ndash;6:30</span><span class="dot">&middot;</span><span class="cr">verify &middot; listed 1&ndash;15</span><span class="dot">&middot;</span><span class="status open">Open &middot; 3 of 40</span></span>
           </summary>
@@ -412,7 +411,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">BA 456</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">BA 456</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Living Business Leadership Experience</span>
             <span class="sum-meta"><span class="when">Tue/Thu 8:30&ndash;10:00</span><span class="dot">&middot;</span><span class="cr">3 cr</span><span class="dot">&middot;</span><span class="status open">Open &middot; 6 of 36</span></span>
           </summary>
@@ -433,7 +432,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">MKT 302</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">MKT 302</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Marketing Management</span>
             <span class="sum-meta"><span class="when">4 minor sections</span><span class="dot">&middot;</span><span class="cr">3 cr</span><span class="dot">&middot;</span><span class="status open">Restricted seats open</span></span>
           </summary>
@@ -459,7 +458,7 @@
         </label>
         <details>
           <summary>
-            <span class="sum-top"><span class="code">CMPLXSYS 335</span><span class="pick">Top pick</span></span>
+            <span class="sum-top"><span class="code">CMPLXSYS 335</span><span class="pick">Highly rated</span></span>
             <span class="course-title">Introduction to Network Science</span>
             <span class="sum-meta"><span class="when">Mon/Wed 1:00&ndash;2:30</span><span class="dot">&middot;</span><span class="cr">3 cr</span><span class="dot">&middot;</span><span class="status wait">Wait list &middot; 30 cap</span></span>
           </summary>
@@ -477,10 +476,10 @@
 
   <section>
     <div class="sec-head">
-      <h2>Entrepreneurship, AI, and doing good at scale</h2>
+      <h2>Entrepreneurship, AI, and impact</h2>
       <span class="sec-count">18 courses</span>
     </div>
-    <p class="sec-note">Your first bucket. ENTR special-topics sections carry variable credit &mdash; confirm the number in Wolverine Access before you count on three.</p>
+    <p class="sec-note">ENTR special-topics sections carry variable credit &mdash; confirm the number in Wolverine Access before you count on three.</p>
 
     <div class="courses">
       <div class="course" data-campus="central" data-open="1" data-top="0" data-start="510" data-end="600" data-fam="central" data-crv="3" data-under="94" data-interest="90" data-ev="1">
@@ -879,10 +878,10 @@
 
   <section>
     <div class="sec-head">
-      <h2>The product-manager stack</h2>
+      <h2>Product, design, and analytics</h2>
       <span class="sec-count">20 courses</span>
     </div>
-    <p class="sec-note">Your second bucket. A PM sits between users, engineers, and executives &mdash; so this splits into user-side (research and design), analysis-side (data and consulting), and organization-side (strategy, change, communication).</p>
+    <p class="sec-note">User research and design, data and consulting, strategy and communication &mdash; the three sides of building products with other people.</p>
 
     <div class="courses">
       <div class="course" data-campus="central" data-open="1" data-top="0" data-start="870" data-end="960" data-fam="central" data-crv="3" data-under="93" data-interest="81" data-ev="1">
@@ -1310,10 +1309,10 @@
 
   <section>
     <div class="sec-head">
-      <h2>Rooms you haven't been in</h2>
+      <h2>Across the university</h2>
       <span class="sec-count">22 courses</span>
     </div>
-    <p class="sec-note">Your third bucket: genuinely interesting, and covering content that isn't anywhere on your transcript. Ordered roughly by how far each sits from what you already know.</p>
+    <p class="sec-note">Courses from departments most students never wander into: astronomy, urban planning, art and design, linguistics, complex systems.</p>
 
     <div class="courses">
       <div class="course" data-campus="central" data-open="1" data-top="0" data-start="600" data-end="690" data-fam="central" data-crv="3" data-under="92" data-interest="78" data-ev="1">
@@ -2248,7 +2247,7 @@
       <h2>Four credits and up</h2>
       <span class="sec-count">26 courses</span>
     </div>
-    <p class="sec-note">Full-weight courses, mostly 4-credit EECS, CSE, and UMSI, plus the LSA courses that run 3&ndash;4. Adding one of these to EECS 445 is a real term. The evaluation numbers matter more here than anywhere else on the page.</p>
+    <p class="sec-note">Full-weight courses, mostly 4-credit EECS, CSE, and UMSI, plus the LSA courses that run 3&ndash;4. The evaluation numbers matter more here than anywhere else on the page.</p>
 
     <div class="courses">
       <div class="course" data-campus="north" data-open="1" data-top="0" data-start="630" data-end="990" data-fam="north" data-crv="4" data-under="88" data-interest="84" data-ev="1">
@@ -2795,52 +2794,19 @@
   </section>
 
   <!-- ================= CUT LIST ================= -->
-  <section>
-    <div class="sec-head">
-      <h2>Cut for conflicts</h2>
-      <span class="sec-count">25 courses</span>
-    </div>
-    <p class="sec-note">These fit your interests but collide with EECS 445. Listed so you know they exist &mdash; several become available if you ever move to a different 445 discussion, though the Mon/Wed lecture is fixed across all three sections.</p>
-    <ul class="cut">
-      <li><b>ES 476</b> Startup Science: AI-Empowered Entrepreneurship &mdash; MW 11:30&ndash;1:00</li>
-      <li><b>EAS 608</b> Entrepreneurship and Innovation for Sustainability &mdash; MW 11:30&ndash;1:00</li>
-      <li><b>BE 450</b> Economic Consulting and Competition Policy &mdash; MW 11:30&ndash;1:00</li>
-      <li><b>EECS 498.019</b> Data Privacy: What, Why, and How &mdash; MW 10:30&ndash;12:00</li>
-      <li><b>SI 376</b> AI in Practice: Tools and Problem-Solving &mdash; MW 11:30&ndash;1:00</li>
-      <li><b>SI 608</b> Networks &mdash; Wed 9:00&ndash;12:00</li>
-      <li><b>SI 534</b> Theories of Social Influence &mdash; Wed 9:00&ndash;12:00</li>
-      <li><b>TO 450</b> Business Intelligence and Data Visualization &mdash; MW 10:00&ndash;11:30</li>
-      <li><b>ECON 407</b> Behavioral Economics &mdash; MW 10:00&ndash;11:30</li>
-      <li><b>ENVIRON 419 / ORGSTUDY 419</b> Business, Sustainability, and Justice &mdash; MW 10:00&ndash;11:30</li>
-      <li><b>ARCH 433</b> Possible Worlds &mdash; Mon 8:30&ndash;11:30</li>
-      <li><b>ARTDES 241</b> Product Design &mdash; MW section only; the TuTh section works but is waitlisted</li>
-      <li><b>ENTR 402 / 403</b> Concept to Prototype (software+hardware / 3D printing) &mdash; Fri 12:00&ndash;3:00</li>
-      <li><b>EECS 498.009</b> Election Cybersecurity &mdash; Fri 1:30&ndash;4:30</li>
-      <li><b>SI 519</b> Intellectual Property and Information Law &mdash; Wed 9:00&ndash;12:00</li>
-      <li><b>STATS 485</b> Capstone Seminar &mdash; MW 11:30&ndash;1:00</li>
-      <li><b>PSYCH 393</b> Political Psychology &mdash; MW 10:00&ndash;11:00</li>
-      <li><b>EECS 497</b> Human-Centered Software Design and Development &mdash; MW 11:30&ndash;1:30</li>
-      <li><b>EECS 493</b> User Interface Development &mdash; MW 10:30&ndash;12:00 (also closed)</li>
-      <li><b>EECS 494</b> Computer Game Design &mdash; MW 10:30&ndash;12:30, and 89% call the workload heavier</li>
-      <li><b>EECS 495</b> Accessible Computing &mdash; Fri 1:30&ndash;4:30</li>
-      <li><b>EECS 201</b> Computer Science Pragmatics &mdash; Fri 3:00&ndash;4:30</li>
-      <li><b>ENTR 422</b> Organizational Values and Ethics in Startups &mdash; Mon 10:00&ndash;12:00</li>
-      <li><b>TO 616</b> Project Management &mdash; Fri 12:00&ndash;3:00 (also full)</li>
-      <li><b>TO 640</b> Big Data Management &mdash; MW 11:00&ndash;12:30</li>
-    </ul>
-  </section>
+  
 
   <div class="fine">
     <h2>Before you register</h2>
     <p><strong>Seat counts are a snapshot.</strong> The three-credit list was pulled from Atlas on <strong>23 August 2026</strong> and everything else on <strong>24 August 2026</strong>. Open/waitlist status moves daily and Atlas itself only refreshes once per day &mdash; re-check anything you're counting on.</p>
-    <p><strong>Prerequisites were deliberately ignored</strong>, per your instructions. Several of these enforce them for real: ECON 431/461/483 want ECON 401; STRATEGY 350 wants STRATEGY 302; SI 526 wants SI 582 and 539; SI 649/670 want the SI programming sequence; CSE 593 wants graduate standing; ASTRO 206 wants PHYSICS 140; ARTDES 345/420/429/333 want studio prerequisites; ENTR 485 needs instructor consent. Expect to send override emails.</p>
+    <p><strong>Prerequisites are not filtered.</strong> Several courses enforce them for real: ECON 431/461/483 want ECON 401; STRATEGY 350 wants STRATEGY 302; SI 526 wants SI 582 and 539; SI 649/670 want the SI programming sequence; CSE 593 wants graduate standing; ASTRO 206 wants PHYSICS 140; ARTDES 345/420/429/333 want studio prerequisites; ENTR 485 needs instructor consent. Expect to send override emails.</p>
     <p><strong>Variable credits.</strong> Atlas doesn't expose per-section credit for <code>ENTR 390</code>, <code>ENTR 490</code>, <code>ENTR 599</code> (listed 1&ndash;15), <code>EECS 498</code> and <code>CSE 598</code> (1&ndash;4), <code>PUBPOL 475</code> (1&ndash;4), or <code>SI 364</code> (1&ndash;3). <code>PHIL 424</code> is 2&ndash;3, <code>PHIL 340</code> is 2&ndash;4, <code>PHIL 560/578</code> and <code>PHIL 611</code> are 1&ndash;3, and several PHIL and ECON courses are 3&ndash;4, where you elect the number. The credit tally uses the top of each range for the 4-credit courses and 3 for the open-ended ones. <strong>Ross mini-courses run half-term</strong>, so a 1.5-credit Ross course occupies its slot for roughly seven weeks, not fifteen &mdash; the week grid cannot show that.</p>
     <p><strong>Campus assignment.</strong> Every course is placed by its actual room against the <a href="https://ro.umich.edu/calendars/schedule-classes/location-abbreviations">Registrar's location-abbreviation list</a>. Three are genuinely ambiguous and were called by hand: <code>TO 448 + ARTDES 416</code> straddles both (Ross is Central, A&amp;AB is North) and is marked North; <code>SI 394</code> is listed in both 1250 USB and 1305 Leinweber and is marked Central; <code>URP 489</code> and <code>PHIL 611</code> have no room posted yet and are placed by department home. <code>ENTR 560</code> differs by section &mdash; Tuesday is Central, Wednesday is North.</p>
     <p><strong>How complete is this?</strong> Fall 2026 has <strong>8,190 course entries</strong> in Atlas. All of them were enumerated by title. The first pass opened 120 three-credit profiles individually; the second pass filtered the remaining catalog to courses of other credit values in 46 relevant subjects, catalog numbers 200&ndash;700, which left 687 candidates, and opened 107 of them before Atlas rate-limited the session. Dropped without opening: applied-music performance, dissertation and independent-study lines, the clinical medicine and dentistry catalogs, language instruction, study abroad, and the hardware-heavy end of EECS, ROB, MECHENG, NERS, and CEE.</p>
     <p><strong>What is still unopened.</strong> The rate limit stopped the sweep partway through the second pass. Not yet checked: <code>PUBPOL 474/479/583/589/592/594/597</code>, <code>COMM 230/290/343/349/370</code>, <code>CMPLXSYS 251/391</code>, <code>DATASCI 315/415</code>, <code>ROB 204/340</code>, <code>IOE 202/373/425/474</code>, <code>UT 330/340/402/430</code>, <code>ENGR 455/499</code>, <code>ORGSTUDY 201</code>, <code>LING 209/374</code>, <code>STATS 413</code>, <code>ECON 395/420/490</code>, <code>SI 311/611</code>, <code>PHIL 397</code>, <code>COMPFOR 204/301</code>, <code>URP 499</code>, <code>TCHNCLCM 497</code>, <code>EECS 507</code>.</p>
     <p><strong>Courses that are simply not running this term.</strong> Worth knowing so you stop looking for them: <code>STRATEGY 699 AI and Strategy</code>, <code>STRATEGY 675 Business Model Innovation</code>, <code>STRATEGY 488</code>, <code>MKT 608/625/626/642</code>, <code>MO 512/611/617/680</code>, <code>ES 516/602/605/620/676</code>, <code>TO 416</code>, <code>ENTR 409 Introduction to Venture Capital</code>, <code>EECS 444</code>, <code>CSE 576</code>, <code>CSE 596</code>, <code>PHIL 250/322/345/355/481</code>, <code>ECON 408/492</code>. All of them exist in the catalog with no Fall 2026 sections.</p>
     <p><strong>How the evaluation numbers work.</strong> Atlas aggregates the last five academic years of official course evaluations across all instructors, so the scores describe the <em>course</em>, not necessarily the person teaching it this fall. Response rates vary a lot &mdash; each strip shows the raw count. Treat a 14-response score as a rumour and a 3,000-response score as a fact. Special-topics umbrellas (<code>EECS 498</code>, <code>CSE 598</code>, <code>ENTR 390/490/599</code>, <code>PUBPOL 475</code>) pool every section that ever ran under that number, so their scores say more about the department than about the specific section listed.</p>
-    <p><strong>Three pairs are mutually exclusive in practice:</strong> SI 347 and SI 207 are the same slot and heavily overlapping content; MKT 300 and MKT 302 are the same course for different populations, and you want 302; <strong>SI 670 duplicates EECS 445</strong> &mdash; pick one.</p>
+    <p><strong>Three pairs are mutually exclusive in practice:</strong> SI 347 and SI 207 are the same slot and heavily overlapping content; MKT 300 and MKT 302 are the same course for different populations, (302 is the non-BBA version); <strong>SI 670 duplicates EECS 445</strong> &mdash; pick one.</p>
   </div>
 
  </div>
@@ -2848,7 +2814,7 @@
  <aside class="rail">
   <div class="planner">
     <h2>Your week</h2>
-    <p class="tally"><b id="ncourse">0</b> selected &middot; <b id="ncred">4</b> credits <span class="load" id="load">(EECS 445 only)</span></p>
+    <p class="tally"><b id="ncourse">0</b> picked &middot; <b id="ncred">0</b> credits <span class="load" id="load">(nothing picked yet)</span></p>
     <div class="cal" id="cal">
       <div class="dh" style="grid-column:2">Mon</div>
       <div class="dh" style="grid-column:3">Tue</div>
@@ -2952,9 +2918,10 @@
     {label:"SI 347", d:"TR", s:870, e:960, campus:"central"},
     {label:"PHIL 611", d:"T", s:960, e:1110, campus:"central"}
   ];
-  var SKEY = 'planner.sched.v1';
-  function loadSched(){ try{ var r=localStorage.getItem(SKEY); if(r) return JSON.parse(r); }catch(e){} return SEED.slice(); }
+  var SKEY = 'planner.sched.v2';
+  function loadSched(){ try{ var r=localStorage.getItem(SKEY); if(r) return JSON.parse(r); }catch(e){} return []; }
   var FIXED = loadSched();
+  window.PL_EXAMPLE = SEED;
   function setFixed(list){ FIXED = list; try{ localStorage.setItem(SKEY, JSON.stringify(list)); }catch(e){} render(); applyFilters(); }
   var cal = document.getElementById('cal');
   var boxes = Array.prototype.slice.call(document.querySelectorAll('.course input[type=checkbox]'));
@@ -3064,12 +3031,12 @@
     var chosen = boxes.filter(function(b){ return b.checked; });
     var cred = chosen.reduce(function(a,b){ return a + parseFloat(b.getAttribute('data-cr')); }, 0);
     document.getElementById('ncourse').textContent = chosen.length;
-    var fixedCr = FIXED.length ? 4 : 0; var total = Math.round((cred + fixedCr) * 100) / 100;
+    var total = Math.round(cred * 100) / 100;
     document.getElementById('ncred').textContent = total;
-    var load = total <= 4 ? '(my schedule only)' :
+    var load = total === 0 ? '(nothing picked yet; fixed classes not counted)' : total < 12 ? '(picked so far)' :
                total < 12 ? '(under full-time)' :
                total <= 16 ? '(a normal term)' :
-               total <= 18 ? '(heavy \u2014 445 runs heavy too)' : '(too much)';
+               total <= 18 ? '(heavy)' : '(too much)';
     document.getElementById('load').textContent = load;
 
     var warn = document.getElementById('warn');
@@ -3348,7 +3315,7 @@
     el('h2',{text:'Tell it where you want to end up'}),
     el('p',{class:'lede',text:'Plain English. The model reads your goal, your fixed schedule, and the catalog, then ranks with a reason for each pick. An instant keyword ranking shows while it thinks.'}),
     el('div',{class:'goalrow'},[
-      el('input',{id:'goal',type:'text',placeholder:'Say it however you want: “PM at an AI company”, “no mornings, something about ethics”, “4 credits that count for CS”',value:LS.get('planner.goal','product manager')}),
+      el('input',{id:'goal',type:'text',placeholder:'Say it however you want: “PM at an AI company”, “no mornings, something about ethics”, “4 credits that count for CS”',value:LS.get('planner.goal','')}),
       el('button',{class:'btn',id:'goal-go',type:'button',text:'Ask'}),
       el('button',{class:'btn ghost',id:'goal-ai',type:'button',text:'Ask the model','data-needs-sample':'1',hidden:''})
     ]),
@@ -3371,7 +3338,7 @@
   }
   var aiSeq = 0;
   function doRank(){
-    var g=document.getElementById('goal').value.trim()||'product manager'; LS.set('planner.goal',g);
+    var g=document.getElementById('goal').value.trim(); LS.set('planner.goal',g); if(!g){ document.getElementById('reclist').innerHTML=''; document.getElementById('recnote').textContent='Type a goal, or pick one of the chips.'; return; }
     var heur = rank(g); drawRecs(heur, 'Instant ranking shown; asking the model…');
     var seq = ++aiSeq;
     var cands = heur.slice(0,40).map(function(r){ var c=r.c; return { id:c.id, code:c.code, title:c.title, when:c.when, credits:c.cr, seats:c.open?'open':'waitlist/closed', evals:c.under>0?(c.under+'% understanding, '+c.interest+'% interest'):'none yet', blurb:c.blurb.slice(0,260), fitsWeek:window.PL.fits(c.box) }; });
@@ -3413,7 +3380,7 @@
     el('button',{class:'btn ghost',type:'submit',text:'Add to my schedule'})
   ]);
   sched.appendChild(form); planner.appendChild(sched);
-  function drawSched(){ var ul=document.getElementById('sched-list'); ul.innerHTML=''; var f=window.PL.getFixed(); if(!f.length) ul.appendChild(el('li',{text:'Nothing fixed yet — add your registered classes.'}));
+  function drawSched(){ var ul=document.getElementById('sched-list'); ul.innerHTML=''; var f=window.PL.getFixed(); if(!f.length){ var ex=el('button',{type:'button',class:'chip',text:'Load an example schedule'}); ex.addEventListener('click',function(){ window.PL.setFixed(window.PL_EXAMPLE.slice()); drawSched(); doRank(); }); ul.appendChild(el('li',{},[el('span',{text:'Nothing fixed yet — add your registered classes, or '}), ex])); }
     f.forEach(function(x,i){ var rm=el('button',{type:'button',text:'remove','aria-label':'Remove '+x.label}); rm.addEventListener('click',function(){ var l=window.PL.getFixed(); l.splice(i,1); window.PL.setFixed(l); drawSched(); doRank(); }); ul.appendChild(el('li',{},[el('b',{text:x.label+' · '+x.d+' '+window.PL.fmt(x.s)+'–'+window.PL.fmt(x.e)}), rm])); }); }
   form.addEventListener('submit',function(e){ e.preventDefault(); var fd=new FormData(form); var days=fd.getAll('d').join(''); if(!days){ alert('Pick at least one day.'); return; }
     var s=window.PL.hm(fd.get('s')), en=window.PL.hm(fd.get('e')); if(en<=s){ alert('End must be after start.'); return; }
@@ -3450,8 +3417,8 @@
     {id:'major-minor',text:'A major and a minor may share at most one course.',check:function(a,b){ return (a.kind==='major'&&b.kind==='minor')||(a.kind==='minor'&&b.kind==='major')?1:null; }},
     {id:'major-major',text:'Two majors are uncapped by LSA, except where a department caps it (Cognitive Science: 3 shared).',check:function(a,b){ if(a.kind!=='major'||b.kind!=='major') return null; var caps=[a.cap,b.cap].filter(function(x){ return x!=null; }); return caps.length?Math.min.apply(null,caps):Infinity; }}
   ];
-  var DK='planner.degree.v1';
-  var DEG = LS.get(DK,{declared:['cs-lsa','cogsci','bus-minor','phil-minor','entr-minor'],courses:{}});
+  var DK='planner.degree.v2';
+  var DEG = LS.get(DK,{declared:['cs-lsa'],courses:{}});
   function codesOf(pid){ var out=[]; (PROGRAMS[pid].buckets||[]).forEach(function(b){ ((DEG.courses[pid]||{})[b.id]||'').split(/[,;\n]+/).map(function(x){ return x.trim().toUpperCase().replace(/\s+/g,' '); }).filter(Boolean).forEach(function(c){ var code=c.split(':')[0].trim(); if(out.indexOf(code)===-1) out.push(code); }); }); return out; }
   function bucketVal(pid,b){ var raw=((DEG.courses[pid]||{})[b.id]||''); var items=raw.split(/[,;\n]+/).map(function(x){ return x.trim(); }).filter(Boolean); if(b.unit==='courses') return items.length; return items.reduce(function(a,x){ var m=x.match(/:(\d+(\.\d+)?)/); return a+(m?parseFloat(m[1]):3); },0); }
   function renderDegree(){
@@ -3488,24 +3455,24 @@
   // ---------- skills (from the Syllabus Collector's index) ----------
   var SKILL_DICT = ['Python','C++','C','Java','JavaScript','TypeScript','SQL','R','MATLAB','HTML','CSS','React','Node','Flask','Django','Git','Linux','shell','bash','Docker','AWS','cloud computing','REST APIs','databases','data structures','algorithms','complexity analysis','recursion','dynamic programming','graph algorithms','operating systems','concurrency','threads','virtual memory','file systems','distributed systems','computer architecture','assembly','compilers','networking','security','cryptography','machine learning','deep learning','neural networks','regression','classification','clustering','reinforcement learning','computer vision','natural language processing','statistics','probability','hypothesis testing','experimental design','A/B testing','linear algebra','calculus','discrete math','proofs','logic','game theory','decision theory','behavioral economics','microeconomics','finance','valuation','accounting','marketing','pricing','sales','negotiation','strategy','operations','supply chain','project management','agile','scrum','product management','roadmapping','user research','interviews','surveys','personas','usability testing','prototyping','wireframing','Figma','interaction design','information architecture','accessibility','data visualization','Tableau','Excel','spreadsheets','dashboards','storytelling','public speaking','presentations','technical writing','writing','critical thinking','ethics','philosophy of mind','epistemology','argumentation','policy analysis','privacy','intellectual property','entrepreneurship','business model','customer discovery','pitching','fundraising','venture capital','leadership','teamwork','stakeholder management','change management','human-computer interaction','cognitive psychology','memory','attention','perception','language','systems thinking','network science','simulation'];
   var SEED_SKILLS = [
-    {code:'SI 582',title:'Introduction to Interaction Design',skills:['interaction design','prototyping','wireframing','usability testing','personas','Figma'],tag:'syllabi index'},
-    {code:'SI 622',title:'Needs Assessment and Usability Evaluation',skills:['user research','interviews','surveys','usability testing','personas'],tag:'syllabi index'},
-    {code:'SI 631',title:'Agile Software Development',skills:['agile','scrum','project management','Git','teamwork'],tag:'syllabi index'},
-    {code:'SI 699',title:'Mastery Course (UX / Product)',skills:['product management','roadmapping','stakeholder management','presentations','user research'],tag:'syllabi index · public PDF'},
-    {code:'SI 410',title:'Ethics and Information Technology',skills:['ethics','privacy','policy analysis','argumentation','writing'],tag:'syllabi index'},
-    {code:'PHIL 340',title:'Minds and Machines',skills:['philosophy of mind','logic','argumentation','critical thinking','writing'],tag:'syllabi index · real syllabus'},
-    {code:'PHIL 397',title:'Philosophy Research Seminar',skills:['epistemology','argumentation','technical writing','presentations'],tag:'syllabi index · real syllabus'}
+    {code:'SI 582',title:'Introduction to Interaction Design',skills:['interaction design','prototyping','wireframing','usability testing','personas','Figma'],tag:'sample · syllabi index'},
+    {code:'SI 622',title:'Needs Assessment and Usability Evaluation',skills:['user research','interviews','surveys','usability testing','personas'],tag:'sample · syllabi index'},
+    {code:'SI 631',title:'Agile Software Development',skills:['agile','scrum','project management','Git','teamwork'],tag:'sample · syllabi index'},
+    {code:'SI 699',title:'Mastery Course (UX / Product)',skills:['product management','roadmapping','stakeholder management','presentations','user research'],tag:'sample · public PDF'},
+    {code:'SI 410',title:'Ethics and Information Technology',skills:['ethics','privacy','policy analysis','argumentation','writing'],tag:'sample · syllabi index'},
+    {code:'PHIL 340',title:'Minds and Machines',skills:['philosophy of mind','logic','argumentation','critical thinking','writing'],tag:'sample · real syllabus'},
+    {code:'PHIL 397',title:'Philosophy Research Seminar',skills:['epistemology','argumentation','technical writing','presentations'],tag:'sample · real syllabus'}
   ];
-  var KK='planner.skills.v1';
+  var KK='planner.skills.v2';
   var SK = LS.get(KK,null); if(!SK){ SK={entries:SEED_SKILLS.slice()}; LS.set(KK,SK); }
   function extract(text){ var t=' '+text.toLowerCase().replace(/[^a-z0-9+#./ -]/g,' ')+' '; return SKILL_DICT.filter(function(s){ var re=new RegExp('(^|[^a-z0-9+#])'+s.toLowerCase().replace(/[+.]/g,'\\$&')+'([^a-z0-9+#]|$)'); return re.test(t); }); }
   function renderSkills(){
     var pane=panes.skills; pane.innerHTML='';
     pane.appendChild(el('div',{class:'sec-head'},[el('h2',{text:'Skills you have actually been taught'}), el('span',{class:'sec-count',text:SK.entries.length+' syllabi'})]));
-    pane.appendChild(el('p',{class:'sec-note',text:'Paste a syllabus from a class you took, tag it with the course code, and the planner extracts the skills it taught. Seeded with courses from the Syllabus Collector bot’s index (SI product-management pathway, PHIL). Resume material, not vibes.'}));
+    pane.appendChild(el('p',{class:'sec-note',text:'Paste a syllabus from a class you took, tag it with the course code, and the planner extracts the skills it taught. Sample entries come from the Syllabus Collector bot’s index; remove them and add your own. Resume material, not vibes.'}));
     var code=el('input',{id:'sk-code',placeholder:'Course code, e.g. EECS 482'}); var title=el('input',{id:'sk-title',placeholder:'Title (optional)'}); var ta=el('textarea',{id:'sk-text',placeholder:'Paste the syllabus text here: course description, learning objectives, weekly topics, tools.'});
     var go=el('button',{class:'btn',type:'button',text:'Extract skills'}); var ai=el('button',{class:'btn ghost',type:'button',text:'Extract with the model','data-needs-sample':'1'}); ai.hidden=!sampleNS;
-    var demo=el('button',{class:'chip',type:'button',text:'Load a sample syllabus'}); var reset=el('button',{class:'chip',type:'button',text:'Reset to index seed'});
+    var demo=el('button',{class:'chip',type:'button',text:'Load a sample syllabus'}); var reset=el('button',{class:'chip',type:'button',text:'Reset to samples'});
     demo.addEventListener('click',function(){ code.value='EECS 482'; title.value='Introduction to Operating Systems'; ta.value='Sample syllabus (for demo). Topics: threads and concurrency, synchronization, virtual memory, paging, file systems, scheduling, distributed systems, RPC. Projects in C++ on Linux using git. Students will design and implement a thread library, a pager, and a networked file server; emphasis on debugging, testing, and technical writing in design documents.'; });
     reset.addEventListener('click',function(){ SK={entries:SEED_SKILLS.slice()}; LS.set(KK,SK); renderSkills(); });
     function save(skills,tag){ if(!code.value.trim()){ alert('Add the course code.'); return; } SK.entries=SK.entries.filter(function(e){ return e.code!==code.value.trim().toUpperCase(); }); SK.entries.unshift({code:code.value.trim().toUpperCase(),title:title.value.trim(),skills:skills,tag:tag}); LS.set(KK,SK); renderSkills(); }
