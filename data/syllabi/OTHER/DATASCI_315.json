@@ -1,0 +1,53 @@
+{
+  "code": "DATASCI 315",
+  "title": "Introductory Deep Learning (cross-listed STATS 315)",
+  "term": "Winter 2023",
+  "sourceRepo": "ambujtewari/stats315-winter2023",
+  "sourceFiles": ["README.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Ambuj Tewari",
+  "gradingBreakdown": [
+    {"component": "Canvas quizzes", "percent": 20},
+    {"component": "Homeworks", "percent": 30},
+    {"component": "Midterm Exam", "percent": 20},
+    {"component": "Final Exam", "percent": 30}
+  ],
+  "weeklyTopics": [
+    "Course logistics and introduction",
+    "Linear Algebra boot camp",
+    "Basic elements of linear regression",
+    "Loss functions and gradient descent",
+    "Classification, softmax operation, cross entropy loss",
+    "Softmax derivatives and information theory basics",
+    "TensorFlow, Keras, Google Colab",
+    "First steps with TensorFlow",
+    "Midterm exam",
+    "Neural networks: classification (MNIST, IMDB)",
+    "Neural networks: regression (Boston Housing)",
+    "Generalization and evaluating ML models",
+    "Improving model fit / regularization",
+    "From fully-connected layers to convolutions",
+    "Convolutions for images, padding/stride, multi-channel",
+    "Pooling, LeNet, Keras model-building approaches",
+    "Temperature-forecasting example (time series)",
+    "Recurrent neural networks (basic and advanced)",
+    "Course conclusion"
+  ],
+  "toolsAndLanguages": ["Python", "TensorFlow", "Keras", "Google Colab"],
+  "skills": [
+    "linear algebra for deep learning",
+    "linear and softmax regression",
+    "gradient descent optimization",
+    "cross entropy loss and information theory",
+    "building models in tensorflow/keras",
+    "convolutional neural networks",
+    "recurrent neural networks",
+    "time series forecasting with neural nets",
+    "model evaluation and generalization",
+    "regularization techniques"
+  ],
+  "workloadNotes": "5 homework assignments roughly every other week, weekly Canvas quizzes (2 lowest dropped), an in-class multiple-choice open-book midterm, and a final exam.",
+  "prerequisitesText": null,
+  "textbooks": ["Dive into Deep Learning (Zhang, Lipton, Li, Smola)", "Deep Learning with Python, 2nd ed. (Chollet)", "Deep Learning (Goodfellow, Bengio, Courville)"],
+  "confidence": "syllabus"
+}

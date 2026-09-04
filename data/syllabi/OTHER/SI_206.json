@@ -1,0 +1,27 @@
+{
+  "code": "SI 206",
+  "title": "Data-Oriented Programming",
+  "term": "Fall 2016",
+  "sourceRepo": "cvanlent/Archived-Course",
+  "sourceFiles": ["index.html", "twittercode/", "pygameStarterCode/", "HW3-StudentCopy/", "lecture/"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Mad-lib style string generation (madlib_generator)",
+    "Working with the Twitter API (streaming, sentiment analysis, location, NLP)",
+    "Building simple games with Pygame"
+  ],
+  "toolsAndLanguages": ["Python", "Pygame", "Twitter API"],
+  "skills": [
+    "python programming fundamentals",
+    "working with apis (twitter)",
+    "basic sentiment analysis and nlp",
+    "game programming with pygame",
+    "data-oriented programming patterns"
+  ],
+  "workloadNotes": "Homework assignments (e.g. HW3) and in-class labeled projects (Alpha/Beta/Gamma, One/Two/Three/Four per course index page); student-preserved repo, not an official syllabus.",
+  "prerequisitesText": "SI 106 (per typical SI sequence)",
+  "textbooks": [],
+  "confidence": "listing only"
+}

@@ -1,0 +1,5 @@
+SI 507 Intermediate Programming at UMich
+Directories: lecture/week1-6, homework/hw1-4, project/p1
+hw1: guess.py, hw2: hw2-ttt.py (tic tac toe), hw3: hw3-tamagotchi.py, hw4: git practice
+lecture week5: cards.py, cards_test.py, pet.py, teach_pets.py
+lecture week6: news_api.py

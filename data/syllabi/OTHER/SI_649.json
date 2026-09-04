@@ -1,0 +1,25 @@
+{
+  "code": "SI 649",
+  "title": "Information Visualization",
+  "term": null,
+  "sourceRepo": "twho/Info-visualization-project",
+  "sourceFiles": ["README.md", "index.html", "depth101.html", "magnitude.html", "simulator.html", "event.html"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [],
+  "toolsAndLanguages": ["D3.js", "Tableau", "Altair", "CanvasJS", "Bootstrap"],
+  "skills": [
+    "information visualization design",
+    "d3.js interactive visualization",
+    "narrative / scrollytelling data visualization",
+    "web-based dashboard building",
+    "tableau and altair for visualization",
+    "group project collaboration",
+    "data storytelling"
+  ],
+  "workloadNotes": "Group final project building a multi-step interactive data visualization website (student example: a 6-step earthquake data story built with D3.js). Course description (from official listing, not this repo) notes a 14-week structure with weekly readings, lecture, and lab/design-jam sessions, prerequisite EECS 493 or graduate standing.",
+  "prerequisitesText": "EECS 493 or graduate standing (per official course listing)",
+  "textbooks": [],
+  "confidence": "listing only"
+}

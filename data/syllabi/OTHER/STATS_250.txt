@@ -1,0 +1,23 @@
+STATS 250
+=========
+
+This Gitbook hosts the collection of all of my resources from [STATS 250](http://www.lsa.umich.edu/stats/undergraduate/statisticscourses) for the Winter 2015 semester:
+
+* Lecture notes
+* Study guides
+* Flash cards and exercises
+
+If you're interested in contributing, please [contact me](mailto:stevenschmatz@gmail.com) or submit a pull request. If you're not interested in contributing, but you found this material useful, let me know!
+
+Consider this material in the public domain.# Summary
+
+* [Introduction](README.md)
+* [Lecture Notes](Lecture_Notes/README.md)
+    * [Lecture 1: Statistical Terminology](Lecture_Notes/lecture_1_statistical_terminology.md)
+    * [Lecture 2: Distribution and Visualization of Data](Lecture_Notes/lecture_2.md)
+    * [Lecture 3: Numerical Summaries](Lecture_Notes/lecture_3.md)
+* [Study Guides](Study_Guides/README.md)
+    * [Exam 1 Study Guide](Study_Guides/exam_1.md)
+    * [Exam 2 Study Guide](Study Guides/exam_2.md)
+    * [Final Exam Study Guide](Study_Guides/final_exam.md)
+* [Exercises](Exercises/README.md)

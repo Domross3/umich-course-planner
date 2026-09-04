@@ -1,0 +1,42 @@
+{
+  "code": "CMPLXSYS 530",
+  "title": "Computer Modeling of Complex Systems",
+  "term": "Winter 2019",
+  "sourceRepo": "lynetteshaw/cscs-530-wi2019",
+  "sourceFiles": ["syllabus.md", "README.md", "In_Class_Notebooks/", "Assignments/", "ABMandPython/"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Lynette Shaw",
+  "gradingBreakdown": [
+    {"component": "Class Participation and Discussion", "percent": 10},
+    {"component": "Netlogo Exercise Set", "percent": 10},
+    {"component": "Python Exercise Set", "percent": 10},
+    {"component": "Project Brainstorm and Lit Review", "percent": 10},
+    {"component": "5 Min. In-Class Brainstorm", "percent": 5},
+    {"component": "Project Proposal", "percent": 20},
+    {"component": "Final Project", "percent": 35}
+  ],
+  "weeklyTopics": [
+    "Introduction to agent-based modeling (ABM)",
+    "Networks",
+    "Basic probability distributions and statistics",
+    "Programming fundamentals (NetLogo)",
+    "Programming fundamentals (Python)",
+    "Review of important ABM papers",
+    "Building and analyzing a personal ABM project"
+  ],
+  "toolsAndLanguages": ["NetLogo", "Python"],
+  "skills": [
+    "agent-based modeling",
+    "netlogo programming",
+    "python programming",
+    "network analysis basics",
+    "probability and statistics fundamentals",
+    "critical reading of complex systems research",
+    "designing and analyzing a research project",
+    "scientific writing (project proposal and final project)"
+  ],
+  "workloadNotes": "Netlogo and Python exercise sets, a project brainstorm/lit review, in-class brainstorm, a project proposal (20%), and a final project (35%) - final project is the capstone deliverable.",
+  "prerequisitesText": "No formal Complex Systems prerequisite; beginner-level programming and basic statistics/math strongly encouraged.",
+  "textbooks": ["Think Complexity (Allen Downey)", "Think Python (Allen Downey)", "Introduction to the Modeling and Analysis of Complex Systems (Hiroki Sayama)", "An Introduction to Agent-Based Modeling (Wilensky & Rand)"],
+  "confidence": "syllabus"
+}

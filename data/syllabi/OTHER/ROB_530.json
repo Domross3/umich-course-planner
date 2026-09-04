@@ -1,0 +1,35 @@
+{
+  "code": "ROB 530",
+  "title": "Mobile Robotics: Methods & Algorithms (cross-listed NA 568/EECS 568)",
+  "term": "Winter 2022",
+  "sourceRepo": "UMich-CURLY-teaching/UMich-ROB-530-public",
+  "sourceFiles": ["README.md", "homework/homework-01..07", "lecture-notes/", "slides/", "code-examples/"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Preliminaries",
+    "Estimation & Kalman Filtering",
+    "Nonlinear Filtering",
+    "Lie Groups & Invariant EKF",
+    "Localization",
+    "Mapping",
+    "SLAM (Simultaneous Localization and Mapping)"
+  ],
+  "toolsAndLanguages": ["MATLAB", "Python", "Julia", "C++"],
+  "skills": [
+    "bayesian filtering",
+    "kalman filtering and nonlinear filtering",
+    "lie groups and invariant ekf",
+    "robot localization algorithms",
+    "mapping algorithms",
+    "slam (simultaneous localization and mapping)",
+    "probabilistic robotics",
+    "geometric reasoning for robotics",
+    "reading and implementing research papers"
+  ],
+  "workloadNotes": "7 homework assignments covering estimation through SLAM; graduate course with ~140 students in Winter 2022, some undergraduates.",
+  "prerequisitesText": "Linear algebra (ROB 101/ROB 501 level), basic probability and statistics, estimation, matrix calculus, calculus (Taylor series); familiarity with a programming language.",
+  "textbooks": ["Probabilistic Robotics (Thrun, Burgard, Fox)", "State Estimation for Robotics (Barfoot, 2021)"],
+  "confidence": "syllabus"
+}

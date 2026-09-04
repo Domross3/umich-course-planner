@@ -1,0 +1,41 @@
+{
+  "code": "SI 370",
+  "title": "Data Exploration",
+  "term": null,
+  "sourceRepo": "umsi-data-science/si370",
+  "sourceFiles": ["370_00_Introduction.ipynb .. 370_16_Time-complete.ipynb", "370_Homework_1..4.ipynb", "370_Mid-term-solutions.ipynb"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Getting Started / Introduction",
+    "Pandas I",
+    "Loading Data",
+    "Concatenating data",
+    "Groupby and Pivot",
+    "Visualization I & II",
+    "Stats I, II, III",
+    "Clustering",
+    "Classification",
+    "Dimension Reduction",
+    "Natural Language Processing (NLP)",
+    "Time (time series)",
+    "Midterm"
+  ],
+  "toolsAndLanguages": ["Python", "pandas", "Jupyter notebooks"],
+  "skills": [
+    "data loading and cleaning",
+    "pandas data manipulation",
+    "data visualization",
+    "descriptive and inferential statistics",
+    "clustering algorithms",
+    "classification algorithms",
+    "dimension reduction techniques",
+    "natural language processing basics",
+    "time series analysis"
+  ],
+  "workloadNotes": "4 homework notebooks plus a midterm exam; notebook-based coursework.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "course page"
+}

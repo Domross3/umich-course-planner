@@ -1,0 +1,33 @@
+{
+  "code": "SI 579",
+  "title": "Building Interactive Applications for the Web",
+  "term": null,
+  "sourceRepo": "soney/si-579",
+  "sourceFiles": ["hw1/", "hw2-1/README.md", "hw2-2/README.md", "hw3/", "hw4/", "hw5/", "javascript_tests/"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "HTML basics (contact/index pages)",
+    "CSS styling",
+    "JavaScript fundamentals and DOM manipulation",
+    "building an interactive menu component",
+    "unit testing JavaScript (test runner for problem sets)",
+    "npm packages / build tooling",
+    "alternative dev environments"
+  ],
+  "toolsAndLanguages": ["HTML", "CSS", "JavaScript", "npm"],
+  "skills": [
+    "html and css",
+    "javascript fundamentals",
+    "dom manipulation",
+    "building interactive ui components",
+    "javascript unit testing",
+    "npm package management",
+    "front-end web development"
+  ],
+  "workloadNotes": "5+ homework assignments building progressively more interactive web pages (student repo, not an official syllabus).",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

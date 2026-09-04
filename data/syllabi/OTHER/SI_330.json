@@ -1,0 +1,39 @@
+{
+  "code": "SI 330",
+  "title": "Data Manipulation",
+  "term": "Winter 2022",
+  "sourceRepo": "umsi-data-science/si330-2018",
+  "sourceFiles": ["README.md", "330_01_Introduction.ipynb .. 330_22_Big_Data_IV.ipynb", "SI 330 WN 2022 Day 13 - Natural Language Processing.pdf", "environment.yml"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction",
+    "Pandas I",
+    "Loading Data",
+    "Join, Combine, Reshape",
+    "Groupby and pivot",
+    "Efficiency",
+    "More NLP (Natural Language Processing)",
+    "Midterm Review",
+    "Midterm",
+    "Matplotlib I & II",
+    "SQL",
+    "Big Data I, II, III, IV"
+  ],
+  "toolsAndLanguages": ["Python", "pandas", "matplotlib", "SQL", "Jupyter notebooks", "Binder"],
+  "skills": [
+    "advanced pandas data manipulation",
+    "joining, combining, and reshaping data",
+    "groupby and pivot table operations",
+    "code efficiency and performance",
+    "natural language processing basics",
+    "data visualization with matplotlib",
+    "sql querying",
+    "big data processing concepts"
+  ],
+  "workloadNotes": "Multiple homeworks (HW1-HW4), a midterm exam, notebook submissions to Canvas as .ipynb and .html.",
+  "prerequisitesText": "Builds on SI 106/206 programming sequence",
+  "textbooks": [],
+  "confidence": "course page"
+}

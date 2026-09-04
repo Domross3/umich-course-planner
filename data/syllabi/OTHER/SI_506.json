@@ -1,0 +1,33 @@
+{
+  "code": "SI 506",
+  "title": "Programming I (Using Python)",
+  "term": null,
+  "sourceRepo": "umsi-arwhyte/SI506-practice",
+  "sourceFiles": ["README.md", "problem_sets/ps_01-2020Fall/README.md", "problem_sets/ps_05-2020Fall/README.md", "problem_sets/ps_10-2020Fall/README.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "comments, values, types, variables, built-in functions, arithmetic",
+    "functions and documentation",
+    "classes and objects, dictionaries, file input/output",
+    "working with JSON and REST APIs (Star Wars API / SWAPI, requests library)"
+  ],
+  "toolsAndLanguages": ["Python", "requests library", "JSON", "Gradescope"],
+  "skills": [
+    "python fundamentals",
+    "variables and data types",
+    "writing functions",
+    "reading documentation",
+    "classes and objects",
+    "file input and output",
+    "dictionaries",
+    "json parsing",
+    "making http requests",
+    "working with rest apis"
+  ],
+  "workloadNotes": "Weekly problem sets (10+) and lab exercises; this repo holds retired practice materials, not the live syllabus.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

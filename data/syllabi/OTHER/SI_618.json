@@ -1,0 +1,32 @@
+{
+  "code": "SI 618",
+  "title": "Data Manipulation and Analysis",
+  "term": "Winter 2019",
+  "sourceRepo": "umsi-data-science/si618wn2019",
+  "sourceFiles": ["README.md", "618_01_Introduction.ipynb", "618_02_Pandas_Intro.ipynb", "618_03_Pandas_Advanced.ipynb", "618_06_Regular_Expressions.pdf", "environment.yml"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction",
+    "Pandas Intro",
+    "Pandas Advanced",
+    "Regular Expressions",
+    "Categorical and text data"
+  ],
+  "toolsAndLanguages": ["Python", "pandas", "numpy", "matplotlib", "Jupyter notebooks", "Binder"],
+  "skills": [
+    "data manipulation with pandas",
+    "exploratory data analysis",
+    "regular expressions",
+    "working with categorical data",
+    "working with text data",
+    "numpy basics",
+    "data visualization with matplotlib",
+    "reproducible notebooks (binder)"
+  ],
+  "workloadNotes": "Notebook-based homework (e.g. Homework 01), coursework submitted to Canvas as .ipynb and .html exports.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "course page"
+}

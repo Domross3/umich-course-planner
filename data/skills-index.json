@@ -1,0 +1,1222 @@
+[
+ {
+  "code": "CMPLXSYS 270",
+  "title": "Introduction to Agent-Based Modeling",
+  "term": null,
+  "confidence": "listing only",
+  "skills": [
+   "agent-based modeling",
+   "netlogo programming",
+   "network simulation",
+   "emergent behavior analysis"
+  ],
+  "tools": [
+   "NetLogo"
+  ],
+  "grading": [],
+  "workload": null,
+  "source": "iamttc/cmplxsys270",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "CMPLXSYS 530",
+  "title": "Computer Modeling of Complex Systems",
+  "term": "Winter 2019",
+  "confidence": "syllabus",
+  "skills": [
+   "agent-based modeling",
+   "netlogo programming",
+   "python programming",
+   "network analysis basics",
+   "probability and statistics fundamentals",
+   "critical reading of complex systems research",
+   "designing and analyzing a research project",
+   "scientific writing (project proposal and final project)"
+  ],
+  "tools": [
+   "NetLogo",
+   "Python"
+  ],
+  "grading": [
+   {
+    "component": "Class Participation and Discussion",
+    "percent": 10
+   },
+   {
+    "component": "Netlogo Exercise Set",
+    "percent": 10
+   },
+   {
+    "component": "Python Exercise Set",
+    "percent": 10
+   },
+   {
+    "component": "Project Brainstorm and Lit Review",
+    "percent": 10
+   },
+   {
+    "component": "5 Min. In-Class Brainstorm",
+    "percent": 5
+   },
+   {
+    "component": "Project Proposal",
+    "percent": 20
+   },
+   {
+    "component": "Final Project",
+    "percent": 35
+   }
+  ],
+  "workload": "Netlogo and Python exercise sets, a project brainstorm/lit review, in-class brainstorm, a project proposal (20%), and a final project (35%) - final project is the capstone deliverable.",
+  "source": "lynetteshaw/cscs-530-wi2019",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "CSE 585",
+  "title": "Advanced Scalable Systems for Agentic AI",
+  "term": "Winter 2026",
+  "confidence": "syllabus",
+  "skills": [
+   "reading and presenting systems research papers",
+   "datacenter and cloud computing fundamentals",
+   "distributed llm training systems",
+   "llm inference serving systems",
+   "agentic ai system design",
+   "kv-cache and context management for llms",
+   "multi-agent system scheduling",
+   "ai system security and access control",
+   "capacity, cost, and reliability analysis for ai infrastructure",
+   "power and energy efficiency for ai systems",
+   "research project execution and technical writing",
+   "technical presentation skills"
+  ],
+  "tools": [],
+  "grading": [
+   {
+    "component": "Paper Presentation",
+    "percent": 20
+   },
+   {
+    "component": "Paper Summary",
+    "percent": 10
+   },
+   {
+    "component": "Participation",
+    "percent": 10
+   },
+   {
+    "component": "Project Report",
+    "percent": 40
+   },
+   {
+    "component": "Project Presentations",
+    "percent": 20
+   }
+  ],
+  "workload": "Weekly paper readings/discussion with student paper presentations and written summaries; a semester-long group research project with a mid-semester presentation, final report, and final presentation.",
+  "source": "mosharaf/cse585",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "DATASCI 306",
+  "title": "Introduction to Statistical Computing (cross-listed with STATS 306)",
+  "term": "Spring 2023",
+  "confidence": "syllabus",
+  "skills": [
+   "r programming",
+   "data wrangling with tidyverse",
+   "data visualization with ggplot2",
+   "exploratory data analysis",
+   "writing functions in r",
+   "working with relational data",
+   "string processing",
+   "debugging and profiling code",
+   "parallel programming",
+   "building shiny web apps",
+   "git version control",
+   "team-based data science collaboration"
+  ],
+  "tools": [
+   "R",
+   "RStudio",
+   "RMarkdown",
+   "ggplot2",
+   "git",
+   "Rcpp",
+   "Shiny",
+   "Great Lakes cluster"
+  ],
+  "grading": [
+   {
+    "component": "Homework Assignments",
+    "percent": 50
+   },
+   {
+    "component": "Quizzes",
+    "percent": 20
+   },
+   {
+    "component": "Labs",
+    "percent": 10
+   },
+   {
+    "component": "Project 1",
+    "percent": 10
+   },
+   {
+    "component": "Project 2",
+    "percent": 10
+   }
+  ],
+  "workload": "5 homework assignments, weekly labs, quizzes, and 2 projects (one includes a Shiny app) over the semester. Late homework not accepted.",
+  "source": "markmfredrickson/stats306_spring_2023",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "DATASCI 315",
+  "title": "Introductory Deep Learning (cross-listed STATS 315)",
+  "term": "Winter 2023",
+  "confidence": "syllabus",
+  "skills": [
+   "linear algebra for deep learning",
+   "linear and softmax regression",
+   "gradient descent optimization",
+   "cross entropy loss and information theory",
+   "building models in tensorflow/keras",
+   "convolutional neural networks",
+   "recurrent neural networks",
+   "time series forecasting with neural nets",
+   "model evaluation and generalization",
+   "regularization techniques"
+  ],
+  "tools": [
+   "Python",
+   "TensorFlow",
+   "Keras",
+   "Google Colab"
+  ],
+  "grading": [
+   {
+    "component": "Canvas quizzes",
+    "percent": 20
+   },
+   {
+    "component": "Homeworks",
+    "percent": 30
+   },
+   {
+    "component": "Midterm Exam",
+    "percent": 20
+   },
+   {
+    "component": "Final Exam",
+    "percent": 30
+   }
+  ],
+  "workload": "5 homework assignments roughly every other week, weekly Canvas quizzes (2 lowest dropped), an in-class multiple-choice open-book midterm, and a final exam.",
+  "source": "ambujtewari/stats315-winter2023",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ECON 402",
+  "title": "Intermediate Macroeconomics",
+  "term": "Winter 2018",
+  "confidence": "course page",
+  "skills": [
+   "macroeconomic theory",
+   "intertemporal choice modeling",
+   "solow growth model",
+   "is-lm analysis",
+   "open economy macroeconomics",
+   "mundell-fleming model",
+   "working with fred economic data in r",
+   "regression analysis of macro data",
+   "data visualization with ggplot2"
+  ],
+  "tools": [
+   "R",
+   "RMarkdown",
+   "ggplot2",
+   "FRED economic data API"
+  ],
+  "grading": [],
+  "workload": "Weekly discussion section (GSI section 004); 2 midterms and a final exam; weekly homeworks due Fridays.",
+  "source": "richryan/econ402",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "EECS 201",
+  "title": "Computer Science Pragmatics",
+  "term": "Fall 2018 (archived; predecessor course \"Computing for Computer Scientists\"/C4CS, since renamed/renumbered to EECS 201)",
+  "confidence": "syllabus",
+  "skills": [
+   "command line proficiency",
+   "version control with git",
+   "shell scripting and bash",
+   "using text editors and ides",
+   "build systems and makefiles",
+   "unit testing in python",
+   "using a debugger",
+   "package management and dev environment setup",
+   "general software development tooling literacy"
+  ],
+  "tools": [
+   "Unix/Linux command line",
+   "Git",
+   "Bash",
+   "Python",
+   "Virtual Machines",
+   "Build systems (e.g. Make)",
+   "Debuggers",
+   "Package managers",
+   "IDEs/Editors"
+  ],
+  "grading": [],
+  "workload": "Weekly lecture + homework cadence, with optional 'advanced' topics and OH++ (office-hours-plus) sessions for select weeks.",
+  "source": "c4cs/c4cs.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 280",
+  "title": "Programming and Introductory Data Structures",
+  "term": null,
+  "confidence": "listing only",
+  "skills": [
+   "c++ programming fundamentals",
+   "command line proficiency",
+   "using a debugger (gdb/lldb)",
+   "memory debugging (asan, leak checking)",
+   "version control with git",
+   "code style and static analysis",
+   "using makefiles",
+   "remote development on caen/ssh"
+  ],
+  "tools": [
+   "C++",
+   "gdb",
+   "lldb",
+   "AddressSanitizer",
+   "Valgrind/leak-check",
+   "Git",
+   "VS Code",
+   "Xcode",
+   "CAEN Linux",
+   "Make"
+  ],
+  "grading": [],
+  "workload": null,
+  "source": "eecs280staff/tutorials",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 442",
+  "title": "Computer Vision",
+  "term": "Winter 2024",
+  "confidence": "syllabus",
+  "skills": [
+   "camera models and geometry",
+   "image filtering and edge detection",
+   "feature detection and description (sift)",
+   "image transforms and ransac fitting",
+   "supervised learning fundamentals",
+   "gradient-based optimization",
+   "neural network backpropagation",
+   "convolutional neural networks",
+   "semantic and instance segmentation",
+   "generative models (gans, diffusion)",
+   "epipolar geometry and stereo vision",
+   "structure from motion",
+   "neural 3d representations (neural fields)"
+  ],
+  "tools": [
+   "Python",
+   "NumPy",
+   "PyTorch",
+   "Gradescope",
+   "Piazza"
+  ],
+  "grading": [
+   {
+    "component": "Homework (6 @ 10% each)",
+    "percent": 60
+   },
+   {
+    "component": "Midterm",
+    "percent": 20
+   },
+   {
+    "component": "Final Project (2% proposal + 18% report/video)",
+    "percent": 20
+   }
+  ],
+  "workload": "Six homeworks (10% each, 6 total late days across all), one in-class midterm, and a final group project (proposal + report/video) done in groups of 3-4 over the second half of the semester.",
+  "source": "eecs442/eecs442.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 445",
+  "title": "Introduction to Machine Learning",
+  "term": "Fall 2016",
+  "confidence": "listing only",
+  "skills": [
+   "linear regression",
+   "logistic regression",
+   "support vector machines",
+   "naive bayes classification",
+   "decision trees",
+   "ensemble methods (bagging and boosting)",
+   "bias-variance tradeoff analysis",
+   "unsupervised learning and pca",
+   "clustering and gaussian mixture models",
+   "hidden markov models",
+   "probabilistic graphical models",
+   "expectation-maximization algorithm",
+   "convolutional neural networks"
+  ],
+  "tools": [
+   "Python"
+  ],
+  "grading": [],
+  "workload": "Weekly discussion sections and hands-on sessions accompanying each lecture (per repository structure); no grading breakdown documented in this repo.",
+  "source": "eecs445-f16/umich-eecs445-f16",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 467",
+  "title": "Autonomous Robotics Laboratory",
+  "term": "Winter 2016 (student fork, historical)",
+  "confidence": "listing only",
+  "skills": [
+   "robot middleware / inter-process communication (lcm)",
+   "sensor and actuator driver development",
+   "robot arm control (rexarm)",
+   "real-time visualization for robotics (vx)",
+   "linux build tooling for robotics stacks",
+   "udev/hardware interfacing on linux"
+  ],
+  "tools": [
+   "C/C++",
+   "Java",
+   "LCM (Lightweight Communications and Marshalling)",
+   "vx (visualization library)",
+   "Linux/Ubuntu",
+   "Make",
+   "rexarm robot arm driver"
+  ],
+  "grading": [],
+  "workload": null,
+  "source": "sajanptl/eecs467",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 484",
+  "title": "Database Management Systems",
+  "term": "Spring 2026 (sp26 half-term)",
+  "confidence": "syllabus",
+  "skills": [
+   "relational database design",
+   "sql querying",
+   "database normalization",
+   "jdbc application programming",
+   "nosql databases (mongodb)",
+   "storage and indexing structures",
+   "hash-based and tree-based indexing",
+   "external sorting algorithms",
+   "query evaluation and optimization",
+   "transaction management",
+   "concurrency control",
+   "logging and recovery",
+   "grace hash join implementation"
+  ],
+  "tools": [
+   "SQL",
+   "Java",
+   "JavaScript",
+   "C++",
+   "Oracle DB",
+   "Postgres",
+   "MongoDB",
+   "JDBC",
+   "Gradescope",
+   "Autograder.io"
+  ],
+  "grading": [
+   {
+    "component": "Midterm Exam",
+    "percent": 27
+   },
+   {
+    "component": "Final Exam",
+    "percent": 27
+   },
+   {
+    "component": "Projects (4 @ 10% each)",
+    "percent": 40
+   },
+   {
+    "component": "Homeworks (5 @ 2% each, 2 lowest dropped)",
+    "percent": 6
+   }
+  ],
+  "workload": "4 programming projects (Fakebook Database, Fakebook JDBC, MongoDB, Grace Hash Join), completed in pairs; 5 written homeworks (lowest 2 dropped); midterm and final exam.",
+  "source": "eecs484db/eecs484db.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 485",
+  "title": "Web Systems",
+  "term": null,
+  "confidence": "listing only",
+  "skills": [
+   "mapreduce programming model",
+   "python for data processing pipelines",
+   "distributed/parallel data processing concepts"
+  ],
+  "tools": [
+   "Python",
+   "MapReduce / Hadoop Streaming (via Madoop)",
+   "Flask (implied by staff tooling ecosystem)"
+  ],
+  "grading": [],
+  "workload": null,
+  "source": "eecs485staff/madoop",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "EECS 489",
+  "title": "Computer Networks",
+  "term": "Winter 2025",
+  "confidence": "syllabus",
+  "skills": [
+   "socket programming",
+   "http proxy implementation",
+   "tcp/udp protocol design",
+   "network routing algorithms",
+   "software-defined networking",
+   "packet analysis with wireshark",
+   "client-server application design",
+   "congestion control",
+   "dns and cdn concepts",
+   "wireless networking basics",
+   "datacenter networking",
+   "distributed video streaming systems"
+  ],
+  "tools": [
+   "C/C++",
+   "Unix sockets",
+   "Wireshark"
+  ],
+  "grading": [
+   {
+    "component": "Assignment 1",
+    "percent": 5
+   },
+   {
+    "component": "Assignment 2",
+    "percent": 15
+   },
+   {
+    "component": "Assignment 3",
+    "percent": 15
+   },
+   {
+    "component": "Assignment 4",
+    "percent": 15
+   },
+   {
+    "component": "Midterm Exam",
+    "percent": 25
+   },
+   {
+    "component": "Final Exam",
+    "percent": 25
+   },
+   {
+    "component": "Quiz (Bonus)",
+    "percent": 2
+   }
+  ],
+  "workload": "Four assignments during the semester; the first done individually, the rest in groups. Two exams (midterm and final).",
+  "source": "mosharaf/eecs489",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 493",
+  "title": "User Interface Development",
+  "term": "Fall 2026",
+  "confidence": "syllabus",
+  "skills": [
+   "user interface design methods",
+   "user-centered research",
+   "web programming for uis",
+   "prototyping with figma",
+   "usability evaluation",
+   "hci research methods",
+   "team-based final project development",
+   "asteroids-style game ui build (assignments)",
+   "menu and navigation design",
+   "search/artist-search interface implementation"
+  ],
+  "tools": [
+   "HTML/CSS/JavaScript",
+   "Figma",
+   "Web programming"
+  ],
+  "grading": [
+   {
+    "component": "Lecture Participation",
+    "percent": 10
+   },
+   {
+    "component": "Discussion Participation",
+    "percent": 5
+   },
+   {
+    "component": "Quizzes",
+    "percent": 5
+   },
+   {
+    "component": "Assignments (5 total)",
+    "percent": 25
+   },
+   {
+    "component": "Final Project (milestones + presentation)",
+    "percent": 25
+   },
+   {
+    "component": "Midterm Exam",
+    "percent": 15
+   },
+   {
+    "component": "Final Exam",
+    "percent": 15
+   }
+  ],
+  "workload": "23 lectures, 10 discussions, 4 project showcase/presentation days, a midterm, and a final. 5 assignments (first is an HCI research training, remaining four are web programming, e.g. asteroids menu/game, Figma prototyping, artist search). Final project done in groups of ~4 with 5 milestones plus a final presentation.",
+  "source": "eecs493staff/eecs493staff.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "EECS 582",
+  "title": "Advanced Operating Systems",
+  "term": "Winter 2022",
+  "confidence": "syllabus",
+  "skills": [
+   "reading and reviewing systems research papers",
+   "operating system kernel design",
+   "virtualization techniques",
+   "distributed systems fault tolerance",
+   "datacenter-scale systems (mapreduce, gfs, bigtable, spanner)",
+   "software testing and formal verification",
+   "concurrency and consistency models",
+   "systems security analysis",
+   "research project design and execution",
+   "technical writing and presentation of research"
+  ],
+  "tools": [],
+  "grading": [
+   {
+    "component": "Paper Reviews",
+    "percent": 20
+   },
+   {
+    "component": "Presentations (paper + midterm + final)",
+    "percent": 15
+   },
+   {
+    "component": "Class Participation",
+    "percent": 10
+   },
+   {
+    "component": "Project (prototype)",
+    "percent": 45
+   },
+   {
+    "component": "Project (final paper)",
+    "percent": 10
+   }
+  ],
+  "workload": "Weekly paper reviews (miss up to 4 with no penalty) and in-class paper presentations/discussions; a semester-long group research project with proposal, mid-semester presentation, final video presentation, and final research paper.",
+  "source": "efeslab/eecs582",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ROB 101",
+  "title": "Computational Linear Algebra",
+  "term": "Fall 2021",
+  "confidence": "course page",
+  "skills": [
+   "linear equations",
+   "matrix algebra",
+   "lu factorization",
+   "linear independence",
+   "least squares",
+   "vector subspaces",
+   "qr factorization",
+   "eigenvalues and rank",
+   "root finding algorithms",
+   "newton-raphson method",
+   "gradient descent",
+   "convex optimization basics",
+   "support vector machines",
+   "convolution",
+   "julia programming"
+  ],
+  "tools": [
+   "Julia"
+  ],
+  "grading": [],
+  "workload": "9 homework sets and 3 projects across the semester; first-year undergraduate course, no calculus prerequisite required.",
+  "source": "michiganrobotics/rob101",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "ROB 102",
+  "title": "Introduction to AI and Programming",
+  "term": "Fall 2022",
+  "confidence": "syllabus",
+  "skills": [
+   "c++ programming fundamentals",
+   "python programming fundamentals",
+   "graph algorithms",
+   "autonomous robot navigation",
+   "introductory ai algorithms",
+   "git and github version control",
+   "collaborative software development",
+   "computational/algorithmic thinking"
+  ],
+  "tools": [
+   "C++",
+   "Python",
+   "Git",
+   "GitHub Classroom",
+   "Replit"
+  ],
+  "grading": [
+   {
+    "component": "Projects (5 x 15 pts)",
+    "percent": 75
+   },
+   {
+    "component": "Quizzes (4 x 3 pts)",
+    "percent": 12
+   },
+   {
+    "component": "In-class activities (8 x 1 pt)",
+    "percent": 8
+   },
+   {
+    "component": "Participation",
+    "percent": 5
+   },
+   {
+    "component": "Advanced extensions (optional, bonus)",
+    "percent": 4
+   }
+  ],
+  "workload": "5 programming projects (graded via GitHub Classroom, feature-based checked/due grading), 4 quizzes, in-class activities via Replit, and participation. Flipped-classroom format with pre-recorded lectures. Satisfies intro programming requirement for several engineering majors (BME, CS-Engin, CS-LSA, NAME, Robotics) in place of Engin 101/151, and a prerequisite for EECS 280.",
+  "source": "robotics102/robotics102.github.io",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ROB 201",
+  "title": "Calculus for the Modern Engineer",
+  "term": "Winter 2025",
+  "confidence": "syllabus",
+  "skills": [
+   "limits and continuity",
+   "riemann sum integration",
+   "differentiation and taylor series",
+   "root finding and optimization",
+   "constrained optimization / lagrangian dynamics",
+   "ordinary differential equations",
+   "matrix exponentials and eigenvalues",
+   "laplace transforms",
+   "feedback control and controller design",
+   "julia programming",
+   "numerical methods for engineering"
+  ],
+  "tools": [
+   "Julia"
+  ],
+  "grading": [],
+  "workload": "8 homework sets (written + Julia programming components), 3 major individual projects applying calculus to engineering problems.",
+  "source": "michiganrobotics/rob201",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ROB 311",
+  "title": "How to Build Robots and Make Them Move",
+  "term": "Fall 2022",
+  "confidence": "syllabus",
+  "skills": [
+   "mechanical design and fabrication",
+   "rigid body kinematics and dynamics",
+   "motor control and transmissions",
+   "thermal modeling",
+   "additive and subtractive manufacturing",
+   "sensor integration",
+   "digital communications for embedded systems",
+   "feedback control loop design",
+   "data filtering",
+   "solidworks cad modeling",
+   "building and testing a physical robot (ballbot)"
+  ],
+  "tools": [
+   "Python",
+   "Raspberry Pi Pico",
+   "SolidWorks",
+   "3D printing",
+   "laser cutting"
+  ],
+  "grading": [],
+  "workload": "5 homework sets, ~14 hands-on labs (soldering, Raspberry Pi, SolidWorks, laser cutting, ballbot assembly, closed-loop control, etc.), a midterm, and a final competition. Requires hardware access (3D printer, laser cutter, water jet).",
+  "source": "michiganrobotics/rob311",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ROB 501",
+  "title": "Mathematics for Robotics",
+  "term": "Fall 2018",
+  "confidence": "syllabus",
+  "skills": [
+   "abstract linear algebra",
+   "vector spaces and subspaces",
+   "eigenvalues and eigenvectors",
+   "inner product spaces and projections",
+   "least squares estimation",
+   "kalman filtering",
+   "qr factorization",
+   "probability spaces and random variables",
+   "gaussian random vectors",
+   "real analysis fundamentals",
+   "newton-raphson and nonlinear optimization",
+   "convex optimization and linear programming",
+   "matlab programming"
+  ],
+  "tools": [
+   "MATLAB"
+  ],
+  "grading": [],
+  "workload": "10 homework sets, 2 exams, recitation questions and answers provided; graduate-level course.",
+  "source": "michiganrobotics/rob501",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "ROB 530",
+  "title": "Mobile Robotics: Methods & Algorithms (cross-listed NA 568/EECS 568)",
+  "term": "Winter 2022",
+  "confidence": "syllabus",
+  "skills": [
+   "bayesian filtering",
+   "kalman filtering and nonlinear filtering",
+   "lie groups and invariant ekf",
+   "robot localization algorithms",
+   "mapping algorithms",
+   "slam (simultaneous localization and mapping)",
+   "probabilistic robotics",
+   "geometric reasoning for robotics",
+   "reading and implementing research papers"
+  ],
+  "tools": [
+   "MATLAB",
+   "Python",
+   "Julia",
+   "C++"
+  ],
+  "grading": [],
+  "workload": "7 homework assignments covering estimation through SLAM; graduate course with ~140 students in Winter 2022, some undergraduates.",
+  "source": "UMich-CURLY-teaching/UMich-ROB-530-public",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "SI 206",
+  "title": "Data-Oriented Programming",
+  "term": "Fall 2016",
+  "confidence": "listing only",
+  "skills": [
+   "python programming fundamentals",
+   "working with apis (twitter)",
+   "basic sentiment analysis and nlp",
+   "game programming with pygame",
+   "data-oriented programming patterns"
+  ],
+  "tools": [
+   "Python",
+   "Pygame",
+   "Twitter API"
+  ],
+  "grading": [],
+  "workload": "Homework assignments (e.g. HW3) and in-class labeled projects (Alpha/Beta/Gamma, One/Two/Three/Four per course index page); student-preserved repo, not an official syllabus.",
+  "source": "cvanlent/Archived-Course",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "SI 330",
+  "title": "Data Manipulation",
+  "term": "Winter 2022",
+  "confidence": "course page",
+  "skills": [
+   "advanced pandas data manipulation",
+   "joining, combining, and reshaping data",
+   "groupby and pivot table operations",
+   "code efficiency and performance",
+   "natural language processing basics",
+   "data visualization with matplotlib",
+   "sql querying",
+   "big data processing concepts"
+  ],
+  "tools": [
+   "Python",
+   "pandas",
+   "matplotlib",
+   "SQL",
+   "Jupyter notebooks",
+   "Binder"
+  ],
+  "grading": [],
+  "workload": "Multiple homeworks (HW1-HW4), a midterm exam, notebook submissions to Canvas as .ipynb and .html.",
+  "source": "umsi-data-science/si330-2018",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "SI 370",
+  "title": "Data Exploration",
+  "term": null,
+  "confidence": "course page",
+  "skills": [
+   "data loading and cleaning",
+   "pandas data manipulation",
+   "data visualization",
+   "descriptive and inferential statistics",
+   "clustering algorithms",
+   "classification algorithms",
+   "dimension reduction techniques",
+   "natural language processing basics",
+   "time series analysis"
+  ],
+  "tools": [
+   "Python",
+   "pandas",
+   "Jupyter notebooks"
+  ],
+  "grading": [],
+  "workload": "4 homework notebooks plus a midterm exam; notebook-based coursework.",
+  "source": "umsi-data-science/si370",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "SI 506",
+  "title": "Programming I (Using Python)",
+  "term": null,
+  "confidence": "listing only",
+  "skills": [
+   "python fundamentals",
+   "variables and data types",
+   "writing functions",
+   "reading documentation",
+   "classes and objects",
+   "file input and output",
+   "dictionaries",
+   "json parsing",
+   "making http requests",
+   "working with rest apis"
+  ],
+  "tools": [
+   "Python",
+   "requests library",
+   "JSON",
+   "Gradescope"
+  ],
+  "grading": [],
+  "workload": "Weekly problem sets (10+) and lab exercises; this repo holds retired practice materials, not the live syllabus.",
+  "source": "umsi-arwhyte/SI506-practice",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "SI 507",
+  "title": "Intermediate Programming",
+  "term": "Winter 2020",
+  "confidence": "listing only",
+  "skills": [
+   "python classes and objects",
+   "unit testing",
+   "dictionaries and data structures",
+   "git version control",
+   "consuming rest apis",
+   "debugging",
+   "test-driven development",
+   "building a course project"
+  ],
+  "tools": [
+   "Python",
+   "Git",
+   "REST APIs"
+  ],
+  "grading": [],
+  "workload": "4 homework assignments, weekly lecture code, one final project (student repo, not an official syllabus).",
+  "source": "cginiel/si507",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "SI 579",
+  "title": "Building Interactive Applications for the Web",
+  "term": null,
+  "confidence": "listing only",
+  "skills": [
+   "html and css",
+   "javascript fundamentals",
+   "dom manipulation",
+   "building interactive ui components",
+   "javascript unit testing",
+   "npm package management",
+   "front-end web development"
+  ],
+  "tools": [
+   "HTML",
+   "CSS",
+   "JavaScript",
+   "npm"
+  ],
+  "grading": [],
+  "workload": "5+ homework assignments building progressively more interactive web pages (student repo, not an official syllabus).",
+  "source": "soney/si-579",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "SI 618",
+  "title": "Data Manipulation and Analysis",
+  "term": "Winter 2019",
+  "confidence": "course page",
+  "skills": [
+   "data manipulation with pandas",
+   "exploratory data analysis",
+   "regular expressions",
+   "working with categorical data",
+   "working with text data",
+   "numpy basics",
+   "data visualization with matplotlib",
+   "reproducible notebooks (binder)"
+  ],
+  "tools": [
+   "Python",
+   "pandas",
+   "numpy",
+   "matplotlib",
+   "Jupyter notebooks",
+   "Binder"
+  ],
+  "grading": [],
+  "workload": "Notebook-based homework (e.g. Homework 01), coursework submitted to Canvas as .ipynb and .html exports.",
+  "source": "umsi-data-science/si618wn2019",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "SI 649",
+  "title": "Information Visualization",
+  "term": null,
+  "confidence": "listing only",
+  "skills": [
+   "information visualization design",
+   "d3.js interactive visualization",
+   "narrative / scrollytelling data visualization",
+   "web-based dashboard building",
+   "tableau and altair for visualization",
+   "group project collaboration",
+   "data storytelling"
+  ],
+  "tools": [
+   "D3.js",
+   "Tableau",
+   "Altair",
+   "CanvasJS",
+   "Bootstrap"
+  ],
+  "grading": [],
+  "workload": "Group final project building a multi-step interactive data visualization website (student example: a 6-step earthquake data story built with D3.js). Course description (from official listing, not this repo) notes a 14-week structure with weekly readings, lecture, and lab/design-jam sessions, prerequisite EECS 493 or graduate standing.",
+  "source": "twho/Info-visualization-project",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "STATS 250",
+  "title": "Introduction to Statistics and Data Analysis",
+  "term": "Winter 2015",
+  "confidence": "listing only",
+  "skills": [
+   "statistical terminology and concepts",
+   "data distribution and visualization",
+   "numerical summary statistics",
+   "introductory hypothesis testing concepts"
+  ],
+  "tools": [],
+  "grading": [],
+  "workload": "Two midterm exams and a final exam (study guides referenced, largely unfilled in this repo); this is a student-authored study notes repo, not an official syllabus.",
+  "source": "stevenschmatz/STATS-250",
+  "tag": "syllabi sweep · listing only"
+ },
+ {
+  "code": "STATS 306",
+  "title": "Introduction to Statistical Computing (also cross-listed DATASCI 306)",
+  "term": "Spring 2023",
+  "confidence": "syllabus",
+  "skills": [
+   "r programming",
+   "data wrangling with tidyverse",
+   "data visualization with ggplot2",
+   "exploratory data analysis",
+   "writing functions in r",
+   "working with relational data",
+   "string processing",
+   "debugging and profiling code",
+   "parallel programming",
+   "building shiny web apps",
+   "git version control",
+   "team-based data science collaboration"
+  ],
+  "tools": [
+   "R",
+   "RStudio",
+   "RMarkdown",
+   "ggplot2",
+   "git",
+   "Rcpp",
+   "Shiny",
+   "Great Lakes cluster"
+  ],
+  "grading": [
+   {
+    "component": "Homework Assignments",
+    "percent": 50
+   },
+   {
+    "component": "Quizzes",
+    "percent": 20
+   },
+   {
+    "component": "Labs",
+    "percent": 10
+   },
+   {
+    "component": "Project 1",
+    "percent": 10
+   },
+   {
+    "component": "Project 2",
+    "percent": 10
+   }
+  ],
+  "workload": "5 homework assignments, weekly labs, quizzes, and 2 projects (one includes a Shiny app) over the semester. Late homework not accepted.",
+  "source": "markmfredrickson/stats306_spring_2023",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 401",
+  "title": "Applied Statistical Methods II",
+  "term": "Winter 2018",
+  "confidence": "syllabus",
+  "skills": [
+   "simple and multiple linear regression",
+   "matrix computations for linear models",
+   "hypothesis testing and confidence intervals",
+   "model diagnostics",
+   "anova and f-tests",
+   "model selection",
+   "collinearity analysis",
+   "design matrices for interactions and factors",
+   "observational study interpretation and causation",
+   "r programming for statistics"
+  ],
+  "tools": [
+   "R"
+  ],
+  "grading": [
+   {
+    "component": "Weekly homeworks",
+    "percent": 20
+   },
+   {
+    "component": "Two lab quizzes",
+    "percent": 10
+   },
+   {
+    "component": "Midterm exam",
+    "percent": 20
+   },
+   {
+    "component": "Final exam",
+    "percent": 50
+   }
+  ],
+  "workload": "9 weekly homework assignments, 13 labs, 2 lab quizzes, a midterm exam, and a comprehensive final exam. Homework graded on completeness (with required 'Sources' and 'Please explain' statements), not correctness.",
+  "source": "ionides/401w18",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
+  "code": "STATS 415",
+  "title": "Data Mining and Statistical Learning (Introduction to Data Mining)",
+  "term": null,
+  "confidence": "course page",
+  "skills": [
+   "linear and logistic regression",
+   "k-nearest neighbors",
+   "bias-variance tradeoff analysis",
+   "discriminant analysis (lda/qda)",
+   "cross-validation and bootstrap resampling",
+   "model selection and regularization (shrinkage)",
+   "dimension reduction",
+   "splines and generalized additive models",
+   "decision trees and ensemble methods",
+   "support vector machines",
+   "clustering (hierarchical, k-means)",
+   "statistical learning in r"
+  ],
+  "tools": [
+   "R",
+   "RMarkdown"
+  ],
+  "grading": [],
+  "workload": "Homework assignments (HW1, HW2 seen) with R/RMarkdown solutions; student repo, not an official syllabus.",
+  "source": "xinyexu/STATS-415",
+  "tag": "syllabi sweep · course page"
+ },
+ {
+  "code": "STATS 507",
+  "title": "Data Science in Python",
+  "term": "Fall 2021",
+  "confidence": "course page",
+  "skills": [
+   "python for data science",
+   "pandas data wrangling",
+   "numpy array computing",
+   "regular expressions",
+   "object-oriented python",
+   "git version control",
+   "linux shell scripting",
+   "high performance computing basics",
+   "parallel processing / multiprocessing",
+   "data visualization with matplotlib",
+   "monte carlo simulation",
+   "statistical modeling (ols, glm)",
+   "machine learning with scikit-learn",
+   "distributed computing with pyspark",
+   "intro deep learning"
+  ],
+  "tools": [
+   "Python",
+   "pandas",
+   "numpy",
+   "matplotlib",
+   "scikit-learn",
+   "statsmodels",
+   "PySpark",
+   "Git",
+   "Jupyter/jupytext",
+   "Great Lakes HPC",
+   "Binder"
+  ],
+  "grading": [],
+  "workload": "6 problem sets (ps1-ps6) with example/exemplar solutions; lecture notebooks doubled as slides (authored in markdown via jupytext).",
+  "source": "jbhender/Stats507_F21",
+  "tag": "syllabi sweep · course page"
+ }
+]

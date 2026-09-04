@@ -1,0 +1,45 @@
+{
+  "code": "STATS 401",
+  "title": "Applied Statistical Methods II",
+  "term": "Winter 2018",
+  "sourceRepo": "ionides/401w18",
+  "sourceFiles": ["index.Rmd", "01/notes01.pdf .. 08/notes08.pdf", "hw/hw00..hw09", "lab/lab01..lab13", "mt/", "final/"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Edward L. Ionides",
+  "gradingBreakdown": [
+    {"component": "Weekly homeworks", "percent": 20},
+    {"component": "Two lab quizzes", "percent": 10},
+    {"component": "Midterm exam", "percent": 20},
+    {"component": "Final exam", "percent": 50}
+  ],
+  "weeklyTopics": [
+    "Introduction",
+    "Linear algebra for applied statistics",
+    "Fitting a linear model to a sample by least squares",
+    "Toward a population version of the linear model (random variables)",
+    "Vector random variables",
+    "Hypothesis testing and confidence intervals",
+    "Model diagnostics",
+    "Additional topics in linear modeling",
+    "F tests and ANOVA",
+    "Colinearity and design matrices for interactions/factors",
+    "Observational studies and causation"
+  ],
+  "toolsAndLanguages": ["R"],
+  "skills": [
+    "simple and multiple linear regression",
+    "matrix computations for linear models",
+    "hypothesis testing and confidence intervals",
+    "model diagnostics",
+    "anova and f-tests",
+    "model selection",
+    "collinearity analysis",
+    "design matrices for interactions and factors",
+    "observational study interpretation and causation",
+    "r programming for statistics"
+  ],
+  "workloadNotes": "9 weekly homework assignments, 13 labs, 2 lab quizzes, a midterm exam, and a comprehensive final exam. Homework graded on completeness (with required 'Sources' and 'Please explain' statements), not correctness.",
+  "prerequisitesText": "MATH 115 and one of (STATS 180, STATS 250, STATS 280, STATS 412, or ECON 451); no credit if STATS 413 completed/enrolled.",
+  "textbooks": ["A Modern Approach to Regression with R (S. Sheather)"],
+  "confidence": "syllabus"
+}

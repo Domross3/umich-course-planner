@@ -1,0 +1,2 @@
+SI 206 - Data-Oriented Programming
+Contains: twittercode/ (twitter.py, twitternlp.py, sentiments.py, location.py), pygameStarterCode/ (sample1-6.py), madlib_generatorP3.py, index.html sections: Alpha, Beta, Gamma, One, Two, Three, Four

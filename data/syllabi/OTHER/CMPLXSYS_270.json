@@ -1,0 +1,22 @@
+{
+  "code": "CMPLXSYS 270",
+  "title": "Introduction to Agent-Based Modeling",
+  "term": null,
+  "sourceRepo": "iamttc/cmplxsys270",
+  "sourceFiles": ["network-group.nlogo"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [],
+  "toolsAndLanguages": ["NetLogo"],
+  "skills": [
+    "agent-based modeling",
+    "netlogo programming",
+    "network simulation",
+    "emergent behavior analysis"
+  ],
+  "workloadNotes": null,
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

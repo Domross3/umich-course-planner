@@ -1,0 +1,2 @@
+CMPLXSYS 270 - Intro to Agent-Based Modeling
+Repo contains NetLogo model files (network-group.nlogo). Course uses NetLogo for agent-based/network simulations.

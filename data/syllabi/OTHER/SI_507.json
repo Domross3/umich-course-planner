@@ -1,0 +1,34 @@
+{
+  "code": "SI 507",
+  "title": "Intermediate Programming",
+  "term": "Winter 2020",
+  "sourceRepo": "cginiel/si507",
+  "sourceFiles": ["README.md", "lecture/week1..week6", "homework/hw1..hw4", "project/p1"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "input and basic scripting",
+    "dictionaries (e.g. grade tracking)",
+    "classes and objects (Tamagotchi-style simulation)",
+    "unit testing (pytest-style test files)",
+    "consuming REST APIs (e.g. news API)",
+    "git and version control practice",
+    "final project"
+  ],
+  "toolsAndLanguages": ["Python", "Git", "REST APIs"],
+  "skills": [
+    "python classes and objects",
+    "unit testing",
+    "dictionaries and data structures",
+    "git version control",
+    "consuming rest apis",
+    "debugging",
+    "test-driven development",
+    "building a course project"
+  ],
+  "workloadNotes": "4 homework assignments, weekly lecture code, one final project (student repo, not an official syllabus).",
+  "prerequisitesText": "SI 506 (Programming I)",
+  "textbooks": [],
+  "confidence": "listing only"
+}

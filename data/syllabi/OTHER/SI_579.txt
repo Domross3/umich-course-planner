@@ -1,0 +1,5 @@
+SI 579 - Building Interactive Applications for the Web
+hw1: contact.html, index.html
+hw2: README-described assignments
+hw3-5: index.html, style.css, myJS.js/menu.js, package.json
+javascript_tests: test runner for problem sets

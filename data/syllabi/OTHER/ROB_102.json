@@ -1,0 +1,39 @@
+{
+  "code": "ROB 102",
+  "title": "Introduction to AI and Programming",
+  "term": "Fall 2022",
+  "sourceRepo": "robotics102/robotics102.github.io",
+  "sourceFiles": ["syllabus.html", "README.md", "projects/", "tutorials/"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Chad Jenkins (Lead Course Creator); Jana Pavlasek (Co-Lead)",
+  "gradingBreakdown": [
+    {"component": "Projects (5 x 15 pts)", "percent": 75},
+    {"component": "Quizzes (4 x 3 pts)", "percent": 12},
+    {"component": "In-class activities (8 x 1 pt)", "percent": 8},
+    {"component": "Participation", "percent": 5},
+    {"component": "Advanced extensions (optional, bonus)", "percent": 4}
+  ],
+  "weeklyTopics": [
+    "Programming fundamentals in C++",
+    "Programming fundamentals in Python",
+    "Graphs and graph algorithms",
+    "Autonomous robot navigation",
+    "Introductory artificial intelligence concepts and algorithms",
+    "Applying AI concepts on real robots"
+  ],
+  "toolsAndLanguages": ["C++", "Python", "Git", "GitHub Classroom", "Replit"],
+  "skills": [
+    "c++ programming fundamentals",
+    "python programming fundamentals",
+    "graph algorithms",
+    "autonomous robot navigation",
+    "introductory ai algorithms",
+    "git and github version control",
+    "collaborative software development",
+    "computational/algorithmic thinking"
+  ],
+  "workloadNotes": "5 programming projects (graded via GitHub Classroom, feature-based checked/due grading), 4 quizzes, in-class activities via Replit, and participation. Flipped-classroom format with pre-recorded lectures. Satisfies intro programming requirement for several engineering majors (BME, CS-Engin, CS-LSA, NAME, Robotics) in place of Engin 101/151, and a prerequisite for EECS 280.",
+  "prerequisitesText": "None; expected to be fluent in algebra and willing to think algorithmically.",
+  "textbooks": ["Bielajew C++ Book (optional reference)"],
+  "confidence": "syllabus"
+}

@@ -1,0 +1,101 @@
+---
+title: "ECON 402: Intermediate Macroeconomics"
+subtitle: "University of Michigan, Winter 2018"
+author: "Section 004"
+date: ""
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: cosmo
+    highlight: tango
+---
+
+#### Class logistics:
+
+* Class: ECON 402, Section 004
+* Times: Fridays, 9:00 am&ndash;10:00 am
+* Location: Lorch 373
+
+#### Office hours:
+
+* Mondays: 5:30 pm&ndash;7:00 pm, Lorch 142
+* Fridays: 8:30 am&ndash;9:00 am, Lorch 373
+* Fridays: 10:00 am&ndash;12:00 pm, Shapiro Library 2144
+* <span style="color:blue">Office Hours in preparation for the Final Exam</span>
+    + <span style="color:teal">Wednesday, 4/18, 12:00 pm&ndash;2:00 pm, Lorch 373</span>
+    + <span style="color:teal">Monday, 4/23, 1:00 pm&ndash;3:00 pm, Lorch 171</span>
+
+I plan on walking over to Shapiro after class&mdash;you are all welcome to join.
+
+#### Instructor info:
+
+* Name: [Rich Ryan](https://richryan.github.io/)
+* E-mail: richryan@umich.edu
+* Office: Lorch 119
+
+#### Policy for handing in homeworks:
+
+* Homeworks are due by 5:00 pm on Fridays
+* Please use the course mailbox to hand in homeworks.[^1] 
+The course mailbox is located at the end of the hall where the GSI offices are. 
+If you enter Lorch Hall from Tappan Avenue the mailbox will be down the stairs,
+through a doorway, at your immediate left.
+Our mailbox is labeled "ECON 402.004."
+A large Post-it note announces that it is "The Rich Ryan Section."
+
+#### Exam schedule:
+
+* Midterm Exam I, February 7 (Wednesday, in class)
+* Midterm Exam II, March 21 (Wednesday, in class)
+* Final, 24 April, 4:00 pm&ndash;6:00 pm (Tuesday)
+
+#### Reviw schedule:
+
+* February 5: 7:00 pm&ndash;9:00 pm, WEIS170
+* February 6: 7:00 pm&ndash;9:00 pm, EH1324
+* March 19: 7:00 pm&ndash;9:00 pm, AHB
+* March 20: 7:00 pm&ndash;9:00 pm, EH1324
+* <span style="color:blue">April 19: 6:00 pm&ndash;7:30 pm, AHD</span>
+* <span style="color:blue">April 20: 6:00 pm&ndash;7:30 pm, SEB1202</span>
+
+# Basic course spiel
+
+The goal of this section is to help you earn a good grade in ECON 402.
+A large part of ECON 402's _raison d'&ecirc;tr_ is teaching you _actual_ economics,
+so I'll also try to incorporate a few topics (mostly nifty stuff you can do with computers) that will likely form the basis of your future research and/or what will come up in job interviews.
+But those topics will just be for fun.
+
+I encourage you to attend all sections and office hours.
+Please speak up if a topic needs more consideration.
+And please laugh at all my jokes.
+
+# Resources
+
+While the class is largely self-contained,
+Professor House mentioned that he may at times reference material from ECON 401.
+Occasionally I may want to reference 401-type material or finance-related material.
+I will do so, mostly, by referring to notes that I wrote as a GSI for ECON 401 and 435.
+These notes are available here:
+
+* [ECON 401](https://richryan.github.io/notes/#intermediate-microeconomic-theory-econ-401)
+* [ECON 435](https://richryan.github.io/notes/#financial-economics-econ-435)
+
+The past year and a half I was a GSI for the first-year macro sequence in the PhD program.
+Those notes are also cataloged there.
+We'll be covering some of the same topics in this class, 
+in case you're interested in a more math-y presentation.
+
+# Warning
+
+In the interests of full and forthright disclosure,
+I really really really like macroeconomics.
+Any economic evangelism is only meant in jest or to signal what I think is useful to know (like for exams).
+We're going to learn a lot and have lots of fun this semester.
+
+[^1]: And because it seems like good policy to inflict the absolute minimum amount of pain on anyone,
+you will not be penalized if something comes up for you.
+E.g., you are in Chicago for a job interview on a given Friday.
+Please just notify me well in advance so we can work out a solution.
+N.B. this only applies to homeworks&mdash;I have no control over exams.

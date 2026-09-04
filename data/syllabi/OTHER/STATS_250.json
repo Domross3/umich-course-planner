@@ -1,0 +1,26 @@
+{
+  "code": "STATS 250",
+  "title": "Introduction to Statistics and Data Analysis",
+  "term": "Winter 2015",
+  "sourceRepo": "stevenschmatz/STATS-250",
+  "sourceFiles": ["README.md", "SUMMARY.md", "Lecture_Notes/lecture_1_statistical_terminology.md", "Lecture_Notes/lecture_2.md", "Lecture_Notes/lecture_3.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Statistical Terminology",
+    "Distribution and Visualization of Data",
+    "Numerical Summaries"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "statistical terminology and concepts",
+    "data distribution and visualization",
+    "numerical summary statistics",
+    "introductory hypothesis testing concepts"
+  ],
+  "workloadNotes": "Two midterm exams and a final exam (study guides referenced, largely unfilled in this repo); this is a student-authored study notes repo, not an official syllabus.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

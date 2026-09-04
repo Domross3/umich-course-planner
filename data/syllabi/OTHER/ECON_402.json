@@ -1,0 +1,37 @@
+{
+  "code": "ECON 402",
+  "title": "Intermediate Macroeconomics",
+  "term": "Winter 2018",
+  "sourceRepo": "richryan/econ402",
+  "sourceFiles": ["docs/index.Rmd", "docs/notes.Rmd", "docs/computer_work.Rmd", "README.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Rich Ryan (GSI, Section 004); Professor House (lecture)",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "A too short introduction",
+    "Intertemporal choice, the saving supply function, dynamic general equilibrium",
+    "Saving supply and saving demand",
+    "Choice under Uncertainty",
+    "Introduction to the Solow model of economic growth",
+    "Economic growth continued",
+    "IS-LM",
+    "IS-LM continued, Open Economy Macroeconomics",
+    "Mundell-Fleming"
+  ],
+  "toolsAndLanguages": ["R", "RMarkdown", "ggplot2", "FRED economic data API"],
+  "skills": [
+    "macroeconomic theory",
+    "intertemporal choice modeling",
+    "solow growth model",
+    "is-lm analysis",
+    "open economy macroeconomics",
+    "mundell-fleming model",
+    "working with fred economic data in r",
+    "regression analysis of macro data",
+    "data visualization with ggplot2"
+  ],
+  "workloadNotes": "Weekly discussion section (GSI section 004); 2 midterms and a final exam; weekly homeworks due Fridays.",
+  "prerequisitesText": "ECON 401 (Intermediate Microeconomic Theory) referenced as related/prior material",
+  "textbooks": [],
+  "confidence": "course page"
+}
