@@ -3529,18 +3529,27 @@
     {code:'PHIL 340',title:'Minds and Machines',skills:['philosophy of mind','logic','argumentation','critical thinking','writing'],tag:'sample · real syllabus'},
     {code:'PHIL 397',title:'Philosophy Research Seminar',skills:['epistemology','argumentation','technical writing','presentations'],tag:'sample · real syllabus'}
   ];
-  var KK='planner.skills.v2';
-  var SK = LS.get(KK,null); if(!SK){ SK={entries:SEED_SKILLS.slice()}; LS.set(KK,SK); }
+  var KK='planner.skills.v3';
+  var SK = LS.get(KK,null); if(!SK){ SK={entries:SEED_SKILLS.slice(),seeded:'samples'}; LS.set(KK,SK); }
+  var SWEPT = null; // data/skills-index.json, collected from public course repos
+  fetch('data/skills-index.json',{cache:'no-store'}).then(function(r){ return r.ok?r.json():null; }).then(function(idx){
+    if(!Array.isArray(idx)||!idx.length) return; SWEPT=idx;
+    if(SK.seeded!=='index'){ // first time the index is seen: replace the sample seed, keep anything the student pasted
+      var mine=SK.entries.filter(function(e){ return e.tag && e.tag.indexOf('pasted')===0; });
+      SK={entries:mine.concat(idx.map(function(r){ return {code:r.code,title:r.title,skills:r.skills,tag:r.tag||('syllabi sweep · '+r.confidence),source:r.source,grading:r.grading}; })),seeded:'index'}; LS.set(KK,SK);
+      if(panes.skills.classList.contains('on')) renderSkills();
+    }
+  }).catch(function(){});
   function extract(text){ var t=' '+text.toLowerCase().replace(/[^a-z0-9+#./ -]/g,' ')+' '; return SKILL_DICT.filter(function(s){ var re=new RegExp('(^|[^a-z0-9+#])'+s.toLowerCase().replace(/[+.]/g,'\\$&')+'([^a-z0-9+#]|$)'); return re.test(t); }); }
   function renderSkills(){
     var pane=panes.skills; pane.innerHTML='';
     pane.appendChild(el('div',{class:'sec-head'},[el('h2',{text:'Skills you have actually been taught'}), el('span',{class:'sec-count',text:SK.entries.length+' syllabi'})]));
-    pane.appendChild(el('p',{class:'sec-note',text:'Paste a syllabus from a class you took, tag it with the course code, and the planner extracts the skills it taught. Sample entries come from the Syllabus Collector bot’s index; remove them and add your own. Resume material, not vibes.'}));
+    pane.appendChild(el('p',{class:'sec-note',text:'Paste a syllabus from a class you took, tag it with the course code, and the planner extracts the skills it taught. Courses listed below come from public course repositories swept by the Syllabus Collector; add your own by pasting. Resume material, not vibes.'}));
     var code=el('input',{id:'sk-code',placeholder:'Course code, e.g. EECS 482'}); var title=el('input',{id:'sk-title',placeholder:'Title (optional)'}); var ta=el('textarea',{id:'sk-text',placeholder:'Paste the syllabus text here: course description, learning objectives, weekly topics, tools.'});
     var go=el('button',{class:'btn',type:'button',text:'Extract skills'}); var ai=el('button',{class:'btn ghost',type:'button',text:'Extract with the model','data-needs-sample':'1'}); ai.hidden=!sampleNS;
-    var demo=el('button',{class:'chip',type:'button',text:'Load a sample syllabus'}); var reset=el('button',{class:'chip',type:'button',text:'Reset to samples'});
+    var demo=el('button',{class:'chip',type:'button',text:'Load a sample syllabus'}); var reset=el('button',{class:'chip',type:'button',text:'Reset to swept index'});
     demo.addEventListener('click',function(){ code.value='EECS 482'; title.value='Introduction to Operating Systems'; ta.value='Sample syllabus (for demo). Topics: threads and concurrency, synchronization, virtual memory, paging, file systems, scheduling, distributed systems, RPC. Projects in C++ on Linux using git. Students will design and implement a thread library, a pager, and a networked file server; emphasis on debugging, testing, and technical writing in design documents.'; });
-    reset.addEventListener('click',function(){ SK={entries:SEED_SKILLS.slice()}; LS.set(KK,SK); renderSkills(); });
+    reset.addEventListener('click',function(){ SK=SWEPT?{entries:SWEPT.map(function(r){ return {code:r.code,title:r.title,skills:r.skills,tag:r.tag||('syllabi sweep · '+r.confidence),source:r.source,grading:r.grading}; }),seeded:'index'}:{entries:SEED_SKILLS.slice(),seeded:'samples'}; LS.set(KK,SK); renderSkills(); });
     function save(skills,tag){ if(!code.value.trim()){ alert('Add the course code.'); return; } SK.entries=SK.entries.filter(function(e){ return e.code!==code.value.trim().toUpperCase(); }); SK.entries.unshift({code:code.value.trim().toUpperCase(),title:title.value.trim(),skills:skills,tag:tag}); LS.set(KK,SK); renderSkills(); }
     go.addEventListener('click',function(){ var s=extract(ta.value); if(!s.length){ alert('No known skills found. Try pasting the learning objectives or topics list.'); return; } save(s,'pasted · dictionary'); });
     ai.addEventListener('click',function(){ if(!sampleNS) return; ai.disabled=true; ai.textContent='Thinking…'; sampleNS.json('Extract the concrete skills a student gains from this course syllabus. Return ONLY JSON {"skills":["..."]} with 5-12 short lowercase skill names (tools, methods, concepts, soft skills), no sentences.\n\n'+ta.value.slice(0,6000),{modelTier:'quick'}).then(function(o){ var s=(o&&o.skills||[]).map(String).slice(0,12); if(s.length) save(s,'pasted · model'); }).catch(function(){ alert('Model unavailable; using the dictionary instead.'); var s=extract(ta.value); if(s.length) save(s,'pasted · dictionary'); }).then(function(){ ai.disabled=false; ai.textContent='Extract with the model'; }); });
@@ -3550,7 +3559,7 @@
     if(!keys.length) pane.appendChild(el('p',{class:'empty-s',text:'No skills yet. Paste a syllabus above.'}));
     else pane.appendChild(el('div',{class:'skills'},keys.map(function(k){ return el('span',{class:'sk',title:agg[k].join(', ')},[el('b',{text:k}),el('span',{text:agg[k].length+' course'+(agg[k].length===1?'':'s')})]); })));
     pane.appendChild(el('div',{class:'sec-head'},[el('h2',{text:'By course'})]));
-    pane.appendChild(el('ul',{class:'srcs'},SK.entries.map(function(e){ var rm=el('button',{type:'button',text:'remove'}); rm.addEventListener('click',function(){ SK.entries=SK.entries.filter(function(x){ return x!==e; }); LS.set(KK,SK); renderSkills(); }); return el('li',{},[el('span',{class:'c',text:e.code}), el('span',{},[e.title?el('span',{text:e.title+' — '}):null, el('span',{class:'s',text:e.skills.join(', ')})]), el('span',{},[el('span',{class:'tag',text:e.tag||''}),' ',rm])]); })));
+    pane.appendChild(el('ul',{class:'srcs'},SK.entries.map(function(e){ var rm=el('button',{type:'button',text:'remove'}); rm.addEventListener('click',function(){ SK.entries=SK.entries.filter(function(x){ return x!==e; }); LS.set(KK,SK); renderSkills(); }); var gr=(e.grading&&e.grading.length)?el('div',{class:'s',style:'font-family:var(--f-mono);font-size:.66rem;margin-top:.15rem',text:'Grading: '+e.grading.map(function(g){ return g.component+' '+g.percent+'%'; }).join(' · ')}):null; return el('li',{},[el('span',{class:'c',text:e.code}), el('span',{},[e.title?el('span',{text:e.title+' — '}):null, el('span',{class:'s',text:e.skills.join(', ')}), gr]), el('span',{},[el('span',{class:'tag',text:e.tag||''}),e.source?el('a',{class:'tag',href:'https://github.com/'+e.source,target:'_blank',rel:'noopener',text:'source'}):null,' ',rm])]); })));
     pane.appendChild(el('p',{class:'credit',html:'Catalog: U-M Atlas sweep, Aug 23–24 2026 (117 courses). Skills seed: Syllabus Collector bot index, Sept 3 2026 (118 courses; SI/PHIL enriched). Degree numbers: program pages, unverified. Built by a three-bot Grok team. <a href="https://claude.ai/code/artifact/e3ee984d-17f3-44c8-83e7-b01d548d21b7">Demo</a> · #GrokBotForStudents'}));
   }
 
