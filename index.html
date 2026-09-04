@@ -3441,17 +3441,32 @@
   function codesOf(pid){ var out=[]; (PROGRAMS[pid].buckets||[]).forEach(function(b){ ((DEG.courses[pid]||{})[b.id]||'').split(/[,;\n]+/).map(function(x){ return x.trim().toUpperCase().replace(/\s+/g,' '); }).filter(Boolean).forEach(function(c){ var code=c.split(':')[0].trim(); if(out.indexOf(code)===-1) out.push(code); }); }); return out; }
   function bucketVal(pid,b){ var raw=((DEG.courses[pid]||{})[b.id]||''); var items=raw.split(/[,;\n]+/).map(function(x){ return x.trim(); }).filter(Boolean); if(b.unit==='courses') return items.length; return items.reduce(function(a,x){ var m=x.match(/:(\d+(\.\d+)?)/); return a+(m?parseFloat(m[1]):3); },0); }
   var TK='planner.taken.v1'; var TRDRAFT='';
-  var TAKEN = LS.get(TK,[]);
+  var TAKEN = LS.get(TK,[]); var LASTIMPORT=null;
   function parseTranscript(text){
     var out={}, re=/\b([A-Z]{2,8})\s+(\d{3})\b([^\n]*)/g, m;
     var t=text.replace(/\u00a0/g,' ');
     while((m=re.exec(t))){
       var code=m[1]+' '+m[2]; if(/^(FALL|WINTER|SPRING|SUMMER|TERM|GPA|MHRS|EHRS|TOTAL|CUM|UNIT|CREDIT|HOURS|PAGE)$/.test(m[1])) continue;
-      var rest=m[3]; var cr=(rest.match(/\b(\d{1,2}\.\d{2})\b/)||[])[1]; var gr=(rest.match(/\s([A-E][+\-]?|CR|NC|P|F|W|I|S|U|Y)\s*$/)||rest.match(/\s([A-E][+\-]?|CR|P)\s/)||[])[1];
+      var rest=m[3]; var cr=(rest.match(/\b(\d{1,2}\.\d{2})\b/)||[])[1]; var gr=(rest.match(/\s([A-E][+\-]?|CR|NC|P|F|W|I|S|U|Y|T)\s*$/)||rest.match(/\s([A-E][+\-]?|CR|P|T)\s/)||[])[1];
       if(gr==='W'||gr==='NC'||gr==='F'||gr==='E') continue;
-      out[code]={code:code,credits:cr?parseFloat(cr):null,grade:gr||null};
+      if(/##/.test(rest)) continue;
+      var current = !gr && !!cr;   // credits listed, no grade yet = in progress this term
+      out[code]={code:code,credits:cr?parseFloat(cr):null,grade:gr||null,current:current};
     }
     return Object.keys(out).map(function(k){ return out[k]; });
+  }
+  var KNOWN_TIMES = { 'EECS 445':[{label:'EECS 445',d:'MW',s:630,e:720,campus:'central'},{label:'EECS 445 disc',d:'F',s:870,e:930,campus:'north'}] };
+  function scheduleCurrent(list){
+    var fixed=window.PL.getFixed(); var have={}; fixed.forEach(function(f){ have[f.label.replace(/ disc$/,'')]=true; });
+    var added=[], unknown=[];
+    list.forEach(function(c){ if(have[c.code]) return;
+      var hit=CAT.filter(function(x){ return x.code.split('.')[0].split(' / ')[0].split(' + ')[0].trim()===c.code; })[0];
+      if(hit){ var mt=JSON.parse(hit.box.getAttribute('data-mtgs')); mt.forEach(function(m){ fixed.push({label:c.code,d:m.d,s:m.s,e:m.e,campus:hit.row.getAttribute('data-campus')}); }); added.push(c.code); }
+      else if(KNOWN_TIMES[c.code]){ KNOWN_TIMES[c.code].forEach(function(k){ fixed.push(k); }); added.push(c.code); }
+      else unknown.push(c.code);
+    });
+    if(added.length){ window.PL.setFixed(fixed); if(typeof drawSched==='function') drawSched(); }
+    return {added:added,unknown:unknown};
   }
   function autofill(){
     DEG.declared.forEach(function(pid){ PROGRAMS[pid].buckets.forEach(function(b){
@@ -3463,7 +3478,7 @@
     }); });
     LS.set(DK,DEG);
   }
-  function markTaken(){ var set={}; TAKEN.forEach(function(c){ set[c.code]=true; }); CAT.forEach(function(c){ var base=c.code.split('.')[0].split(' / ')[0].split(' + ')[0].trim(); var old=c.row.querySelector('.taken'); if(old) old.remove(); if(set[base]){ var b=document.createElement('span'); b.className='pick taken'; b.textContent='Taken'; c.row.querySelector('.sum-top').appendChild(b); } }); }
+  function markTaken(){ var set={}; TAKEN.forEach(function(c){ set[c.code]=c.current?'This term':'Taken'; }); CAT.forEach(function(c){ var base=c.code.split('.')[0].split(' / ')[0].split(' + ')[0].trim(); var old=c.row.querySelector('.taken'); if(old) old.remove(); if(set[base]){ var b=document.createElement('span'); b.className='pick taken'; b.textContent=set[base]; c.row.querySelector('.sum-top').appendChild(b); } }); }
   function renderDegree(){
     var pane=panes.degree; pane.innerHTML='';
     var sel=el('select',{id:'add-prog'},[el('option',{value:'',text:'Add a major or minor…'})].concat(Object.keys(PROGRAMS).filter(function(k){ return DEG.declared.indexOf(k)===-1; }).map(function(k){ return el('option',{value:k,text:PROGRAMS[k].name+' ('+PROGRAMS[k].kind+')'}); })));
@@ -3476,10 +3491,10 @@
     pasteBtn.addEventListener('click',function(){ if(!navigator.clipboard||!navigator.clipboard.readText){ alert('Your browser blocks clipboard reads here; click in the box and press Cmd+V.'); return; } navigator.clipboard.readText().then(function(t){ ta.value=(ta.value?ta.value+'\n':'')+t; TRDRAFT=ta.value; ta.focus(); }).catch(function(){ alert('Clipboard permission denied; click in the box and press Cmd+V.'); }); });
     var fileIn=el('input',{type:'file',accept:'.txt,.csv,.md,text/plain',style:'font-family:var(--f-mono);font-size:.68rem'});
     fileIn.addEventListener('change',function(){ var f=fileIn.files&&fileIn.files[0]; if(!f) return; f.text().then(function(t){ ta.value=t; TRDRAFT=t; }); });
-    go.addEventListener('click',function(){ TRDRAFT=''; var got=parseTranscript(ta.value); if(!got.length){ alert('No course codes found. Paste text that contains lines like “EECS 281 … 4.00 A”.'); return; } var seen={}; TAKEN.forEach(function(c){ seen[c.code]=c; }); got.forEach(function(c){ seen[c.code]=c; }); TAKEN=Object.keys(seen).map(function(k){ return seen[k]; }); LS.set(TK,TAKEN); autofill(); markTaken(); renderDegree(); });
+    go.addEventListener('click',function(){ var got=parseTranscript(ta.value); if(!got.length){ alert('No course codes found. Paste text that contains lines like “EECS 281 … 4.00 A”.'); return; } var seen={}; TAKEN.forEach(function(c){ seen[c.code]=c; }); got.forEach(function(c){ seen[c.code]=c; }); TAKEN=Object.keys(seen).map(function(k){ return seen[k]; }); LS.set(TK,TAKEN); autofill(); markTaken(); var cur=got.filter(function(c){ return c.current; }); var sch=scheduleCurrent(cur); LASTIMPORT={n:got.length,current:cur.map(function(c){ return c.code; }),scheduled:sch.added,unknown:sch.unknown}; renderDegree(); });
     clr.addEventListener('click',function(){ TAKEN=[]; LS.set(TK,TAKEN); markTaken(); renderDegree(); });
     var cr=TAKEN.reduce(function(a,c){ return a+(c.credits||0); },0);
-    pane.appendChild(el('section',{class:'recs'},[ el('h2',{text:'Import your transcript'}), el('p',{class:'lede',text:TAKEN.length?(TAKEN.length+' courses on file · '+cr+' credits with a listed value. Buckets below were auto-filled where a course clearly qualifies; edit anything.'):'Paste it once. Courses you have taken fill the buckets below automatically and get a “Taken” badge in the catalog.'}), el('div',{class:'skl-in'},[ta, el('div',{class:'row'},[go,pasteBtn,fileIn,clr])]), TAKEN.length?el('div',{class:'chips'},TAKEN.slice().sort(function(a,b){ return a.code.localeCompare(b.code); }).map(function(c){ return el('span',{class:'chip',text:c.code+(c.grade?' · '+c.grade:'')}); })):null ]));
+    pane.appendChild(el('section',{class:'recs'},[ el('h2',{text:'Import your transcript'}), el('p',{class:'lede',text:TAKEN.length?(TAKEN.length+' courses on file · '+cr+' credits with a listed value. Buckets below were auto-filled where a course clearly qualifies; edit anything.'+(LASTIMPORT&&LASTIMPORT.current.length?(' This term: '+LASTIMPORT.current.join(', ')+'.'+(LASTIMPORT.scheduled.length?' Added to your week: '+LASTIMPORT.scheduled.join(', ')+'.':'')+(LASTIMPORT.unknown.length?' No meeting time on file for '+LASTIMPORT.unknown.join(', ')+' — add it under My schedule.':'')):'')):'Paste it once. Courses you have taken fill the buckets below automatically and get a “Taken” badge in the catalog; this term’s courses land on your week.'}), el('div',{class:'skl-in'},[ta, el('div',{class:'row'},[go,pasteBtn,fileIn,clr])]), TAKEN.length?el('div',{class:'chips'},TAKEN.slice().sort(function(a,b){ return a.code.localeCompare(b.code); }).map(function(c){ return el('span',{class:'chip',text:c.code+(c.grade?' · '+c.grade:'')}); })):null ]));
     // overall
     var tot=0, done=0;
     DEG.declared.forEach(function(pid){ PROGRAMS[pid].buckets.forEach(function(b){ tot+=b.need; done+=Math.min(b.need,bucketVal(pid,b)); }); });
