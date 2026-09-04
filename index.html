@@ -243,6 +243,7 @@
   <div class="filters" id="filters">
     <input type="search" id="q" placeholder="Search anything: code, title, topic, instructor" aria-label="Search courses">
     <label class="fchk hero" title="Hides every course that overlaps a class in My schedule, with a 30-minute buffer across campuses"><input type="checkbox" id="f-fits"><i></i><span>Hide clashes with my schedule</span></label>
+    <label class="fchk"><input type="checkbox" id="f-ug"><i></i><span>Undergrad only (below 500)</span></label>
     <label class="fchk"><input type="checkbox" id="f-open"><i></i><span>Open seats</span></label>
     <label class="fchk"><input type="checkbox" id="f-top"><i></i><span>Highly rated</span></label>
     <label class="ftime"><span>Nothing before</span><input type="time" id="t-before" step="900" aria-label="Nothing before"></label>
@@ -3083,6 +3084,7 @@
   var F = {
     q: document.getElementById('q'),
     fits: document.getElementById('f-fits'),
+    ug: document.getElementById('f-ug'),
     open: document.getElementById('f-open'),
     top: document.getElementById('f-top'),
     tBefore: document.getElementById('t-before'),
@@ -3110,6 +3112,7 @@
         var hay = (r.querySelector('.code').textContent + ' ' + r.querySelector('.course-title').textContent + ' ' + ((r.querySelector('.blurb')||{}).textContent||'') + ' ' + ((r.querySelector('.rowmeta')||{}).textContent||'')).toLowerCase();
         if(hay.indexOf(q) === -1) ok = false;
       }
+      if(ok && F.ug.checked){ var cnum = parseInt((r.querySelector('.code').textContent.match(/\b(\d{3})\b/)||[0,999])[1],10); if(cnum >= 500) ok = false; }
       if(ok && F.open.checked  && r.getAttribute('data-open') !== '1') ok = false;
       if(ok && F.top.checked   && r.getAttribute('data-top')  !== '1') ok = false;
       var tb = hm(F.tBefore.value), ta = hm(F.tAfter.value);
@@ -3152,13 +3155,13 @@
   }
 
   function hm(v){ if(!v) return null; var p=v.split(':'); return parseInt(p[0],10)*60+parseInt(p[1],10); }
-  [F.q, F.fits, F.open, F.top, F.tBefore, F.tAfter, F.sDay, F.sFrom, F.sTo, F.loved, F.fresh, F.cr, F.cN, F.cC, F.cA].forEach(function(el){
+  [F.q, F.fits, F.ug, F.open, F.top, F.tBefore, F.tAfter, F.sDay, F.sFrom, F.sTo, F.loved, F.fresh, F.cr, F.cN, F.cC, F.cA].forEach(function(el){
     el.addEventListener('input', applyFilters);
     el.addEventListener('change', applyFilters);
   });
   document.getElementById('freset').addEventListener('click', function(){
     F.q.value = '';
-    [F.fits,F.open,F.top,F.loved,F.fresh].forEach(function(c){ c.checked = false; });
+    [F.fits,F.ug,F.open,F.top,F.loved,F.fresh].forEach(function(c){ c.checked = false; });
     [F.tBefore,F.tAfter,F.sFrom,F.sTo,F.sDay].forEach(function(c){ c.value=''; });
     F.cr.value = '';
     F.cA.checked = true;
@@ -3180,6 +3183,9 @@
   .filters.top input[type=search]{flex:1 1 auto;font-size:1.05rem;font-family:var(--f-body);padding:.6rem .8rem;border:1.5px solid var(--accent)}
   .pick.taken{color:var(--open);border-color:var(--open);background:var(--central-bg)}
   #tr-text{grid-column:1/3;min-height:7rem}
+  .reclist .ev-line{font-family:var(--f-mono);font-size:.68rem;color:var(--muted);margin:.2rem 0 0;display:flex;flex-wrap:wrap;gap:.3rem .7rem}
+  .reclist .ev-line b{font-weight:600;color:var(--ink-soft)}
+  .reclist .ev-line .good{color:var(--open)} .reclist .ev-line .bad{color:var(--clash)}
   .tabs{display:flex;gap:0;border-bottom:1px solid var(--ink);margin:0 0 1.5rem}
   .tabs button{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:.6rem .9rem;cursor:pointer;margin-bottom:-1px}
   .tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
@@ -3292,7 +3298,7 @@
     var ev = r.querySelector('.ev');
     return { row:r, box:box, id:box.id, code:r.querySelector('.code').textContent.trim(), title:r.querySelector('.course-title').textContent.trim(),
       when:(r.querySelector('.when')||{}).textContent||'', blurb:(r.querySelector('.blurb')||{}).textContent||'', why:(r.querySelector('.why')||{}).textContent||'',
-      open:r.getAttribute('data-open')==='1', under:parseInt(r.getAttribute('data-under'),10), interest:parseInt(r.getAttribute('data-interest'),10), cr:box.getAttribute('data-cr'),
+      open:r.getAttribute('data-open')==='1', under:parseInt(r.getAttribute('data-under'),10), interest:parseInt(r.getAttribute('data-interest'),10), cr:box.getAttribute('data-cr'), num:parseInt((r.querySelector('.code').textContent.match(/\b(\d{3})\b/)||[0,999])[1],10), seatText:((r.querySelector('.status')||{}).textContent||'').trim(), workload:(function(){ var b=r.querySelectorAll('.ev .evm b'); return b.length>=4?parseInt(b[3].textContent,10):-1; })(), desire:(function(){ var b=r.querySelectorAll('.ev .evm b'); return b.length>=3?parseInt(b[2].textContent,10):-1; })(),
       hay: null };
   });
   CAT.forEach(function(c){ c.hay = tok(c.code+' '+c.title+' '+c.blurb+' '+c.why); });
@@ -3309,7 +3315,8 @@
   function expand(goal){ var g=goal.toLowerCase(); var ws=tok(g); Object.keys(GOALS).forEach(function(k){ if(g.indexOf(k)!==-1 || k.split(' ').some(function(p){ return p.length>3 && g.indexOf(p)!==-1; })) ws=ws.concat(GOALS[k]); }); return ws.filter(function(w,i,a){ return a.indexOf(w)===i; }); }
   function rank(goal){
     var ws = expand(goal);
-    return CAT.map(function(c){
+    var ug=document.getElementById('f-ug').checked;
+    return CAT.filter(function(c){ return !ug || c.num < 500; }).map(function(c){
       var hits = ws.filter(function(w){ return c.hay.indexOf(w)!==-1; });
       var s = hits.length*3 + (c.under>0?c.under/50:0) + (c.interest>0?c.interest/100:0) + (c.open?1:0) + (window.PL.fits(c.box)?0:-4);
       return { c:c, s:s, hits:hits };
@@ -3336,8 +3343,15 @@
     list.slice(0,8).forEach(function(r,i){
       var c=r.c; var add=el('button',{class:'add'+(c.box.checked?' on':''),type:'button',text:c.box.checked?'In my week':'Add to week'});
       add.addEventListener('click',function(){ c.box.checked=!c.box.checked; c.box.dispatchEvent(new Event('change',{bubbles:true})); add.className='add'+(c.box.checked?' on':''); add.textContent=c.box.checked?'In my week':'Add to week'; });
-      var why = r.reason || ((r.hits.length?('Matches '+r.hits.slice(0,4).join(', ')):'Broad fit')+(c.under>0?' · '+c.under+'% say it advanced their understanding':'')+(window.PL.fits(c.box)?'':' · clashes with your week'));
-      ol.appendChild(el('li',{},[ el('span',{class:'rk',text:String(i+1)}), el('div',{},[ el('div',{},[el('span',{class:'rc',text:c.code}),' ',el('span',{class:'rt',text:c.title})]), el('p',{class:'rw',html:'<b>Why:</b> '+why.replace(/</g,'&lt;')}), el('p',{class:'rowmeta',text:c.when+' · '+c.cr+' cr'}) ]), add ]));
+      var why = r.reason || ((r.hits.length?('Your goal mentions '+r.hits.slice(0,3).join(', ')+'; this course covers it directly'):'Broad fit for the goal; no direct keyword match')+(c.workload>=0&&c.workload<=25?', and students call the workload light':''));
+      var fitsNow=window.PL.fits(c.box);
+      var evl=el('p',{class:'ev-line'},[
+        c.workload>=0?el('span',{class:c.workload<=25?'good':(c.workload>=60?'bad':''),html:'<b>'+c.workload+'%</b> call it heavier than their other courses'}):el('span',{text:'no evaluations yet'}),
+        c.under>=0?el('span',{html:'<b>'+c.under+'%</b> say it advanced their understanding'}):null,
+        el('span',{class:c.open?'good':'bad',text:c.seatText||(c.open?'open seats':'waitlist / closed')}),
+        el('span',{class:fitsNow?'good':'bad',text:fitsNow?'fits your week':'clashes with your schedule'})
+      ]);
+      ol.appendChild(el('li',{},[ el('span',{class:'rk',text:String(i+1)}), el('div',{},[ el('div',{},[el('span',{class:'rc',text:c.code}),' ',el('span',{class:'rt',text:c.title})]), el('p',{class:'rw',html:'<b>Why:</b> '+why.replace(/</g,'&lt;')}), evl, el('p',{class:'rowmeta',text:c.when+' · '+c.cr+' cr'}) ]), add ]));
     });
     document.getElementById('recnote').textContent = note;
   }
@@ -3346,7 +3360,7 @@
     var g=document.getElementById('goal').value.trim(); LS.set('planner.goal',g); if(!g){ document.getElementById('reclist').innerHTML=''; document.getElementById('recnote').textContent='Type a goal, or pick one of the chips.'; return; }
     var heur = rank(g); drawRecs(heur, 'Instant ranking shown; asking the model…');
     var seq = ++aiSeq;
-    var cands = heur.slice(0,40).map(function(r){ var c=r.c; return { id:c.id, code:c.code, title:c.title, when:c.when, credits:c.cr, seats:c.open?'open':'waitlist/closed', evals:c.under>0?(c.under+'% understanding, '+c.interest+'% interest'):'none yet', blurb:c.blurb.slice(0,260), fitsWeek:window.PL.fits(c.box) }; });
+    var cands = heur.slice(0,40).map(function(r){ var c=r.c; return { id:c.id, code:c.code, title:c.title, when:c.when, credits:c.cr, seats:c.open?'open':'waitlist/closed', evals:c.under>0?(c.under+'% say it advanced understanding, '+c.interest+'% increased interest, '+c.desire+'% desire to take, '+c.workload+'% call the workload heavier than their other courses'):'no evaluations yet (new course)', blurb:c.blurb.slice(0,260), fitsWeek:window.PL.fits(c.box) }; });
     var sched = window.PL.getFixed().map(function(f){ return f.label+' '+f.d+' '+window.PL.fmt(f.s)+'-'+window.PL.fmt(f.e); });
     var ctrl = new AbortController(); var t = setTimeout(function(){ ctrl.abort(); }, 45000);
     fetch('/api/recommend',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({goal:g,candidates:cands,schedule:sched,n:8}),signal:ctrl.signal})
@@ -3372,6 +3386,7 @@
   });
   doRank();
   window.PL.boxes.forEach(function(b){ b.addEventListener('change',function(){ setTimeout(doRank,0); }); });
+  document.getElementById('f-ug').addEventListener('change',function(){ if(document.getElementById('goal').value.trim()) doRank(); });
 
   // ---------- my schedule editor (rail) ----------
   var planner = document.querySelector('.planner');

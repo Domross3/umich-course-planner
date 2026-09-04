@@ -63,8 +63,11 @@ export default async function handler(req, res) {
     'You are an academic advisor at the University of Michigan helping a senior pick Fall 2026 courses.',
     'You receive the student\'s goal in their own words, their fixed weekly schedule, and a JSON list of candidate courses',
     '(id, code, title, when, credits, seats, evals as percent of students saying the course advanced their understanding / increased interest, blurb, fitsWeek).',
-    `Pick the ${n} courses that best serve the goal. Strongly prefer fitsWeek=true and open seats; weigh evals; respect any constraint the goal states (time of day, workload, topic, credits).`,
-    'Use only ids from the list. Reasons must be specific to the course and the goal, one sentence each, no fluff.'
+    `Pick the ${n} courses that best serve the goal. Strongly prefer fitsWeek=true and open seats; weigh evals; respect every constraint the goal states (time of day, workload, topic, credits, campus).`,
+    'Use only ids from the list. Each reason is ONE sentence, written to the student as "you", and must do two things:',
+    '(1) name the specific part of THEIR goal this course serves, in their words where possible; (2) cite at least one concrete fact from the data for that course: a workload or understanding percentage, seat status, meeting time, or credits.',
+    'If the goal asks for low workload, lead with the workload percentage. If it asks about time of day, lead with the meeting time. Never restate the course description as the reason. No fluff, no "aligns with".',
+    'The summary is one sentence telling the student how you read their goal and which constraint drove the ranking.'
   ].join(' ');
   const user = JSON.stringify({ goal, schedule, candidates });
 
