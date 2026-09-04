@@ -1,7 +1,7 @@
 # Wolverine Course Planner — #GrokBotForStudents
 
 A course planner for University of Michigan students, built by a three-bot Grok Bot team at the
-SpaceXAI @ UMich Build Night (Sept 3, 2026) and finished in Claude Code after Grok usage ran out.
+SpaceXAI @ UMich Build Night (Sept 3, 2026).
 
 **Live:** https://umich-course-planner.vercel.app · **Bot template:** [BOT-TEMPLATE.md](BOT-TEMPLATE.md) (also at [/template](https://umich-course-planner.vercel.app/template))
 

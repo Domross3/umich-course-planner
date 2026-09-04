@@ -227,7 +227,7 @@
  <div class="main">
 
   <header class="masthead">
-    <p class="eyebrow">University of Michigan &middot; Fall 2026 &middot; 117 courses from Atlas &middot; built by a Grok Bot team, finished in Claude Code</p>
+    <p class="eyebrow">University of Michigan &middot; Fall 2026 &middot; 117 courses from Atlas &middot; built by a Grok Bot team</p>
     <h1>Wolverine Course Planner</h1>
     <p class="standfirst">Search the catalog, tell it where you want your career to go, and build a week that doesn&rsquo;t clash. Every course carries its student-evaluation scores, seat status, and instructor. Add your own classes on the right and the planner hides anything that collides with them.</p>
   </header>
@@ -3174,8 +3174,10 @@
 <style>
   .ftime,.fslot{display:flex;align-items:center;gap:.3rem;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
   .ftime input,.fslot input,.fslot select{font-family:var(--f-mono);font-size:.7rem;border:1px solid var(--rule);background:var(--surface);color:var(--ink);padding:.2rem .3rem}
-  .filters.top{position:static;margin:0 0 1.2rem;border-bottom:1px solid var(--rule)}
-  .filters.top input[type=search]{flex:1 1 100%;font-size:.95rem;font-family:var(--f-body);padding:.55rem .7rem}
+  .filters.top{position:sticky;top:0;z-index:6;background:var(--paper);margin:0 0 1.2rem;padding:.7rem 0 .7rem;border-bottom:1px solid var(--ink)}
+  .filters.top .slabel{flex:1 1 100%;display:flex;align-items:center;gap:.6rem}
+  .filters.top .slabel span{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);font-weight:600;white-space:nowrap}
+  .filters.top input[type=search]{flex:1 1 auto;font-size:1.05rem;font-family:var(--f-body);padding:.6rem .8rem;border:1.5px solid var(--accent)}
   .pick.taken{color:var(--open);border-color:var(--open);background:var(--central-bg)}
   #tr-text{grid-column:1/3;min-height:7rem}
   .tabs{display:flex;gap:0;border-bottom:1px solid var(--ink);margin:0 0 1.5rem}
@@ -3328,6 +3330,7 @@
   panes.courses.insertBefore(recs, panes.courses.firstChild);
   var filtersBar = document.getElementById('filters'); var emptyMsg = document.getElementById('empty');
   panes.courses.insertBefore(filtersBar, recs); filtersBar.classList.add('top');
+  var q=document.getElementById('q'); var slabel=el('div',{class:'slabel'},[el('span',{text:'Search 117 courses'})]); filtersBar.insertBefore(slabel,q); slabel.appendChild(q);
   function drawRecs(list, note){
     var ol = document.getElementById('reclist'); ol.innerHTML='';
     list.slice(0,8).forEach(function(r,i){
@@ -3517,7 +3520,7 @@
     else pane.appendChild(el('div',{class:'skills'},keys.map(function(k){ return el('span',{class:'sk',title:agg[k].join(', ')},[el('b',{text:k}),el('span',{text:agg[k].length+' course'+(agg[k].length===1?'':'s')})]); })));
     pane.appendChild(el('div',{class:'sec-head'},[el('h2',{text:'By course'})]));
     pane.appendChild(el('ul',{class:'srcs'},SK.entries.map(function(e){ var rm=el('button',{type:'button',text:'remove'}); rm.addEventListener('click',function(){ SK.entries=SK.entries.filter(function(x){ return x!==e; }); LS.set(KK,SK); renderSkills(); }); return el('li',{},[el('span',{class:'c',text:e.code}), el('span',{},[e.title?el('span',{text:e.title+' — '}):null, el('span',{class:'s',text:e.skills.join(', ')})]), el('span',{},[el('span',{class:'tag',text:e.tag||''}),' ',rm])]); })));
-    pane.appendChild(el('p',{class:'credit',html:'Catalog: U-M Atlas sweep, Aug 23–24 2026 (117 courses). Skills seed: Syllabus Collector bot index, Sept 3 2026 (118 courses; SI/PHIL enriched). Degree numbers: program pages, unverified. Built by a three-bot Grok team, finished in Claude Code. <a href="https://claude.ai/code/artifact/e3ee984d-17f3-44c8-83e7-b01d548d21b7">Demo</a> · #GrokBotForStudents'}));
+    pane.appendChild(el('p',{class:'credit',html:'Catalog: U-M Atlas sweep, Aug 23–24 2026 (117 courses). Skills seed: Syllabus Collector bot index, Sept 3 2026 (118 courses; SI/PHIL enriched). Degree numbers: program pages, unverified. Built by a three-bot Grok team. <a href="https://claude.ai/code/artifact/e3ee984d-17f3-44c8-83e7-b01d548d21b7">Demo</a> · #GrokBotForStudents'}));
   }
 
   // Project the fixed schedule onto the list: hide clashing courses by default once a schedule exists,
