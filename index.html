@@ -3413,8 +3413,7 @@
       {id:'pre',name:'Prerequisites',desc:'EECS 203 (or MATH 465/565), EECS 280, one approved math course.',need:3,unit:'courses',match:'^(EECS 203|EECS 280|MATH (465|565|115|116|120|121|156|175|176|185|186|214|215|216|217|255|256|285|286|295|296|417|419))$'},
       {id:'core',name:'Core',desc:'EECS 281, EECS 370, EECS 376, plus one probability/statistics course (e.g. STATS 250, STATS 412, EECS 301).',need:4,unit:'courses',match:'^(EECS 281|EECS 370|EECS 376|EECS 301|STATS (206|250|280|412|426|265)|IOE 265|ECON 451|TO 301)$'},
       {id:'ulcs',name:'Upper-level CS electives',desc:'EECS 4xx/5xx technical electives. Official total is 15 or 16 credits — sources disagree; confirm with your advisor.',need:16,unit:'credits',tbd:true,match:'^(EECS|CSE) [45]\\d\\d',exclude:'^EECS (441|467|470|473|481|494|497|443)$'},
-      {id:'mde',name:'Major design experience',desc:'One capstone: EECS 441, 467, 470, 473, 481, 494, 497, or approved 498 sections. Cannot double-count as an elective.',need:1,unit:'courses',match:'^EECS (441|467|470|473|481|494|497|443)$'},
-      {id:'fte',name:'Flexible technical electives',desc:'Credit count for CS-LSA not confirmed; differs from CS-Engineering.',need:8,unit:'credits',tbd:true}]},
+      {id:'mde',name:'Major design experience',desc:'One capstone: EECS 441, 467, 470, 473, 481, 494, 497, or approved 498 sections. Cannot double-count as an elective.',need:1,unit:'courses',match:'^EECS (441|467|470|473|481|494|497|443)$'}]},
     'cogsci':{name:'Cognitive Science',kind:'major',cap:3,src:'https://lsa.umich.edu/weinberginstitute/undergraduates/current-students/curriculum.html',buckets:[
       {id:'gate',name:'Gateway',desc:'COGSCI 200.',need:1,unit:'courses',match:'^COGSCI 200$'},
       {id:'track',name:'Track courses',desc:'Three courses in your track (Computation, Decision, Language, or Philosophy). Computation: PSYCH 240 or 345 plus EECS 281/445/492.',need:3,unit:'courses'},
@@ -3441,7 +3440,7 @@
   var DEG = LS.get(DK,{declared:['cs-lsa'],courses:{}});
   function codesOf(pid){ var out=[]; (PROGRAMS[pid].buckets||[]).forEach(function(b){ ((DEG.courses[pid]||{})[b.id]||'').split(/[,;\n]+/).map(function(x){ return x.trim().toUpperCase().replace(/\s+/g,' '); }).filter(Boolean).forEach(function(c){ var code=c.split(':')[0].trim(); if(out.indexOf(code)===-1) out.push(code); }); }); return out; }
   function bucketVal(pid,b){ var raw=((DEG.courses[pid]||{})[b.id]||''); var items=raw.split(/[,;\n]+/).map(function(x){ return x.trim(); }).filter(Boolean); if(b.unit==='courses') return items.length; return items.reduce(function(a,x){ var m=x.match(/:(\d+(\.\d+)?)/); return a+(m?parseFloat(m[1]):3); },0); }
-  var TK='planner.taken.v1';
+  var TK='planner.taken.v1'; var TRDRAFT='';
   var TAKEN = LS.get(TK,[]);
   function parseTranscript(text){
     var out={}, re=/\b([A-Z]{2,8})\s+(\d{3})\b([^\n]*)/g, m;
@@ -3470,12 +3469,17 @@
     var sel=el('select',{id:'add-prog'},[el('option',{value:'',text:'Add a major or minor…'})].concat(Object.keys(PROGRAMS).filter(function(k){ return DEG.declared.indexOf(k)===-1; }).map(function(k){ return el('option',{value:k,text:PROGRAMS[k].name+' ('+PROGRAMS[k].kind+')'}); })));
     sel.addEventListener('change',function(){ if(sel.value){ DEG.declared.push(sel.value); LS.set(DK,DEG); autofill(); renderDegree(); } });
     pane.appendChild(el('div',{class:'deg-head'},[sel, el('span',{class:'unv',text:'requirement numbers unverified — from program pages, confirm with your advisor'})]));
-    var ta=el('textarea',{id:'tr-text',placeholder:'Paste your unofficial transcript here (Wolverine Access → Student Business → Unofficial Transcript, select all, copy). Any text with course codes works: “EECS 281 Data Struct & Algor 4.00 A”.'});
+    var ta=el('textarea',{id:'tr-text',text:TRDRAFT,placeholder:'Paste your unofficial transcript here (Wolverine Access → Student Business → Unofficial Transcript, select all, copy). Any text with course codes works: “EECS 281 Data Struct & Algor 4.00 A”.'});
+    ta.addEventListener('input',function(){ TRDRAFT=ta.value; }); ta.addEventListener('paste',function(e){ try{ var t=(e.clipboardData||window.clipboardData).getData('text'); if(t){ e.preventDefault(); var st=ta.selectionStart||0, en=ta.selectionEnd||0; ta.value=ta.value.slice(0,st)+t+ta.value.slice(en); TRDRAFT=ta.value; } }catch(err){} });
     var go=el('button',{class:'btn',type:'button',text:'Import transcript'}); var clr=el('button',{class:'chip',type:'button',text:'Clear taken courses'});
-    go.addEventListener('click',function(){ var got=parseTranscript(ta.value); if(!got.length){ alert('No course codes found. Paste text that contains lines like “EECS 281 … 4.00 A”.'); return; } var seen={}; TAKEN.forEach(function(c){ seen[c.code]=c; }); got.forEach(function(c){ seen[c.code]=c; }); TAKEN=Object.keys(seen).map(function(k){ return seen[k]; }); LS.set(TK,TAKEN); autofill(); markTaken(); renderDegree(); });
+    var pasteBtn=el('button',{class:'btn ghost',type:'button',text:'Paste from clipboard'});
+    pasteBtn.addEventListener('click',function(){ if(!navigator.clipboard||!navigator.clipboard.readText){ alert('Your browser blocks clipboard reads here; click in the box and press Cmd+V.'); return; } navigator.clipboard.readText().then(function(t){ ta.value=(ta.value?ta.value+'\n':'')+t; TRDRAFT=ta.value; ta.focus(); }).catch(function(){ alert('Clipboard permission denied; click in the box and press Cmd+V.'); }); });
+    var fileIn=el('input',{type:'file',accept:'.txt,.csv,.md,text/plain',style:'font-family:var(--f-mono);font-size:.68rem'});
+    fileIn.addEventListener('change',function(){ var f=fileIn.files&&fileIn.files[0]; if(!f) return; f.text().then(function(t){ ta.value=t; TRDRAFT=t; }); });
+    go.addEventListener('click',function(){ TRDRAFT=''; var got=parseTranscript(ta.value); if(!got.length){ alert('No course codes found. Paste text that contains lines like “EECS 281 … 4.00 A”.'); return; } var seen={}; TAKEN.forEach(function(c){ seen[c.code]=c; }); got.forEach(function(c){ seen[c.code]=c; }); TAKEN=Object.keys(seen).map(function(k){ return seen[k]; }); LS.set(TK,TAKEN); autofill(); markTaken(); renderDegree(); });
     clr.addEventListener('click',function(){ TAKEN=[]; LS.set(TK,TAKEN); markTaken(); renderDegree(); });
     var cr=TAKEN.reduce(function(a,c){ return a+(c.credits||0); },0);
-    pane.appendChild(el('section',{class:'recs'},[ el('h2',{text:'Import your transcript'}), el('p',{class:'lede',text:TAKEN.length?(TAKEN.length+' courses on file · '+cr+' credits with a listed value. Buckets below were auto-filled where a course clearly qualifies; edit anything.'):'Paste it once. Courses you have taken fill the buckets below automatically and get a “Taken” badge in the catalog.'}), el('div',{class:'skl-in'},[ta, el('div',{class:'row'},[go,clr])]), TAKEN.length?el('div',{class:'chips'},TAKEN.slice().sort(function(a,b){ return a.code.localeCompare(b.code); }).map(function(c){ return el('span',{class:'chip',text:c.code+(c.grade?' · '+c.grade:'')}); })):null ]));
+    pane.appendChild(el('section',{class:'recs'},[ el('h2',{text:'Import your transcript'}), el('p',{class:'lede',text:TAKEN.length?(TAKEN.length+' courses on file · '+cr+' credits with a listed value. Buckets below were auto-filled where a course clearly qualifies; edit anything.'):'Paste it once. Courses you have taken fill the buckets below automatically and get a “Taken” badge in the catalog.'}), el('div',{class:'skl-in'},[ta, el('div',{class:'row'},[go,pasteBtn,fileIn,clr])]), TAKEN.length?el('div',{class:'chips'},TAKEN.slice().sort(function(a,b){ return a.code.localeCompare(b.code); }).map(function(c){ return el('span',{class:'chip',text:c.code+(c.grade?' · '+c.grade:'')}); })):null ]));
     // overall
     var tot=0, done=0;
     DEG.declared.forEach(function(pid){ PROGRAMS[pid].buckets.forEach(function(b){ tot+=b.need; done+=Math.min(b.need,bucketVal(pid,b)); }); });
@@ -3495,7 +3499,7 @@
       var box=el('section',{class:'prog'},[ el('header',{},[ el('div',{},[el('h3',{text:P.name}),' ',el('span',{class:'kind',text:P.kind+(P.cap?' · caps sharing with another major at '+P.cap:'')})]), el('div',{},[el('a',{href:P.src,target:'_blank',rel:'noopener',class:'kind',text:'source'}),' ',rm]) ]) ]);
       P.buckets.forEach(function(b){ var v=bucketVal(pid,b); var ok=v>=b.need;
         var ta=el('textarea',{placeholder:b.unit==='courses'?'EECS 281, EECS 370':'PHIL 340:4, PHIL 361',text:((DEG.courses[pid]||{})[b.id]||'')});
-        ta.addEventListener('input',function(){ DEG.courses[pid]=DEG.courses[pid]||{}; DEG.courses[pid][b.id]=ta.value; LS.set(DK,DEG); }); ta.addEventListener('blur',renderDegree);
+        var before=ta.value; ta.addEventListener('input',function(){ DEG.courses[pid]=DEG.courses[pid]||{}; DEG.courses[pid][b.id]=ta.value; LS.set(DK,DEG); }); ta.addEventListener('blur',function(){ if(ta.value!==before) setTimeout(renderDegree,0); });
         box.appendChild(el('div',{class:'bucket'},[ el('div',{},[ el('div',{class:'bn'},[b.name+' ', b.tbd?el('span',{class:'unv',text:'TBD'}):null]), el('p',{class:'bd',text:b.desc}), el('div',{class:'bs'+(ok?' ok':''),text:(ok?'✓ ':'')+v+' of '+b.need+' '+b.unit}), el('div',{class:'bar'+(ok?'':' warn'),style:'--p:'+Math.min(100,Math.round(v/b.need*100))},[el('i')]) ]), ta ]));
       });
       pane.appendChild(box);
