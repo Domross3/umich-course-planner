@@ -1,0 +1,55 @@
+{
+  "code": "STATS 710",
+  "title": "Sequential Decision Making with mHealth Applications",
+  "term": "Fall 2016",
+  "sourceRepo": "ambujtewari/ambujtewari.github.io",
+  "sourceFiles": ["teaching/STATS710-Fall2016/STATS710Fall2016.html"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Susan Murphy and Ambuj Tewari",
+  "gradingBreakdown": [
+    {"component": "Scribing lectures (1-2 lectures per student, typed in LaTeX)", "percent": 60},
+    {"component": "Final project proposal", "percent": 5},
+    {"component": "Final project poster presentation", "percent": 10},
+    {"component": "Final project report", "percent": 25}
+  ],
+  "weeklyTopics": [
+    "Introduction to multi-armed bandits; Robbins (1952) consistency result",
+    "Epsilon-greedy and UCB regret analysis (Auer et al. 2002)",
+    "Distribution-independent regret bounds and lower bounds",
+    "Thompson sampling for Bernoulli rewards (Agrawal and Goyal 2013)",
+    "Non-stochastic bandits and the Exp3 algorithm",
+    "Introduction to contextual bandits; competing with a policy class",
+    "Epoch-Greedy algorithm (Langford and Zhang 2008)",
+    "Exp4 algorithm; VE algorithm and regret analysis",
+    "Introduction to reinforcement learning / MDPs; UCB for finite-horizon RL (Auer and Ortner 2005)",
+    "ILOVETOCONBANDITS (Agarwal et al. 2014)",
+    "Guest lecture: real-world mHealth bandit deployment (Elad Yom-Tov)",
+    "PAC bounds for multi-armed bandits (Even-Dar et al. 2002), median elimination",
+    "Online ranking with top-1 feedback / partial monitoring (Chaudhuri and Tewari 2015)",
+    "Guest lectures: contextual decision processes with low Bellman rank (Nan Jiang)",
+    "mHealth-specific challenges: costly feature acquisition, non-stationarity, interpretability, on-phone computation, missing data, user engagement",
+    "Final poster presentations"
+  ],
+  "toolsAndLanguages": ["LaTeX", "Canvas"],
+  "skills": [
+    "multi-armed bandits",
+    "contextual bandits",
+    "regret analysis",
+    "thompson sampling",
+    "reinforcement learning in mdps",
+    "pac learning bounds",
+    "mobile health intervention design",
+    "just-in-time adaptive interventions",
+    "scribing/technical note-taking",
+    "research poster presentation",
+    "reading primary ml theory literature"
+  ],
+  "workloadNotes": "Advanced graduate seminar co-taught by Susan Murphy and Ambuj Tewari; minimal formal requirements beyond scribing 1-2 lectures each (typed LaTeX notes posted to the course site, 60%) and a final project (survey, paper commentary, or original research, individually or in pairs) split into proposal (5%), poster (10%), and report (25%).",
+  "prerequisitesText": "Advanced graduate level; comfort with probability and algorithms expected.",
+  "textbooks": [
+    "Bubeck and Cesa-Bianchi, Regret Analysis of Stochastic and Nonstochastic Multi-armed Bandit Problems",
+    "Sutton and Barto, Reinforcement Learning: An Introduction",
+    "Szepesvari, Algorithms for Reinforcement Learning"
+  ],
+  "confidence": "syllabus"
+}

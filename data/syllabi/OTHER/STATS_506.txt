@@ -1,0 +1,22 @@
+=== README.md (repo root) ===
+This repository `Stats506_F20` is for sharing code with Stats 506 in Fall 2020. You will find activities, examples, case studies and both data and solutions for problem sets.
+- Activities: supporting materials for group activities from Tuesday classes (activities/weekN, N=1..10).
+- Examples: short examples presented in class (examples/), organized by language: R, Stata, sas, shell.
+- Case Studies: longer case studies presented in lectures (case_studies/1-tidyverse, case_studies/2-stata).
+- Problem Sets: example solutions posted after each deadline (problem_sets/), with data (problem_sets/data) and per-language templates (problem_sets/templates: psX_template.R, psX_template.Rmd, psX_spin_template.R, psX_template.do [Stata], psX_template.sas, psX_template.sh).
+
+=== examples/README.md ===
+Directory shares code for examples presented during lecture or referenced in the reading, including Rmarkdown.Rmd (source for course notes) and per-language subfolders:
+- shell/: patterns such as `while read` looping, checking for duplicate lines with sort/uniq/wc, variable expansion differences between single/double quotes.
+- Stata/: I/O commands (sysuse, clear, import delimited, export delimited, save).
+(R and SAS examples subfolders also present, contents not enumerated here.)
+
+=== Activity file names by week (inferred topics) ===
+week1: shell scripting basics (cutnames.sh, positional args)
+week4: R / RECS2015 energy survey data analysis and plotting
+week6: NHANES survey data / balance weights in R
+week7: dplyr programming
+week10: cross-language "translations" exercise (same task in R/Stata/SAS/shell)
+All weekly activities are group activities with assigned roles (Project Manager, Editor, Record Keeper) run during Tuesday breakout sessions.
+
+Note: this is a "for sharing code" teaching repo, not a syllabus document — no grading percentages, explicit weekly topic list, or instructor name found in-repo. The official syllabus lives at jbhender.github.io/Stats506/F20/Syllabus.html (umich github.io host, blocked in this environment).

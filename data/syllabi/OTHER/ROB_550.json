@@ -1,0 +1,62 @@
+{
+  "code": "ROB 550",
+  "title": "Robotic Systems Laboratory",
+  "term": null,
+  "sourceRepo": "rob550-docs/rob550-docs.github.io",
+  "sourceFiles": [
+    "index.md",
+    "docs/armlab/index.md",
+    "docs/armlab/hardware.md",
+    "docs/armlab/software.md",
+    "docs/armlab/setup-guide.md",
+    "docs/armlab/checkpoints/index.md",
+    "docs/armlab/checkpoints/checkpoint1.md",
+    "docs/armlab/checkpoints/competition.md",
+    "docs/botlab/index.md",
+    "docs/botlab/checkpoints/index.md"
+  ],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Armlab Checkpoint 1: arm web interface, control station codebase, camera-to-world transform via tape measure and grid board",
+    "Armlab: kinematics and computer vision for a 6-DOF UFACTORY Lite 6 manipulator",
+    "Armlab competition: camera calibration through inverse kinematics, block sorting/stacking",
+    "Botlab Part 1: assemble the MBot Classic (ROS2, differential drive)",
+    "Botlab Part 2: tune feedback/PID controller for motor speed; velocity-command controller",
+    "Botlab Part 3: 2D Lidar mapping, SLAM, path planning",
+    "Botlab Part 4: OpenCV/AprilTag obstacle and target detection, Potential Field Planner, visual servoing"
+  ],
+  "toolsAndLanguages": [
+    "Python",
+    "PyQt5",
+    "xArm Python SDK",
+    "MuJoCo",
+    "LCM",
+    "ROS2",
+    "OpenCV",
+    "AprilTags",
+    "Raspberry Pi",
+    "GitLab"
+  ],
+  "skills": [
+    "robot kinematics",
+    "inverse kinematics",
+    "camera calibration",
+    "coordinate transforms",
+    "computer vision",
+    "pid control",
+    "state machines",
+    "slam",
+    "monte carlo localization",
+    "path planning",
+    "a* search",
+    "sensor fusion",
+    "embedded systems",
+    "team-based lab work"
+  ],
+  "workloadNotes": "Two lab segments (Armlab, Botlab) run as team-based hands-on hardware labs with staged checkpoints; Armlab ends in a competition worth extra credit toward the report grade.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "course page"
+}

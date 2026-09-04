@@ -1,0 +1,42 @@
+=== README.md ===
+UMSI SI 664 Docs — document store for UMSI SI 664 materials.
+TOC:
+* Installation: macOS/win10 Python, Django, MySQL dev environment setup
+* Git and Github: setting up a GitHub remote repository (macOS/Windows)
+* Django ORM: Django ORM QuerySet Examples
+* SQL: MySQL SELECT statement examples, creating a database using flat files, reading local files (Windows)
+* Tools: ngrok (macOS/Windows)
+* Assignments (by course meeting):
+  - Meeting 4: Exercise 4.2
+  - Meeting 5: Exercise 5.2
+  - Meeting 6: Exercise 6.2
+  - Midterm (10/23/2018) + answers
+  - Meeting 7: Exercise 7.2
+  - Meeting 8: Exercise 8.2, plus extra credit (Django ORM QuerySet exercise)
+  - Meeting 9: Exercise 9.2
+  - Meeting 10: Exercise 10.2
+  - Final Project
+
+=== exercises/final_project.md ===
+# SI664: Final Project (2000 points)
+Deliverables:
+1.0 Github repo (50 points)
+2.0 Logical data model (100 points)
+3.0 MySQL database (650 points)
+4.0 Django app (700 points)
+5.0 Django REST API (500 points)
+6.0 Extra credit (optional)
+7.0 Admin user
+8.0 Database dump file
+9.0 Final project evaluation
+Students may mimic/borrow from the instructor's public "heritagesites" reference Django app.
+
+=== exams/si664_midterm-20181023.md ===
+# SI 664 Midterm, Fall 2018
+Sections:
+1.0 Preliminaries (open web, problem format, work folder, gotchas)
+2.0 SQL SELECT statement problems (e.g., Indian heritage sites inscribed 2000-present; sub-Saharan site counts by region/category; heritage site counts by country, top 25)
+3.0 Django ORM QuerySet problems (equivalent queries expressed via Django ORM instead of raw SQL)
+4.0 Django heritagesites app (add new pages, URLs, templates, navbar link)
+
+Course centers on a running example app ("heritagesites", a UNESCO World Heritage Sites database) used to teach SQL, the Django ORM, and building a Django web app + REST API.

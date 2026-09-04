@@ -1,0 +1,54 @@
+University of Michigan — Department of Economics
+Econ672: Econometric Analysis II
+Winter 2020
+Lecture: MW, 2:30-5:20pm in 1505 NUB
+Andreas Hagemann ( hagem@umich.edu)
+Oﬃce hours: W, 11:00am-12:00pm in 351c Lorch
+Discussion section: TTh, 5:30-7:00pm in 1518 NUB
+Brock Rowberry ( browberr@umich.edu), Bernardo Modenesi ( bmodene@umich.edu)
+Oﬃce hours: M, 5:30pm-7:30pm in 142 Lorch,
+Th, 2:00pm-4:00pm in 111 Lorch (Informal),
+Th, 4:00pm-5:30pm in B116 MLB.
+Course website: Canvas (umich.instructure.com)
+Course objective: This is the second course of the ﬁrst-year econometrics sequence in the
+Department of Economics. Econ672 provides a theory-based introduction to econometric
+analysis. The main focus of this class will be on the theoretical aspects of standard
+econometric models, but practical issues will be discussed when appropriate.
+Prerequisites: Econ671. The course is not open to masters students. Non-econ PhD students
+should check with their department if their course grade in Econ671 makes them eligible
+for this course.
+Textbook: This course does not follow a speciﬁc textbook. Suggested readings are listed below.
+An excellent reference is
+Wooldridge, J. W. (2010). Econometric Analysis of Cross-Section and Panel Data . 2nd
+Edition. MIT Press.
+Another excellent (but advanced) reference for some of the course material is
+van der Vaart, A. W. (1998). Asymptotic Statistics . Cambridge University Press.
+That book is far beyond the scope of Econ672 but will be used extensively in Econ678 and
+Econ679. A further reference for the ﬁrst half of the course is Bruce Hansen’s manuscript
+Econometrics available at http://www.ssc.wisc.edu/~bhansen.
+Evaluations: Your grade will be based on problem sets (10% of the course grade), a mid-term
+exam (40%) and a comprehensive ﬁnal exam (50%). The mid-term exam will be held
+Monday, March 30, 2:30pm-4:00pm in class. The ﬁnal exam date and location are
+determined by the University.
+1
+Course outline: The following is a tentative outline of the course. I will add or remove topics
+depending on how the course progresses. Readings preceded by an “H” refer to the Hansen
+lecture notes; all other readings are chapters or sections in Wooldridge. I unfortunately
+may have to cancel lectures on short notice this semester.
+Topic Readings Lecture Date
+Introduction / Econ671 review 3 1 03/09
+Maximum likelihood estimation 13.1-5 2-3 03/09, 03/11
+Least squares and projections 2, H3 4-6 03/11, 03/16, 03/16
+Least squares in ﬁnite samples 4.3, H3 7 03/18
+Least squares asymptotics 4.2 8 03/18
+Instrumental variables 5 9-10 03/23, 03/23
+Panel data 10 11-12 03/25, 03/25
+Mid-term exam 1-12 03/30
+Time dependence and HAC estimation H16.1-7 13 04/01
+M-estimation 12.1-6 14-16 04/01, 04/06, 04/06
+Generalized method of moments 14.1-4 17 04/08
+Discrete choice, censoring, truncation 15, 17.1-4 18-20 04/08, 04/13, 04/13
+Selection models and missing data 19 21-22 04/15, 04/15
+Potential outcomes, treatment eﬀects 21 23-24 04/20, 04/20
+Final exam 1-25 TBA
+2

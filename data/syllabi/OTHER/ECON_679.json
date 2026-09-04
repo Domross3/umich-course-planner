@@ -1,0 +1,39 @@
+{
+  "code": "ECON 679",
+  "title": "Advanced Econometrics II",
+  "term": "Winter 2017",
+  "sourceRepo": "hgmn/hgmn.github.io",
+  "sourceFiles": ["assets/hagemann_679_syl.pdf"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Andreas Hagemann",
+  "gradingBreakdown": [
+    {"component": "Problem sets (4, may involve in-class presentations)", "percent": 20},
+    {"component": "Take-home final exam", "percent": 80}
+  ],
+  "weeklyTopics": [
+    "Resampling methods and asymptotic expansions (bootstrap, subsampling)",
+    "Topics in empirical process theory, functional central limit theorems",
+    "Quantile regression: endogeneity, longitudinal data, asymptotics of convex-process minimizers",
+    "Stationary and nonstationary time series theory: structural change, unit roots, structural breaks and trends"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "resampling methods",
+    "asymptotic expansions",
+    "empirical process theory",
+    "quantile regression",
+    "time series econometrics",
+    "structural break testing",
+    "unit root testing",
+    "econometric theory",
+    "reading primary economics literature"
+  ],
+  "workloadNotes": "Second course of the PhD second-year econometric theory field sequence (preceded by Econ 678); prepares students for the econometric theory field exam. Not open to master's students. 4 problem sets (20%) plus a take-home final exam (80%).",
+  "prerequisitesText": "Econ 671, Econ 672.",
+  "textbooks": [
+    "van der Vaart, Asymptotic Statistics, Cambridge University Press, 1998",
+    "van der Vaart and Wellner, Weak Convergence and Empirical Processes, Springer, 1996",
+    "Koenker, Quantile Regression, Cambridge University Press, 2005"
+  ],
+  "confidence": "syllabus"
+}

@@ -1,0 +1,49 @@
+{
+  "code": "STATS 605",
+  "title": "Advanced Topics in Modeling and Data Analysis: High Dimensional Statistics",
+  "term": "Winter 2013",
+  "sourceRepo": "ambujtewari/ambujtewari.github.io",
+  "sourceFiles": ["teaching/STATS605-Winter2013/STATS605Winter2013.html"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Ambuj Tewari",
+  "gradingBreakdown": [
+    {"component": "Homeworks (4, equally weighted)", "percent": 60},
+    {"component": "Final project (survey or research project)", "percent": 40}
+  ],
+  "weeklyTopics": [
+    "Linear model with n << p, sparsity, Lasso",
+    "l1-regularized logistic regression, GLMs with l1 regularization, l1-SVMs and margins",
+    "Matrix completion and trace norm; 1-bit and non-negative matrix completion",
+    "Covariance and concentration/precision matrix estimation",
+    "Gaussian graphical model selection (l1-regularized log-det, parallel l1-regularized regressions)",
+    "High dimensional Ising model selection",
+    "Sparse PCA: ScoTLASS, SDP relaxation, generalized power method",
+    "High dimensional k-means and sparse subspace clustering",
+    "Lasso l2 error bounds, restricted eigenvalue (RE) condition",
+    "Sup-norm error bounds and sign consistency of Lasso, mutual incoherence condition",
+    "Proximal methods, prox operators, convergence rates",
+    "Coordinate descent methods, LARS and the Lasso modification of LARS",
+    "Estimation of high-dimensional low-rank matrices, restricted strong convexity (RSC)",
+    "Random matrix theory: bounds on maximum singular value, Gordon's theorem, Gaussian concentration for Lipschitz functions",
+    "High-dimensional Fisher's LDA, naive Bayes/independence rule, loss-based classification"
+  ],
+  "toolsAndLanguages": ["Matlab", "R"],
+  "skills": [
+    "high-dimensional statistics",
+    "lasso regression",
+    "sparse pca",
+    "matrix completion",
+    "graphical model estimation",
+    "convex optimization",
+    "concentration inequalities",
+    "random matrix theory",
+    "clustering",
+    "covariance estimation",
+    "classification theory",
+    "research survey writing"
+  ],
+  "workloadNotes": "Advanced PhD-level course. 4 equally-weighted homeworks mixing theory and programming (60%); final project (40%) is either an individually-written high-quality survey of an actively developing sub-topic, or a research project (teams up to 2) contributing novel theory/methods/algorithms/applications, split into a proposal, presentation, and report. No official programming language required.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "syllabus"
+}

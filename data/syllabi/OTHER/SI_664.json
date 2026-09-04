@@ -1,0 +1,36 @@
+{
+  "code": "SI 664",
+  "title": "Database and Information Systems Design (Django/MySQL web applications)",
+  "term": "Fall 2018",
+  "sourceRepo": "arwhyte/SI664-docs",
+  "sourceFiles": ["README.md", "exercises/final_project.md", "exams/si664_midterm-20181023.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Anthony Whyte",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Environment setup: Python, Django, MySQL install (macOS/Windows)",
+    "Git/GitHub remote repository setup",
+    "Meeting 4-6: Django/SQL exercises",
+    "Midterm exam: SQL SELECT queries and equivalent Django ORM QuerySets against a heritage-sites database",
+    "Meeting 7-10: Django ORM, MySQL data loading, REST API exercises",
+    "Django ORM QuerySet examples and extra-credit ORM exercises",
+    "Final project: building a full Django + MySQL + REST API web application (heritagesites-style)"
+  ],
+  "toolsAndLanguages": ["Python", "Django", "Django REST Framework", "MySQL", "SQL", "Git/GitHub", "ngrok"],
+  "skills": [
+    "sql queries",
+    "relational data modeling",
+    "django orm",
+    "django web development",
+    "rest api design",
+    "mysql administration",
+    "git/github workflow",
+    "database schema design",
+    "web app deployment",
+    "python programming"
+  ],
+  "workloadNotes": "Final project graded on a 2000-point rubric (GitHub repo 50, logical data model 100, MySQL database 650, Django app 700, Django REST API 500 points) rather than percentages, so no percent breakdown is given. Weekly exercises tied to specific class meetings (4 through 10) plus a mid-course exam.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "course page"
+}

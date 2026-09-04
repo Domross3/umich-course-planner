@@ -22,3 +22,29 @@
 {"code":"CMPLXSYS 530","title":"Computer Modeling of Complex Systems","sourceRepo":"lynetteshaw/cscs-530-wi2019","confidence":"syllabus"}
 {"code":"SI 649","title":"Information Visualization","sourceRepo":"twho/Info-visualization-project","confidence":"listing only"}
 {"code":"ROB 102","title":"Introduction to AI and Programming","sourceRepo":"robotics102/robotics102.github.io","confidence":"syllabus"}
+{"code":"ROB 550","title":"Robotic Systems Laboratory","sourceRepo":"rob550-docs/rob550-docs.github.io","confidence":"course page"}
+{"code":"STATS 506","title":"Computational Methods and Tools in Statistics","sourceRepo":"jbhender/Stats506_F20","confidence":"listing only"}
+{"code":"STATS 503","title":"Multivariate Analysis","sourceRepo":"rogerfan/stats503_w17_labs","confidence":"listing only"}
+{"code":"STATS 531","title":"Modeling and Analysis of Time Series Data","sourceRepo":"ionides/531w24","confidence":"syllabus"}
+{"code":"DATASCI 531","title":"Modeling and Analysis of Time Series Data (cross-listed with STATS 531)","sourceRepo":"ionides/531w24","confidence":"syllabus"}
+{"code":"STATS 451","title":"Bayesian Data Analysis","sourceRepo":"danieliong/stats451","confidence":"syllabus"}
+{"code":"DATASCI 451","title":"Bayesian Data Analysis (cross-listed with STATS 451)","sourceRepo":"danieliong/stats451","confidence":"syllabus"}
+{"code":"SI 664","title":"Database and Information Systems Design (Django/MySQL web applications)","sourceRepo":"arwhyte/SI664-docs","confidence":"course page"}
+{"code":"DATASCI 415","title":"Data Mining and Machine Learning (cross-listed with STATS 415)","sourceRepo":"xinyexu/STATS-415","confidence":"course page"}
+{"code":"DATASCI 507","title":"Data Science and Analytics using Python (cross-listed with STATS 507)","sourceRepo":"jbhender/Stats507_F21","confidence":"course page"}
+{"code":"ROB 204","title":"Introduction to Human-Robot Systems","sourceRepo":"michiganrobotics/rob204","confidence":"syllabus"}
+{"code":"STATS 504","title":"Capstone Seminar in Statistics","sourceRepo":"kshedden/case_studies","confidence":"syllabus"}
+{"code":"STATS 485","title":"Capstone Seminar in Statistics","sourceRepo":"kshedden/case_studies","confidence":"syllabus"}
+{"code":"STATS 604","title":"Statistical Practice","sourceRepo":"kshedden/case_studies","confidence":"syllabus"}
+{"code":"STATS 701","title":"Special Topics: Theory of Reinforcement Learning","sourceRepo":"ambujtewari/stats701-winter2021","confidence":"syllabus"}
+{"code":"STATS 607A","title":"Computing in Statistics","sourceRepo":"ambujtewari/stats607a-fall2014","confidence":"listing only"}
+{"code":"STATS 700","title":"Special Topics: Theory of LLM Reasoning","sourceRepo":"ambujtewari/LT-fall2025","confidence":"syllabus"}
+{"code":"STATS 425","title":"Introduction to Probability (cross-listed with MATH 425)","sourceRepo":"ambujtewari/ambujtewari.github.io","confidence":"syllabus"}
+{"code":"STATS 605","title":"Advanced Topics in Modeling and Data Analysis: High Dimensional Statistics","sourceRepo":"ambujtewari/ambujtewari.github.io","confidence":"syllabus"}
+{"code":"STATS 608A","title":"Optimization Methods in Statistics","sourceRepo":"ambujtewari/ambujtewari.github.io","confidence":"syllabus"}
+{"code":"STATS 710","title":"Sequential Decision Making with mHealth Applications","sourceRepo":"ambujtewari/ambujtewari.github.io","confidence":"syllabus"}
+{"code":"ECON 678","title":"Advanced Econometrics I","sourceRepo":"hgmn/hgmn.github.io","confidence":"syllabus"}
+{"code":"ECON 679","title":"Advanced Econometrics II","sourceRepo":"hgmn/hgmn.github.io","confidence":"syllabus"}
+{"code":"ECON 672","title":"Econometric Analysis II","sourceRepo":"hgmn/hgmn.github.io","confidence":"syllabus"}
+{"code":"IOE 510","title":"Linear Programming I (cross-listed MATH 561, TO 518)","sourceRepo":"PeterQiu0516/UMich-Syllabus-Collection","confidence":"syllabus"}
+{"code":"ENGR 455","title":"Multidisciplinary Software Development (cross-taught with EECS 497)","sourceRepo":"PeterQiu0516/UMich-Syllabus-Collection","confidence":"syllabus"}

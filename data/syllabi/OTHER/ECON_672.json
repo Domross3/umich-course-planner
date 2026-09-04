@@ -1,0 +1,51 @@
+{
+  "code": "ECON 672",
+  "title": "Econometric Analysis II",
+  "term": "Winter 2020",
+  "sourceRepo": "hgmn/hgmn.github.io",
+  "sourceFiles": ["assets/hagemann_672_syl.pdf"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Andreas Hagemann (discussion sections: Brock Rowberry, Bernardo Modenesi)",
+  "gradingBreakdown": [
+    {"component": "Problem sets", "percent": 10},
+    {"component": "Mid-term exam", "percent": 40},
+    {"component": "Comprehensive final exam", "percent": 50}
+  ],
+  "weeklyTopics": [
+    "Introduction / Econ 671 review",
+    "Maximum likelihood estimation",
+    "Least squares and projections",
+    "Least squares in finite samples",
+    "Least squares asymptotics",
+    "Instrumental variables",
+    "Panel data",
+    "Time dependence and HAC estimation",
+    "M-estimation",
+    "Generalized method of moments (GMM)",
+    "Discrete choice, censoring, truncation",
+    "Selection models and missing data",
+    "Potential outcomes and treatment effects"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "maximum likelihood estimation",
+    "least squares theory",
+    "instrumental variables",
+    "panel data econometrics",
+    "hac estimation",
+    "m-estimation",
+    "generalized method of moments",
+    "discrete choice models",
+    "selection models",
+    "treatment effects estimation",
+    "econometric theory"
+  ],
+  "workloadNotes": "Second course of the PhD first-year econometrics sequence (prerequisite: Econ 671; not open to master's students). Problem sets (10%), mid-term exam in-class (40%), comprehensive final exam (50%). Detailed lecture-by-lecture schedule tied to Wooldridge textbook chapters and Bruce Hansen's lecture notes.",
+  "prerequisitesText": "Econ 671.",
+  "textbooks": [
+    "Wooldridge, Econometric Analysis of Cross-Section and Panel Data, 2nd ed., MIT Press, 2010",
+    "van der Vaart, Asymptotic Statistics, Cambridge University Press, 1998 (advanced reference)",
+    "Bruce Hansen, Econometrics (lecture notes manuscript)"
+  ],
+  "confidence": "syllabus"
+}

@@ -1,0 +1,53 @@
+{
+  "code": "STATS 701",
+  "title": "Special Topics: Theory of Reinforcement Learning",
+  "term": "Winter 2021",
+  "sourceRepo": "ambujtewari/stats701-winter2021",
+  "sourceFiles": ["README.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Ambuj Tewari",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Introduction to reinforcement learning; historical examples (Samuel's Checkers, AlphaGo)",
+    "Markov processes and Markov reward processes",
+    "Markov decision processes (MDPs); dynamic programming",
+    "Linear programming approach to solving MDPs; MLE of Markov processes; Hoeffding's inequality",
+    "Monte Carlo methods for RL",
+    "Temporal difference learning methods",
+    "Online convex optimization (OCO): first-order algorithms",
+    "The experts problem, Follow-the-Regularized-Leader, mirror descent",
+    "Adversarial multi-armed bandits (Exp3 algorithm)",
+    "Stochastic multi-armed bandits (Explore-Then-Commit, UCB, Thompson Sampling)",
+    "Optimism-based algorithms for online RL in MDPs (UCRL2)",
+    "Posterior/Thompson sampling for RL (PSRL)",
+    "Adversarial MDPs (MDP-Experts, O-REPS)",
+    "Advanced topics chosen by student interest: RL with function approximation, continuous state/action spaces (LQR), offline/off-policy evaluation, multi-task/transfer RL, hierarchical RL, multi-agent RL",
+    "Student paper-reading presentations on advanced RL topics"
+  ],
+  "toolsAndLanguages": ["Zoom (remote delivery)", "Canvas"],
+  "skills": [
+    "reinforcement learning theory",
+    "markov decision processes",
+    "dynamic programming",
+    "monte carlo methods",
+    "temporal difference learning",
+    "online convex optimization",
+    "regret analysis",
+    "multi-armed bandits",
+    "thompson sampling",
+    "concentration inequalities",
+    "stochastic approximation",
+    "research paper presentation",
+    "mathematical proof reading"
+  ],
+  "workloadNotes": "PhD-level special topics seminar, taught remotely (COVID-19); no graded homeworks or exams; grades based on class presentations (student groups present papers on advanced RL topics) and a final project (proposal due partway through term).",
+  "prerequisitesText": "Aimed at advanced graduate students in statistics, CS, control theory, and operations research; prior exposure to RL or at least MDPs strongly recommended; significant mathematical maturity expected.",
+  "textbooks": [
+    "Sutton and Barto, Reinforcement Learning: An Introduction (2nd ed.)",
+    "Puterman, Markov Decision Processes: Discrete Stochastic Dynamic Programming",
+    "Hazan, Introduction to Online Convex Optimization",
+    "Lattimore and Szepesvari, Bandit Algorithms",
+    "Course notes by Prof. Vidyasagar"
+  ],
+  "confidence": "syllabus"
+}

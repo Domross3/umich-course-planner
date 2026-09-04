@@ -1,0 +1,39 @@
+{
+  "code": "ENGR 455",
+  "title": "Multidisciplinary Software Development (cross-taught with EECS 497: Human-Centered Software Design and Development)",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": ["EECS 497&ENGR455_Human-Centered Software Design and Development & Multidisciplinary Software Development_Winter 2021.pdf"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Jeff Ringenberg (with Ju Young (Lisa) Kim)",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Customer discovery and contextual inquiry",
+    "Prototyping and process models",
+    "Project scheduling",
+    "UI/UX design",
+    "Development and testing/debugging",
+    "Team dynamics, creative problem solving, dealing with failure, leadership, conflict resolution",
+    "(second semester continuation topics, for MDP/EECS497 students continuing): security, change management, maintenance, business considerations, case studies, intellectual property, entrepreneurism"
+  ],
+  "toolsAndLanguages": ["Zoom", "GitLab/GitHub", "Jira Software", "Microsoft Teams"],
+  "skills": [
+    "contextual inquiry",
+    "software requirements gathering",
+    "ui/ux design",
+    "software prototyping",
+    "project scheduling",
+    "software testing and debugging",
+    "multidisciplinary team collaboration",
+    "client-facing project delivery",
+    "remote team collaboration",
+    "technical demo presentation"
+  ],
+  "workloadNotes": "Part of the Multidisciplinary Design Program (MDP): teams pair CS students with non-CS 'domain' students on a real sponsor's project, following the full software design/development cycle from idea to delivery. Fully asynchronous lectures (recorded), with a lecture-summary quiz to verify attendance. EECS 497 grading only (ENGR 455 is graded separately through MDP): Initial Project Concept Doc 2%, Lecture Summaries 5%, Self/Team Evaluations 5%, Project Planning Doc 7%, User Requirements Doc 9%, Lo-Fi Prototype 12%, Testing and Debugging Report 15%, Final Demo 20%, Exam 25%.",
+  "prerequisitesText": null,
+  "textbooks": [
+    "Holtzblatt, Wendell, and Wood, Rapid Contextual Design, 2008",
+    "Software Engineering: A Practitioner's Approach, 8th ed., McGraw-Hill, 2014"
+  ],
+  "confidence": "syllabus"
+}

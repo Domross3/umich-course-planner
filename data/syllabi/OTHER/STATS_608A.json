@@ -1,0 +1,35 @@
+{
+  "code": "STATS 608A",
+  "title": "Optimization Methods in Statistics",
+  "term": "Fall 2015 (half-semester, began Oct 26, 2015)",
+  "sourceRepo": "ambujtewari/ambujtewari.github.io",
+  "sourceFiles": ["teaching/STATS608A-Fall2015/STATS608AFall2015.html"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Ambuj Tewari (GSI: Yun-Jhong Wu)",
+  "gradingBreakdown": [
+    {"component": "Homeworks (3, equally weighted)", "percent": 75},
+    {"component": "Course project proposal", "percent": 5},
+    {"component": "Course project final report", "percent": 20}
+  ],
+  "weeklyTopics": [
+    "Gradient descent",
+    "Subgradient methods",
+    "Proximal algorithms",
+    "Coordinate descent methods",
+    "Applications of convex optimization to machine learning and statistics"
+  ],
+  "toolsAndLanguages": ["Python", "Matlab", "R"],
+  "skills": [
+    "convex optimization",
+    "gradient descent",
+    "subgradient methods",
+    "proximal algorithms",
+    "coordinate descent",
+    "optimization for machine learning",
+    "research project writing"
+  ],
+  "workloadNotes": "Half-semester graduate course on convex optimization for ML/statistics. 3 homeworks mixing theory and programming (75% total); course project done in pairs (groups of 3 allowed for wider-scope projects), consisting of a 2-page proposal (5%) and a 6-8 page final report in NeurIPS format (20%).",
+  "prerequisitesText": null,
+  "textbooks": ["Bertsekas, Convex Optimization Algorithms (reference)", "Boyd and Vandenberghe, Convex Optimization (reference)"],
+  "confidence": "syllabus"
+}

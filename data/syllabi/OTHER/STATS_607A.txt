@@ -1,0 +1,19 @@
+=== README.md ===
+Material for STATS 607A (Fall 2014) course at University of Michigan.
+
+=== Notebook-by-notebook topics (extracted from markdown intro cells) ===
+Intro.ipynb: "Hello World" in Python; Python as a calculator (exponentiation operator).
+Lecture 01: if statement; for and while loops (break, continue, else clause); pass statement; functions and their arguments (def, argument passing, docstrings).
+Lecture 02: more operations on lists; tuples; sets; dictionaries; looping techniques.
+Lecture 03: running OS commands; handling command line arguments; math module; pattern matching (regex).
+Lecture 04: creating numpy arrays; basic operations; indexing and slicing.
+Lecture 05: manipulating arrays (reshape); universal functions (ufuncs); sorting and searching.
+Lecture 06: array input and output (numpy.save/load); linear algebra with numpy.
+Lecture 07: optimization and root finding; special functions; statistical functions (scipy).
+Lecture 08: (topic not captured in first markdown cell - likely continuation of scipy/stats).
+Lecture 09: Pandas basic data structures: Series, DataFrame, Panel.
+Lecture 10: reading and writing text (pandas read_csv/to_csv); reading from databases; reading from web APIs.
+Lecture 11: logging into "flux" (UMich's HPC cluster) via SSH with MToken; downloading text corpora (ebooks) for the next lecture's exercise.
+Lecture 12: building an inverted index using Hadoop on the flux cluster; treating each line of text as a "document"; word-indexing exercise using Bible text and other corpora.
+
+Course appears to be a graduate-level "Computing in Statistics" course: Python fundamentals -> numpy -> scipy -> pandas -> databases/web APIs -> HPC cluster computing (flux) -> Hadoop/MapReduce.

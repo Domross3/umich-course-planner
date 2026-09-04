@@ -1,0 +1,38 @@
+{
+  "code": "STATS 506",
+  "title": "Computational Methods and Tools in Statistics",
+  "term": "Fall 2020",
+  "sourceRepo": "jbhender/Stats506_F20",
+  "sourceFiles": ["README.md", "examples/README.md", "activities/week1", "activities/week4", "activities/week6", "activities/week7", "activities/week10", "case_studies/", "problem_sets/templates/"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "James (Jerry) Henderson",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Shell scripting basics and positional arguments",
+    "R programming and Rmarkdown",
+    "RECS 2015 energy survey data analysis and plotting in R",
+    "NHANES survey data and balance weights in R",
+    "dplyr programming",
+    "Stata I/O and data management",
+    "SAS examples",
+    "Cross-language translation exercise: the same analysis task implemented in R, Stata, SAS, and shell",
+    "Tidyverse and Stata case studies"
+  ],
+  "toolsAndLanguages": ["R", "RMarkdown", "Stata", "SAS", "shell/bash", "dplyr"],
+  "skills": [
+    "shell scripting",
+    "r programming",
+    "dplyr",
+    "data wrangling",
+    "survey data analysis",
+    "stata programming",
+    "sas programming",
+    "cross-language translation",
+    "reproducible reports",
+    "group collaboration"
+  ],
+  "workloadNotes": "Weekly Tuesday group activities with assigned roles (Project Manager, Editor, Record Keeper); problem sets have per-language starter templates (R, Rmarkdown, Stata, SAS, shell), implying assignments are done in multiple languages.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "listing only"
+}

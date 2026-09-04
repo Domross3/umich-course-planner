@@ -1,0 +1,46 @@
+{
+  "code": "DATASCI 451",
+  "title": "Bayesian Data Analysis (cross-listed with STATS 451)",
+  "term": null,
+  "sourceRepo": "danieliong/stats451",
+  "sourceFiles": [
+    "index.Rmd",
+    "course-policy.Rmd"
+  ],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Yang Chen (GSI: Daniel Iong)",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Monte Carlo methods and simulations",
+    "Basics of Bayesian modeling and inference: prior, likelihood, posterior",
+    "Single and multi-parameter Bayesian models",
+    "Bayesian hierarchical models and shrinkage estimators",
+    "Computational methods: Markov chain Monte Carlo (MCMC)",
+    "Usage of the STAN package",
+    "Bayesian inference in practice"
+  ],
+  "toolsAndLanguages": [
+    "R",
+    "Stan",
+    "JAGS",
+    "Canvas"
+  ],
+  "skills": [
+    "bayesian inference",
+    "monte carlo methods",
+    "mcmc",
+    "hierarchical modeling",
+    "shrinkage estimation",
+    "stan programming",
+    "posterior analysis",
+    "probabilistic modeling",
+    "statistical computing",
+    "group research project"
+  ],
+  "workloadNotes": "Grades based on weekly Canvas quizzes, biweekly homework, one midterm exam, and one final project (groups of 2-4) applying Bayesian methods to real data with a written report; up to 5% bonus for Canvas discussion participation.",
+  "prerequisitesText": "(STATS 412 or STATS 425) and (STATS 306 or EECS 280)",
+  "textbooks": [
+    "Kruschke, John. Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan. Academic Press, 2014."
+  ],
+  "confidence": "syllabus"
+}

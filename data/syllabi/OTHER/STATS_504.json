@@ -1,0 +1,38 @@
+{
+  "code": "STATS 504",
+  "title": "Capstone Seminar in Statistics",
+  "term": null,
+  "sourceRepo": "kshedden/case_studies",
+  "sourceFiles": ["stats504/syllabus.md", "methods/writing-tips.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Kerby Shedden (GSI: Kevin Wibisono)",
+  "gradingBreakdown": [
+    {"component": "Writing memos and one presentation (unweighted average, ~8 assignments)", "percent": 100}
+  ],
+  "weeklyTopics": [
+    "~8 case studies, each covering roughly 3 lectures of background/statistical issues followed by a 10-day writing assignment",
+    "Case study domains include human health, social/behavioral science, and natural science (e.g. NHANES, mortality, actigraphy, RLMS, COVID testing/mortality data, per the shared course case-studies repo)",
+    "Statistical methods introduced per case study: GLMs, GEE, mixed/multilevel regression, survival analysis, dimension reduction, time series",
+    "Technical writing: framing a research question, methods justification, findings/interpretation memos",
+    "One in-class student presentation per student (4-5 slides, 5-minute talk)"
+  ],
+  "toolsAndLanguages": ["R", "Python", "Julia", "Google Docs", "GitHub", "Canvas"],
+  "skills": [
+    "applied statistical analysis",
+    "generalized linear models",
+    "survival analysis",
+    "mixed effects models",
+    "gee",
+    "dimension reduction",
+    "time series analysis",
+    "large/complex dataset manipulation",
+    "technical writing",
+    "oral presentation",
+    "statistical communication",
+    "case study analysis"
+  ],
+  "workloadNotes": "Capstone seminar for 2nd-year Applied Statistics/Data Science master's students; ~8 individual case-study writing assignments (2-3 page memos) graded on a 4-part rubric (focus, methods/approach, writing/organization, findings/interpretation, 25 points each), plus one student presentation; course grade is an unweighted average of all assignment scores; no exams; code is not submitted or graded.",
+  "prerequisitesText": "Master's-level courses in probability, theoretical statistics, regression analysis, and multivariate statistics.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

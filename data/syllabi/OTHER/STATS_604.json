@@ -1,0 +1,43 @@
+{
+  "code": "STATS 604",
+  "title": "Statistical Practice",
+  "term": null,
+  "sourceRepo": "kshedden/case_studies",
+  "sourceFiles": ["stats604/syllabus.pdf"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Kerby Shedden",
+  "gradingBreakdown": [
+    {"component": "Short writing assignments (memos, 6-8 over the term)", "percent": 50},
+    {"component": "Attendance and participation in class discussions", "percent": 15},
+    {"component": "In-class handwritten writing exercise (blue book, no references)", "percent": 15},
+    {"component": "Individual oral exams (15 min each, last five lab meetings)", "percent": 20}
+  ],
+  "weeklyTopics": [
+    "~6 case studies covering open-access datasets, each discussed for 2-3 weeks",
+    "Formulating compelling and tractable research questions",
+    "Assessing dataset structure, sampling, and measurement for research aims",
+    "Implementing statistical methods (including GLMs and newer methods) and conducting analysis",
+    "Assessing a priori potential outcomes/failure modes of an analysis, including statistical power",
+    "Communicating methods and findings to varied stakeholders, in writing and orally",
+    "Assigned readings from the statistics and broader scientific literature",
+    "In-class handwritten exam memo (October 28 per this offering)",
+    "Individual oral exams during the final five lab meetings (starting November 4 per this offering)"
+  ],
+  "toolsAndLanguages": ["R", "Python", "Julia", "GitHub", "Canvas"],
+  "skills": [
+    "research question formulation",
+    "study design assessment",
+    "generalized linear models",
+    "statistical power analysis",
+    "applied data analysis",
+    "scientific writing",
+    "oral defense of analysis",
+    "case study analysis",
+    "critical reading of statistical literature",
+    "seminar discussion / participation"
+  ],
+  "workloadNotes": "PhD-level seminar for 2nd-year Statistics PhD students (prerequisite: STATS 600 and either 511 or 610); discussion-based, not lecture-based; heavy emphasis on oral defense of written work via individual 15-minute oral exams tailored to each student's own memos; code is not submitted for grading.",
+  "prerequisitesText": "STATS 600 and either STATS 511 or STATS 610.",
+  "textbooks": [],
+  "confidence": "syllabus"
+}

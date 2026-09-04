@@ -1,0 +1,64 @@
+University of Michigan — Department of Economics
+Econ679: Advanced Econometrics II
+Winter 2017
+Lecture: MW 8:30-10:00am in 171 Lorch
+Andreas Hagemann ( hagem@umich.edu)
+Oﬃce hours: Tu, 2:00-3:00pm in 351c Lorch
+Class web page: Canvas (umich.instructure.com)
+Course objective: This is the second course of the second-year econometric theory ﬁeld
+sequence in the Department of Economics. The ﬁrst class (Econ678) will be oﬀered
+again in Fall 2017. The main goal of this sequence is to provide students with the
+necessary background to: (i) take and pass the ﬁeld examination in econometric
+theory, and (ii) carry out innovative research in theoretical and applied econometrics.
+Econ679 provides an introduction to (i) resampling methods and asymptotic ex-
+pansions, (ii) topics in empirical process theory, (iii) quantile regression, and (iv)
+stationary and nonstationary time series theory. Several results from statistical
+large-sample theory will also be discussed during the semester when necessary. Some
+basic references for each portion of the class are provided below.
+Prerequisites: Econ671, Econ672. The course is not open to masters students.
+Evaluations: Your ﬁnal grade will be based on four problem sets (20 percent of the course
+grade) and a take-home ﬁnal exam (80 percent). The problem sets may involve
+in-class presentations.
+Course outline: The following is a tentative outline of the course readings. I will add
+or remove topics depending on how the course progresses. I might have to cancel
+classes on short notice this semester.
+Resampling methods and asymptotic expansions:
+Andrews, D. W. (2000) Inconsistency of the bootstrap when a parameter is on the
+boundary of the parameter space. Econometrica 68, 399–406.
+Davidson, R. and J. G. MacKinnon (2006). Bootstrap methods in econometrics.
+In Palgrave Handbooks of Econometrics , ed. by T. C. Mills and K. D. Patterson.
+Palgrave Macmillan, Basingstoke, vol. 1, chap. 23.
+1
+Horowitz, J. L. (2001). The bootstrap. In Handbook of Econometrics , ed. by J. J.
+Heckman and E. E. Leamer. Amsterdam, North-Holland, vol. 5, chap. 52.
+Lehmann, E. L. and J. P. Romano (2005). Testing Statistical Hypotheses (3rd ed.).
+Springer, New York.
+Politis, D. N., and J. P. Romano (1994). Large sample conﬁdence regions based on
+subsamples under minimal sssumptions. Annals of Statistics 22 , 2031–2050.
+van der Vaart, A. W. (1998). Asymptotic Statistics . Cambridge University Press.
+Topics in empirical process theory:
+Andrews, D. W. K. and D. Pollard (1994). An introduction to functional central limit
+theorems for dependent stochastic processes. International Statistical Review 62 ,
+119–132.
+van der Vaart, A. W. (1998). Asymptotic Statistics . Cambridge University Press.
+van der Vaart, A. W. and J. A. Wellner (1996). Weak Convergence and Empirical
+Processes: With Applications to Statistics . Springer Series in Statistics. Springer,
+New York.
+Quantile regression:
+Chernozhukov, V. and C. Hansen (2013). Quantile models with endogeneity. Annual
+Review of Economics 5 , 57–81.
+Hjort, N., and D. Pollard (1993). Asymptotics for minimisers of convex processes.
+Statistical Research Report, University of Oslo.
+Knight, K. (1998). Limiting distributions of l 1 regression estimators under general
+conditions. Annals of Statistics 26 , 756–770.
+Koenker, R. (2005). Quantile Regression. Cambridge University Press, New York.
+Koenker, R. (2004). Quantile regression for longitudinal data. Journal of Multivari-
+ate Analysis 91 , 74–89.
+Stationary and nonstationary time series theory:
+van der Vaart, A. W. (2013). Time series. Universiteit Leiden.
+Andrews, D. W. (1993) Tests for parameter instability and structural change with
+unknown change point. Econometrica 61, 821–856.
+Stock, J. H. (1994). Unit Roots, Structural Breaks, and Trends. In Handbook of
+Econometrics, ed. by R. F. Engle and D. L. McFadden. Amsterdam, North-Holland,
+vol. 4, chap. 46.
+2

@@ -1,0 +1,35 @@
+{
+  "code": "STATS 425",
+  "title": "Introduction to Probability (cross-listed with MATH 425)",
+  "term": "Fall 2014",
+  "sourceRepo": "ambujtewari/ambujtewari.github.io",
+  "sourceFiles": ["teaching/STATS425-Fall2014/STATS425Fall2014.html"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Ambuj Tewari (GSI: Yun-Jhong Wu)",
+  "gradingBreakdown": [
+    {"component": "Homeworks (11 assigned, lowest dropped, best 10 counted)", "percent": 30},
+    {"component": "Midterm exam", "percent": 30},
+    {"component": "Final exam", "percent": 40}
+  ],
+  "weeklyTopics": [
+    "Axioms of probability",
+    "Conditional probability and independence",
+    "Random variables, discrete and continuous",
+    "Joint distributions",
+    "Expectation, variance, covariance"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "probability theory",
+    "conditional probability",
+    "random variables",
+    "joint distributions",
+    "expectation and variance",
+    "problem solving",
+    "mathematical proof"
+  ],
+  "workloadNotes": "11 homework assignments (lowest dropped), one closed-book midterm covering chapters 1-3, one closed-book comprehensive final exam. Late homework not accepted absent documented emergency; collaboration on discussion allowed but write-ups must be independent.",
+  "prerequisitesText": "MATH 215 (calculus: differentiation, integration, change of variables).",
+  "textbooks": ["Sheldon Ross, A First Course in Probability, 9th edition"],
+  "confidence": "syllabus"
+}

@@ -1,0 +1,85 @@
+{
+  "code": "DATASCI 531",
+  "title": "Modeling and Analysis of Time Series Data (cross-listed with STATS 531)",
+  "term": "Winter 2024",
+  "sourceRepo": "ionides/531w24",
+  "sourceFiles": [
+    "syllabus.md",
+    "index.md"
+  ],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Edward L. Ionides (GSI: Jesse Wheeler)",
+  "gradingBreakdown": [
+    {
+      "component": "Weekly homeworks",
+      "percent": 25
+    },
+    {
+      "component": "Group midterm project",
+      "percent": 20
+    },
+    {
+      "component": "Peer reviews of midterm projects (2, individual)",
+      "percent": 8
+    },
+    {
+      "component": "Group final project",
+      "percent": 30
+    },
+    {
+      "component": "Peer reviews of final projects (2, individual)",
+      "percent": 12
+    },
+    {
+      "component": "Participation",
+      "percent": 5
+    }
+  ],
+  "weeklyTopics": [
+    "Introduction to time series analysis",
+    "Time series models: estimating trend and autocovariance",
+    "Stationarity, white noise, and basic time series models",
+    "Linear time series models and the algebra of ARMA models",
+    "Parameter estimation and model identification for ARMA models",
+    "Extending the ARMA model: seasonality and trend",
+    "Introduction to the frequency domain",
+    "Smoothing in the time and frequency domains",
+    "Case study: association between unemployment and mortality",
+    "Introduction to partially observed Markov process (POMP) models",
+    "Simulation-based inference for epidemiological dynamics via the pomp R package",
+    "Simulation of stochastic dynamic models",
+    "Likelihood for POMP models: theory and practice",
+    "Likelihood maximization for POMP models",
+    "Case study: polio dynamics with covariates, seasonality, over-dispersion",
+    "Case study: financial volatility, POMP model with observations driving latent dynamics",
+    "Case study: measles dynamics revealed in long time series"
+  ],
+  "toolsAndLanguages": [
+    "R",
+    "pomp R package",
+    "Piazza"
+  ],
+  "skills": [
+    "time series analysis",
+    "arma models",
+    "trend estimation",
+    "autocovariance",
+    "frequency domain analysis",
+    "spectral smoothing",
+    "state-space models",
+    "pomp models",
+    "simulation-based inference",
+    "likelihood maximization",
+    "stochastic dynamic modeling",
+    "epidemiological modeling",
+    "financial volatility modeling",
+    "r programming",
+    "peer review"
+  ],
+  "workloadNotes": "Weekly homeworks graded to a rubric; a randomly-assigned group midterm project plus two individual anonymous peer reviews; groups re-randomized for a group final project plus two more individual peer reviews; class participation tracked via a rubric. Explicit source-attribution and GenAI-use disclosure requirements on every homework and project.",
+  "prerequisitesText": "Recommended: theoretical and applied statistics (STATS 500 and prior/concurrent STATS 511, or STATS 413 and STATS 426 with a strong math/computing background); basic linear algebra; R programming (no formal R prerequisite, but extensive R use).",
+  "textbooks": [
+    "R. Shumway and D. Stoffer, Time Series Analysis and its Applications, 4th edition (2017)"
+  ],
+  "confidence": "syllabus"
+}

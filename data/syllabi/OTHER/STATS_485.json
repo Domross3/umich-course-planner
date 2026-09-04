@@ -1,0 +1,36 @@
+{
+  "code": "STATS 485",
+  "title": "Capstone Seminar in Statistics",
+  "term": "Fall 2025",
+  "sourceRepo": "kshedden/case_studies",
+  "sourceFiles": ["stats485/syllabus.md", "methods/writing-tips.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Kerby Shedden (GSIs: Jaylin Lowe, Abhiti Mishra)",
+  "gradingBreakdown": [
+    {"component": "Writing memos (unweighted average, ~8 assignments, no exams)", "percent": 100}
+  ],
+  "weeklyTopics": [
+    "~8 case studies, each covering roughly 3 lectures of background/statistical issues followed by a 10-day writing assignment",
+    "Case study domains include human health, social/behavioral science, natural science, and industry/commerce",
+    "Statistical methods used are drawn from the shared case-studies repo: GLMs, GEE, mixed/multilevel regression, survival analysis, dimension reduction, time series",
+    "Technical/scientific writing: framing a research question, justifying methods, interpreting findings in a 2-3 page memo"
+  ],
+  "toolsAndLanguages": ["R", "Python", "Julia", "Google Docs", "GitHub", "Canvas", "Piazza"],
+  "skills": [
+    "applied statistical analysis",
+    "generalized linear models",
+    "survival analysis",
+    "mixed effects models",
+    "gee",
+    "dimension reduction",
+    "time series analysis",
+    "large/complex dataset manipulation",
+    "scientific writing",
+    "statistical communication",
+    "case study analysis"
+  ],
+  "workloadNotes": "Satisfies the LSA Upper Level Writing Requirement (ULWR) for Statistics/Data Science majors. ~8 individual case-study writing memos (2-3 pages) graded on a 4-part rubric (focus, methods/approach, writing/organization, findings/interpretation, 25 points each); course grade is an unweighted average; no exams or quizzes; code is not submitted or graded.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "syllabus"
+}

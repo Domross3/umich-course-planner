@@ -1,0 +1,60 @@
+{
+  "code": "DATASCI 415",
+  "title": "Data Mining and Machine Learning (cross-listed with STATS 415)",
+  "term": null,
+  "sourceRepo": "xinyexu/STATS-415",
+  "sourceFiles": [
+    "README.md",
+    "415-HW1.pdf",
+    "415-hw2.pdf",
+    "415-HW1.R",
+    "415-hw2.Rmd"
+  ],
+  "fetchedAt": "2026-09-04",
+  "instructor": null,
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Data summaries",
+    "Data visualization",
+    "Intro to regression and linear regression",
+    "Categorical predictors and interactions",
+    "K nearest neighbors",
+    "Model assessment and the bias/variance trade-off",
+    "Linear and Quadratic Discriminant Analysis",
+    "Logistic regression",
+    "Resampling methods (cross-validation and bootstrap)",
+    "Model Selection: best subset selection",
+    "Model Selection: shrinkage methods",
+    "Model Selection: dimension reduction",
+    "Nonlinear regression: splines",
+    "Nonlinear regression: Generalized Additive Models (GAMs)",
+    "Trees",
+    "Ensemble methods",
+    "Support Vector Machines",
+    "Introduction to Clustering",
+    "Hierarchical clustering",
+    "K-means"
+  ],
+  "toolsAndLanguages": [
+    "R",
+    "RMarkdown"
+  ],
+  "skills": [
+    "linear and logistic regression",
+    "k-nearest neighbors",
+    "bias-variance tradeoff analysis",
+    "discriminant analysis (lda/qda)",
+    "cross-validation and bootstrap resampling",
+    "model selection and regularization (shrinkage)",
+    "dimension reduction",
+    "splines and generalized additive models",
+    "decision trees and ensemble methods",
+    "support vector machines",
+    "clustering (hierarchical, k-means)",
+    "statistical learning in r"
+  ],
+  "workloadNotes": "Homework assignments (HW1, HW2 seen) with R/RMarkdown solutions; student repo, not an official syllabus.",
+  "prerequisitesText": null,
+  "textbooks": [],
+  "confidence": "course page"
+}

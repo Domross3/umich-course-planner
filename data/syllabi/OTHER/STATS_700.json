@@ -1,0 +1,43 @@
+{
+  "code": "STATS 700",
+  "title": "Special Topics: Theory of LLM Reasoning",
+  "term": "Fall 2025 (half-semester, Aug 25 - Oct 10, 2025)",
+  "sourceRepo": "ambujtewari/LT-fall2025",
+  "sourceFiles": ["README.md"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Ambuj Tewari",
+  "gradingBreakdown": [],
+  "weeklyTopics": [
+    "Background (2.5 weeks): Transformers architecture (Jurafsky & Martin ch. 9)",
+    "Background: Large Language Models (J&M ch. 10), proper scoring rules",
+    "Background: Model alignment, prompting, in-context learning, RLHF/PPO/GRPO/DPO (J&M ch. 12)",
+    "Background: Reasoning LLMs overview (DeepSeek R1 technical report, survey of reasoning LLMs)",
+    "Theory papers (4.5 weeks): emergent in-context learning as implicit structure induction",
+    "Theory: chain-of-thought and transformer expressiveness (serial computation, Boolean circuits)",
+    "Theory: scaling test-time compute, verifier-based vs verifier-free methods",
+    "Theory: test-time compute as meta reinforcement learning",
+    "Theory: context-enhanced learning and sample efficiency of chain-of-thought supervision",
+    "Theory: information-theoretic analysis of chain-of-thought reasoning",
+    "Theory: learning-theoretic framework for autoregressive chain-of-thought",
+    "Theory: optimal chain-of-thought length, confidence-limiting fine-tuning objectives",
+    "Theory: PAC-learnability of verifiers for chain-of-thought reasoning",
+    "Open questions: whether CoT reasoning is a distribution-dependent 'mirage', anthropomorphization of intermediate tokens, RL with minimal training data"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "llm reasoning theory",
+    "transformer architecture",
+    "reinforcement learning from human feedback",
+    "chain-of-thought analysis",
+    "in-context learning theory",
+    "sample complexity analysis",
+    "pac learning",
+    "information theory",
+    "test-time compute scaling",
+    "reading and critiquing ml theory papers"
+  ],
+  "workloadNotes": "PhD-level half-semester (7-week) special topics course requiring strong mathematical maturity and interest in LLM reasoning; structured as background reading (~2.5 weeks) followed by close reading and discussion of recent (2024-2025) machine learning theory papers on chain-of-thought and test-time compute (~4.5 weeks); no grading breakdown found in-repo.",
+  "prerequisitesText": "Strong interest in reasoning and LLMs, and a high level of mathematical maturity.",
+  "textbooks": ["Jurafsky and Martin, Speech and Language Processing (3rd ed. draft), chapters 9, 10, 12"],
+  "confidence": "syllabus"
+}

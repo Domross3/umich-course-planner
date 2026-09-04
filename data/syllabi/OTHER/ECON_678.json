@@ -1,0 +1,42 @@
+{
+  "code": "ECON 678",
+  "title": "Advanced Econometrics I",
+  "term": "Fall 2019",
+  "sourceRepo": "hgmn/hgmn.github.io",
+  "sourceFiles": ["assets/hagemann_678_syl.pdf"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Andreas Hagemann",
+  "gradingBreakdown": [
+    {"component": "Problem sets (may involve in-class presentations)", "percent": 20},
+    {"component": "Take-home final exam", "percent": 80}
+  ],
+  "weeklyTopics": [
+    "Generalized method of moments (GMM)",
+    "Empirical process theory",
+    "Resampling methods and randomization (bootstrap, subsampling)",
+    "Asymptotic expansions",
+    "Quantile regression (time permitting)",
+    "Stationary and nonstationary time series theory (time permitting)",
+    "Statistical large-sample theory as needed throughout"
+  ],
+  "toolsAndLanguages": [],
+  "skills": [
+    "generalized method of moments",
+    "empirical process theory",
+    "bootstrap methods",
+    "asymptotic statistics",
+    "quantile regression",
+    "time series theory",
+    "econometric theory",
+    "reading primary economics literature",
+    "in-class research presentation"
+  ],
+  "workloadNotes": "First course of the PhD second-year econometric theory field sequence (followed by Econ 679); prepares students for the econometric theory field exam and for research. Not open to master's students.",
+  "prerequisitesText": "Econ 671, Econ 672.",
+  "textbooks": [
+    "van der Vaart, Asymptotic Statistics, Cambridge University Press, 1998",
+    "Koenker, Quantile Regression, Cambridge University Press, 2005",
+    "Lehmann and Romano, Testing Statistical Hypotheses, 3rd ed., Springer, 2005"
+  ],
+  "confidence": "syllabus"
+}

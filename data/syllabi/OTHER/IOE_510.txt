@@ -1,0 +1,167 @@
+SYLLABUS
+IOE 510/Math 561/TO 518: Linear Programming I
+Instructor Prof. Ruiwei Jiang, ruiwei@umich.edu
+Ofﬁce hours Fri. 10:00–11:00AM (all time in Eastern Time)
+Zoom Link https://tinyurl.com/510w21
+GSI Huiwen Jia, hwjia@umich.edu
+Ofﬁce hours TBD
+Zoom Link https://tinyurl.com/510w21
+Data Analytics Help Desk Ziang Xu, xuziang@umich.edu
+Ofﬁce hours TBD
+Zoom Link TBD
+Lectures Asynchronous; recordings posted on Canvas→ Media Gallery.
+Textbook
+⋄ No required textbooks; all homework assignments and exams are based on my lecture notes
+and materials posted on Canvas.
+⋄ Optional: Bazaraa, M. S., Jarvis, J. J., and Sherali, H. D. (2010) Linear Programming and
+Network Flows. Wiley; 4th edition. (Available as an e-textbook at UMich library.)
+⋄ Optional: Jon Lee. A First Course in Linear Optimization; 2nd Edition. Online Available at
+https://github.com/jon77lee/JLee_LinearOptimizationBook/archive/master.
+zip.
+Prerequisites Linear algebra (matrix analysis, row/column operations, solution methods for lin-
+ear equation systems). Skills of writing mathematical proofs and coding.
+Focus of the Course We teach how to optimize decisions for problems in various applica-
+tion domains where complex situations are involved. We will focus on formulating mathemati-
+cal models for real-world problems, developing algorithms to identify optimal solutions to these
+models, and implementing these models in commercial/academic solvers. For implementation,
+we accept any programming language (e.g., C/C++, Python, AMPL) and any optimization solver
+(e.g., CPLEX, Gurobi, IPOPT), but we strongly encourage you to try and use Python and Gurobi.
+IOE 510 is a *graduate level* course in optimization. In particular, we will teach:
+⋄ Modeling
+1
+⋄ Mathematics and algorithms of linear programs
+⋄ Computation and coding
+⋄ Mathematical proofs
+Software:
+⋄ LATEX (for typing documents; required for homework and project)
+⋄ Excel (for spreadsheet functions, and solving optimization models)
+⋄ Python (for compiling and solving optimization models)
+⋄ Matlab (for linear algebra operations, solving optimization models, and other math compu-
+tations)
+Example Topics:
+⋄ How to formulate mathematical optimization models: Identify decision variables, problem
+parameters, objectives, and constraints
+⋄ A wide variety of modeling applications
+⋄ Algebraic and geometric interpretations of linear programs (LPs)
+⋄ The Primal Simplex method for solving LPs
+⋄ The relationship between primal and dual of an LP (complementary slackness) and how this
+relationship is useful
+⋄ Sensitivity analysis
+⋄ What an integer program (IP) is? How to formulate and solve an IP (e.g., the branch-and-
+bound algorithm, cutting-plane algorithms, totally unimodular structures)
+⋄ Linear optimization approaches: Decomposition, Lagrangian relaxation, column generation
+Responsibility & Requirements Students are expected to read this syllabus fully and responsi-
+ble for the whole content.
+We will post lecture notes and necessary materials before the corresponding days of class; students
+are encouraged to print out the notes and ﬁll them up during the class.
+2
+Homework There are 6–7 homework assignments planned. Homework questions will include
+modeling, numerical analysis, algorithm design, and coding in software to solve optimization
+models.
+⋄ You may work in a group of 1–3 students, and all of your submitted work should be the work
+of the group — NOT of uncredited others; NOT materials found on the internet; NOT getting
+homework solutions from students who took the course in previous semesters. Violation of
+this is a violation of the Honor Code, and you will not get any credit for your homework.
+This honor code violation will also hurt your overall grade.
+⋄ For your mental health during this difﬁcult time, we encourage that you work in a group of
+size 3. To this end, we will add 5 extra credits to your HW grade if you work in a group of size
+3 and submit evidence of doing so in your HW submission (e.g., a Zoom meeting screenshot
+with all group members). Note: your HW score in the course grade cannot exceed the full
+mark speciﬁed below.
+⋄ All work must be typed using LATEX and submitted on time by ONE representative of your
+group. Please clearly write all students’ names in your group in the FIRST line. Please
+submit LATEX source (.tex) and a compiled pdf ﬁle. If there are coding questions, please
+submit all the code-related ﬁles.
+⋄ No extension of the due dates will be given for any homework or project assignments —
+start your work early, and try the best you can with the allotted time.
+⋄ The maximum grade for an assignment turned in on time is 100, plus the 5 extra credits if
+you work in a group of 3.
+⋄ An assignment turned in late, but less than 24 hours late, will have max score = 80+5; an
+assignment turned in more than 24 hours late, but less than 48 hours late, will have max
+score = 60+5; an assignment turned in more than 48 hours late, but less than 72 hours late,
+will have max score = 40+5; no assignments will be accepted if turned in more than 72 hours
+late.
+Ofﬁce Hours Ofﬁce hours are for clariﬁcation of lecture material and for clariﬁcation of home-
+work assignments. They are NOT for: (i) help in actually doing the homework, (ii) verifying your
+solutions and pre-grading your homework, (iii) help coding or debugging.
+Quiz We will have 10 quizzes to encourage students to maintain a routine of learning. Each quiz
+will be due at the end of the week and will be about the materials taught in that week. You need to
+answer at least 5/10 quizzes correctly in order to receive a full mark for quiz in the course grade.
+3
+Project We require you work in a group of 1–3, and complete a project that uses modeling, com-
+putational, and coding techniques learnt in class for a real-world optimization problem. I will post
+a list of topics from which you can choose one as your project. Each team will record a 10-min pre-
+sentation and write a report for your project. The presentation recording is due by April 21 and
+the report is due by April 28.
+The project team group does not need to be the same as your homework group, but we highly
+recommend that you start early to organize the team, think about project ideas, and identify indi-
+viduals’ responsibilities. Moreover, we require:
+⋄ Using techniques that are relevant to what we teach in this course;
+⋄ Having sections of relevant literature review, model(s), algorithm(s), and numerical results
+in your project report. For conducting numerical studies, the default programming lan-
+guage/solver to use is Python/Gurobi, which we will use for homework assignments. You
+can use other coding languages and/or solvers (e.g., C/C++ with CPLEX or Matlab) if you
+are more comfortable using those. But the results should be clearly presented and repro-
+ducible, and each team needs to submit their code together with the pdf report.
+⋄ The report needs to be typed in LATEX , and should use A4 size letter papers, 6–10 pages, 12pt
+font size, 1 inch margins on all sides, single space between lines, and in pdf format. Refer-
+ences will not be counted into the pages, but is necessary as a part of the report submission.
+The correctness of citation format will affect the project grade.
+⋄ Each team needs to prepare 6–10 slides that describe their projects and presents them for 10
+minutes.
+⋄ After each presentation, we will ask individual team members questions to ensure that the
+project is done collaboratively, and everyone understands all parts of their projects.
+⋄ Each team member needs to specify their contribution by using 2–3 sentences at the end of
+the report, and we anticipate equal workload distribution. We reserve the right of differenti-
+ating the grades among members from the same team, based on our judgement of individual
+contribution from the above statement in the report and Q&A.
+To grade the project, we will mainly consider the quality of technical reports, but will also use the
+presentation and Q&A to assist our decision making. Each team will receive our feedback on how
+to revise their reports after their presentations.
+For your mental health during this difﬁcult time, we encourage that you work in a group of size
+3. To this end, we will add 5 extra credits to your project grade if you work in a group of size 3.
+Note: your project score in the course grade cannot exceed the full mark speciﬁed below.
+4
+Final Grade
+⋄ Homework (30%);
+⋄ Quizzes (5%);
+⋄ Project (25% Report + Final Presentation);
+⋄ Exam 1 (20%; Mar. 3 (Wed.), take home, 9:00am, 24 hours);
+⋄ Exam 2 (20%; Apr. 14 (Wed.), take home, 9:00am, 24 hours).
+(We do not offer alternative exam dates for either exam.)
+Letter Grade Ranges:
+⋄ A: [93,∞); A−: [88, 93)
+⋄ B+: [83, 88); B: [75, 83); B−: [70, 75)
+⋄ C+: [65, 70); C or below: < 65; letter grades will be determined individually
+Exam & Regrading Policies Any student requiring special accommodations during exam time
+should contact the instructor at the beginning of the semester so that adequate arrangements can
+be made. After grades being returned,
+⋄ If you believe that there is an error in the grading of your exam or homework submissions,
+you must submit a written request within one week of the submissions being returned,
+explaining why you feel points were unfairly deducted. Note that any submitted requests
+for re-grading will be fully re-graded – all questions will be reviewed for accurate grading,
+and the new grades could be higher or lower.
+⋄ Ofﬁce hours are only for discussions related to learning, but not for regrading. Regrading
+request is only accepted in a written format.
+Honor Code Policy We take the Engineering Honor Code very seriously. All students are ex-
+pected to be familiar with it and are bound by its requirements. In particular, we emphasize the
+importance of individual student write-ups for problem sets, no collaborative work during ex-
+ams, and full contribution by all members of student teams. Each student needs to independently
+work on quizzes and submits the work. Do not submit for others, which will be considered as
+serious honor code violation. Furthermore, respect in the classroom will be given utmost priority.
+Students are expected to treat the instructors and each other with respect, and have the right to be
+treated respectfully in return. Disrespect at any level will not be tolerated.
+5
+University of Michigan Disability Statement The University of Michigan is committed to pro-
+viding equal opportunity for participation in all programs, services and activities. Request for
+accommodations by persons with disabilities may be made by contacting the Services for Stu-
+dents with Disabilities (SSD) Ofﬁce located at G 664 Haven Hall. The SSD phone number is 734-
+763-3000. Once your eligibility for an accommodation has been determined you will be issued a
+veriﬁed individual services accommodation (VISA) form. Please present this form to me at the
+beginning of the semester to allow processing time for special accommodation for the lectures,
+projects, tests, and exams.
+Important Links
+⋄ The Engineering Honor Council: https://ecas.engin.umich.edu/honor-council/
+⋄ Honor Code: https://ecas.engin.umich.edu/wp-content/uploads/sites/19/
+2019/03/Honor-Code-Pamphlet-2018.pdf
+6

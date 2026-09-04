@@ -1,0 +1,91 @@
+---
+title: "STATS 451: Bayesian Data Analysis"
+# author:  "[Daniel Iong](https://github.com/danieliong)"
+output:
+  html_document:
+    fig_width: 1
+---
+
+----
+
+# Course Overview
+
+This course offers a basic introduction to Monte Carlo methods and Bayesian modeling & computational techniques to prepare undergraduate students (statistics and data science majors and minors) and graduate students in fields other than statistics to apply Bayesian methods in practice. The course is application-oriented and addresses practical skills for principled data analysis.
+
+Grades are based on weekly quizzes on Canvas, biweekly homework, one midterm exam, and one final project (groups of 2-4). For the final project, students are expected to apply Bayesian methods to analyze real data and write up a thorough report on the modeling, computation, and interpretation of the statistical analysis.
+
+**Prerequisites**: (STATS 412 or STATS 425) and (STATS 306 or EECS 280).
+
+**Textbook**: [Kruschke, John. Doing Bayesian data analysis: A tutorial with R, JAGS, and Stan. Academic Press, 2014.](https://www.sciencedirect.com/book/9780124058880/doing-bayesian-data-analysis)
+
+----
+
+# Office Hours and Contact Information 
+
+**Instructor**: [Yang Chen](https://lsa.umich.edu/stats/people/faculty/YangChen.html)
+  
+  * **Office Hours**: Tuesday 5-7pm in 445E West Hall 
+
+**GSI**: Daniel Iong
+
+  * **Ofice Hours**: Tuesday 5:30 - 6:30pm, Thursday 7-9pm @ 2165 USB
+
+
+----
+
+# Course Outline 
+
+* Monte Carlo Methods
+  - Monte Carlo Simulations
+
+* Basics of Bayesian Modeling and Inference
+  - Basic Concepts: Prior, Likelihood, Posterior
+  - Examples: Single and Multi Parameter Models
+  - Bayesian Hierarchical Model and Shrinkage Estimators
+
+* Computational Methods
+  - Markov chain Monte Carlo Methods
+
+* Usage of the STAN Package
+
+* Bayesian Inference in Practice
+
+----
+
+# Course Policy
+
+* Q & A are handled ONLY on Canvas and office hours, thus please avoid asking technical questions via email. Students are encouraged to help solving each other’s problems on Canvas. Students are encouraged to share notes on Canvas. Bonus points (up to 5%) will be given according to students’ involvement and contributions on Canvas.
+
+* Please come to the GSI or the instructor’s office hours if you have any questions that you don’t want to post on Canvas discussions. Emails sent to the GSI or instructor about (a) contents that can be found on Canvas, (b) technical questions including bugs in code, or (c) asking for homework / final project extensions (except medical conditions) won’t be replied.
+
+* Proper collaboration is highly recommended. However, you must recognize your collaborators by writing down their names clearly in the front when handing in your homework or final project. Refer to the Academic Misconduct for policies of plagiarism. The instructor will follow the university honor code policy strictly. Lack of knowledge of the academic honesty policy is not a reasonable explanation for a violation. If you discuss with other students about homework, you are supposed to write down your own homework/code independently after the discussions. Under any circumstances, two exact copies of homework/code are considered to be plagiarism. Students are under their own risk of any type of penalty from the university in violating academic honesty.
+
+----
+
+
+## Academic Misconduct
+
+The University of Michigan community functions best when its members treat one another with honesty, fairness, respect, and trust. The College of LSA promotes the assumption of personal responsibility and integrity, and prohibits all forms of academic dishonesty and misconduct. All cases of academic misconduct will be referred to the Office of the Assistant Dean for Undergraduate Education. Being found responsible for academic misconduct will usually result in a grade sanction, in addition to any sanction from the College. For more information, including examples of behaviors that are considered academic misconduct and potential sanctions, please see www.lsa.umich.edu/academicintegrity.
+
+## Accommodations for Students with Disabilities
+
+If you think you need an accommodation for a disability, please let me know at your earliest con- venience. Some aspects of this course, the assignments, the in-class activities, and the way the course is usually taught may be modified to facilitate your participation and progress. As soon as you make me aware of your needs, we can work with the Services for Students with Disabili- ties (SSD) office to help us determine appropriate academic accommodations. SSD (734-763-3000; http://ssd.umich.edu) typically recommends accommodations through a Verified Individualized Services and Accommodations (VISA) form. Any information you provide is private and confiden- tial and will be treated as such.
+
+## Other resources
+
+As a student, you may experience a range of issues that can negatively impact your learning, such as anxiety, depression, interpersonal or sexual violence, difficulty eating or sleeping, loss/grief, and/or alcohol/drug problems. These mental health concerns or stressful events may lead to diminished academic performance and affect your ability to participate in day-to-day activities. In order to support you during such challenging times, the University of Michigan provides a number of confidential resources to all enrolled students, including Counseling and Psychological Services (CAPS) (734.764.8312), Sexual Assault Prevention and Awareness Center (SAPAC) (24-Hour Crisis Line: 734.936.3333), Psychiatric Emergency Services (734-996-4747), and Services for Students with Disabilities (734.763.3000; 734.615.4461 [TDD]; 734.619.6661 [VP]).
+
+
+
+
+---
+title: "Course Policy"
+output: html_document
+---
+
+* Q & A are handled ONLY on Canvas and office hours, thus please avoid asking technical questions via email. Students are encouraged to help solving each other’s problems on Canvas. Students are encouraged to share notes on Canvas. Bonus points (up to 5%) will be given according to students’ involvement and contributions on Canvas.
+
+* Please come to the GSI or the instructor’s office hours if you have any questions that you don’t want to post on Canvas discussions. Emails sent to the GSI or instructor about (a) contents that can be found on Canvas, (b) technical questions including bugs in code, or (c) asking for homework / final project extensions (except medical conditions) won’t be replied.
+
+* Proper collaboration is highly recommended. However, you must recognize your collaborators by writing down their names clearly in the front when handing in your homework or final project. Refer to the Academic Misconduct for policies of plagiarism. The instructor will follow the university honor code policy strictly. Lack of knowledge of the academic honesty policy is not a reasonable explanation for a violation. If you discuss with other students about homework, you are supposed to write down your own homework/code independently after the discussions. Under any circumstances, two exact copies of homework/code are considered to be plagiarism. Students are under their own risk of any type of penalty from the university in violating academic honesty.
+

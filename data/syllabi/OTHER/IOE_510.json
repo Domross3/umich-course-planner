@@ -1,0 +1,48 @@
+{
+  "code": "IOE 510",
+  "title": "Linear Programming I (cross-listed MATH 561, TO 518)",
+  "term": "Winter 2021",
+  "sourceRepo": "PeterQiu0516/UMich-Syllabus-Collection",
+  "sourceFiles": ["MATH561&IOE 510_Linear Programming I_Winter 2021.pdf"],
+  "fetchedAt": "2026-09-04",
+  "instructor": "Ruiwei Jiang (GSI: Huiwen Jia)",
+  "gradingBreakdown": [
+    {"component": "Homework (6-7 assignments)", "percent": 30},
+    {"component": "Quizzes (10, need 5/10 correct for full quiz credit)", "percent": 5},
+    {"component": "Project (report + final presentation)", "percent": 25},
+    {"component": "Exam 1 (take-home, 24 hours)", "percent": 20},
+    {"component": "Exam 2 (take-home, 24 hours)", "percent": 20}
+  ],
+  "weeklyTopics": [
+    "Formulating mathematical optimization models: decision variables, parameters, objectives, constraints",
+    "Modeling applications across domains",
+    "Algebraic and geometric interpretations of linear programs (LPs)",
+    "The Primal Simplex method for solving LPs",
+    "Primal-dual relationship of an LP and complementary slackness",
+    "Sensitivity analysis",
+    "Integer programs (IPs): formulation, branch-and-bound, cutting-plane algorithms, totally unimodular structures",
+    "Linear optimization approaches: decomposition, Lagrangian relaxation, column generation"
+  ],
+  "toolsAndLanguages": ["Python", "Gurobi", "LaTeX", "Excel", "MATLAB", "CPLEX", "IPOPT", "AMPL"],
+  "skills": [
+    "linear programming",
+    "integer programming",
+    "simplex method",
+    "duality theory",
+    "sensitivity analysis",
+    "branch-and-bound",
+    "cutting-plane methods",
+    "lagrangian relaxation",
+    "column generation",
+    "optimization modeling",
+    "mathematical proof writing",
+    "optimization software (gurobi/cplex)"
+  ],
+  "workloadNotes": "Graduate-level optimization course, asynchronous lecture delivery via Canvas recordings. Homework done in groups of 1-3 (bonus 5 extra credit points for groups of 3), submitted as typed LaTeX with strict late penalties (80% at <24h late, 60% at <48h, 40% at <72h, zero beyond). Weekly quizzes. Group project (1-3 students) applying course techniques to a real optimization problem: LaTeX report (6-10 pages), 6-10 slide presentation, individual contribution statement, and Q&A to verify collaboration. Two take-home exams, no makeup dates offered.",
+  "prerequisitesText": "Linear algebra (matrix analysis, row/column operations, solving linear systems); ability to write mathematical proofs and to code.",
+  "textbooks": [
+    "Bazaraa, Jarvis, and Sherali, Linear Programming and Network Flows, 4th ed., Wiley, 2010 (optional)",
+    "Jon Lee, A First Course in Linear Optimization, 2nd ed. (optional, freely available)"
+  ],
+  "confidence": "syllabus"
+}

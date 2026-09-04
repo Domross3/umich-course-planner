@@ -1,0 +1,46 @@
+=== index.md ===
+Welcome to ROB 550! Designed for educational use, here we offer insights into the hardware and software of the ROB 550 Robotic Systems Laboratory at the University of Michigan.
+Our course comprises two main segments: Armlab and Botlab. In Armlab, we focus on a 5 DOF manipulator with 7 Dynamixel servo motors (site text; hardware page specifies a 6-DOF UFACTORY Lite 6 arm). Botlab introduces the Mbot Classic, a differential-drive robot.
+
+=== docs/armlab/index.md ===
+For this lab, we will work on a 6-DOF robotic arm and learn how to interact with such systems. We will primarily be working towards building the autonomy for this robot, using computer vision techniques, kinematics and path planning to enable the robot to manipulate various objects.
+1. Setup Guide — get your station, codebase and environment running.
+2. Hardware — what is on the station and how it is wired.
+3. Software — the code you will be editing.
+4. Checkpoints — the graded tasks, in order.
+5. How-to Guide — reference material you will come back to.
+
+=== docs/armlab/hardware.md ===
+Station: UFACTORY Lite 6 arm (6-DOF, 440mm reach, 600g payload, ±0.5mm repeatability, 500mm/s max TCP speed), a 50mm-grid board with AprilTags at corners, an aluminium frame with a top-mounted RealSense camera, 24V power supply, control laptop, emergency stop. Arm commanded over Ethernet via the xArm Python SDK.
+
+=== docs/armlab/software.md ===
+Codebase: PyQt5 control station with 3 background worker threads (VideoThread 30Hz: RealSense frames, depth filters, AprilTag detection; ArmThread 20Hz: joint angles / end-effector pose; StateMachineThread 20Hz: state machine loop). Plain Python in env550lab conda env, no ROS in Armlab. control_station.py supports --real (hardware) and --sim (MuJoCo over LCM) modes.
+
+=== docs/armlab/setup-guide.md ===
+Stations run Ubuntu 24.04 laptops (ROB550-AM / ROB550-PM sessions). Code hosted on UMich GitLab (gitlab.eecs.umich.edu); students fork the codebase into a team group.
+
+=== docs/armlab/checkpoints/index.md ===
+Checkpoint 1
+Competition
+
+=== docs/armlab/checkpoints/checkpoint1.md ===
+Gets students moving the arm and reasoning about spatial position. Starts in the arm's web interface, then moves to the control station codebase. Board has a 50mm x 50mm grid; origin at arm's mounting location on the board; board surface z=0; positions in millimetres. Builds a camera-to-world transform using only a tape measure.
+
+=== docs/armlab/checkpoints/competition.md ===
+Final competition: several challenges testing camera calibration through inverse kinematics, worth extra credit added to the report grade. Must demonstrate at least Event 1 level 1 to receive full marks.
+Event 1: Sort 'n stack! (300 points) — sort/stack cubes by size and, at higher levels, in rainbow color order within 180 seconds, based on a chosen difficulty level.
+
+=== docs/botlab/index.md ===
+Botlab introduces the Mbot Classic, a differential-drive robot.
+
+=== docs/botlab/checkpoints/index.md ===
+Working with the ROS2 MBot Classic: differential drive with 2 parallel wheels + rear caster, magnetic wheel encoders, scanning 2D Lidar, MEMS 3-axis IMU, Raspberry Pi 5 (high level), RP2040-based MBot Control Board (low level motor control).
+ACTION: Cascade Control & PID; 3-DOF rigid-body coordinate transforms; planar kinematics of a differential-drive ground robot; motion models with uncertainty.
+PERCEPTION: quadrature encoders; MEMS IMU; 2D LIDAR rangefinders; camera and fiducial marker (AprilTag) detection.
+REASONING: Monte Carlo Localization; SLAM; A* search; path planning.
+Structure:
+Part 1: Assemble the MBot.
+Part 2: Tune the feedback controller to control motor speed; design a controller to move the robot based on velocity commands.
+Part 3: Implement 2D mapping using the 2D Lidar; build a SLAM system to map and localize; build a path planner to navigate in the map.
+Part 4: Use OpenCV and AprilTags to find obstacles/targets; implement a Potential Field Planner and Visual Servoing.
+Team assignment — all members must collectively participate on each component.

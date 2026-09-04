@@ -1,0 +1,68 @@
+University of Michigan — Department of Economics
+Econ678: Advanced Econometrics I
+Fall 2019
+Lecture: TTh 4:00-5:20pm in G634 Haven Hall
+Andreas Hagemann ( hagem@umich.edu)
+Oﬃce hours: W, 11:30am-12:30pm in 351C Lorch. Please send me an email.
+Class web page: umich.instructure.com
+Course objective: This is the ﬁrst course of the second-year econometric theory ﬁeld
+sequence in the Department of Economics. The second course (Econ679) will
+be oﬀered again in Winter 2020. The main goal of this sequence is to provide
+students with the necessary background to: (i) take and pass the ﬁeld examination
+in econometric theory, and (ii) carry out innovative research in theoretical and
+applied econometrics.
+Econ678 provides an introduction to (i) the generalized method of moments, (ii)
+empirical process theory, (iii) resampling methods and asymptotic expansions, and,
+time permitting, (iv) quantile regression and (v) stationary and nonstationary
+time series theory. Several results from statistical large-sample theory will also
+be discussed during the semester when necessary. Some basic references for each
+portion of the class are provided below.
+Prerequisites: Econ671, Econ672. The course is not open to masters students.
+Evaluations: Your ﬁnal grade will be based on problem sets (20 percent of the course
+grade) and a take-home ﬁnal exam (80 percent). The problem sets may involve
+in-class presentations.
+Course outline: The following is a tentative outline of the course readings. I will add or
+remove topics depending on how the course progresses. I may have to cancel or
+reschedule classes in November.
+Generalized method of moments:
+Andrews, D. W. K. (1994). Empirical process methods in econometrics. In Handbook
+of Econometrics , ed. by R. F. Engle and D. L. McFadden. Amsterdam, North-
+Holland, vol. 4, chap. 37.
+Cattaneo, M. D. (2014). Notes on generalized method of moments. University of
+Michigan.
+1
+Newey, W. K. and D. L. McFadden (1994). Large sample estimation and hypothesis
+testing. In Handbook of Econometrics , ed. by R. F. Engle and D. L. McFadden.
+Amsterdam, North-Holland, vol. 4, chap. 36.
+Pollard, D. (1985). New ways to prove central limit theorems. Econometric Theory 1,
+295-313.
+van der Vaart, A. W. (1998). Asymptotic Statistics . Cambridge University Press.
+Resampling methods and randomization:
+Andrews, D. W. (2000) Inconsistency of the bootstrap when a parameter is on the
+boundary of the parameter space. Econometrica 68, 399–406.
+Davidson, R. and J. G. MacKinnon (2006). Bootstrap methods in econometrics.
+In Palgrave Handbooks of Econometrics , ed. by T. C. Mills and K. D. Patterson.
+Palgrave Macmillan, Basingstoke, vol. 1, chap. 23.
+Horowitz, J. L. (2001). The bootstrap. In Handbook of Econometrics , ed. by J. J.
+Heckman and E. E. Leamer. Amsterdam, North-Holland, vol. 5, chap. 52.
+Lehmann, E. L. and J. P. Romano (2005). Testing Statistical Hypotheses (3rd ed.).
+Springer, New York.
+Politis, D. N., and J. P. Romano (1994). Large sample conﬁdence regions based on
+subsamples under minimal sssumptions. Annals of Statistics 22 , 2031–2050.
+van der Vaart, A. W. (1998). Asymptotic Statistics . Cambridge University Press.
+Topics in empirical process theory:
+Andrews, D. W. K. and D. Pollard (1994). An introduction to functional central limit
+theorems for dependent stochastic processes. International Statistical Review 62 ,
+119–132.
+van der Vaart, A. W. (1998). Asymptotic Statistics . Cambridge University Press.
+Quantile regression:
+Chernozhukov, V. and C. Hansen (2013). Quantile models with endogeneity. Annual
+Review of Economics 5 , 57–81.
+Koenker, R. (2005). Quantile Regression. Cambridge University Press, New York.
+Nonstationary time series theory:
+Andrews, D. W. (1993) Tests for parameter instability and structural change with
+unknown change point. Econometrica 61, 821–856.
+Stock, J. H. (1994). Unit Roots, Structural Breaks, and Trends. In Handbook of
+Econometrics, ed. by R. F. Engle and D. L. McFadden. Amsterdam, North-Holland,
+vol. 4, chap. 46.
+2

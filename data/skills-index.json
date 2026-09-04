@@ -1939,6 +1939,34 @@
   "tag": "syllabi sweep · syllabus"
  },
  {
+  "code": "ENGR 455",
+  "title": "Multidisciplinary Software Development (cross-taught with EECS 497: Human-Centered Software Design and Development)",
+  "term": "Winter 2021",
+  "confidence": "syllabus",
+  "skills": [
+   "contextual inquiry",
+   "software requirements gathering",
+   "ui/ux design",
+   "software prototyping",
+   "project scheduling",
+   "software testing and debugging",
+   "multidisciplinary team collaboration",
+   "client-facing project delivery",
+   "remote team collaboration",
+   "technical demo presentation"
+  ],
+  "tools": [
+   "Zoom",
+   "GitLab/GitHub",
+   "Jira Software",
+   "Microsoft Teams"
+  ],
+  "grading": [],
+  "workload": "Part of the Multidisciplinary Design Program (MDP): teams pair CS students with non-CS 'domain' students on a real sponsor's project, following the full software design/development cycle from idea to delivery. Fully asynchronous lectures (recorded), with a lecture-summary quiz to verify attendance. EECS 497 grading only (ENGR 455 is graded separately through MDP): Initial Project Concept Doc 2%, Lecture Summaries 5%, Self/Team Evaluations 5%, Project Planning Doc 7%, User Requirements Doc 9%, Lo-Fi Prototype 12%, Testing and Debugging Report 15%, Final Demo 20%, Exam 25%.",
+  "source": "PeterQiu0516/UMich-Syllabus-Collection",
+  "tag": "syllabi sweep · syllabus"
+ },
+ {
   "code": "IOE 510",
   "title": "Linear Programming I (cross-listed MATH 561, TO 518)",
   "term": "Winter 2021",

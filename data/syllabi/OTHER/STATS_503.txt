@@ -1,0 +1,21 @@
+=== README.md ===
+STATS 503 Winter 2017 lab materials, University of Michigan.
+* Lab 2 (01-13-2017): intro R/data (Lab2.Rmd)
+* Lab 3 (01-20-2017): PCA (Lab3_pca.Rmd)
+* Lab 4 (01-27-2017): factor analysis and MDS (multidimensional scaling) (Lab4_fa_mds solutions)
+* Lab 5 (02-03-2017): ggplot2 (Lab5_ggplot.Rmd)
+* Lab 6 (02-10-2017): classification (Lab 6 - classification.Rmd) - uses iris dataset, ggpairs
+* Lab 7 (02-17-2017): logistic regression (Lab7_logistic.Rmd)
+* Lab 8 (02-24-2017): KNN and SVM (Lab8-knnsvm.Rmd), includes a Shiny app (Lab8-shiny.Rmd)
+* Lab 9 (03-10-2017): neural networks (Lab9_neuralnet.Rmd) - MNIST digit classification
+* Lab 10 (03-17-2017): decision trees, bagging, boosting (Lab10-trees-bag-boost.Rmd)
+* Lab 11 (03-31-2017): clustering (Lab11_cluster.Rmd), with a Shiny app (Lab11-shiny.Rmd)
+* Lab 12 (04-07-2017): Gaussian mixture models (Lab12-gmm.html)
+* Lab 13 (04-14-2017): text processing (Lab13_text.Rmd, Lab13-processing.py)
+
+Data files used across labs: Simmons81.mat, cars.csv, citycrime.txt, county_facts_dictionary.csv, dowjones.csv, heightWeightData.txt, pitches.txt, salaries.csv, starry.jpg, stateoftheunion1790-2017.txt.gz, votes.csv.
+
+Lab 6 excerpt: uses the iris dataset with ggpairs() colored by Species for classification exploration.
+Lab 9 excerpt: loads MNIST train/test data (mnist_train_x.txt etc.) for neural network classification.
+
+Note: lab-materials repo only (dated schedule of weekly labs), not an official syllabus document — no grading breakdown or instructor name found in-repo. Course is UMich STATS 503, Winter 2017 (Multivariate Analysis, based on lab topic sequence: PCA, FA, MDS, classification, clustering, GMM).
