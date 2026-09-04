@@ -242,7 +242,7 @@
   </div>
 
   <div class="filters" id="filters">
-    <input type="search" id="q" placeholder="Search code or title" aria-label="Search courses">
+    <input type="search" id="q" placeholder="Search anything: code, title, topic, instructor" aria-label="Search courses">
     <label class="fchk hero"><input type="checkbox" id="f-fits"><i></i><span>Still fits my week</span></label>
     <label class="fchk"><input type="checkbox" id="f-open"><i></i><span>Open seats</span></label>
     <label class="fchk"><input type="checkbox" id="f-top"><i></i><span>Top picks</span></label>
@@ -3140,7 +3140,7 @@
       var box = r.querySelector('input[type=checkbox]');
       var ok = true;
       if(q){
-        var hay = (r.querySelector('.code').textContent + ' ' + r.querySelector('.course-title').textContent).toLowerCase();
+        var hay = (r.querySelector('.code').textContent + ' ' + r.querySelector('.course-title').textContent + ' ' + ((r.querySelector('.blurb')||{}).textContent||'') + ' ' + ((r.querySelector('.rowmeta')||{}).textContent||'')).toLowerCase();
         if(hay.indexOf(q) === -1) ok = false;
       }
       if(ok && F.open.checked  && r.getAttribute('data-open') !== '1') ok = false;
@@ -3207,6 +3207,8 @@
 <style>
   .ftime,.fslot{display:flex;align-items:center;gap:.3rem;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
   .ftime input,.fslot input,.fslot select{font-family:var(--f-mono);font-size:.7rem;border:1px solid var(--rule);background:var(--surface);color:var(--ink);padding:.2rem .3rem}
+  .filters.top{position:static;margin:0 0 1.2rem;border-bottom:1px solid var(--rule)}
+  .filters.top input[type=search]{flex:1 1 100%;font-size:.95rem;font-family:var(--f-body);padding:.55rem .7rem}
   .tabs{display:flex;gap:0;border-bottom:1px solid var(--ink);margin:0 0 1.5rem}
   .tabs button{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:.6rem .9rem;cursor:pointer;margin-bottom:-1px}
   .tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
@@ -3343,11 +3345,11 @@
     }).sort(function(a,b){ return b.s-a.s; });
   }
   var recs = el('section',{class:'recs'},[
-    el('h2',{text:'Where do you want to end up?'}),
-    el('p',{class:'lede',text:'Type a role. Courses are ranked by how much they move you toward it: keyword fit against the catalog, student evaluations, open seats, and whether they still fit your week.'}),
+    el('h2',{text:'Tell it where you want to end up'}),
+    el('p',{class:'lede',text:'Plain English. The model reads your goal, your fixed schedule, and the catalog, then ranks with a reason for each pick. An instant keyword ranking shows while it thinks.'}),
     el('div',{class:'goalrow'},[
-      el('input',{id:'goal',type:'text',placeholder:'e.g. product manager at an AI company',value:LS.get('planner.goal','product manager')}),
-      el('button',{class:'btn',id:'goal-go',type:'button',text:'Rank'}),
+      el('input',{id:'goal',type:'text',placeholder:'Say it however you want: “PM at an AI company”, “no mornings, something about ethics”, “4 credits that count for CS”',value:LS.get('planner.goal','product manager')}),
+      el('button',{class:'btn',id:'goal-go',type:'button',text:'Ask'}),
       el('button',{class:'btn ghost',id:'goal-ai',type:'button',text:'Ask the model','data-needs-sample':'1',hidden:''})
     ]),
     el('div',{class:'chips'}, Object.keys(GOALS).map(function(k){ var c=el('button',{class:'chip',type:'button',text:k}); c.addEventListener('click',function(){ document.getElementById('goal').value=k; doRank(); }); return c; })),
@@ -3355,6 +3357,8 @@
     el('p',{class:'recnote',id:'recnote'})
   ]);
   panes.courses.insertBefore(recs, panes.courses.firstChild);
+  var filtersBar = document.getElementById('filters'); var emptyMsg = document.getElementById('empty');
+  panes.courses.insertBefore(filtersBar, recs); filtersBar.classList.add('top');
   function drawRecs(list, note){
     var ol = document.getElementById('reclist'); ol.innerHTML='';
     list.slice(0,8).forEach(function(r,i){
@@ -3365,7 +3369,22 @@
     });
     document.getElementById('recnote').textContent = note;
   }
-  function doRank(){ var g=document.getElementById('goal').value.trim()||'product manager'; LS.set('planner.goal',g); drawRecs(rank(g), 'Deterministic ranking. Add courses, then re-rank: anything that now clashes drops.'); }
+  var aiSeq = 0;
+  function doRank(){
+    var g=document.getElementById('goal').value.trim()||'product manager'; LS.set('planner.goal',g);
+    var heur = rank(g); drawRecs(heur, 'Instant ranking shown; asking the model…');
+    var seq = ++aiSeq;
+    var cands = heur.slice(0,40).map(function(r){ var c=r.c; return { id:c.id, code:c.code, title:c.title, when:c.when, credits:c.cr, seats:c.open?'open':'waitlist/closed', evals:c.under>0?(c.under+'% understanding, '+c.interest+'% interest'):'none yet', blurb:c.blurb.slice(0,260), fitsWeek:window.PL.fits(c.box) }; });
+    var sched = window.PL.getFixed().map(function(f){ return f.label+' '+f.d+' '+window.PL.fmt(f.s)+'-'+window.PL.fmt(f.e); });
+    var ctrl = new AbortController(); var t = setTimeout(function(){ ctrl.abort(); }, 45000);
+    fetch('/api/recommend',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({goal:g,candidates:cands,schedule:sched,n:8}),signal:ctrl.signal})
+      .then(function(r){ return r.json().then(function(j){ if(!r.ok) throw new Error(j.error||('HTTP '+r.status)); return j; }); })
+      .then(function(j){ if(seq!==aiSeq) return; var byId={}; CAT.forEach(function(c){ byId[c.id]=c; });
+        var list=(j.picks||[]).map(function(p){ return byId[p.id]?{c:byId[p.id],hits:[],reason:p.reason}:null; }).filter(Boolean);
+        if(list.length) drawRecs(list, (j.summary?j.summary+' ':'')+'Ranked by '+(j.model||'the model')+' from 40 candidates.'); else drawRecs(heur,'Model returned no usable picks; showing the instant ranking.'); })
+      .catch(function(e){ if(seq!==aiSeq) return; drawRecs(heur, 'Instant ranking (model unavailable: '+(e&&e.message||'error')+').'); })
+      .then(function(){ clearTimeout(t); });
+  }
   document.getElementById('goal-go').addEventListener('click',doRank);
   document.getElementById('goal').addEventListener('keydown',function(e){ if(e.key==='Enter') doRank(); });
   document.getElementById('goal-ai').addEventListener('click',function(){
